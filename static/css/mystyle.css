@@ -1,5 +1,25 @@
 * {
-  font-family: sans-serif
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+
+h2 {
+  border-bottom: solid 1px grey;
+}
+
+.post-content h2:before {
+  font-family: "FontAwesome";
+  content: "\f02d";
+  margin-right: 9px;
+}
+
+.post-content h3:before {
+  font-family: "FontAwesome";
+  content: "\f0a4";
+  margin-right: 9px;
+}
+
+.post-content h3 {
+  font-size: 125%;
 }
 
 .post-content table {
