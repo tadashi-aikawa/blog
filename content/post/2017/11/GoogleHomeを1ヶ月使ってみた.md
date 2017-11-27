@@ -1,6 +1,12 @@
 ---
 title: "Google Homeを1ヶ月使ってみた"
 date: 2017-11-19
+thumbnailImage: https://dl.dropboxusercontent.com/s/go0e80htb64jtde/20171119_1.jpg
+categories:
+  - gadget
+tags:
+  - google
+  - スマートスピーカー
 ---
 
 Google Homeを1ヶ月使ってみました。  
@@ -30,15 +36,12 @@ IoTのセキュリティが不安だったからというのもありますが�
 
 開封前はこんな感じです。シンプル。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/go0e80htb64jtde/20171119_1.jpg"><img src="https://dl.dropboxusercontent.com/s/go0e80htb64jtde/20171119_1.jpg" /></a>
-</div>
+{{< himg "go0e80htb64jtde/20171119_1.jpg" >}}
 
 中身を空けるともっとシンプルです。そしてクール
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/756376dli5i53l1/20171119_2.jpg"><img src="https://dl.dropboxusercontent.com/s/756376dli5i53l1/20171119_2.jpg" /></a>
-</div>
+{{< himg "756376dli5i53l1/20171119_2.jpg" >}}
+
 
 リビングのテーブルに置いてもメカニックな感じがしなくてGOODです。
 
@@ -89,10 +92,12 @@ IoTのセキュリティが不安だったからというのもありますが�
 
 ### ラジオ
 
-『ねえGoogle, ニッポン放送流して』と言えば、[radiko](http://radiko.jp/)でニッポン放送をストリーミングしてくれます。  
-[radiko](http://radiko.jp/)対応したのは10/20過ぎなので、発売当初は利用できませんでした。
+『ねえGoogle, ニッポン放送流して』と言えば、[radiko]でニッポン放送をストリーミングしてくれます。  
+[radiko]対応したのは10/20過ぎなので、発売当初は利用できませんでした。
 
 ストリーミングなので音声もキレイですし、何か聴きながら作業をするのが好きなので、私はこの機能を一番使っています！
+
+[radiko]: http://radiko.jp/
 
 
 たまに使う機能
@@ -107,7 +112,7 @@ IoTのセキュリティが不安だったからというのもありますが�
 
 ### 音楽再生
 
-[Spotify](https://www.spotify.com/jp/info/)やGoogle Play Musicの音楽を再生することができます。  
+[Spotify]やGoogle Play Musicの音楽を再生することができます。  
 音楽再生自体は素晴らしいのですが、以下の理由からあまり使いません。
 
 * (無料ユーザでは)流れる曲が希望にほとんどあわない
@@ -115,10 +120,14 @@ IoTのセキュリティが不安だったからというのもありますが�
 
 データをGoogle Homeでキャッシュしてくれるようになったら、音楽ストリーミングサービスの有料登録をして試してみると思います。
 
+[Spotify]: https://www.spotify.com/jp/info/
+
 ### Todoistのタスク登録
 
 『ねえGoogle, 後でシャンプーを買わなきゃ』で`シャンプーを買う`というタスクをTodoistに登録することができます。  
-これはGoogle Homeに搭載されている機能ではなく、[IFTTT](https://ifttt.com/discover)連携機能を利用しています。
+これはGoogle Homeに搭載されている機能ではなく、[IFTTT]連携機能を利用しています。
+
+[IFTTT]: https://ifttt.com/discover
 
 
 使わない機能
