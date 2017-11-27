@@ -2,14 +2,20 @@
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
-h2 {
-  border-bottom: solid 1px grey;
+.postShorten-header h1:before {
+  font-family: "FontAwesome";
+  color: deepskyblue;
+  content: "\f219";
 }
 
 .post-content h2:before {
   font-family: "FontAwesome";
   content: "\f02d";
   margin-right: 9px;
+}
+
+h2 {
+  border-bottom: solid 1px grey;
 }
 
 .post-content h3:before {
@@ -20,6 +26,10 @@ h2 {
 
 .post-content h3 {
   font-size: 125%;
+}
+
+.post-content h4 {
+  font-size: 100%;
 }
 
 .post-content table {
