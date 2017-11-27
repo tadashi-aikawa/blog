@@ -38,3 +38,6 @@ div.img-vertical {
   margin: 20px 0px 20px 0px;
 }
 
+div.postShorten-thumbnailimg img {
+    border-radius: 50%;
+}
