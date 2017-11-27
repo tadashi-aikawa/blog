@@ -1,0 +1,102 @@
+baseURL = "http://blog.mamansoft.net"
+
+# はまった...
+DefaultContentLanguage = "en-us"
+languageCode = "ja"
+publishDir = "docs"
+
+title = "MAMANのITブログ"
+theme = "tranquilpeak"
+
+
+[permalinks]
+  post = "/:slug/"
+
+[author]
+  name = "Tadashi Aikawa"
+  location = "Japan"
+  picture = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
+  twitter = "Tadashi_MAMAN"
+
+[params]
+  description = "Hugo tranquilpeak theme demo"
+  coverImage = "https://rr.img.naver.jp/mig?src=http%3A%2F%2Fwww.wallpaper-box.com%2Fsmartphone%2Fwp-content%2Fuploads%2F2012%2F10%2Ff8b6b7d9dad4aaa55b00826bf472e3fd.jpg&twidth=1000&theight=0&qlt=80&res_format=jpg&op=r"
+  favicon = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
+
+  sidebarBehavior = 2
+  thumbnailImage = true
+  thumbnailImagePosition = "left"
+  autoThumbnailImage = true
+  imageGallery = true
+  hierarchicalCategories = true
+  syntaxHighlighter = 'highlight.js'
+
+  [[params.customJS]]
+    src = "//cdn.embedly.com/widgets/platform.js"
+    async = true
+
+  [[params.customCSS]]
+    href = "css/mystyle.css"
+
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fa-facebook-official"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+  [[params.sharingOptions]]
+    name = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com/intent/tweet?text=%s"
+
+  [[params.sharingOptions]]
+    name = "Google+"
+    icon = "fa-google-plus"
+    url = "https://plus.google.com/share?url=%s"
+
+
+[[menu.main]]
+  weight = 1
+  identifier = "home"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+[[menu.main]]
+  weight = 2
+  identifier = "categories"
+  name = "Categories"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  url = "/categories"
+[[menu.main]]
+  weight = 3
+  identifier = "tags"
+  name = "Tags"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  url = "/tags"
+[[menu.main]]
+  weight = 4
+  identifier = "search"
+  name = "Search"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
+  url = "/#search"
+  class = "st-search-show-outputs"
+[[menu.main]]
+  weight = 5
+  identifier = "about"
+  name = "About"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  url = "/#about"
+
+[[menu.links]]
+  weight = 0
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  url = "https://github.com/tadashi-aikawa"
+
+[[menu.misc]]
+  weight = 0
+  identifier = "rss"
+  name = "RSS"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  url = "/index.xml"
+
