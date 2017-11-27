@@ -1,7 +1,7 @@
 ---
 title: "React Storybookを使用したVisual regression testingの導入"
 date: 2017-11-16
-thumbnailImage: https://dl.dropboxusercontent.com/s/el0xavywg3w6ury/20170910_1.jpg
+thumbnailImage: https://dl.dropboxusercontent.com/s/huwknua0ma443cr/20171116_1.png
 categories:
   - engineering
 tags:
@@ -113,10 +113,10 @@ Owloraは以下の技術を使用しています。
 
 {{<himg "huwknua0ma443cr/20171116_1.png">}}
 
-① Dockerイメージの作成
-② Storybookのキャプチャ画像を作成
-③ 前回のキャプチャと比較してレポートを作成
-④ レポートをアップロードして確認
+① Dockerイメージの作成  
+② Storybookのキャプチャ画像を作成  
+③ 前回のキャプチャと比較してレポートを作成  
+④ レポートをアップロードして確認  
 
 1の作業に入る前に対象プロジェクトをCloneしておきます。ここではOwloraです。
 
