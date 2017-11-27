@@ -87,11 +87,17 @@ theme = "tranquilpeak"
   url = "/#about"
 
 [[menu.links]]
-  weight = 0
+  weight = 1
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
   url = "https://github.com/tadashi-aikawa"
+[[menu.links]]
+  weight = 2
+  identifier = "twitter"
+  name = "Twitter"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
+  url = "https://twitter.com/Tadashi_MAMAN"
 
 [[menu.misc]]
   weight = 0
