@@ -6,14 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout([
-                    $class: 'GitSCM',
-                    branches: [[name: '*/master']],
-                    extensions: [[
-                            $class: 'SubmoduleOption',
-                            recursiveSubmodules: true
-                    ]],
-                ])
+                checkout scm
             }
         }
 
