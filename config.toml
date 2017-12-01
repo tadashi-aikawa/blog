@@ -1,13 +1,12 @@
+title = "MAMANのITブログ"
+theme = "tranquilpeak"
 baseURL = "https://blog.mamansoft.net"
-
+googleAnalytics = UA-36444836-1
 # はまった...
 DefaultContentLanguage = "en-us"
 languageCode = "ja"
+
 publishDir = "docs"
-
-title = "MAMANのITブログ"
-theme = "tranquilpeak"
-
 
 [permalinks]
   post = "/:slug/"
