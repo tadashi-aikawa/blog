@@ -1,3 +1,6 @@
+// SCMの追加処理で Advanced sub-modules behavioursを選び
+// サブモジュールを再帰的にアップデートにチェックをしてください
+
 pipeline {
     agent any
     stages {
@@ -27,7 +30,7 @@ pipeline {
         }
 
         failure { 
-            slackSend channel: '#times_tadashi-aikawa', color: 'danger', message: ':tio:  ブログの更新に失敗', teamDomain: 'ntj', tokenCredentialId: 'NTJ_SLACK_TOKEN'
+            slackSend channel: '#times_tadashi-aikawa', color: 'danger', message: ':xymon_red:  ブログの更新に失敗', teamDomain: 'ntj', tokenCredentialId: 'NTJ_SLACK_TOKEN'
         }
     }
 }
