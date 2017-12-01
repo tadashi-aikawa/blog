@@ -2,6 +2,10 @@
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
+ul {
+  margin: 30px 0 30px 0;
+}
+
 .embedly-card {
   margin: 30px 0 30px 0;
 }
