@@ -25,6 +25,7 @@ build: ## Build sites
 
 deploy: ## Deploy sites
 	@echo 'Starting $@'
+	@docker rm -f blog && echo "Remove a previous container" || echo "There are no container"
 	@docker run --name blog -v `pwd`/docs:/usr/share/nginx/html:ro -d -p 8080:80 nginx
 	@echo 'Finished $@'
 
