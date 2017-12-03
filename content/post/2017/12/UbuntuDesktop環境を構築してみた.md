@@ -314,11 +314,6 @@ Windowsでも使っていますが、以下をコピーすれば使い勝手は�
 * `settings.json` (ユーザ設定)
 * `keybindings.json` (ユーザのキーショートカット)
 
-{{<alert info>}}
-初回インストールしたとき、なぜかコマンドプロンプトから`code`コマンドで立ち上げることができませんでした。  
-なぜか、Ubuntuごと再インストールした後は上手くいきました。
-{{</alert>}}
-
 ### 画面の動きがもっさりする
 
 `Vagrantfile`の設定が適切であるかを確認してください。  
@@ -327,27 +322,86 @@ Windowsでも使っていますが、以下をコピーすれば使い勝手は�
 * 仮想マシンのモニタ数が2以上になっている (`"--monitorcount", "１"`でない)
 * 3DアクセラレータをONになっていない (`"--accelerate3d", "on"`でない)
 
+### VS Codeをコマンドから起動できない
+
+`code`で起動できない場合、環境変数`DISPLAY`の値を確認してください。
+
+* `DISPLAY`が`:0`と設定されていればOK
+* `DISPLAY`が`localhost:0.0`だとNG
+
+### Vimのヤンクとクリップボードを同期させたい
+
+#### Ubuntu Desktop
+
+{{<icon linux>}} `.vimrc`で`set clipboard=unnamedplus`を設定しましょう。  
+
+{{<alert warning>}}
+`set clipboard=unamed`では動作しません。
+{{</alert>}}
+
+#### Windows
+
+ {{<icon windows>}} `.vimrc`で`set clipboard=unnamedplus`を設定した上で以下の準備が必要です。
+
+* Windows Xサーバ([VcXsrv] など)のインストール/起動が完了している
+* 環境変数`DISPLAY`の値が`:0`である
+* vimで`:echo has('clipboard')`した結果が`1`でなければ`vim-gtk` をインストールしている
+
+クリップボードと通信するためWindows Xサーバが必要なのが少し面倒ですね。
+
+[VcXsrv]: https://sourceforge.net/projects/vcxsrv/
+
+### tmuxのコピー領域とクリップボードを同期させたい
+
+`.tmux.conf`でバインドを設定しましょう。  
+
+#### Ubuntu Desktop
+
+{{<icon linux>}} デフォルトでインストールされている`xsel`を使ってクリップボードを操作させます。
+
+```
+$ bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xsel -ip && xsel -op | xsel -ib"
+```
+
+#### Windows
+
+ {{<icon windows>}} Windowsコマンドの`wcmd clip`を使用します。    
+
+```
+$ bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "wcmd clip"
+```
+
+{{<alert warning>}}
+前提として、WSL terminalで`wcmd`コマンドを使える必要があります。
+{{</alert>}}
+
 
 使用感
 ------
 
 ### Ubuntu Desktopにして良かったこと
 
-Desktop版ならではのメリットは1つ目だけですね。他はCUI環境でも実現できます。
+Desktop版ならではのメリットは3つです。
 
 * 純粋なLinuxで動かしたいモノ(Docker等)について
-  - 動作を直接ブラウザで確認できる
-    - Vagrantのポートフォワーディングはなぜか上手くいかないことがある...
-  - Vim以外のエディタで閲覧/編集できる
-* ターミナルの反応速度
+    - 動作を直接ブラウザで確認できる
+        - Vagrantのポートフォワーディングはなぜか上手くいかないことがある...
+    - Vim以外のエディタで閲覧/編集できる
+* WSL terminalからUbuntuにsshログインしてコマンドを打つと、ゲストの仮想モニタで起動できる
+    - `firefox blog.mamansoft.net`とすればこのブログが立ち上がる
+* クリップボードやyankを完全に同期できる
+    - Ubuntuがクリップボードを持ち、かつWindowsと同期できるのが大きい
+
+以下はDesktop版ではないUbuntu環境でも同じです。
+
+* ターミナルの反応速度が速い
 * Windows特有の落とし穴にハマるリスクを回避できる
 
 ### Ubuntu Desktopの期待外れだったこと
 
 UbuntuというよりVirtualBoxを使うことによる弊害がほとんだと思いますが...
 
-* 描画が全体的に遅い
-* 仮想スクリーンを2つ以上にするともっさりする
+* 仮想スクリーンを2つ以上にすると描画が遅い
 * ウィンドウの操作が思考の速度でできない
 * ホストマシンとキーバインディングが競合して悩まされることがある
 
@@ -356,10 +410,13 @@ UbuntuというよりVirtualBoxを使うことによる弊害がほとんだと�
 ----
 
 Ubuntu Desktopで開発できる環境を整えてみました。  
-現時点では全てUbuntuに環境を移すことは難しいと思います。
+現時点では1画面で多少のキー競合を許容できれば快適といったレベルです。
 
-VirtualBoxがパワーアップしてWindowsと同じ操作感で使えるようになるまでは、お互いを使い分ける必要があります。  
-しかし、Ubuntu CUIイメージの用途は包含しておりますので、VMの運用はUbuntu Desktopに1本化する予定です。
+キーバインディングの競合は仮想マシンを使う以上、避けられない問題です。  
+ウィンドウと複数仮想スクリーンでの挙動は、VirtualBoxに頑張っていただきたいと思いました。
+
+1画面という制限付きでも、GUIが使えるUbuntuから受ける恩恵は大きいです。  
+基本はWSLターミナルで操作し、画面が必要なときに限って1画面限定のVirtualBox上で操作する... という使い方をしばらく試してみます。
 
 
 ### 参考
