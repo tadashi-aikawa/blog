@@ -13,9 +13,14 @@ publishDir = "docs"
 
 [author]
   name = "Tadashi Aikawa"
-  location = "Japan"
+  bio = """
+  <div style="color: #55acee; font-size: 150%;">
+    <a href="https://twitter.com/Tadashi_MAMAN">
+      <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+    </a>
+  </div>
+  """
   picture = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
-  twitter = "Tadashi_MAMAN"
 
 [params]
   description = "Hugo tranquilpeak theme demo"
@@ -104,4 +109,3 @@ publishDir = "docs"
   name = "RSS"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
   url = "/index.xml"
-
