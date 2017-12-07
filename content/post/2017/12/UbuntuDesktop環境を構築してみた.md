@@ -406,6 +406,24 @@ VagrantでUbuntuを立ち上げた後、以下のいずれにも該当しない�
 
 アプリケーションの立ち上げやクリップボードの同期を行うには、ファーストログイン時にvagrantユーザとしてログイン済みである必要があります。
 
+### webpack-dev-serverのエンドポイントにアクセスできない
+
+`host`コマンドを使って、ホストからのアクセスを許可するようにしましょう。
+`webpack-dev-server --host 0.0.0.0` とすればアクセスできるようになるはずです。
+
+また、変更点を検知するために`--watch-pool`オプションも必要です。
+
+<blockquote class="embedly-card"><h4><a href="https://webpack.js.org/guides/development-vagrant/#running-the-server">Development - Vagrant</a></h4><p>We made the Vagrant box accessible from a static IP, and then made webpack-dev-server publicly accessible so it is reachable from a browser. We then tackled a common problem that VirtualBox doesn't send out filesystem events, causing the server to not reload on file changes.</p></blockquote>
+
+### Hugoのエンドポイントにアクセスできない
+
+`bind`コマンドを使って、ホストからのアクセスを許可するようにしましょう。
+`hugo serve --bind 0.0.0.0`とすればアクセスできるようになるはずです。
+
+{{<alert warning>}}
+共有ディレクトリを使っている場合Hot Reloadされませんでした。
+{{</alert>}}
+
 
 使用感
 ------
