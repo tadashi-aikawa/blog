@@ -243,9 +243,31 @@ AutoHotKeyでは`setIME()`関数を使用して直接日本語入力モードを
 
 {{<himg "bby1trlvx2y6r04/20171203_2.png">}}
 
-最も他のツールと競合しなかった `Ctrl+Shift+Pgup` と `Ctrl+Shift+Pgdn` を割り当てました。
+最も他のツールと競合しなかった `ScrollLock` と `Ctrl+ScrollLock` を割り当てました。  
 
 {{<himg "x9bvuv2mso4utu3/20171203_3.png">}}
+
+Pauseキーも含めて色々と試しましたが、AutoHotKeyとの相性もあってかなり苦戦しました。。  
+AutoHotKeyでは`{sc046}`がScreenLockキーに該当しますので、以下の様な関数を組みました。
+
+```ahk
+;【概要】日本語入力をON/OFFを指定して切り替える
+;【引数】true: 日本語入力ON / false: 日本語入力OFF
+;【戻値】なし
+setIME(imeOn) {
+    if (isActive("ubuntu")) {
+        if (imeOn) {
+            send {sc046}
+        } else {
+            send ^{sc046}
+        }
+    } else {
+        IME_SET(imeOn)
+    }
+}
+```
+
+`isActive`と`IME_SET`は上記以外で定義された関数です。
 
 
 ターミナルの設定
@@ -374,6 +396,15 @@ $ bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "wcmd clip"
 {{<alert warning>}}
 前提として、WSL terminalで`wcmd`コマンドを使える必要があります。
 {{</alert>}}
+
+### たまにアプリケーションの立ち上げやクリップボードの同期ができない
+
+VagrantでUbuntuを立ち上げた後、以下のいずれにも該当しないことを確認してください。
+
+* ゲストセッションでログインしてから、Ubuntu内でvagrantユーザとして再ログインした
+* Ubuntuにログインしていない
+
+アプリケーションの立ち上げやクリップボードの同期を行うには、ファーストログイン時にvagrantユーザとしてログイン済みである必要があります。
 
 
 使用感
