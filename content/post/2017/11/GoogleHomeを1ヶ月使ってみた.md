@@ -36,11 +36,11 @@ IoTのセキュリティが不安だったからというのもありますが�
 
 開封前はこんな感じです。シンプル。
 
-{{< himg "go0e80htb64jtde/20171119_1.jpg" >}}
+{{< himg "https://dl.dropboxusercontent.com/s/go0e80htb64jtde/20171119_1.jpg" >}}
 
 中身を空けるともっとシンプルです。そしてクール
 
-{{< himg "756376dli5i53l1/20171119_2.jpg" >}}
+{{< himg "https://dl.dropboxusercontent.com/s/756376dli5i53l1/20171119_2.jpg" >}}
 
 
 リビングのテーブルに置いてもメカニックな感じがしなくてGOODです。

@@ -176,7 +176,7 @@ end
 上記設定ファイルで使用しているAnsibleのPlaybookは以下になります。  
 本記事執筆時とは内容が変わっている可能性がありますのでご了承下さい。
 
-<blockquote class="embedly-card"><h4><a href="https://github.com/tadashi-aikawa/owl-playbook">tadashi-aikawa/owl-playbook</a></h4><p>owl-playbook - Ansible playbook for Linux</p></blockquote>
+{{<summary "https://github.com/tadashi-aikawa/owl-playbook">}}
 {{</alert>}}
 
 ### 実行
@@ -207,7 +207,7 @@ Ubuntuから再起動するとボリュームマウントが上手くいきま�
 デフォルトでは英語版のキーボードになっています。  
 それが良い場合は問題ありませんが、日本語版が使いたい場合は以下の設定をします。
 
-{{<mp4 "eeg31zu2kjnfuwm/20171203_2.mp4">}}
+{{<mp4 "https://dl.dropboxusercontent.com/s/eeg31zu2kjnfuwm/20171203_2.mp4">}}
 
 
 AutoHotKeyを自然に使えるようにする
@@ -224,12 +224,12 @@ VirtualBoxのウィンドウがアクティブなとき、キーボードから�
 以下が点灯しているとき、キーボードのキャプチャーはONになっています。  
 キャプチャーのON/OFFはホストキー(デフォルト: `右Ctrl`)で変更できます。
 
-{{<himg "tww72u7amt4x2uu/20171203_1.png">}}
+{{<himg "https://dl.dropboxusercontent.com/s/tww72u7amt4x2uu/20171203_1.png">}}
 
 デフォルトでは、VirtualBoxにフォーカスが当たると自動でONになります。  
 これを禁止することで、普段はAutoHotKeyが使えるようにします。
 
-{{<mp4 "t5c7wuidtqrwy2y/20171203_1.mp4">}}
+{{<mp4 "https://dl.dropboxusercontent.com/s/t5c7wuidtqrwy2y/20171203_1.mp4">}}
 
 
 ### 日本語入力のON/OFFショートカットキーを変更する
@@ -241,11 +241,11 @@ AutoHotKeyでは`setIME()`関数を使用して直接日本語入力モードを
 
 キーボードの設定を開きます。
 
-{{<himg "bby1trlvx2y6r04/20171203_2.png">}}
+{{<himg "https://dl.dropboxusercontent.com/s/bby1trlvx2y6r04/20171203_2.png">}}
 
 最も他のツールと競合しなかった `ScrollLock` と `Ctrl+ScrollLock` を割り当てました。  
 
-{{<himg "x9bvuv2mso4utu3/20171203_3.png">}}
+{{<himg "https://dl.dropboxusercontent.com/s/x9bvuv2mso4utu3/20171203_3.png">}}
 
 Pauseキーも含めて色々と試しましたが、AutoHotKeyとの相性もあってかなり苦戦しました。。  
 AutoHotKeyでは`{sc046}`がScreenLockキーに該当しますので、以下の様な関数を組みました。
@@ -276,20 +276,20 @@ setIME(imeOn) {
 私の場合は以下を設定します。不要の場合はスキップしてください。  
 端末を開き、`ファイル` > `新しいプロファイル`からプロファイルを作成します。
 
-{{<himg "noc5yr7a2xxh4my/20171203_4.png">}}
+{{<himg "https://dl.dropboxusercontent.com/s/noc5yr7a2xxh4my/20171203_4.png">}}
 
 ### デフォルトシェルをfishにする
 
 コマンドタブの設定を以下の様にします。
 
-{{<himg "blsfqllynwn6w4x/20171203_5.png">}}
+{{<himg "https://dl.dropboxusercontent.com/s/blsfqllynwn6w4x/20171203_5.png">}}
 
 
 ### Powerline対応フォントに変更する
 
 全般タブの設定を以下の様にします。
 
-{{<himg "vrwnmpf02vqa6ku/20171203_6.png">}}
+{{<himg "https://dl.dropboxusercontent.com/s/vrwnmpf02vqa6ku/20171203_6.png">}}
 
 {{<alert info>}}
 Powerlineフォントはインストールが必要なため、Ansibleのplaybookにtaskを記載しています。  
@@ -314,7 +314,7 @@ Powerlineフォントはインストールが必要なため、Ansibleのplayboo
 ターミナルを開いたときのプロファイルを今回作成したものにしましょう。  
 `端末` > `設定`から設定できます。
 
-{{<himg "om6wwtfoaahmy7k/20171203_7.png">}}
+{{<himg "https://dl.dropboxusercontent.com/s/om6wwtfoaahmy7k/20171203_7.png">}}
 
 
 トラブルシューティング
@@ -329,7 +329,7 @@ Powerlineフォントはインストールが必要なため、Ansibleのplayboo
 
 私はVisual Studio Codeを入れています。
 
-<blockquote class="embedly-card"><h4><a href="https://code.visualstudio.com/">Visual Studio Code - Code Editing. Redefined</a></h4><p>Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Visual Studio Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.</p></blockquote>
+{{<summary "https://code.visualstudio.com/">}}
 
 Windowsでも使っていますが、以下をコピーすれば使い勝手はほぼ同じでした。
 
@@ -355,7 +355,7 @@ Windowsでも使っていますが、以下をコピーすれば使い勝手は�
 
 #### Ubuntu Desktop
 
-{{<icon linux>}} `.vimrc`で`set clipboard=unnamedplus`を設定しましょう。  
+`.vimrc`で`set clipboard=unnamedplus`を設定しましょう。  
 
 {{<alert warning>}}
 `set clipboard=unamed`では動作しません。
@@ -363,7 +363,7 @@ Windowsでも使っていますが、以下をコピーすれば使い勝手は�
 
 #### Windows
 
- {{<icon windows>}} `.vimrc`で`set clipboard=unnamedplus`を設定した上で以下の準備が必要です。
+`.vimrc`で`set clipboard=unnamedplus`を設定した上で以下の準備が必要です。
 
 * Windows Xサーバ([VcXsrv] など)のインストール/起動が完了している
 * 環境変数`DISPLAY`の値が`:0`である
@@ -379,7 +379,7 @@ Windowsでも使っていますが、以下をコピーすれば使い勝手は�
 
 #### Ubuntu Desktop
 
-{{<icon linux>}} デフォルトでインストールされている`xsel`を使ってクリップボードを操作させます。
+デフォルトでインストールされている`xsel`を使ってクリップボードを操作させます。
 
 ```
 $ bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xsel -ip && xsel -op | xsel -ib"
@@ -387,7 +387,7 @@ $ bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xsel -ip && xsel -op 
 
 #### Windows
 
- {{<icon windows>}} Windowsコマンドの`wcmd clip`を使用します。    
+Windowsコマンドの`wcmd clip`を使用します。    
 
 ```
 $ bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "wcmd clip"
@@ -413,7 +413,8 @@ VagrantでUbuntuを立ち上げた後、以下のいずれにも該当しない�
 
 また、変更点を検知するために`--watch-pool`オプションも必要です。
 
-<blockquote class="embedly-card"><h4><a href="https://webpack.js.org/guides/development-vagrant/#running-the-server">Development - Vagrant</a></h4><p>We made the Vagrant box accessible from a static IP, and then made webpack-dev-server publicly accessible so it is reachable from a browser. We then tackled a common problem that VirtualBox doesn't send out filesystem events, causing the server to not reload on file changes.</p></blockquote>
+{{<summary "https://webpack.js.org/guides/development-vagrant/#running-the-server">}}
+
 
 ### Hugoのエンドポイントにアクセスできない
 
@@ -470,8 +471,6 @@ Ubuntu Desktopで開発できる環境を整えてみました。
 
 ### 参考
 
-<blockquote class="embedly-card"><h4><a href="http://kamatte.me/2017/08/16/vagrantvirtualboxubuntu16-04%E3%81%A7%E8%B6%85%E5%BF%AB%E9%81%A9%E3%81%AAgui%E4%BB%AE%E6%83%B3%E7%92%B0%E5%A2%83%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B/">Vagrant+VirtualBox+Ubuntu16.04で超快適なGUI仮想環境を構築する - かまって☆しんどろ～む</a></h4><p>開発環境としてのWindowsに痺れを切らしました。いい加減まともな開発環境を構築しようと思い一念発起。VagrantとVirtualBoxを使ってUbuntu16.04の 超快適な GUI仮想環境を構築していきます。 なお、この記事は私がWindows環境で構築したことを基に解していますが、手順は全てのホストOSで共通ですのでご参考ください。 GUIが物理環境と同程度に機敏に動作する。 ...</p></blockquote>
-
-<blockquote class="embedly-card"><h4><a href="http://did2memo.net/2015/07/31/virtualbox-autohotkey-auto-keyboard-capture-off/">VirtualBoxのゲストOSに対してAutoHotkeyのキー変換を有効にする設定方法（重要）</a></h4><p>Windows利用時に当然のようにAutoHotkeyを使う普通の人であれば、Windows上で動かしているVirtualBox上の仮想マシンにもAutoHotkeyで変換したキーストロークを送信したい、と思うのもまた当然でしょう。 しかし、この当然できるべき華麗な連携を実際にVirtualBox最新版+Ubuntuで試してみると、 ...</p></blockquote>
-
-<blockquote class="embedly-card"><h4><a href="https://qiita.com/kmsyn1111/items/ed724a617b2753d135d2">Ubuntu Desktop(16.04LTS)のBox作成 - Qiita</a></h4><p>Ubuntu Desktop(16.04LTS)のBox作成 はじめに ローカル開発環境として、Ubuntu Desktop(16.04LTS)環境を構築したので、その手順を残します。 前提 Vagrant2.0.0 + Virtualbox5.1.30 + Ubuntu16.04 LTS 使用boxはbento/ubuntu-16.04 手順 Ubuntuをダウンロード $ vagrant init bento/ubuntu-16.04...</p></blockquote>
+{{<summary "http://kamatte.me/2017/08/16/vagrantvirtualboxubuntu16-04%E3%81%A7%E8%B6%85%E5%BF%AB%E9%81%A9%E3%81%AAgui%E4%BB%AE%E6%83%B3%E7%92%B0%E5%A2%83%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B/">}}
+{{<summary "http://did2memo.net/2015/07/31/virtualbox-autohotkey-auto-keyboard-capture-off/">}}
+{{<summary "https://qiita.com/kmsyn1111/items/ed724a617b2753d135d2">}}

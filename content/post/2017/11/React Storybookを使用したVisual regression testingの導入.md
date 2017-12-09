@@ -14,7 +14,7 @@ React Storybookに登録したコンポーネントに対し、継続的にVisua
 
 <!--more-->
 
-{{<himg "jvvkdv9qtuw41wq/20171116_2.png">}}
+{{<himg "https://dl.dropboxusercontent.com/s/jvvkdv9qtuw41wq/20171116_2.png">}}
 
 <!--toc-->
 
@@ -57,21 +57,21 @@ React Storybookに登録したコンポーネントに対し、継続的にVisua
 Visualized Testを実施するためにはStorybookのページにアクセスし、キャプチャする仕組みが必要です。  
 この機能を持ったツールがLOKIです。
 
-<blockquote class="embedly-card"><a href="https://github.com/oblador/loki">oblador/loki</a><p>loki - 👁 Visual Regression Testing for Storybook</p></blockquote>
+{{<summary "https://github.com/oblador/loki">}}
 
 上記に `Visual Regression Testing for Storybook` とある通り、LOKIはリグレッションテストまで実施することのできるツールです。  
 しかし、以下の理由から差分比較部分は別のツールを使うことにしています。
 
 * 画像をGitにコミットしなくてはいけない
 * 出力結果が画像のみのため結果が一目で分からない
-* 差分画像結果が見にくい (GraphicsMagickをインストールすれば改善されるが、それでもなお)
+* 差分の表示方法が好みではない
 
 
 ### REG-SUIT
 
 CUIでVisual regression testingを実施するツールです。
 
-<blockquote class="embedly-card"><a href="https://github.com/reg-viz/reg-suit">reg-viz/reg-suit</a><p>reg-suit - Visual Regression Testing Suit</p></blockquote>
+{{<summary "https://github.com/reg-viz/reg-suit">}}
 
 LOKIとの大きな違いは **画像が存在する前提であること** です。  
 なので、画像の作成は別のツールで行う必要があります。(React Storybookには依存しません)
@@ -90,7 +90,7 @@ LOKIとの大きな違いは **画像が存在する前提であること** で�
 
 今回、Visual regression testingを導入する対象プロジェクトです。  
 
-<blockquote class="embedly-card"><a href="https://github.com/tadashi-aikawa/owlora">tadashi-aikawa/owlora</a><p>Contribute to owlora development by creating an account on GitHub.</p></blockquote>
+{{<summary "https://github.com/tadashi-aikawa/owlora">}}
 
 OwloraはTodoistのデータを使用して、Todoistが苦手としている1週間～1ヶ月という中期タスク管理をサポートするツールです。  
 まだ発展途上にあるため、マニュアルなどは整備しておりませんが興味ありましたらお声がけ下さい。  
@@ -111,7 +111,7 @@ Owloraは以下の技術を使用しています。
 
 今回実施する作業の全体像を説明します。
 
-{{<himg "huwknua0ma443cr/20171116_1.png">}}
+{{<himg "https://dl.dropboxusercontent.com/s/huwknua0ma443cr/20171116_1.png">}}
 
 ① Dockerイメージの作成  
 ② Storybookのキャプチャ画像を作成  
@@ -263,16 +263,21 @@ $ npx loki init
 オリジナル版では表示の途中でキャプチャされてしまうため、正確なテストが行えませんでした。  
 以下のIssueに起票しています。
 
-<blockquote class="embedly-card"><a href="https://github.com/oblador/loki/issues/32">Missing character strings in only first few cases · Issue #32 · oblador/loki</a><p>HI. Thanks for a awesome tool! I have a problem that character string of the created image is missing. I expected to get If I change chrome/create-chrome-target.js as following, this problem is n...</p></blockquote>
+{{<summary "https://github.com/oblador/loki/issues/32">}}
 
 上記問題を解決するためにforkを行い、以下の機能を追加しました。
 
 * kindとstoryの値によって、ブラウザのロード完了からキャプチャまでの間に待ち時間を設定できる
 
-プルリクエストも作成したので、運が良ければ取り込まれるかもしれません。  
-この対応は取り込まれないとしても回避策や代替案を提示していただきたいものですが...
+{{<summary "https://github.com/oblador/loki/pull/33">}}
 
-<blockquote class="embedly-card"><a href="https://github.com/oblador/loki/pull/33">Wait before capturing option by tadashi-aikawa · Pull Request #33 · oblador/loki</a><p>To avoid Issue #32, I suggest a feature as following. package.json "loki": { "configurations": { "chrome.laptop": { "target": "chrome.docker", "waitBeforeCapture": [ ...</p></blockquote>
+{{<alert info>}}
+2017/12/09 追記
+
+上記のプルリクエストは採用されませんでしたが、代わりに下記の機能を入れて頂きました。  
+記述量は増えますが、同様のことができるようです。
+{{<summary "https://github.com/oblador/loki/pull/37">}}
+{{</alert>}}
 
 
 ### LOKIの初期設定2
@@ -566,6 +571,7 @@ Slack Webhook URLはコミットしないようにしましょう。
 Owloraでは`make visualized-test-init`を実行することで、都度`regconfig.json`を作成するようにしています。
 {{</alert>}}
 
+
 ### Jenkinsについて
 
 JenkinsでCIを実施する場合、設定で注意する点を紹介します。
@@ -604,12 +610,18 @@ $ make visualized-test-init visualized-test
 ```
 
 
+### レポートの公開範囲について
+
+デフォルトではACLが`public-read`になるため、全世界の人が閲覧可能です。  
+公開範囲を狭めたい場合は、`regconfig.js`のオプションに`"acl: private"`を設定しましょう。
+
+ACLの設定はプルリクエスト作成してマージしていただきました。ありがとうございました。
+
+{{<summary "https://github.com/reg-viz/reg-suit/pull/97">}}
+
+
 総括
 ----
 
 React Storybookを使用してVisual regression testingを実現する手法を紹介しました。  
 REG-SUITは画像比較に特化しているため、LOKIの部分をSeleniumなどに置き換えればStorybook以外のケースでも快適なテスト環境を構築することができそうです。
-
-P.S. REG-SUITのPRマージありがとうございました
-
-<blockquote class="embedly-card"><a href="https://github.com/reg-viz/reg-suit/pull/95">Fix bug that `publish` command not notify even if specify `-n` or `--notification` by tadashi-aikawa · Pull Request #95 · reg-viz/reg-suit</a><p>reg-suit - Visual Regression Testing Suit</p></blockquote>

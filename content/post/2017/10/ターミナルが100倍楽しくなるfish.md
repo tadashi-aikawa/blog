@@ -64,14 +64,14 @@ Playbookを使わない方法は他の素晴らしいブログで記載されて
 
 まるで漢字ドリルをなぞるように先回りした補完がデフォルトの状態で使用できます。
 
-{{<himg "rj8qobwzptcbz5f/20171015_2.gif">}}
+{{<himg "https://dl.dropboxusercontent.com/s/rj8qobwzptcbz5f/20171015_2.gif">}}
 
 
 ### 曖昧補完
 
 `**` で配下のエントリ全てを補完することができます。
 
-{{<himg "edmn5h1xmkw32rk/20171015_3.gif">}}
+{{<himg "https://dl.dropboxusercontent.com/s/edmn5h1xmkw32rk/20171015_3.gif">}}
 
 
 最後のは標準機能ではなくプラグインを使っています。
@@ -206,7 +206,7 @@ fishにマッチする形でfzfと上手く連携してくれます。
 
 以下は以前実行した`site.yml`を編集するコマンドを履歴から検索して実行するまでの流れです。
 
-{{<himg "4q3vjhb7s2uk1gn/20171015_1.gif">}}
+{{<himg "https://dl.dropboxusercontent.com/s/4q3vjhb7s2uk1gn/20171015_1.gif">}}
 
 他にも色々機能がありますが、これが一番使いますね。
 

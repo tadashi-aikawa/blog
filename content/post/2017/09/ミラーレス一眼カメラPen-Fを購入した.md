@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-{{<himg "el0xavywg3w6ury/20170910_1.jpg">}}
+{{<himg "https://dl.dropboxusercontent.com/s/el0xavywg3w6ury/20170910_1.jpg">}}
 
 1ヶ月くらい使ってみたので購入の経緯を含めてレビューします。
 
@@ -141,28 +141,20 @@ Pen-Fに決めた理由
 
 オシャレな機種だけあって外観もオシャレです。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/sebf6kfyq8uu7i9/20170910_2.jpg"><img src="https://dl.dropboxusercontent.com/s/sebf6kfyq8uu7i9/20170910_2.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/sebf6kfyq8uu7i9/20170910_2.jpg">}}
 
 黒い布の中身に本体があります。あまりのコンパクトさに圧倒されました。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/h73hylqymmjpbym/20170910_3.jpg"><img src="https://dl.dropboxusercontent.com/s/h73hylqymmjpbym/20170910_3.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/h73hylqymmjpbym/20170910_3.jpg">}}
 
 名刺と比較してみました。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/dzfb8saalxwx8ys/20170910_4.jpg"><img src="https://dl.dropboxusercontent.com/s/dzfb8saalxwx8ys/20170910_4.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/dzfb8saalxwx8ys/20170910_4.jpg">}}
 
 スマホ(Nexus6)との比較です。  
 Nexus6はデカイ機種ですが、まさかスマホの方がデカイとは思いませんでした。。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/05mwm80llul8cgi/20170910_5.jpg"><img src="https://dl.dropboxusercontent.com/s/05mwm80llul8cgi/20170910_5.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/05mwm80llul8cgi/20170910_5.jpg">}}
 
 
 満足しているところ
@@ -198,42 +190,36 @@ Pen-FにはスマートフォンとWi-Fi接続して好きな写真を転送す�
 
 光目覚ましの光を遮っている ぶち犬たろー の写真です。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/l2ifjj0c4tb5six/20170910_6.jpg"><img src="https://dl.dropboxusercontent.com/s/l2ifjj0c4tb5six/20170910_6.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/l2ifjj0c4tb5six/20170910_6.jpg">}}
+
 
 #### 夜の料理屋
 
 雰囲気も出ています。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/kvky7u2o0gduisx/20170910_7.jpg"><img src="https://dl.dropboxusercontent.com/s/kvky7u2o0gduisx/20170910_7.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/kvky7u2o0gduisx/20170910_7.jpg">}}
+
 
 #### 夜の高層マンション
 
 シャッタースピード0.8秒ですが、手持ち余裕でした。
 
-<div class="img-vertical">
-    <a href="https://dl.dropboxusercontent.com/s/crq6jjjsetyoczy/20170910_8.jpg"><img src="https://dl.dropboxusercontent.com/s/crq6jjjsetyoczy/20170910_8.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/crq6jjjsetyoczy/20170910_8.jpg">}}
+
 
 #### 夜の交差点
 
 F5.6、ISO1600まで引き上げて1/25秒で撮影しました。  
 通行人にピントをあわせてみましたが、十分だと思います。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/3blne117yvsw3nn/20170910_9.jpg"><img src="https://dl.dropboxusercontent.com/s/3blne117yvsw3nn/20170910_9.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/3blne117yvsw3nn/20170910_9.jpg">}}
+
 
 #### 夜の町並み
 
 調整を施せば夜中の街でもホワイトアウトやブラックアウトを最小限にして雰囲気を出すことが出来ます。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/0zsc79kw3q9baco/20170910_12.jpg"><img src="https://dl.dropboxusercontent.com/s/0zsc79kw3q9baco/20170910_12.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/0zsc79kw3q9baco/20170910_12.jpg">}}
 
 
 ### ミクロ撮影も強い
@@ -241,13 +227,10 @@ F5.6、ISO1600まで引き上げて1/25秒で撮影しました。
 単焦点レンズ かつ ミクロ撮影用レンズではないため、スマホと同じ距離感で料理などを撮れるか不安でしたが問題ありませんでした。  
 デジタルテレコン機能をONにすることで、単焦点レンズでも2倍デジタルズームを使用する事ができます。
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/ud6ol2m2bqo7joz/20170910_10.jpg"><img src="https://dl.dropboxusercontent.com/s/ud6ol2m2bqo7joz/20170910_10.jpg" /></a>
-</div>
 
-<div class="img-horizontal">
-    <a href="https://dl.dropboxusercontent.com/s/sakpz1198gvz8to/20170910_11.jpg"><img src="https://dl.dropboxusercontent.com/s/sakpz1198gvz8to/20170910_11.jpg" /></a>
-</div>
+{{<himg "https://dl.dropboxusercontent.com/s/ud6ol2m2bqo7joz/20170910_10.jpg">}}
+
+{{<himg "https://dl.dropboxusercontent.com/s/sakpz1198gvz8to/20170910_11.jpg">}}
 
 限界まで近寄ったわけではありませんので、もう少し近寄れると思います。
 
@@ -271,21 +254,12 @@ F5.6、ISO1600まで引き上げて1/25秒で撮影しました。
 
 最後に参考にさせていただいたブログやレビュー記事を掲載させて頂きます。
 
-<blockquote class="embedly-card"><a href="http://america-career.com/olympuspen-f-tansho/">ミラーレス機オリンパスPen-Fを2ヶ月使って分かった短所を7つほどご紹介</a><p>今回の日本一時帰国では、麗しのオリンパスPen-Fをがっつり使ってきました。普通の大きさのカバンに入って、何気なく取り出せるその手軽さで、予想通り大活躍でした。取り扱いもintuitive（直感的に操作できる）で、旅の途中でググる必要も全くありませんでした。そんな頼もしくてセクシーな相棒ですが、2ヶ月使ってデメリットもいくつか気づいたので、今日はそんな欠点のご紹介です。 ...</p></blockquote>
-
-<blockquote class="embedly-card"><a href="http://trendy.nikkeibp.co.jp/atcl/column/15/1040433/051700004/?rt=nocnt">オリンパス「PEN-F」、けしからんボディーに心乱れる</a><p>今回のお題は、オリンパスのミラーレス一眼「OLYMPUS PEN-F」だ。撮像素子をシリーズ初の2000万画素に高画素化しつつ、クラシックな印象を高めるダイヤルを多く配置した外観が特徴的な高性能モデル。落合カメラマンは、当初PEN-Fのデザインを見て「やりすぎでは......？」と否定的な印象を受けたというが、上位シリーズ「OM-D ...</p></blockquote>
-
-<blockquote class="embedly-card"><a href="http://blog.livedoor.jp/nori_suke55-retouch/archives/1062315533.html">8-58 OLYMPUS PEN-F レビュー （操作性、機能） : Nori-sukeのRAW現像・レタッチ＋カメラの話</a><p>OLYMPUS PEN-Fのレビューです。8-38では、短時間触った結果のプチレビューでしたが、長時間使用できる機会がありましたので、再レビューします。 中身がかなり近い OM-D E-M10 Mark IIと直接比較した結果も含みます。[1] 操作性ダイヤル・スイッチ類店頭で触ったモデルとは少</p></blockquote>
-
-<blockquote class="embedly-card"><a href="http://jmplanning.net/PEN-F/osusumelenz.html">PEN-Fユーザーに人気の高いおすすめレンズはどれ？PEN-Fおすすめレンズ｜オリンパス PEN-Fの評価と口コミ</a><p>PEN-Fのレンズ選びで迷っていないだろうか。PEN-FのおすすめレンズはオリンパスのM.ZUIKO ED 12-40mm F2.8 PROだ。このレンズはオリンパスユーザーの評価が非常に高い。レンズの構成枚数が他のレンズの群を抜いており、絞りや最短距離などの性能も含めると...</p></blockquote>
-
-<blockquote class="embedly-card"><a href="https://ganref.jp/m/hide-skyphoto/reviews_and_diaries/review/9849">OLYMPUS PEN-Fレビュー12 まとめ・総括 | GANREF</a><p>JavaScriptを有効にしてお使いください。JavaScriptの設定方法は ヘルプ をご覧ください Please wait... 長いようで短かった１ヶ月、PEN-Fを使ったまとめ、総括です。 【デザイン】 フィルムカメラを彷彿とさせるクラシカルな見た目。 ボタン、ダイヤル類が丸で統一された、洗練されたデザイン。どこを見てもネジが見当たらないこだわり。 ...</p></blockquote>
-
-<blockquote class="embedly-card"><a href="https://ganref.jp/m/hide-skyphoto/reviews_and_diaries/review/9845">OLYMPUS PEN-Fレビュー10 OI.Shareを使ってみた | GANREF</a><p>ホーム > hide-photoさんのページ > 機材レビュー・撮影記一覧 > 2016年6月 > OLYMPUS PEN-Fレビュー10 OI.Shareを使ってみた</p></blockquote>
-
-<blockquote class="embedly-card"><a href="http://kiumahb.hatenablog.com/entry/2016/05/20/133041">【NEW PEN-F】マイクロフォーサーズの今　2016 - きうまのふぉとらいふ</a><p>オリンパス さんより新しく発売された「PEN-F」を購入し使ってみた感想を書きたいと思います。 こんにちは、きうまと申します。 このPEN-Fで マイクロフォーサーズ カメラとしては２機種目の購入となります。 僕が マイクロフォーサーズカメラを初めて購入したのは「E-M1」です。 E-M1が発売されたのが2013年10月。 そして、「PEN-F」が発売されたのは2016年2月ですね。 ...</p></blockquote>
-
-<blockquote class="embedly-card"><a href="http://camera.one-cut.net/entry/olympuspen-f">スタイリッシュなミラーレスカメラ オリンパスPEN-F製品レビュー - CameraStory</a><p>ミラーレスが欲しい衝動にかられてるつるたまです。 あのカメラも欲しいし、あのレンズも使ってみたい。写真を始めると物欲が止まらなくなりますが、もっと気軽に撮れるカメラが欲しい！っと思っている方向けに、今回はオリンパス記事第４弾、スタイリッシュなボディと直感的な操作性が魅力的なPEN-Fをご紹介いたします。 ...</p></blockquote>
-
-<blockquote class="embedly-card"><a href="http://america-career.com/olympus-penf-kaukadouka-2kagetsu-mayou/">オリンパス PEN-F を買うかどうか２ヶ月迷った末の決断</a><p>久々に大物を買っちゃいました。来月の一時帰国を踏まえて、大きな出費はあれだけ避けていたのに、不思議なことに指が勝手に動いて、注文ボタン押しちゃいましたよ。それが今手元にあるオリンパスPEN-F！今日はまず第一弾のレビューです。 ...</p></blockquote>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+{{<summary "http://america-career.com/olympuspen-f-tansho/">}}
+{{<summary "http://trendy.nikkeibp.co.jp/atcl/column/15/1040433/051700004/?rt=nocnt">}}
+{{<summary "http://blog.livedoor.jp/nori_suke55-retouch/archives/1062315533.html">}}
+{{<summary "http://jmplanning.net/PEN-F/osusumelenz.html">}}
+{{<summary "https://ganref.jp/m/hide-skyphoto/reviews_and_diaries/review/9849">}}
+{{<summary "https://ganref.jp/m/hide-skyphoto/reviews_and_diaries/review/9845">}}
+{{<summary "http://kiumahb.hatenablog.com/entry/2016/05/20/133041">}}
+{{<summary "http://camera.one-cut.net/entry/olympuspen-f">}}
+{{<summary "http://america-career.com/olympus-penf-kaukadouka-2kagetsu-mayou/">}}

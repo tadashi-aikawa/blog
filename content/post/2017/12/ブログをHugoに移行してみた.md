@@ -14,7 +14,7 @@ tags:
 
 <!--more-->
 
-<blockquote class="embedly-card"><h4><a href="https://gohugo.io/">A Fast and Flexible Website Generator</a></h4><p>The world's fastest framework for building websites</p></blockquote>
+{{<summary "https://gohugo.io/">}}
 
 <!--toc-->
 
@@ -24,8 +24,7 @@ tags:
 
 以下の内容を実施したときWordpressが再起不能になってしまいました。  
 
-<blockquote class="embedly-card"><h4><a href="https://blog.mamansoft.net/docker%E3%82%92%E8%B7%A1%E5%BD%A2%E3%82%82%E7%84%A1%E3%81%8F%E6%B6%88%E3%81%97%E3%81%A6%E5%85%A5%E3%82%8C%E7%9B%B4%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">Dockerを跡形も無く消して入れ直してみた</a></h4><p>以下の理由からDockerを最新にしてみました。 サーバの容量が無くなってきた DockerのImageやContainerが管理しきれなくなってきて消した ブログ(Wordpress)のコンテナが再帰不能になった</p></blockquote>
-
+{{<summary "https://blog.mamansoft.net/docker%E3%82%92%E8%B7%A1%E5%BD%A2%E3%82%82%E7%84%A1%E3%81%8F%E6%B6%88%E3%81%97%E3%81%A6%E5%85%A5%E3%82%8C%E7%9B%B4%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">}}
 
 頑張れば別の手段で復旧することはできると思います。  
 ただ、2010年頃からずっとWordpressを使い続けており、世の中の流れも変わってきているのでWordpressをやめることにしました。
@@ -69,13 +68,13 @@ Hugo以外の静的ジェネレータ
 Pythonで作られており、GitHubが開発しています。  
 そのせいもあってGitやGitHub Pagesとの連携は抜群らしいです。
 
-<blockquote class="embedly-card"><h4><a href="https://jekyllrb.com/">jekyll</a></h4><p>Transform your plain text into static websites and blogs</p></blockquote>
+{{<summary "https://jekyllrb.com/">}}
 
 ### Hexo
 
 NodeJSで開発されています。
 
-<blockquote class="embedly-card"><h4><a href="https://hexo.io/">Hexo</a></h4><p>Hexo is a fast, simple & powerful blog framework powered by Node.js.</p></blockquote>
+{{<summary "https://hexo.io/">}}
 
 
 Hugoに決めた理由
@@ -103,8 +102,7 @@ Wordpressから移行して良かったと感じることです。
 ShortcodesはHTMLのスニペットを作成することができる機能です。  
 機会があれば別の記事で紹介します。
 
-<blockquote class="embedly-card"><h4><a href="https://gohugo.io/content-management/shortcodes/">Shortcodes</a></h4><p>CONTENT MANAGEMENT Shortcodes are simple snippets inside your content files calling built-in or custom templates. Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video ) to Markdown content.</p></blockquote>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+{{<summary "https://gohugo.io/content-management/shortcodes/">}}
 
 今のところ、Wordpressの方が良かったと感じることはありません。
 

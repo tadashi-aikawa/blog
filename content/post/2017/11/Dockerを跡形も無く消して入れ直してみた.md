@@ -43,7 +43,7 @@ DockerとDocker Composeの削除
 
 既存のDockerとDocker Composeを削除します。
 
-<blockquote class="embedly-card"><h4><a href="https://docs.docker.com/engine/installation/linux/docker-ce/centos/#install-using-the-convenience-script">Get Docker CE for CentOS</a></h4><p>To get started with Docker CE on CentOS, make sure you meet the prerequisites, then install Docker. Prerequisites Docker EE customers To install Docker Enterprise Edition (Docker EE), go to...</p></blockquote>
+{{<summary "https://docs.docker.com/engine/installation/linux/docker-ce/centos/#install-using-the-convenience-script">}}
 
 
 ### Dockerの削除
@@ -118,7 +118,7 @@ Docker Composeのインストール
 
 続いてDocker Composeのインストールです。
 
-<blockquote class="embedly-card"><h4><a href="https://docs.docker.com/compose/install/">Install Docker Compose</a></h4><p>You can run Compose on macOS, Windows, and 64-bit Linux. Prerequisites Docker Compose relies on Docker Engine for any meaningful work, so make sure you have Docker Engine installed either...</p></blockquote>
+{{<summary "https://docs.docker.com/compose/install/">}}
 
 該当するディストリビューションのリリース物をGitHubから取得します。
 
