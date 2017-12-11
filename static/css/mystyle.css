@@ -2,11 +2,11 @@
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
-ul {
+ul, ol {
   margin: 20px 0 20px 0;
 }
 
-li ul {
+li ul, li ol {
   margin: 0 0 0 0;
 }
 
