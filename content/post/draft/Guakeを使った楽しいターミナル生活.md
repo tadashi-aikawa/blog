@@ -1,12 +1,6 @@
 ---
 draft: true
 title: "Guakeを使った楽しいターミナル生活"
-date: 2017-MM-dd
-#thumbnailImage: 
-categories:
-  - 
-tags:
-  - 
 ---
 
 Ubuntuで使用しているターミナルをgnome-terminalから、Guakeに変更しました。
