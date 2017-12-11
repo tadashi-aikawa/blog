@@ -1,6 +1,6 @@
 ---
 title: "Dockerを跡形も無く消して入れ直してみた"
-date: 2017-11-28
+date: 2017-11-28T00:00:00+09:00
 thumbnailImage: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/docker.svg
 categories:
   - engineering

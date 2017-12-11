@@ -1,6 +1,6 @@
 ---
 title: "Google Homeを1ヶ月使ってみた"
-date: 2017-11-19
+date: 2017-11-19T00:00:00+09:00
 thumbnailImage: https://dl.dropboxusercontent.com/s/go0e80htb64jtde/20171119_1.jpg
 categories:
   - gadget

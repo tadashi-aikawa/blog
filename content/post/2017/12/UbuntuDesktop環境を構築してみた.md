@@ -1,6 +1,6 @@
 ---
 title: "Ubuntu Desktop環境を構築してみた"
-date: 2017-12-03
+date: 2017-12-03T00:00:00+09:00
 thumbnailImage: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/ubuntu.svg
 categories:
   - engineering
