@@ -79,6 +79,9 @@ div.img-horizontal {
   max-width: 75%;
   height: auto;
 
+  display: inline-block;
+  position: relative;
+
   -moz-box-shadow: 2px 2px 3px 3px #CCC;
   -webkit-box-shadow: 2px 2px 3px 3px #CCC;
   box-shadow: 2px 2px 3px 3px #CCC;
@@ -91,6 +94,9 @@ div.img-horizontal {
 div.img-vertical {
   max-width: 50%;
   width: auto;
+
+  display: inline-block;
+  position: relative;
 
   -moz-box-shadow: 2px 2px 3px 3px #CCC;
   -webkit-box-shadow: 2px 2px 3px 3px #CCC;
