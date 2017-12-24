@@ -7,7 +7,7 @@ DefaultContentLanguage = "en-us"
 languageCode = "ja"
 
 publishDir = "docs"
-
+enableEmoji = true
 
 [permalinks]
   post = "/:slug/"
