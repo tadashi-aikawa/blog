@@ -1,5 +1,6 @@
 ---
 title: "ブログをHugoに移行してみた"
+slug: migrate-blog-by-hugo
 date: 2017-12-01T19:30:00+09:00
 thumbnailImage: https://dl.dropboxusercontent.com/s/enzavilsafwyk5b/20171201_1.png
 categories:

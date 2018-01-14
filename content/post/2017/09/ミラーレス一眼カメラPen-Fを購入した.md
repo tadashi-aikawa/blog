@@ -1,5 +1,6 @@
 ---
 title: ミラーレス一眼カメラPen-Fを購入した
+slug: pen-f-review
 date: 2017-09-10T00:00:00+09:00
 thumbnailImage: https://dl.dropboxusercontent.com/s/el0xavywg3w6ury/20170910_1.jpg
 categories:

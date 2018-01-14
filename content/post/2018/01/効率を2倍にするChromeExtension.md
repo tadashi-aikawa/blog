@@ -1,5 +1,6 @@
 ---
 title: "効率を2倍にするChrome Extension"
+slug: awesome-chrome-extensions
 date: 2018-01-14T00:00:00+09:00
 thumbnailImage: https://lh3.googleusercontent.com/nYhPnY2I-e9rpqnid9u9aAODz4C04OycEGxqHG5vxFnA35OGmLMrrUmhM9eaHKJ7liB-=w300
 categories:

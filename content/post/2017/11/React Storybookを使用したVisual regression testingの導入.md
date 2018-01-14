@@ -1,5 +1,6 @@
 ---
 title: "React Storybookを使用したVisual regression testingの導入"
+slug: visual-regression-testing-with-react-story-book
 date: 2017-11-16T00:00:00+09:00
 thumbnailImage: https://dl.dropboxusercontent.com/s/huwknua0ma443cr/20171116_1.png
 categories:

@@ -1,5 +1,6 @@
 ---
 title: 次世代プレゼンテーションリモコンSpotlightを試してみた
+slug: spotlight-review
 date: 2017-04-02T17:00:34+09:00
 thumbnailImage: https://dl.dropboxusercontent.com/s/ry2jcxflhij0wmn/20170402_5.jpg
 categories:

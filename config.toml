@@ -10,7 +10,7 @@ publishDir = "docs"
 enableEmoji = true
 
 [permalinks]
-  post = "/:slug/"
+  post = ":year/:month/:day/:slug/"
 
 [author]
   name = "Tadashi Aikawa"

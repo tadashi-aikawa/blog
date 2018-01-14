@@ -1,5 +1,6 @@
 ---
 title: ターミナルが100倍楽しくなるfish
+slug: enjoy-fish
 date: 2017-10-15T00:00:00+09:00
 thumbnailImage: https://fishshell.com/assets/img/Terminal_Logo_CRT_Small.png
 categories:

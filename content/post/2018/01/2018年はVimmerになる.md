@@ -1,5 +1,6 @@
 ---
 title: "2018年はVimmerになる"
+slug: 2018-vimmer
 date: 2018-01-09T22:27:00+09:00
 thumbnailImage: http://thehacker.jp/wp-content/uploads/2015/12/vimlogo-564x564.png
 categories:
