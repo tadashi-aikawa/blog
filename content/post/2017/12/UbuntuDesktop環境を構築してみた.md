@@ -117,7 +117,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     # Install ubuntu-desktop
     sudo apt -y update
-    sudo apt-get -y upgrade
+    # See https://github.com/chef/bento/issues/661
+    # sudo apt-get -y upgrade だと interactiveな画面でCUIが固まってしまうため以下のコマンドを代わりに実行
+    DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
     sudo apt-get -y dist-upgrade
     sudo apt-get -y install ubuntu-desktop
 
