@@ -3,7 +3,14 @@
 
 pipeline {
     agent any
+
     stages {
+        stage('Clean') {
+            steps {
+                sh 'sudo rm -rf *'
+            }
+        }        
+
         stage('Checkout') {
             steps {
                 checkout scm
@@ -27,3 +34,4 @@ pipeline {
         }
     }
 }
+
