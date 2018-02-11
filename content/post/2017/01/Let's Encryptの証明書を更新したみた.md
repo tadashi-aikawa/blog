@@ -67,7 +67,6 @@ new certificate deployed without reload, fullchain is
 Congratulations, all renewals succeeded. The following certs have been renewed:
   /etc/letsencrypt/live/mamansoft.net/fullchain.pem (success)
 
-$ systemctl start nginx
 ```
 
 
