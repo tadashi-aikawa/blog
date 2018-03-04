@@ -18,6 +18,11 @@ init: ## Prepare environment
 	@docker build -t blog/hugo .
 	@echo 'Finished $@'
 
+serve-docs: ## Serve docs (Not use docker)
+	@echo 'Starting $@'
+	@hugo serve --bind="0.0.0.0"
+	@echo 'Finished $@'
+
 build: ## Build sites
 	@echo 'Starting $@'
 	@docker run -i -v `pwd`:/tmp --rm blog/hugo
