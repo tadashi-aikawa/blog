@@ -2,6 +2,11 @@
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
+/* Table of Contentsの邪魔なulを消す */
+#TableOfContents > ul:nth-child(1) {
+  list-style-type: none;
+}
+
 ul, ol {
   margin: 20px 0 20px 0;
 }
