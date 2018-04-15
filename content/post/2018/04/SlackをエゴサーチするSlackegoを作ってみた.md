@@ -74,21 +74,6 @@ Slackego
 インストール方法はREADMEをご覧下さい。使い方は少し補足します。  
 実行する前に`Preparation`を忘れず確認して下さい。
 
-{{<alert "danger">}}
-2018/04/15現在 新しいPyPIにログインできないため、slackegoのパッケージが登録できていません。  
-パッケージ登録が完了するまでの間は以下のコマンドでGitHubからインストールしてください。
-
-```
-$ pip install git+https://github.com/tadashi-aikawa/slackego.git@v0.1.0
-```
-
-Pipenvを使用する場合は以下になります。
-
-```
-$ pipenv install pipenv --python 3.6
-$ pipenv install --skip-lock git+https://github.com/tadashi-aikawa/slackego.git@v0.1.0#egg=slackego
-```
-{{</alert>}}
 
 ### 機能
 
