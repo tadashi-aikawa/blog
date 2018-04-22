@@ -181,10 +181,10 @@ active boot switches: -d:release
 環境変数PATHに`/home/vagrant/.nimble/bin`を追加しましょう。
 
 
-IDEAを選ぶ
-----------
+IDEを選ぶ
+---------
 
-Visual Stucio Codeを使用します。
+IDEはVisual Stucio Codeを使用することにしました。
 
 {{<summary "https://marketplace.visualstudio.com/items?itemName=kosz78.nim">}}
 
