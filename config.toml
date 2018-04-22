@@ -9,6 +9,9 @@ languageCode = "ja"
 publishDir = "docs"
 enableEmoji = true
 
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
 [permalinks]
   post = ":year/:month/:day/:slug/"
 
@@ -34,7 +37,6 @@ enableEmoji = true
   autoThumbnailImage = true
   imageGallery = true
   hierarchicalCategories = true
-  syntaxHighlighter = 'highlight.js'
 
   [[params.customJS]]
     src = "//cdn.embedly.com/widgets/platform.js"
