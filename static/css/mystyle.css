@@ -119,7 +119,7 @@ div.postShorten-thumbnailimg img {
 /* Syntax code style
 /***********************************:
 
-/* Background */ .chroma code, pre code { color: #f8f8f2; background-color: #272822; line-height: 100%; }
+/* Background */ .chroma code, pre code { color: #f8f8f2; background-color: #272822; line-height: 20px; }
 /* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
 /* LineTableTD */ .chroma .lntd { ; vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { ; border-spacing: 0; padding: 0; margin: 0; border: 0; width: 100%; overflow: auto; display: block; }
