@@ -115,11 +115,19 @@ div.postShorten-thumbnailimg img {
     border-radius: 50%;
 }
 
-/***********************************:
+/***********************************/
 /* Syntax code style
-/***********************************:
+/***********************************/
 
-/* Background */ .chroma code, pre code { color: #f8f8f2; background-color: #272822; line-height: 20px; }
+.chroma code, pre code {
+    color: #f8f8f2;
+    background-color: #272822;
+    line-height: 20px;
+    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+.chroma code span, pre code span{
+    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
 /* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
 /* LineTableTD */ .chroma .lntd { ; vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { ; border-spacing: 0; padding: 0; margin: 0; border: 0; width: 100%; overflow: auto; display: block; }
