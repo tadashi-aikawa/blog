@@ -137,7 +137,7 @@ Nimのインストール
 
 {{<summary "https://nim-lang.org/install_unix.html">}}
 
-nimのインストール/管理を簡易可するツール、choosenimをインストールします。
+nimのインストール/管理を簡易可するツール、choosenimを使ってインストールします。
 
 {{<summary "https://github.com/dom96/choosenim#choosenim">}}
 
@@ -164,7 +164,7 @@ choosenim-init: Place the following line in the ~/.profile or ~/.bashrc file.
 choosenim-init:     export PATH=/home/vagrant/.nimble/bin:$PATH
 ```
 
-これでnim, nimble, nimgrep, nimsuggest がインストールされました。
+これでnim, nimble, nimgrep, nimsuggest がインストールされました。  
 nimbleはパッケージ管理ツール、nimsuggestはIDEのサジェスト機能で使用するツールです。
 
 バージョンを確認します。
