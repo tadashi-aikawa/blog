@@ -8,6 +8,7 @@ categories:
 tags:
   - nim
   - slack
+  - 情報収集
 ---
 
 以前にPythonでSlackをエゴサーチするツールSlackegoを作りましたが、Nimでそれを作り直しました。

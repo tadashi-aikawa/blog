@@ -15,6 +15,14 @@ Slackに投稿された内容を対象としてエゴサーチするツール、
 
 <!--more-->
 
+{{<alert "danger">}}
+SlackegoのPython版は凍結しています。代わりにNim版をお使い下さい。  
+ツールの思想や大枠の機能には今のところ変更ありません。
+
+{{<summary "https://blog.mamansoft.net/2018/04/30/nim-recreate-slackego/">}}
+
+{{</alert>}}
+
 {{<summary "https://github.com/tadashi-aikawa/slackego">}}
 
 <!--toc-->
