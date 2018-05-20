@@ -39,7 +39,7 @@ Pipenvとは
 
 Pipenvをご存知ない方のために簡単に紹介します。
 
-{{<summary "https://docs.pipenv.org/">}}
+{{<summary "https://github.com/pypa/pipenv">}}
 
 PipenvはPythonのパッケージング管理ツールです。  
 使い勝手はnpmに近く、Pipで感じる不満をほぼ全て解決してくれます。
@@ -55,9 +55,7 @@ pipenv open
 -----------
 
 いきなり結論です。  
-`pipenv open <MODULE>`コマンドを使うと指定したモジュールのソースコードを開くことができます。
-
-{{<summary "https://docs.pipenv.org/#pipenv-open">}}
+[`pipenv open <MODULE>`コマンド](https://docs.pipenv.org/#pipenv-open)を使うと指定したモジュールのソースコードを開くことができます。
 
 モジュールなのでパスが通っていればインストールしたライブラリのモジュール、現在のプロジェクト配下にあるモジュール、Localにある別のモジュール、標準モジュールの全てを参照することができます。
 
