@@ -1,5 +1,6 @@
 ---
 title: "HaskellでHello World"
+slug: haskell-hello-world
 date: 2018-05-07T03:30:00+09:00
 thumbnailImage: http://t2.gstatic.com/images?q=tbn:ANd9GcQSqSxnXvtRfV1hALfAHqluQjSB3tegivfSAplaZMmW9ZqqF0dU
 categories:

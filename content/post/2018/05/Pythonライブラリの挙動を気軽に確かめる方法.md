@@ -1,5 +1,6 @@
 ---
 title: "Pythonライブラリの挙動を気軽に確かめる方法"
+slug: python-library-light-check
 date: 2018-05-21T02:55:00+09:00
 thumbnailImage: https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 categories:
