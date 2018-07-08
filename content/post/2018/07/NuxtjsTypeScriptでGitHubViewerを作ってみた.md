@@ -17,6 +17,8 @@ Nuxt.jsとTypeScriptを使ってGitHubの情報を閲覧できるツールを作
 
 <!--more-->
 
+<img src="https://github.com/tadashi-aikawa/github-viewer/raw/master/pv.gif"/>
+
 <!--toc-->
 
 
@@ -48,7 +50,9 @@ Vue.jsを使ってSPAを作成する予定があるため、その勉強とBoile
 
 ### ツールのデモ
 
-TODO: 上手くデプロイできなかったので少々お待ちを..
+以下からお試しできます。
+
+{{<summary "https://tadashi-aikawa.github.io/github-viewer/repositories/">}}
 
 
 利用技術
@@ -372,6 +376,33 @@ vueファイルのtemplateには`<font-awesome-icon icon="calendar" size="sm"/>`
 {{<alert "info">}}
 [`@nuxtjs/font-awesome`](https://www.npmjs.com/package/@nuxtjs/font-awesome)という公式提供のmoduleがありますが使い方が分からずに断念しました...
 {{</alert>}}
+
+
+GitHub Pagesへデプロイするときの注意
+------------------------------------
+
+ドメイン直下ではないため`nuxt.config.js`の変更が必要です。  
+リポジトリ名をルーターのベースおよびfaviconのベースとして追加します。
+
+```javascript
+module.exports = {
+  mode: 'spa',
+  router: {
+    base: '/github-viewer/',
+  },
+  head: {
+    link: [
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/github-viewer/favicon.ico",
+      }
+    ]
+  },
+```
+
+この変更によって`npm run dev`でアクセスする先も`http://localhost:3000/github-viewer/repositories`に変わります。  
+GitHub Pagesに特化した設定となってしまいますが大きな支障は無いと思います。
 
 
 総括
