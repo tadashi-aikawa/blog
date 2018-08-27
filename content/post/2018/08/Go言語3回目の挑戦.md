@@ -8,6 +8,7 @@ categories:
 tags:
   - golang
   - vim
+draft: true
 ---
 
 Go言語の開発環境を作成して簡単なスクリプトを書いてみました。  
