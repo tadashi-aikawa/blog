@@ -87,7 +87,7 @@ describe('sum returns', () => {
 
 `npx jest`を実行すると最後のテストだけが失敗すると思います。
 
-{{<alert "warning">}}
+{{<error "SecurityError: localStorage is not available for opaque origins">}}
 バージョンによっては`package.json`に以下を追加しないとエラーになる場合があります。
 
 ```json
@@ -95,9 +95,8 @@ describe('sum returns', () => {
     "testEnvironment": "node"
   }
 ```
-
-https://github.com/jsdom/jsdom/issues/2304
-{{</alert>}}
+{{<refer "jest : SecurityError: localStorage is not available for opaque origins #2304" "https://github.com/jsdom/jsdom/issues/2304">}}
+{{</error>}}
 
 
 ### Parameterized testを書く

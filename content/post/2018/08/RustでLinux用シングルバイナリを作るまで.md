@@ -18,9 +18,12 @@ Rustでビルドした実行ファイルを、Linuxならどこでも実行で�
 
 <!--more-->
 
-{{<alert success>}}
-お急ぎの方は`muslビルド用のDockerイメージでビルドする`と`OpenSSLを使う場合の注意`をご覧下さい。
-{{</alert>}}
+{{<info "すぐに解決方法だけを知りたい方へ">}}
+以下をご覧下さい。
+
+1. [muslビルド用のDockerイメージでビルドする](/2018/08/20/rust-linux-single-binary/#muslビルド用のdockerイメージでビルドする)
+2. [OpenSSLを使う場合の注意](/2018/08/20/rust-linux-single-binary/#opensslを使う場合の注意)
+{{</info>}}
 
 <img src="https://images.pexels.com/photos/1275929/pexels-photo-1275929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
 

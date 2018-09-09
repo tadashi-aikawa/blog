@@ -60,10 +60,13 @@ Ansibleを使っている場合は以下のようにplaybookを作成します�
 
 versionは1.10.3にしました。
 
-{{<alert "success">}}
-執筆時点での最新はversion 1.11でした。  
-ただ、リリース直後のせいか[vim-go]が上手く動作しなかったため1つ前のバージョンをインストールしました。
-{{</alert>}}
+{{<why "なぜ最新版の1.11を使わないのか?">}}
+リリース直後のせいか[vim-go]が上手く動作しなかったためです。  
+1.11から追加されたGo modulesの機能に対するIssueが作成されていますが実現は厳しいかもしれません...
+{{<refer "Support Go modules · Issue #1906 · fatih/vim-go" "https://github.com/fatih/vim-go/issues/1906">}}
+
+[vim-go]: http://https://github.com/fatih/vim-go
+{{</why>}}
 
 
 ### 環境変数の設定
@@ -139,11 +142,6 @@ autocmd FileType go setl nolist
 * dlv (デバッガ)
 
 これらがインストールされていないと[vim-go]の機能をフル活用することができません。
-
-{{<alert "info">}}
-1.11から追加されたGo modulesの機能に対するIssueが作成されていますが実現は厳しいかもしれません...  
-[Support Go modules · Issue #1906 · fatih/vim-go](https://github.com/fatih/vim-go/issues/1906)
-{{</alert>}}
 
 
 ### UltiSnips
