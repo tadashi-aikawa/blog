@@ -198,7 +198,6 @@ end
 私個人用に設定などをカスタマイズしています。あくまで参考程度に。
 
 {{<error "Error: Could not resolve host: vagrantcloud.com">}}
-{{<alert "danger">}}
 以下エラーのようにログインを促される場合
 
 ```
@@ -216,7 +215,6 @@ Error: Could not resolve host: vagrantcloud.com
 
 * HashiCorpのアカウントを作成
 * `vagrant login`
-{{</alert>}}
 {{</error>}}
 
 
@@ -237,23 +235,18 @@ $ sudo apt-get install -y lubuntu-desktop
 私はGDMを選択しました。
 
 {{<warn Vagrantfileでlubuntu-desktopをインストールする場合の注意>}}
-{{<alert "warning">}}
 VagrantfileのProvisioning処理でlubuntu-desktopをインストールすると、ディスプレイマネージャー選択画面の表示に問題が生じます。  
 画面に変化はなくても処理は完了するかもしれませんが、視覚フィードバックが得られないためオススメしません。
 
 Provisioning完了後にUbuntuへログインしてからインストールすることを強く推奨します。
-{{</alert>}}
 {{</warn>}}
 
 {{<why "なぜディスプレイマネージャーにGDMを選ぶのか?">}}
-{{<alert "success">}}
 Ubuntu 17からデフォルトのディスプレイマネージャーがGDMに変更されたからです。  
 以前はLightDMがデフォルトでしたが、今後を考えるとGDMにしておいた方が良さそうだと判断しました。
-{{</alert>}}
 {{</why>}}
 
 {{<why "なぜLubuntuを使用するのか?">}}
-{{<alert "success">}}
 
 Ubuntuでは以下ツールを使用する際、画面描画に大きな遅延が生じるからです。
 
@@ -262,7 +255,6 @@ Ubuntuでは以下ツールを使用する際、画面描画に大きな遅延�
 
 Lubuntuは軽量ディストリビューションのため、画面描画を実用的な速度まで引き上げてくれます。  
 なんてクールなんだ！
-{{</alert>}}
 {{</why>}}
 
 
@@ -291,12 +283,10 @@ LightDMに慣れていると切り替えに戸惑いますが、以下画像の�
 {{<himg "https://dl.dropboxusercontent.com/s/atcvplu83gbnq9x/20180909_2.png">}}
 
 {{<warn "ubuntuユーザのログインパスワードを求められて認証できない場合は...">}}
-{{<alert "warning">}}
 `sudo passwd ubuntu`コマンドでubuntuユーザのパスワードを変更しましょう。  
 再び入力を求められたら、再設定したパスワードを入力すればOKです。
 
 ※ 初期パスワードが分かっていればこの工程は不要かもしれませんが`vagrant`では認証が通りませんでした..
-{{</alert>}}
 {{</warn>}}
 
 インストール成功したら`Language`と`Regional Formats`を日本語に設定します。  
@@ -316,11 +306,9 @@ LightDMに慣れていると切り替えに戸惑いますが、以下画像の�
 {{<himg "https://dl.dropboxusercontent.com/s/w8b1dz8px472sxo/20180909_5.png">}}
 
 {{<warn "キーボードアイコンが表示されない場合は...">}}
-{{<alert "warning">}}
 理由は分かりませんが表示されなくなることがあります。一度VMを再起動してみましょう。
 
 `vagrant reload`では改善しない場合がありますので、`vagrant halt && vagrant up`を推奨します。
-{{</alert>}}
 {{</warn>}}
 
 ダイアログ下部のボタンを使って、入力メソッドのキーボードを以下のように配置します。

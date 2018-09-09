@@ -1,5 +1,7 @@
 <details>
-  <summary><i class="fa fa-warning" style="color: orange;" aria-hidden="true"></i> <em style="color: orange;">{{ .Get 0 }}</em></summary>
-  {{ .Inner | markdownify }}
+  <summary><i class="fa fa-warning alert-word-warn" aria-hidden="true"></i> <em class="alert-word-warn">{{ .Get 0 }}</em></summary>
+  <div class="alert-box alert-box-warn">
+    {{ .Inner | markdownify }}
+  </div>
 </details>
 
