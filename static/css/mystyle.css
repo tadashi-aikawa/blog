@@ -183,16 +183,19 @@ details[open] summary::before {
   padding: 0;
 }
 
+.alert-box-file { background: #272822; }
 .alert-box-info { background: blue; }
 .alert-box-why { background: #effaf0; }
 .alert-box-warn { background: #fdf1d8; }
 .alert-box-error { background: #feecea; }
 
+.alert-box-file:before { border-bottom: 15px solid #272822; }
 .alert-box-info:before { border-bottom: 15px solid blue; }
 .alert-box-why:before { border-bottom: 15px solid #effaf0; }
 .alert-box-warn:before { border-bottom: 15px solid #fdf1d8; }
 .alert-box-error:before { border-bottom: 15px solid #feecea; }
 
+.alert-word-file { color: #272822; }
 .alert-word-info { color: blue; }
 .alert-word-why { color: #4da657; }
 .alert-word-warn { color: #f5770a; }

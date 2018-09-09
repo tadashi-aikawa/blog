@@ -1,5 +1,7 @@
 <details>
-  <summary><i class="fa fa-file" aria-hidden="true"></i> <em>{{ .Get 0 }}</em></summary>
-  {{ .Inner | markdownify }}
+  <summary><i class="fa fa-file alert-word-file" aria-hidden="true"></i> <em class="alert-word-file">{{ .Get 0 }}</em></summary>
+  <div class="alert-box alert-box-file">
+    {{ .Inner | markdownify }}
+  </div>
 </details>
 
