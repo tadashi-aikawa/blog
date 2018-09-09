@@ -173,7 +173,7 @@ details[open] summary::before {
   content: "";
   position: absolute;
   top: -30px;
-  left: 10%;
+  left: 100px;
   margin-left: -15px;
   border: 15px solid transparent;
 }
