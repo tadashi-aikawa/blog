@@ -277,6 +277,22 @@ $ code --install-extension vscodevim.vim
 * `code --install-extensions` (最後に`s`がついている)
 {{</warn>}}
 
+{{<warn "batファイルで `code --install-extensions` を実行しても1つ目しかインストールされない">}}
+callを付けて1つ１つ呼び出す必要があります。
+
+##### 駄目な例
+
+* `code --install-extension vscodevim.vim`
+* `call code --install-extension vscodevim.vim donjayamanne.github`
+
+##### 正しい例
+
+```
+call code --install-extension vscodevim.vim
+call code --install-extension donjayamanne.github
+```
+{{</warn>}}
+
 
 ### Git History
 
