@@ -224,23 +224,209 @@ func CreateConfig() (Config, error) {
 
 ### API結果のjsonを構造体に変換する
 
-{{<alert "info">}}
-TODO
-{{</alert>}}
+GitHub以外にもBitbucket Serverに対応させる必要がありました。  
+しかし、GitHubのように著名なライブラリが無かったためClientを自作しました。  
+その際、できるだけ楽にjsonを構造体として扱う方法を調べてみました。
+
+{{<why "なぜBitbucket Serverに対応させる必要があったのか?">}}
+職場でBitbucket Serverを使用しており、仕事でも使用したかったからです。
+{{</why>}}
+
+#### jsonから構造体定義を作成する
+
+jsonと睨めっこして構造体定義をするほど暇ではありません。  
+楽をする方法をいくつか紹介します。
+
+##### JSON-to-Go
+
+一番簡単な方法で、JSON-to-GOというサイトを使います。  
+サイトを開いてjsonを左側に貼り付けてみて下さい。
+
+{{<summary "https://mholt.github.io/json-to-go/">}}
+
+右に定義が出現しましたね！ 素晴らしい！
+
+##### Paste JSON as Code
+
+VS Codeを使っているならオススメです。  
+先日の記事で紹介しましたのでそちらをご覧下さい。
+
+{{<summary "https://blog.mamansoft.net/2018/09/17/vscode-satisfies-vimmer/#paste-json-as-code">}}
+
+上記にある通り、quicktypeを直接利用してもOKですね。
+
+
+#### jsonを構造体に変換する
+
+変換は簡単です。  
+httpクライアントから取得した結果(res)のBodyを取り出し、デコード関数に構造体インスタンスを渡すだけです。
+
+
+```go
+import (
+    "encoding/json"
+    "net/http"
+)
+
+// ....
+
+res, err := client.Get(url)
+if err != nil {
+    panic(err)
+}
+defer res.Body.Close()
+
+var r BitbucketRepositoryResponse
+json.NewDecoder(res.Body).Decode(&r)
+```
+
+BitbucketRepositoryResponseは先ほどjsonから作成した構造体です。  
+その定義は例えば以下のようになります。
+
+```go
+// BitbucketRepositoryResponse is struct of a API response
+type BitbucketRepositoryResponse struct {
+    Size       int64                 `json:"size"`
+    Limit      int64                 `json:"limit"`
+    IsLastPage bool                  `json:"isLastPage"`
+    Values     []BitbucketRepository `json:"values"`
+    Start      int64                 `json:"start"`
+}
+```
+
+タグにjsonのプロパティを指定すると、構造体のフィールドに紐付けることができます。
 
 
 ### Basic認証を利用する
 
-{{<alert "info">}}
-TODO
-{{</alert>}}
+Bitbucket Serverとの認証にはBasic認証を使う必要があります。
+
+`http.Get`を直接呼び出さず、作成したリクエストに対してBasic認証情報をセットしてやるだけです。
+
+```go
+req, err := http.NewRequest("GET", url, nil)
+if err != nil {
+    panic(err)
+}
+
+req.SetBasicAuth(username, password)
+
+client := &http.Client{}
+res, err := client.Do(req)
+```
 
 
 ### コマンドライン引数を渡す
 
-{{<alert "info">}}
-TODO
-{{</alert>}}
+CLIツールなので当然引数が必要です。  
+[以前紹介したflagモジュール]ではなくdocoptを使います。
+
+[以前紹介したflagモジュール]: https://blog.mamansoft.net/2018/08/27/golang-third-challenge/#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E5%BC%95%E6%95%B0
+
+{{<summary "https://github.com/docopt/docopt.go">}}
+
+docoptを使うと`gowl`の引数取り扱い部分を以下のように分離できます。
+
+{{<file "args.go">}}
+```go
+package main
+
+import (
+    "github.com/docopt/docopt-go"
+    "github.com/pkg/errors"
+)
+
+const version = "0.2.0-alpha"
+const usage = `Gowl.
+
+Usage:
+  gowl get [-f | --force] [-r | --recursive] [-s | --shallow] [-B | --bitbucket-server]
+  gowl edit [-e=<editor> | --editor=<editor>]
+  gowl web
+  gowl list
+  gowl -h | --help
+  gowl --version
+
+Options:
+  -e --editor=<editor>        Use editor [default: default]
+  -f --force                  Force remove and reclone if exists
+  -r --recursive              Clone recursively
+  -s --shallow                Use shallow clone
+  -B --bitbucket-server       Use Bitbucket Server
+  -h --help                   Show this screen.
+  --version                   Show version.
+  `
+
+// Args created by CLI args
+type Args struct {
+    CmdGet  bool `docopt:"get"`
+    CmdEdit bool `docopt:"edit"`
+    CmdWeb  bool `docopt:"web"`
+    CmdList bool `docopt:"list"`
+
+    Editor          string `docopt:"--editor"`
+    Force           bool   `docopt:"--force"`
+    Recursive       bool   `docopt:"--recursive"`
+    Shallow         bool   `docopt:"--shallow"`
+    BitbucketServer bool   `docopt:"--bitbucket-server"`
+}
+
+// CreateArgs creates Args
+func CreateArgs(usage string, argv []string, version string) (Args, error) {
+    parser := &docopt.Parser{
+        HelpHandler:  docopt.PrintHelpOnly,
+        OptionsFirst: false,
+    }
+
+    opts, err := parser.ParseArgs(usage, argv, version)
+    if err != nil {
+        return Args{}, errors.Wrap(err, "Fail to parse arguments.")
+    }
+
+    var args Args
+    opts.Bind(&args)
+
+    return args, nil
+}
+```
+{{</file>}}
+
+Usageのように指定して実行すると、その内容がArgsに取り込まれます。  
+これを別のファイル(`main.go`など)から以下のように呼び出すわけです。
+
+```go
+args, err := CreateArgs(usage, os.Args[1:], version)
+if err != nil {
+    log.Fatal(errors.Wrap(err, "Fail to create arguments."))
+}
+```
+
+{{<file "depコマンド">}}
+```
+$ dep ensure --add github.com/docopt/docopt-go@master
+```
+{{</file>}}
+
+{{<why "なぜflagではなくdocoptを使うのか?">}}
+複雑な組み合わせを容易にバリデーションできるからです。
+
+コマンドが複雑になればなるほど、if文による制御では考慮漏れが生じます。  
+しかし、docoptはUsageに一致しないパターンをエラーと判定できるため処理をシンプルに保つことができます。
+{{</why>}}
+
+
+{{<error "&docopt.Parserが解決しない">}}
+以下のように依存関係の追加コマンドから`@master`が抜けている可能性があります。
+
+```
+$ dep ensure --add github.com/docopt/docopt-go
+```
+
+上記でインストールされるのは執筆時点でv0.6.2です。  
+しかし、GitHubのmasterは更に先を行っているため`&docopt.Parser`などのIFが存在しません。
+
+masterブランチを指定して追加してみましょう。
+{{</error>}}
 
 
 ### 対話型の実現
