@@ -251,7 +251,8 @@ jsonと睨めっこして構造体定義をするほど暇ではありません�
 VS Codeを使っているならオススメです。  
 先日の記事で紹介しましたのでそちらをご覧下さい。
 
-{{<summary "https://blog.mamansoft.net/2018/09/17/vscode-satisfies-vimmer/#paste-json-as-code">}}
+{{<refer "VSCodeをVimmerが満足できる設定にしてみた" "https://blog.mamansoft.net/2018/09/17/vscode-satisfies-vimmer/#paste-json-as-code">}}
+
 
 上記にある通り、quicktypeを直接利用してもOKですね。
 
@@ -431,38 +432,188 @@ masterブランチを指定して追加してみましょう。
 
 ### 対話型の実現
 
-{{<alert "info">}}
-TODO
-{{</alert>}}
+初めは非対話式にしていましたが、キーワード検索が予期した結果になるとは限りません。  
+また、検索結果を表示した後に改めて指定するのも面倒です。
+
+`survey.v1`というライブラリを使って対話型を実現します。
+
+{{<summary "https://gopkg.in/AlecAivazis/survey.v1">}}
+
+他の対話型CLIを実現するライブラリも検討しましたが以下の理由で断念しました。
+
+* Windowsだと表示がおかしくなる
+* 上手く動かない
+* 多機能すぎて実装のコスパが悪い
+
+{{<file "depコマンド">}}
+```
+$ dep ensure --add gopkg.in/AlecAivazis/survey.v1
+```
+{{</file>}}
 
 
 ### 外部コマンドを実行する
 
-{{<alert "info">}}
-TODO
-{{</alert>}}
+CLIでは実際にgitなどのコマンドを実行します。  
+`exec.Command`を使用しますが、以下の様な関数を定義して使っています。
+
+```go
+func execCommand(workdir *string, name string, arg ...string) error {
+    cmd := exec.Command(name, arg...)
+    if workdir != nil {
+        cmd.Dir = *workdir
+    }
+    cmd.Stdin = os.Stdin
+    cmd.Stdout = os.Stdout
+    cmd.Stderr = os.Stderr
+    return cmd.Run()
+}
+```
+
+以下は呼び出しの一例です。
+
+```go
+if err := execCommand(nil, "git", "commit", "-m", "hogehoge"); err != nil {
+    return errors.Wrap(err, "Fail to clone "+url)
+}
+```
+
+{{<warn "execCommandの引数にスペースが含まれると正しく動作しない...">}}
+トークンの切れ目を表す場合は別の引数を指定して下さい。  
+引数`arg ...string`は1つ1つの要素がコマンドと見なされます。
+
+| ソース                                   | 解釈されるコマンド |
+|------------------------------------------|--------------------|
+| execCommand(ni., "git", "clone hoge")    | `git "clone hoge"` |
+| execCommand(ni., "git", "clone", "hoge") | `git clone hoge`   |
+
+{{</warn>}}
+
+{{<warn "cdコマンドを実行してもgowl終了後にカレントディレクトリが移動していない...">}}
+Go言語で呼び出し元ターミナルのカレントディレクトリを変更することはできません。  
+なぜならgowlはターミナルから呼び出されたプロセスであり、ターミナルは親プロセスにあたるからです。
+
+{{<summary "https://stackoverflow.com/questions/46028707/how-to-change-the-current-dir-in-go">}}
+{{</warn>}}
+
+{{<warn "コマンドの出力結果や入力待ちが表示されない場合は...">}}
+コマンドの標準入出力にOSの入出力が割り当てられていることを確認してください。  
+たとえば以下のような記述があるかどうかです。
+
+```go
+cmd.Stdin = os.Stdin
+cmd.Stdout = os.Stdout
+cmd.Stderr = os.Stderr
+```
+{{</warn>}}
 
 
 ### スピナーを表示する
 
-{{<alert "info">}}
-TODO
-{{</alert>}}
+最後に..GitHubと通信中は少し待ち時間が発生するので退屈しない演出を入れてみました。  
+スピナーを表示するライブラリを使用します。
+
+{{<summary "https://github.com/briandowns/spinner">}}
+
+{{<file "depコマンド">}}
+```
+$ dep ensure --add github.com/briandowns/spinner
+```
+{{</file>}}
+
+43種類も選べるのでテンション上がりますが、Windowsでもちゃんと表示されるモノを選ぶ必要があります。  
+gowlでは35番を使用しています。
+
+```go
+s := spinner.New(spinner.CharSets[35], 100*time.Millisecond)
+s.Color("fgHiGreen")
+s.Start()
+repos, err := handler.SearchRepositories(word)
+s.Stop()
+```
 
 
 ハマッたところ
 --------------
 
-{{<alert "info">}}
-TODO
-{{</alert>}}
+その他ハマッたところを2つほどご紹介します。
+
+### WindowsとLinuxのセパレータが混ざる
+
+`filepath.Join`を使用しましょう。  
+`path.Join`を使用していたため発生した問題でした。
+
+
+### Interfaceの実装を認識してくれない
+
+pointer receiverを使用している場合はInterfaceに値ではなく参照を返す必要があります。  
+ちょっと古いですが以下の記事が分かりやすいです。
+
+{{<summary "http://otiai10.hatenablog.com/entry/2014/05/27/223556">}}
+
+gowlでの実装例を一部抜き出してみました。
+
+{{<file "pointer receiverとInterfaceを使う例">}}
+```go
+type IHandler interface {
+    SearchRepositories(word string) ([]Repository, error)
+    GetPrefix() string
+}
+
+type BitbucketServerHandler struct {
+    client *BitbucketClient
+    prefix string
+}
+
+// pointer receiverを使用している
+func (h *BitbucketServerHandler) GetPrefix() string {
+    return h.prefix
+}
+
+// pointer receiverを使用している
+func (h *BitbucketServerHandler) SearchRepositories(word string) ([]Repository, error) {
+    res, err := h.client.searchRepositories(word)
+    if err != nil {
+        return nil, errors.Wrap(err, "Fail to search repositories.")
+    }
+
+    var repos []Repository
+    for _, bsrepo := range res.Values {
+        var r Repository
+        repos = append(repos, *r.fromBitbucketServer(&bsrepo))
+    }
+
+    return repos, nil
+}
+
+
+func NewBitbucketServerHandler(config Config) IHandler {
+    // BitbucketServerHandlerはpointer reciverを使用しているので参照を返す
+    return &BitbucketServerHandler{
+        client: createBitbucketClient(*config.BitbucketServer.UserName, *config.BitbucketServer.Password, *config.BitbucketServer.BaseURL),
+        prefix: *config.BitbucketServer.Prefix,
+    }
+}
+```
+{{</file>}}
+
+{{<file "上記の呼び出し元">}}
+```go
+var handler IHandler
+if args.BitbucketServer {
+    handler = NewBitbucketServerHandler(config)
+} else {
+    handler = NewGithubHandler(config)
+}
+```
+{{</file>}}
+
 
 
 総括
 ----
 
-{{<alert "info">}}
-TODO
-{{</alert>}}
+Go言語でGitの構成管理を手助けするCLIを作り、学んだ事をまとめてみました。
 
+呼び出し元シェルのワーキングディレクトリを変更出来ないのは残念ですが、改修しやすい設計にすることができたので今後も機能追加していこうと考えています :smile:
 
