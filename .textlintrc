@@ -1,0 +1,12 @@
+{
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "preset-ja-technical-writing": {
+      "ja-no-weak-phrase": false,
+      "sentence-length": false,
+      "no-exclamation-question-mark": false,
+    }
+  }
+}
