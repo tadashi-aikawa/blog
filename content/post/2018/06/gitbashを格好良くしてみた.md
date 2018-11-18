@@ -8,6 +8,8 @@ categories:
 tags:
   - git
   - bash
+  - terminal
+  - windows
 ---
 
 普段はLinuxを使っていますが、仕事でWindowsを使う機会が増えています。  

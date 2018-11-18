@@ -11,6 +11,7 @@ tags:
   - fish
   - zsh
   - ansible
+  - terminal
 ---
 
 zshからfishに移行してみました。
