@@ -468,7 +468,7 @@ hgはMercurial、svnはSVNですがどちらも使用していません。
 {{<github "Lag returning to prompt (especially) in git repo #447" "https://github.com/cmderdev/cmder/issues/447#issuecomment-379992066">}}
 
 
-マシン感の同期
+マシン間の同期
 --------------
 
 Cmderはポータビリティがあるため、以下のディレクトリをGitやDropboxなどで同期しておけばOKです。
