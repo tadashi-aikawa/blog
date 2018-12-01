@@ -42,6 +42,11 @@ pygmentsCodefences = true
     src = "//cdn.embedly.com/widgets/platform.js"
     async = true
 
+  [[params.customJS]]
+    src = "https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+    async = true
+  # integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"
+
   [[params.customCSS]]
     href = "css/mystyle.css"
 
