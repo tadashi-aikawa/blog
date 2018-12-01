@@ -113,8 +113,8 @@ source /c/Users/syoum/git/pureline/pureline /c/Users/syoum/git/pureline/.purelin
 {{<himg "https://dl.dropboxusercontent.com/s/h6hd0i78srnok0g/20180604_3.png">}}
 
 
-`.bashrc`
----------
+.bashrc
+-------
 
 そのままでは使えないよく使うコマンドを`.bashrc`に定義しています。
 
