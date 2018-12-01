@@ -97,10 +97,31 @@ pygmentsCodefences = true
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/Tadashi_MAMAN"
-
-[[menu.misc]]
-  weight = 0
+[[menu.links]]
+  weight = 3
   identifier = "rss"
   name = "RSS"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\"></i>"
   url = "/index.xml"
+
+[[menu.misc]]
+  weight = 1
+  pre = "-----　My Product　-----"
+[[menu.misc]]
+  weight = 2
+  identifier = "jumeaux"
+  name = "Jumeaux"
+  pre = "<img src=\"https://tadashi-aikawa.github.io/jumeaux/img/logo.png\" width=30 class=\"sidebar-button-icon\">"
+  url = "https://tadashi-aikawa.github.io/jumeaux"
+[[menu.misc]]
+  weight = 3
+  identifier = "miroir"
+  name = "Miroir"
+  pre = "<img src=\"https://github.com/tadashi-aikawa/miroir/blob/master/src/assets/miroir-inverse.png?raw=true\" width=30 class=\"sidebar-button-icon\">"
+  url = "https://tadashi-aikawa.github.io/miroir"
+[[menu.misc]]
+  weight = 4
+  identifier = "gowl"
+  name = "Gowl"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-horse\"></i>"
+  url = "https://github.com/tadashi-aikawa/gowl"
