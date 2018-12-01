@@ -21,6 +21,12 @@ tags:
 
 <!--toc-->
 
+{{<update "2018/12/01: Cmderを使ってオシャレなcmd.exeライフを送る記事を追加しました">}}
+* [Cmderでオシャレにcmd.exeを使う -前編-](/2018/11/18/use-cmd-elegant-on-cmder-phase1/)
+* [Cmderでオシャレにcmd.exeを使う -後編-](/2018/11/18/use-cmd-elegant-on-cmder-phase2/)
+{{</update>}}
+
+
 
 git bashとは
 ------------
