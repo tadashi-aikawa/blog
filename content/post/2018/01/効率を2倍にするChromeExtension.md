@@ -9,6 +9,7 @@ tags:
   - google
   - google-chrome
   - ブラウザ
+  - vim
 ---
 
 2018年になりましたので久々にGoogle ChromeのExtensionを見直してみました。  
