@@ -10,7 +10,7 @@ tags:
   - phoenix
 ---
 
-Phoenixというフレームワークで簡単なWeb APIを作成してみました。
+Phoenixというフレームワークを触ってみました。
 
 <!--more-->
 
