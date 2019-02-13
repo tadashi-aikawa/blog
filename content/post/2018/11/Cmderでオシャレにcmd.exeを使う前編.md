@@ -218,6 +218,8 @@ Cmderの設定変更
 
 {{<himg "https://dl.dropboxusercontent.com/s/p8xshqyehbzxact/20181118_5.png">}}
 
+赤枠下の部分にある`Startup dir...`ボタンを押してホームディレクトリを選ぶと、自動で入力されます。
+
 なお、`Cmder`では`%home%`もホームディレクトリとして認識されます。
 
 
