@@ -1,7 +1,7 @@
 ---
-title: 用途ごとのlodashまとめ
-slug: lodash-by-usecase
-date: 2019-02-09T23:10:01+09:00
+title: 逆引きlodash Array/Collection/Object編
+slug: lodash-by-usecase-array-collection-object
+date: 2019-02-14T21:05:05+09:00
 thumbnailImage: https://cdn.svgporn.com/logos/lodash.svg
 categories:
   - engineering
@@ -9,7 +9,6 @@ tags:
   - javascript
   - typescript
   - lodash
-draft: true
 ---
 
 Lodashの仕様を以下のようにまとめてみました。
@@ -21,7 +20,7 @@ Lodashの仕様を以下のようにまとめてみました。
 <!--more-->
 
 {{<alert "danger">}}
-本記事で参考にしたlodashのバージョンは 4.17.11 です。  
+本記事で参考にしたLodashのバージョンは 4.17.11 です。  
 時間の経過と共に仕様は変わります。正しい情報が欲しい方は必ず本家のドキュメントをお読み下さい。
 
 {{<summary "https://lodash.com/docs/4.17.11">}}
@@ -31,6 +30,40 @@ Lodashの仕様を以下のようにまとめてみました。
 <img src="https://cdn.svgporn.com/logos/lodash.svg"/>
 
 <!--toc-->
+
+
+経緯
+----
+
+私は仕事でJavaScriptやTypeScriptを使う機会が多いです。  
+その際、従来の命令型の書き方ではなく、関数型の書き方を普及しています。
+
+また、JavaScript/TypeScriptには十分な関数型のfunctionがないため、`Lodash`というライブラリを導入しています。
+
+{{<summary "https://lodash.com/">}}
+
+しかし、慣れるまの間は**何ができるか分からないまま英語のドキュメントを探すこと**がとても重荷になります。  
+少しでも心理的抵抗や調査のコスト/ハードルを下げるために本記事を執筆しました。
+
+
+前提
+----
+
+Lodashの以下Sectionに属するmethodを紹介します。
+
+* Array
+* Collection
+* Object
+
+以下のケースは紹介しません。
+
+* ES2015より前の仕様で主に使うmethod (prototype周りの`xxxIn`)
+* 各method全ての使い方 (知りたい場合は公式ドキュメントを参照)
+
+また、厳密には事実と異なる表現をしている場合があります。  
+正確な理解より、各methodの大まかな挙動を理解してほしいからです。
+
+正確な情報が欲しい場合は公式ドキュメントを参照してください。
 
 
 読み方
@@ -109,6 +142,15 @@ _.find(input, x => x >= 12)
 */
 ```
 
+#### 条件を満たす最初の要素のkey `{} -> *`
+
+```js
+const input = {'warosu': 21, 'tagayasu': 31, 'monomousu': 41, 'osu': 11}
+_.findKey(input, x => x > 30)
+/* => tagayasu
+*/
+```
+
 #### 条件を満たす最後の要素 `([]|{}) -> *`
 
 ```js
@@ -118,7 +160,17 @@ _.findLast(input, x => x >= 12)
 */
 ```
 
-#### 先頭から条件を満たしている間
+#### 条件を満たす最後の要素のkey `{} -> *`
+
+```js
+const input = {'warosu': 21, 'tagayasu': 31, 'monomousu': 41, 'osu': 11}
+_.findLastKey(input, x => x > 30)
+/* => monomousu
+/
+```
+
+
+#### 先頭から条件を満たしている間 `[] -> []`
 
 条件を満たさない要素が出現したら、その後に条件を満たす要素が残っていても終了します。
 
@@ -129,7 +181,7 @@ _.takeWhile(input, x => x < 12)
 */
 ```
 
-#### 末尾から条件を満たしている間
+#### 末尾から条件を満たしている間 `[] -> []`
 
 ```js
 const input = [10, 11, 12, 13, 12, 11, 10]
@@ -185,6 +237,53 @@ _.sampleSize(input, 3)
 /* => [ 20, 40, 10 ]
 */
 ```
+
+#### 指定したパスの値 `{} -> *`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.get(input, 'y.y2')
+/* => YY
+*/
+_.get(input, 'nothing', 'default')
+/* => default
+*/
+```
+
+実行速度が遅いので呼び出し数が多い場合は愚直に書きましょう。
+
+```js
+input.y && input.y.y2 || 'default'
+```
+
+#### 指定した複数パスの値 `{} -> []`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.at(input, ['x', 'y.y2'])
+/* => [ 'X', 'YY' ]
+*/
+```
+
+#### 指定したパスのkey-value `{} -> {}`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.pick(input, ['x', 'y.y1'])
+/* => { x: 'X', y: { y1: 'Y' } }
+*/
+```
+
+#### 条件を満たすのkey-value `{} -> {}`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.pickBy(input, v => _.size(v) > 1)
+/* => { y: { y1: 'Y', y2: 'YY' }, z: 'ZZZ' }
+*/
+```
+
+yはObject型なので、`_.size`はkey-valueの数になります。
 
 
 ### 要素を削除する
@@ -274,6 +373,26 @@ _.compact(input)
 /* => [ 'ai', 'kawa', 'sho' ]
 */
 ```
+
+#### 指定したパスのkey-value `{} -> {}`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.omit(input, ['x', 'y.y1'])
+/* => { y: { y2: 'YY' }, z: 'ZZZ' }
+*/
+```
+
+#### 条件を満たすのkey-value `{} -> {}`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.omitBy(input, v => _.size(v) > 1)
+/* => { x: 'X' }
+*/
+```
+
+yはObject型なので、`_.size`はkey-valueの数になります。
 
 
 ### 重複要素を除外する `[] -> []`
@@ -745,6 +864,90 @@ _.partition(input, x => x >= 5)
 ```
 
 
+### keyとvalueを逆転する `{} -> {}`
+
+#### 変換後の値は1つ
+
+同じ値がある場合はどちらか一方が採用されます。
+
+```js
+const input = {x: 'X', y: 'YY', z: 'ZZZ', x2: 'X'}
+_.invert(input)
+/* => { X: 'x2', YY: 'y', ZZZ: 'z' }
+*/
+```
+
+#### 変換後の値は複数
+
+```js
+const input = {x: 'X', y: 'YY', z: 'ZZZ', x2: 'X'}
+_.invertBy(input)
+/* => { X: [ 'x', 'x2' ], YY: [ 'y' ], ZZZ: [ 'z' ] }
+*/
+```
+
+#### 値をkeyに変換するロジックの指定
+
+変換後の値は複数(配列)です。
+
+```js
+const input = {x: 'X', y: 'YY', z: 'ZZZ', x2: 'X'}
+_.invertBy(input, v => v.toLowerCase())
+/* => { x: [ 'x', 'x2' ], yy: [ 'y' ], zzz: [ 'z' ] }
+*/
+```
+
+
+### key-valueをkeyだけに変換する `{} -> []`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.keys(input)
+/* => [ 'x', 'y', 'z' ]
+*/
+```
+
+Nativeの`Object.keys(input)`と同じです。
+
+
+### key-valueをvalueだけに変換する `{} -> []`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.values(input)
+/* => [ 'X', { y1: 'Y', y2: 'YY' }, 'ZZZ' ]
+*/
+```
+
+Nativeの`Object.values(input)`と同じです。
+
+
+### key-valueのkeyを変換する `{} -> {}`
+
+各keyの後に、valueを文字列にしたときの長さを付ける例です。
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.mapKeys(input, (v, k) => `${k}-${v.toString().length}`)
+/* => { 'x-1': 'X', 'y-15': { y1: 'Y', y2: 'YY' }, 'z-3': 'ZZZ' }
+*/
+```
+
+keyが渡るのはラムダ式の第2引数なので注意してください。
+
+
+### key-valueのvalueを変換する `{} -> {}`
+
+各valueを、文字列にしたときの長さにする例です。
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.mapValues(input, v => v.toString().length)
+/* => { x: 1, y: 15, z: 3 }
+*/
+```
+
+
 並び替え
 --------
 
@@ -817,7 +1020,7 @@ _.shuffle(input)
 複数の要素を単一の何かに畳み込む処理です。
 
 
-### サイズを取得する `([]|{})`
+### サイズを取得する `([]|{}) -> number`
 
 ```js
 const input = [1, 10, 100]
@@ -851,6 +1054,21 @@ _.reduceRight(input, (total, x) => total + x, "")
 */
 ```
 
+#### 条件を満たしている間
+
+`_.reduce`とは異なり、`accumulator`を直接操作します。  
+代わりにiterateeの返却値はbooleanとなり、`false`を返却した時点で終了します。
+
+```js
+const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+_.transform(input, (accumulator, x) => {
+  total.push(x+10)
+  return x < 5
+}, [])
+/* => [ 11, 12, 13, 14, 15 ]
+*/
+```
+
 
 ### 文字列で結合する `[] -> string`
 
@@ -869,6 +1087,18 @@ _.join(input, '-->')
 ----
 
 booleanを返す判定系の処理です。
+
+### keyが含まれているかを確認する `{} -> boolean`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.has(input, 'y.y1')
+/* => true
+*/
+_.has(input, 'z.z1')
+/* => false
+*/
+```
 
 
 ### 要素が含まれているかを確認する `([]|{}|string) -> boolean`
@@ -1312,6 +1542,156 @@ _.reverse(input)
 `[10, 20, 30, 40].reverse()`と一緒です。
 
 
+### 💀Objectのkey-valueを上書き/追加する `{} -> {}`
+
+#### 💀後から指定された方で勝つ
+
+```js
+const input = {x: 'X', y: 'Y'}
+_.assign(input, {x: 'XXX'}, {z: 'Z'})
+/* => { x: 'XXX', y: 'Y', z: 'Z' }
+*/
+```
+
+分割代入(Destructuring assignment)を使えば安全に書くこともできます。
+
+```js
+{...input, x: 'XXX', z: 'Z'}
+```
+
+#### 💀先に指定された方が勝つ
+
+```js
+const input = {x: 'X', y: 'Y'}
+_.defaults(input, {x: 'XXX'}, {z: 'Z'})
+/* => { x: 'X', y: 'Y', z: 'Z' }
+*/
+```
+
+ネストしている要素の場合は`defaultsDeep`です。
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.defaultsDeep(input, {x: 'XXX'}, {y: {y1: 'YYY', y3: 'YYYYYYYYY'}})
+/* => { x: 'X', y: { y1: 'Y', y2: 'YY', y3: 'YYYYYYYYY' }, z: 'ZZZ' }
+*/
+```
+
+`defaults`だと`y.y3`が追加されません。
+
+#### 💀上書きする/しないロジック指定
+
+文字数が多い方で上書きするロジックの場合です。
+
+```js
+const input = {x: 'X', y: 'YY', z: 'ZZZ'}
+_.assignWith(
+  input, {x: 'XXX', y: 'YY'}, {z: 'Z'},
+  (obj, src) => obj.length > src.length ? obj : src
+)
+/* => { x: 'XXX', y: 'YY', z: 'ZZZ' }
+*/
+```
+
+
+### 💀Objectのkey-valueをマージする `{} -> {}`
+
+#### 💀通常
+
+各valueがArrayまたはObjectであるとき、内容をマージします。
+
+```js
+const input = {x: {x1: 'X'}, y: 'Y'}
+_.merge(input, {x: {x2: 'XX'}, y: 'YY'})
+/* => { x: { x1: 'X', x2: 'XX' }, y: 'YY' }
+*/
+```
+
+`_.assign`の場合、結果は以下になり挙動の違いを確認できます。
+
+```js
+{ x: { x2: 'XX' }, y: 'YY' }
+```
+
+#### 💀マージロジックを指定
+
+マージする2つの値をJSON文字列にして結合するロジックに変更した例です。
+
+```js
+const mergeAsJsonString = (obj, src) => JSON.stringify(obj) + JSON.stringify(src)
+
+const input = {x: {x1: 'X'}, y: 'Y'}
+_.mergeWith(input, {x: {x2: 'XX'}, y: 'YY'}, mergeAsJsonString)
+/* => { x: '{"x1":"X"}{"x2":"XX"}', y: '"Y""YY"' }
+*/
+```
+
+
+### 💀指定したパスに値を設定する `{} => {}`
+
+#### 💀通常
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.set(input, 'x.y2', 'YYYYYYYYYY')
+/* => { x: { y2: 'YYYYYYYYYY' }, y: { y1: 'Y', y2: 'YY' }, z: 'ZZZ' }
+*/
+```
+
+#### 💀設定ロジックを指定
+
+指定パスの値が存在する場合、その値から更新後の値を設定するロジックを指定できます。
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.update(input, 'y.y2', x => _.repeat(x, 5))
+/* => { x: 'X', y: { y1: 'Y', y2: 'YYYYYYYYYY' }, z: 'ZZZ' }
+*/
+```
+
+#### 💀数字をkeyとして扱う
+
+`a[0]`や`a.0`と指定したとき、`0`をkeyとして扱います。
+
+```js
+const input = {x: 'X', z: 'ZZZ'}
+_.setWith(input, 'y.0', 'YYY', Object)
+/* => { x: 'X', z: 'ZZZ', y: { '0': 'YYY' } }
+*/
+```
+
+`_.set`の場合は以下のようになります。
+
+```js
+_.set(input, 'y.0', 'YYY')
+/* => { x: 'X', z: 'ZZZ', y: [ 'YYY' ] }
+*/
+```
+
+設定ロジックを指定する場合は`_.updateWith`を使います。
+
+```js
+const input = {x: 'X', z: 'ZZZ'}
+_.updateWith(input, 'y.0', x => "dummy", Object)
+/* => { x: 'X', z: 'ZZZ', y: { '0': 'dummy' } }
+*/
+```
+
+
+### 💀指定したパスの値を削除する `{} => {}`
+
+`_.unset`の返却値はプロパティが削除されたかどうかのbooleanです。
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
+_.unset(input, 'y.y2')
+/* => true
+*/
+input
+/* => { x: 'X', y: { y1: 'Y' }, z: 'ZZZ' }
+```
+
+
 その他
 ------
 
@@ -1331,6 +1711,8 @@ _.forEach(input, x => console.log(x*2))
 */
 ```
 
+Nativeの`Array.forEach`で事足りる場合がほとんどです。
+
 #### 末尾から
 
 ```js
@@ -1344,3 +1726,26 @@ _.forEachRight(input, x => console.log(x*2))
 */
 ```
 
+
+### 指定したパスのmethodを実行する `{} => *`
+
+```js
+const input = {x: 'X', y: {y1: 'Y', y2: 'Y-Y'}, z: 'ZZZ'}
+_.invoke(input, 'y.y2.split', '-')
+/* => [ 'Y', 'Y' ]
+*/
+```
+
+`input.y.y2.split('-')`と同じです。
+
+
+総括
+----
+
+Lodashの以下Sectionに属するmethodを用途別に紹介しました。
+
+* Array
+* Collection
+* Object
+
+続きを書くことがあれば、次はFunction版を執筆したいと思っています。
