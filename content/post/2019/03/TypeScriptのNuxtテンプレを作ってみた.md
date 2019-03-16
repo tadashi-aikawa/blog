@@ -173,6 +173,35 @@ $ npm run dev
 
 初回実行時は`tsconfig.json`を作ってよいか聞かれますのでyesを選びます。
 
+{{<error "nuxt.config.ts:1:17 - error TS2307: Cannot find module './package'.">}}
+`import pkg from './package'`でエラーになる場合です。  
+理由は、TypeScriptがjson(package.json)のimportにデフォルトで対応していないからです。
+
+`tsconfig.json`でJsonをモジュールとして読み込む設定をtrueにしましょう。
+```json
+"resolveJsonModule": true,
+```
+
+また、`nuxt.config.js`のimportは拡張子まで指定してください。
+```ts
+import pkg from './package.json'
+```
+
+{{<refer "TypeScript 2\.9 · TypeScript --resolvejsonmodule" "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-9.html#new---resolvejsonmodule">}}
+{{</error>}}
+
+{{<error "Cannot find module '~/components/Logo.vue'.">}}
+`~`から始まるパスをTypeScriptが解決できていません。  
+`tsconfig.json`の`compilerOptions`に以下の設定を追加して、パスを解決できるようにしてください。
+```json
+  "compilerOptions": {
+    "paths": {
+      "~/*": ["./*"]
+    }
+  }
+```
+{{</error>}}
+
 
 TypeScriptのコードにする
 ------------------------
