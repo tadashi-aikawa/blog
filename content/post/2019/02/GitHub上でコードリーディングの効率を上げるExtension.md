@@ -1,5 +1,5 @@
 ---
-title: GiHub上でコードリーディングの効率を上げるExtension
+title: GitHub上でコードリーディングの効率を上げるExtension
 slug: extensions-to-code-reading-efficient-on-github
 date: 2019-02-22T20:26:06+09:00
 thumbnailImage: https://lh3.googleusercontent.com/nYhPnY2I-e9rpqnid9u9aAODz4C04OycEGxqHG5vxFnA35OGmLMrrUmhM9eaHKJ7liB-=w300
