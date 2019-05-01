@@ -31,7 +31,7 @@ sshcodeを使って、どこでもVS Codeを使えるようにしてみました
 * [sshcode]が動作すること
   * 執筆時点だとLinuxとMacOS、WSLはOK。Windowsはダメ(WSL使おう)
 
-💻 接続元の条件続先の条件
+💻 接続先の条件
 
 * [code-server]が動作すること
   * 執筆時点だとLinuxとOS XはOK。Windowsはダメ
