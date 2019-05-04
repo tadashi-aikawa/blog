@@ -14,6 +14,16 @@ sshcodeを使って、どこでもVS Codeを使えるようにしてみました
 
 <!--more-->
 
+{{<alert "danger">}}
+本記事の公開翌日にMicrosoft公式から、同機能の案内がありました。  
+特別な理由が無ければそちらを使うことを推奨します。
+
+それについての記事も書きました。
+
+{{<summary "https://blog.mamansoft.net/2019/05/04/vscode-everywhere-as-official/">}}
+{{</alert>}}
+
+
 <img src="https://dl.dropboxusercontent.com/s/byvuemmupa95tyy/ben-white-138743-unsplas"/>
 
 <!--toc-->
