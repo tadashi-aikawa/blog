@@ -1,6 +1,6 @@
 ---
-title: 公式の本気!! 本当にどこでもVS Code
-slug: vscode-everywhere-as-official
+title: WSL/SSH/Dockerを越えてVSCodeを使う
+slug: vscode-over-wsl-ssh-docker
 date: 2019-05-04T11:52:42+09:00
 thumbnailImage: https://dl.dropboxusercontent.com/s/bqs82plydercwdd/vidit-goswami-684033-unsplash.jpg
 categories:
