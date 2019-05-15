@@ -27,8 +27,8 @@ pygmentsCodefences = true
   picture = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
 
 [params]
-  description = "Hugo tranquilpeak theme demo"
-  coverImage = "https://rr.img.naver.jp/mig?src=http%3A%2F%2Fwww.wallpaper-box.com%2Fsmartphone%2Fwp-content%2Fuploads%2F2012%2F10%2Ff8b6b7d9dad4aaa55b00826bf472e3fd.jpg&twidth=1000&theight=0&qlt=80&res_format=jpg&op=r"
+  description = "Webエンジニアによる エンジニアリング/業務効率化/ガジェット に関するブログ"
+  coverImage = "https://dl.dropboxusercontent.com/s/l96rzrxzd4ztsgy/cover.jpg"
   favicon = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
 
   sidebarBehavior = 2
