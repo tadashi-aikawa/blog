@@ -87,7 +87,7 @@ Action名が分かれば、`Actionの検索`からコマンドを探して実行
 * {{<icon "cog">}} `Main menu | Navigate | File`
 * {{<icon "keyboard">}} `Ctrl+j f`
 
-{{<himg "https:/dl.dropboxusercontent.com/s/a7qiol2auh6987f/20190518_6.gif">}}
+{{<himg "https://dl.dropboxusercontent.com/s/a7qiol2auh6987f/20190518_6.gif">}}
 
 ### ファイル内のシンボル検索
 
