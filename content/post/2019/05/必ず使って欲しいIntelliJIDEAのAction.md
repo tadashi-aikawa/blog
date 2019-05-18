@@ -24,7 +24,7 @@ Pythonのケースを扱うので[PyCharm]でも使えると思います。
 --------
 
 IDEはテキストエディタと比べ、非常に沢山の機能があります。  
-一方、その機能を十二分に使いこなせて開発者もそれなりにいると思います。
+一方、その有り余る機能を使いこなせていないと思っている方も多いのではないでしょうか。
 
 そこでIDEで有名な[JetBrains]の製品である[IntelliJ IDEA]について、以下のようにランク分けしてみました。
 
@@ -87,7 +87,7 @@ Action名が分かれば、`Actionの検索`からコマンドを探して実行
 * {{<icon "cog">}} `Main menu | Navigate | File`
 * {{<icon "keyboard">}} `Ctrl+j f`
 
-{{<himg "https://dl.dropboxusercontent.com/s/a7qiol2auh6987f/20190518_6.gif">}}
+{{<himg "https:/dl.dropboxusercontent.com/s/a7qiol2auh6987f/20190518_6.gif">}}
 
 ### ファイル内のシンボル検索
 
