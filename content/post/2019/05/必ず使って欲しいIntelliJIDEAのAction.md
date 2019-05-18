@@ -205,7 +205,7 @@ GIFの前半は`宣言に移動`の挙動です。後半で本Actionを使って
 
 * {{<icon "comment">}} `『(Backで少し戻って確認した上で) さっきのところに戻ってもらって...』`
 * {{<icon "cog">}} `Main menu | Navigate | Back`
-* {{<icon "keyboard">}} `Alt+←`
+* {{<icon "keyboard">}} `Alt+→`
 
 `1つ前に戻る`で戻った箇所のコードを確認したとき、その逆を辿って元のコードに戻るため使います。
 
