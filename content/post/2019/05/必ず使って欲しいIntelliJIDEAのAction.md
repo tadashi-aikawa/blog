@@ -163,6 +163,18 @@ Action名が分かれば、`Actionの検索`からコマンドを探して実行
 
 本記事では紹介しませんが、ファイルを保存したときに自動でインポートが最適化されるとベストですね😄
 
+### 意図したアクションの提案
+
+* {{<icon "comment">}} `『そのエラー消しましょ.. (そうじゃなくて..そこでクイックフィックスして..)』`
+* {{<icon "cog">}} `Other | Show Intention Actions`
+* {{<icon "keyboard">}} `Alt+Enter`
+
+Eclipseではクイックフィックスと呼ばれていた機能です。
+
+{{<himg "https://dl.dropboxusercontent.com/s/7ly014ae4sd0jgp/20190518_12.gif">}}
+
+Import文の自動補完は便利なので是非使いましょう。
+
 
 移動系
 ------
