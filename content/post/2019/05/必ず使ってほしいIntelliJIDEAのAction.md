@@ -61,10 +61,15 @@ Action名が分かれば、`Actionの検索`からコマンドを探して実行
 {{</why>}}
 
 
-
 ### 対象外とするAction
 
 一般的なテキストエディタなどでも使える機能.. 例えば`Ctrl+z`でUndo、`Ctrl+f`で検索といったものは除外します。
+
+
+### 環境
+
+* OSはWindows
+* IntelliJ IDEAのバージョンは2019.1 (Ultimate Edition)
 
 
 検索系
