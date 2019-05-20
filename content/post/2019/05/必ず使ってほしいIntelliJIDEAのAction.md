@@ -1,5 +1,5 @@
 ---
-title: 必ず使って欲しいIntelliJ IDEAのAction
+title: 必ず使ってほしいIntelliJ IDEAのAction
 slug: requirements-idea-actions
 date: 2019-05-18T17:47:12+09:00
 thumbnailImage: https://dl.dropboxusercontent.com/s/1ly6ljj1rgna7sy/asian-1839802_1280.jpg
@@ -10,7 +10,7 @@ tags:
   - pycharm
 ---
 
-[IntelliJ IDEA]で必ず使って欲しいActionをまとめてみました。  
+[IntelliJ IDEA]で必ず使ってほしいActionをまとめてみました。  
 Pythonのケースを扱うので[PyCharm]でも使えると思います。
 
 <!--more-->
@@ -30,9 +30,9 @@ IDEはテキストエディタと比べ、非常に沢山の機能がありま�
 
 | ランク |               意味               |
 | ------ | -------------------------------- |
-| A      | 必ず使って欲しい                 |
-| B      | 特別な理由がなければ使って欲しい |
-| C      | できれば使って欲しい             |
+| A      | 必ず使ってほしい                 |
+| B      | 特別な理由がなければ使ってほしい |
+| C      | できれば使ってほしい             |
 | D      | どちらでもよい                   |
 
 ランクAとBは使わないと生産性が著しく下がると思います。ペアプロやモブプロ、レビューでは是非使いましょう。  
@@ -215,7 +215,7 @@ GIFの前半は`宣言に移動`の挙動です。後半で本Actionを使って
 総括
 ----
 
-[IntelliJ IDEA]で必ず使って欲しいランクAのActionを紹介しました。
+[IntelliJ IDEA]で必ず使ってほしいランクAのActionを紹介しました。
 
 次はランクBの紹介を予定しています。
 
