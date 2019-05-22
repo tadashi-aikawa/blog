@@ -44,6 +44,10 @@ IDEはテキストエディタと比べ、非常に沢山の機能がありま�
 {{<summary "https://blog.mamansoft.net/2019/05/20/recommended-idea-actions/">}}
 {{</update>}}
 
+{{<update "2019-05-22: ランクCの記事を書きました">}}
+{{<summary "https://blog.mamansoft.net/2019/05/22/idea-actions-if-possible/">}}
+{{</update>}}
+
 ### 書き方のルール
 
 できるだけ実際の業務中のようなシチュエーションを想定したいので、Actionごとに以下を記載します。
