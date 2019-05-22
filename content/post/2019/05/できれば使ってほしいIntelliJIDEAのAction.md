@@ -29,7 +29,7 @@ Pythonのケースを扱うので[PyCharm]でも使えると思います。
 
 続編を書くつもりはあまり無かったのですが、日本の公式アカウントにリツイートいただけたので頑張ってみました😄
 
-{{<summary "https://twitter.com/jetbrainsjp">}}
+<a class="twitter-timeline" data-height="400" data-width="400" data-theme="dark" href="https://twitter.com/jetbrainsjp?ref_src=twsrc%5Etfw">Tweets by jetbrainsjp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 以前に定義したランクに対して、本記事では **ランクC** のみを紹介します。
 
