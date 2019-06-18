@@ -22,7 +22,7 @@ VS Codeがリモート対応し始めたので試してみました。
 問題の生じる可能性が通常版より高いことを理解した上でお試し下さい。
 {{</warn>}}
 
-{{<update "2019-06-18: 現在はVSCode安定版に本機能が取り入れました">}}
+{{<update "2019-06-18: 現在はVSCode安定版に本機能が取り入れられました">}}
 Visual Studio Code Insidersのインストールは必要ありません。
 記事中のVisual Studio Code Insidersは、通常のVSCodeに置き換えてお読み下さい。
 {{</update>}}
