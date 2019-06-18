@@ -17,10 +17,15 @@ VS Codeがリモート対応し始めたので試してみました。
 
 <!--more-->
 
-{{<warn "2019-05-04現在 本記事で使用する機能は安定版ではありません!!">}}
+{{<warn "2019-05-04: 現在 本記事で使用する機能は安定版ではありません!!">}}
 公式にも記載がある通り、本記事で使用するVS Codeおよび拡張機能は2019-05-04現在安定版ではありません。  
 問題の生じる可能性が通常版より高いことを理解した上でお試し下さい。
 {{</warn>}}
+
+{{<update "2019-06-18: 現在はVSCode安定版に本機能が取り入れました">}}
+Visual Studio Code Insidersのインストールは必要ありません。
+記事中のVisual Studio Code Insidersは、通常のVSCodeに置き換えてお読み下さい。
+{{</update>}}
 
 
 <img src="https://dl.dropboxusercontent.com/s/bqs82plydercwdd/vidit-goswami-684033-unsplas"/>
