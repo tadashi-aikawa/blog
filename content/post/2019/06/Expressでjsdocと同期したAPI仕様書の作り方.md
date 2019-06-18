@@ -6,7 +6,11 @@ thumbnailImage: https://dl.dropboxusercontent.com/s/9p88u3wlb9ypp2b/howling-red-
 categories:
   - engineering
 tags:
-  - Tags
+  - open-api
+  - swagger
+  - express
+  - nodejs
+  - javascript
 ---
 
 [Express]で作成したAPIの仕様書を[Swagger UI]を使って作りました。
