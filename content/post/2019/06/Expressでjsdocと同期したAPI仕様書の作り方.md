@@ -213,7 +213,7 @@ API仕様が記載されたjsdocの部分です。
 ```javascript
 /**
  * @swagger
- * /hello
+ * /hello:
  *   get:
  *     description: こんにちはと挨拶してくれます
  *     produces:
