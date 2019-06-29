@@ -11,7 +11,7 @@ tags:
   - pycharm
 ---
 
-仮想マシン内のPythonプロジェクトを[IntelliJ IDEA]で開発できるようにしてみました。
+仮想マシン(Ubuntu)のPythonプロジェクトを、ホスト(Windows)の[IntelliJ IDEA]で開発できるようにしてみました。
 
 <!--more-->
 
