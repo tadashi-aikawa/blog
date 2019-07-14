@@ -1,5 +1,4 @@
 ---
-draft: true
 title: MkDocsでmarkdownなサイト作り
 slug: create-site-markdown-by-mkdocs
 date: 2019-07-07T23:37:26+09:00
@@ -106,24 +105,137 @@ Material for MkDocs
 [Material for MkDocs]は抱負なExtentionにも対応しています。  
 以下のExtentionを利用しています。
 
-| Extention名  |             説明             |
-| ------------ | ---------------------------- |
-| [Admonition] | Info, Warning, Errorなど     |
-| [CodeHilite] | ソースコードのハイライト表示 |
-| [Footnotes]  | 注釈                         |
-| [Permalinks] | パーマリンクを埋め込み       |
-| [PyMdown.MagicLink] | URLなどを自動でリンク化 |
+|      Extention名      |                          説明                          |
+| --------------------- | ------------------------------------------------------ |
+| [Admonition]          | Info, Warning, Errorなど                               |
+| [CodeHilite]          | ソースコードのハイライト表示                           |
+| [Footnotes]           | 注釈                                                   |
+| [Permalinks]          | パーマリンクを埋め込み                                 |
+| [PyMdown.MagicLink]   | URLなどを自動でリンク化                                |
+| [PyMdown.Details]     | [Admonition]を折りたたみ可能にする                     |
+| [PyMdown.SuperFences] | [Admonition]の中でもcode fence blockが使えるようにする |
 
 [Admonition]: https://squidfunk.github.io/mkdocs-material/extensions/admonition/
 [CodeHilite]: https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
 [Footnotes]: https://squidfunk.github.io/mkdocs-material/extensions/footnotes/
 [Permalinks]: https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
 [PyMdown.MagicLink]: https://squidfunk.github.io/mkdocs-material/extensions/pymdown/#magiclink
+[PyMdown.Details]: https://squidfunk.github.io/mkdocs-material/extensions/pymdown/#details
+[PyMdown.SuperFences]: https://squidfunk.github.io/mkdocs-material/extensions/pymdown/#superfences
+
+
+要件について
+------------
+
+先ほど挙げた要件は以下のように満たせます。
+
+### 1. 全文検索ができる
+
+[Material for MkDocs]は検索も提供しています。  
+他にpluginを使っていなければ特別な設定はいりません。
+
+もし日本語を使う場合は`mkdocs.yml`の`extra.search.language`に設定が必要です。
+
+```yaml
+extra:
+  search:
+    language: 'en, ja'
+```
+
+### 2. マクロ構文が使える
+
+プラグインを使うと、Pythonを利用したマクロが定義できます。
+
+{{<summary "https://github.com/fralau/mkdocs_macros_plugin">}}
+
+この話をすると長くなるため、別の機会に紹介させてください。
+
+{{<info "Mimizou Roomで使っているマクロのイメージ">}}
+以下のようなMarkdownを書くと
+
+https://raw.githubusercontent.com/tadashi-aikawa/mimizou-room/master/docs/IT_Note/tools/mkdocs/index.md
+
+以下のページのようになります。
+
+https://mimizou.mamansoft.net/it_note/tools/mkdocs/
+{{</info>}}
+
+### 3. 追尾型の見出しに対応している
+
+デフォルトで使用できます。
+
+### 4. デザインが格好いい
+
+[Material for MkDocs] カッコイイ( ´▽｀)
+
+### 5. 基本的にMarkdownで完結する
+
+一部、特殊表記もありますが基本はMarkdownです。
+
+新しくファイルやディレクトリを追加しても、設定(`mkdocs.yml`)を変更する必要はありません😄
+
+### 6. バージョン管理できる
+
+GitHubで管理しています。
+
+### 7. レスポンシブ対応(スマホ対応)
+
+[Material for MkDocs]は対応しています👍
+
+
+ビルド
+------
+
+### 開発中
+
+```
+$ mkdocs serve
+```
+
+localhostとポート番号をアクセスして確認できます。  
+ファイルを変更すると自動でリロードします。
+
+`--dirtyreload`オプションを指定すると、変更時に影響あるファイルだけリビルドします。  
+見出しが一部バグりますが、それさえ許容出来れば確認速度が上がります。
+
+### 本番用
+
+```
+$ mkdocs build
+```
+
+`site`ディレクトリに成果物ができます。
+
+
+デプロイ
+--------
+
+`site`ディレクトリをpublishして終わりです。
+
+私のサイトでは[Netlify]を使っています。
+
+{{<file "netlify.toml">}}
+```toml
+[build]
+command = "mkdocs build"
+publish = "site"
+```
+{{</file>}}
 
 
 
 総括
 ----
+
+[MkDocs]を使って、Markdownがメインのサイトを作成するノウハウを紹介しました。
+
+記事内にもあったように、マクロの部分は別の機会で紹介させていただければと思います。
+
+Mimizou Roomには[MkDocs]に関する情報も記載しています。
+
+{{<summary "https://mimizou.mamansoft.net/it_note/tools/mkdocs/">}}
+
+よろしければ覗いてみてください😃
 
 
 [MkDocs]: https://www.mkdocs.org/
@@ -131,3 +243,4 @@ Material for MkDocs
 [Hugo]: https://gohugo.io/
 [Jumeaux]: https://tadashi-aikawa.github.io/jumeaux/
 [Material for MkDocs]: https://squidfunk.github.io/mkdocs-material/
+[Netlify]: https://www.netlify.com/
