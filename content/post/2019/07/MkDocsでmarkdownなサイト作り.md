@@ -8,6 +8,7 @@ categories:
 tags:
   - mkdocs
   - python
+  - markdown
 ---
 
 [MkDocs]を使って、Markdownがメインのポートフォリオ/ノウハウサイトを作成してみました。
