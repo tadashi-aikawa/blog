@@ -13,8 +13,6 @@ tags:
 
 <!--more-->
 
-<img src="https://www.autohotkey.com/assets/images/ahk-logo-no-text241x78-180.png"/>
-
 <!--toc-->
 
 
