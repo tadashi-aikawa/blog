@@ -63,7 +63,7 @@ AutoHotKey
 ### 任意座標のウィンドウを取得する
 
 任意のx,y座標を指定したとき、そのウィンドウハンドラを取得する関数を作ります。  
-[AutoHotKey]にそのような関数は用意されいないため、`DllCall`でWindowsのDllを呼び出します。
+[AutoHotKey]にそのような関数は用意されていないため、`DllCall`でWindowsのDllを呼び出します。
 
 
 ```ahk
