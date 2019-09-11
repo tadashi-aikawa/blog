@@ -2,7 +2,7 @@
 title: AutoHotKeyで特定領域のウィンドウをアクティブにする
 slug: activate-window-in-area-by-autohotkey
 date: 2019-08-23T07:36:15+09:00
-thumbnailImage: https://www.autohotkey.com/assets/images/ahk-logo-no-text241x78-180.png
+thumbnailImage: https://dl.dropboxusercontent.com/s/4cmg3o1aanpu7o6/juan-gomez-kt-wA0GDFq8-unsplash.jpg
 categories:
   - engineering
 tags:
@@ -12,6 +12,8 @@ tags:
 [AutoHotKey]を使って、特定領域のウィンドウをアクティブにするスクリプトを書いてみました。
 
 <!--more-->
+
+<img src="https://dl.dropboxusercontent.com/s/4cmg3o1aanpu7o6/juan-gomez-kt-wA0GDFq8-unsplas"/>
 
 <!--toc-->
 
