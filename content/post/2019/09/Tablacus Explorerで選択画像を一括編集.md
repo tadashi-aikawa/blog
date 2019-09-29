@@ -7,11 +7,13 @@ thumbnailImage: https://dl.dropboxusercontent.com/s/q3eafc0rtnumkw6/cheryl-winn-
 categories:
   - engineering
 tags:
-  - Tags
+  - tablacus-explorer
+  - irfan-view
+  - bat
 ---
 
 [Tablacus Explorer]上で複数画像ファイルに対して一括編集できるような仕組みを作ってみました。  
-本記事では、例してリサイズ(縮小のみ)を扱います。
+本記事では、例としてリサイズ(縮小のみ)を扱います。
 
 <!--more-->
 
