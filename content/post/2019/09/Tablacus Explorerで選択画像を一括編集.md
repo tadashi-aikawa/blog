@@ -62,7 +62,7 @@ Irfan Viewのコマンドラインオプション
 
 `/resize`コマンドが使えるなら、以下が一番シンプルだと思います。
 
-```bat
+```cmd
 i_view64.exe c:\*.jpg /resize=(500,300) /convert=d:\temp\*.png
 ```
 
@@ -85,7 +85,7 @@ GUIで言うところの`File` > `Batch conversion/Rename..` > `Advanced`の設�
 
 実はコレ、`/advancedbatch`オプションでCLIコマンドでも実行できます。
 
-```bat
+```cmd
 i_view64.exe c:\*.jpg /advancedbatch /convert=d:\temp\*.png
 ```
 
@@ -100,7 +100,7 @@ i_view64.exe c:\*.jpg /advancedbatch /convert=d:\temp\*.png
 `/ini`オプションで`iniファイルのありか`を指定してやればOKです。  
 たとえばこんな感じでしょうか。
 
-```bat
+```cmd
 i_view64.exe c:\*.jpg /advancedbatch /ini=%Temp% /convert=d:\temp\*.png
 ```
 
@@ -113,7 +113,7 @@ i_view64.exe c:\*.jpg /advancedbatch /ini=%Temp% /convert=d:\temp\*.png
 
 {{<file "iresize.bat">}}
 
-```bat
+```cmd
 @echo off
 setlocal enabledelayedexpansion
 
@@ -180,13 +180,13 @@ batの挙動は本記事の趣旨から逸れるため割愛します。
 カレントディレクトリ配下にある1280x800の`sample1.png`を、640x400にリサイズしたい場合は以下のように実行します。  
 第一引数に長い辺の縮小後ピクセルサイズを指定します。
 
-```bat
+```cmd
 iresize 640 sample1.png
 ```
 
 複数変数やパターンも受けつけます。
 
-```bat
+```cmd
 iresize 640 sample*.png example*.png
 ```
 
