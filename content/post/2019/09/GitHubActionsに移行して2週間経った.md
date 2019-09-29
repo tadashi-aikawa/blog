@@ -203,13 +203,13 @@ jobs:
 
 Pipenvを使う場合の準備です。
 
-<script src="https://gist.github.com/tadashi-aikawa/4b314d137aef1c42395696a73b0a32b8.js"></script>
+<script src="https://gist.github.com/tadashi-aikawa/2bfc154d0d64f4e8b321ff96676dc6a1.js?file=pipenv.yaml"></script>
 
 ### Code Climateでテストレポート登録
 
 テスト結果を[Code Climate]に送る場合です。
 
-<script src="https://gist.github.com/tadashi-aikawa/db21b7d7773f6dadb79b5fef282553da.js"></script>
+<script src="https://gist.github.com/tadashi-aikawa/2bfc154d0d64f4e8b321ff96676dc6a1.js?file=code-climate.yaml"></script>
 
 
 よく使うワークフローファイルのテンプレート
@@ -228,7 +228,7 @@ npmを使ってCIするケースです。
 
 <details>
   <summary>展開する</summary>
-  <script src="https://gist.github.com/tadashi-aikawa/5a9654e362f86231eff2a0e51ce10193.js"></script>
+  <script src="https://gist.github.com/tadashi-aikawa/2bfc154d0d64f4e8b321ff96676dc6a1.js?file=node.yaml"></script>
 </details>
 
 ### Pipenvプロジェクト with Bats
@@ -237,7 +237,7 @@ npmを使ってCIするケースです。
 
 <details>
   <summary>展開する</summary>
-  <script src="https://gist.github.com/tadashi-aikawa/5557d1b4f73b4676ffaa82630ed49438.js"></script>
+  <script src="https://gist.github.com/tadashi-aikawa/2bfc154d0d64f4e8b321ff96676dc6a1.js?file=pipenv-bats.yaml"></script>
 </details>
 
 [Bats]によるCLIテストが不要ならそこだけ削除してください。
