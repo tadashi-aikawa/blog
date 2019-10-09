@@ -98,7 +98,7 @@ $ npx create-nuxt-app nuxt-electron-typescript-sqlite3
 ? Choose rendering mode Single Page App
 ```
 
-せっかくなのでUIフレームワークとして[Electron]を入れます。  
+せっかくなのでUIフレームワークとして[Element]を入れます。  
 他にもAxiosやJest、Prettierを採用していますが本記事では触れません。
 
 インストールが完了したらディレクトリを移動して起動しましょう。
