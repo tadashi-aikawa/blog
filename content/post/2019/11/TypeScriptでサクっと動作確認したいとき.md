@@ -1,0 +1,183 @@
+---
+title: TypeScriptでサクっと動作確認したいとき
+slug: run-typescript-quickly
+date: 2019-11-02T15:20:55+09:00
+thumbnailImage: https://dl.dropboxusercontent.com/s/ic58fske85nwi8p/visit-almaty-wn4d-mvr7fe-unsplash.jpg
+categories:
+  - engineering
+tags:
+  - typescript
+---
+
+TypeScriptでサクっと動作確認したいときのTipsをまとめてみました。
+
+<!--more-->
+
+<img src="https://dl.dropboxusercontent.com/s/ic58fske85nwi8p/visit-almaty-wn4d-mvr7fe-unsplash.jpg"/>
+
+<!--toc-->
+
+
+はじめに
+--------
+
+最小限のコードを書いて、『それがどのように動くのか』確認したいケースがあると思います。
+
+しかし、TypeScriptはJavaScriptのようにChrome開発者ツールから気軽に確認できません。  
+そんなときに使えるTipsを3つ紹介します。
+
+
+公式のPlayground
+----------------
+
+TypeScriptの文法や挙動を確認したいなら最適です。
+
+{{<summary "https://www.typescriptlang.org/play/index.html">}}
+
+### メリット
+
+#### 事前準備が不要
+
+ブラウザがあれば動きます。
+
+#### 設定の切り替えが楽
+
+GUIから利用バージョンやConfig設定を切り替えられます。
+
+#### トランスパイル結果がデフォルトで隣に表示される
+
+JavaScriptコードとの対応関係が分かるので勉強になります。
+
+### デメリット
+
+#### 依存packageをインストールできない
+
+packageの動作確認には使えません。
+
+#### 1ファイルしか使えない
+
+複数ファイルやディレクトリは使えません。
+
+#### エディタが使いにくい可能性がある
+
+IntelliJ IDEAやVim、VSCodeといったエディタに比べて機能が物足りないかもしれません。
+
+
+StackBlitz
+----------
+
+Webアプリケーションに特化し、VSCodeベースで作られたオンラインIDEです。
+
+{{<summary "https://stackblitz.com/">}}
+
+詳しい内容は以前記事にしたのでご覧下さい。
+
+{{<summary "https://blog.mamansoft.net/2018/12/02/use-stackblitz/">}}
+
+
+### メリット
+
+#### 事前準備が不要
+
+ブラウザプレビュー、ホットリロードもデフォルトでONになっています。  
+ReactやAngularといったフレームワークもワンクリックで動作確認プロジェクトが作られます。
+
+#### 複数ファイルやディレクトリを扱える
+
+複数ファイル間の動作確認が可能です。
+
+#### エディタがほぼVSCode
+
+Extensionはインストールできませんが、使い勝手はいいですね。
+
+#### 依存packageをインストールできる
+
+サイドメニューからライブラリ名を入力し、Enter押すだけで追加できます。
+
+#### 他の人と共有できる
+
+コードと実行例を誰かに見せたいとき、とても便利です。
+
+#### 埋め込み可能
+
+ブラウザプレビュー付きでプロジェクトを埋め込むことができます。  
+技術系ブログや学習系サイト、質問サイトなどと相性がいいです。
+
+
+### デメリット
+
+#### node.jsプロジェクトは未対応
+
+フロントエンド用であるため、node.jsを使うプロジェクトには未対応です。
+
+#### VSCodeのExtensionがインストールできない
+
+Vimmerにとっては死活問題です😢  
+仮にインストールできてもブラウザのショートカットキーと競合しそうですね。
+
+
+Localに自分で作る
+-----------------
+
+最も自由度が高い方法..それは自分で環境を作ることです🤓
+
+### メリット
+
+#### いつもの環境を利用できる
+
+IntelliJ IDEA + Vimプラグインで開発できる!!😄
+
+#### バージョン管理できる
+
+Localだといつも通りにバージョン管理できます。  
+他の方法でも頑張れば不可能ではありませんが..。
+
+#### 作った環境をプロダクションコードに転用しやすい
+
+Localでコピペすれば終わりです。
+
+### デメリット
+
+#### プロジェクトが無い場合は作る必要がある
+
+フロントエンドは準備が大変なので、StackBlitzを使った方が楽だと思います。
+
+### プロジェクト作成
+
+フロントエンド以外の動作確認をするとき、以下のコマンドでプロジェクトを作成しています。
+
+```
+npm init -y
+npm i -D typescript@rc ts-node prettier
+npx tsc --init
+wget https://gist.githubusercontent.com/tadashi-aikawa/697f228f7b0c1d333e15d887deff8a96/raw/298993fc3e0e9cbcbd08a3cca574a31a22937a49/.prettierrc.yaml
+```
+
+| インストールしたもの |                         用途                          |
+| -------------------- | ----------------------------------------------------- |
+| typescript           | TypeScriptを書くため                                  |
+| ts-node              | tscでコンパイルしなくても直接tsファイルを実行するため |
+| prettier             | 自動でフォーマットをかけるため                        |
+
+個人的な好みでeslintはインストールしていません。
+
+テストを書きたい場合はJestを追加します。
+
+```
+npm i -D jest ts-jest @types/jest
+npx ts-jest config:init
+```
+
+
+総括
+----
+
+TypeScriptでサクっと動作確認したいときのTipsをまとめてみました。
+
+|       Tips        |                    個人的なオススメ用途                    |
+| ----------------- | ---------------------------------------------------------- |
+| 公式のPlayground  | TypeScriptの動作確認                                       |
+| StackBlitz        | フロントエンド開発の動作確認 (特にUIフレームワーク)        |
+| Localに自分で作る | バックエンド開発の動作確認 or いつものエディタ/IDE使いたい |
+
+状況と用途に応じて使い分けていきたいですね😄
