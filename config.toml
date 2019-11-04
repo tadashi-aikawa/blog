@@ -12,6 +12,9 @@ enableEmoji = true
 pygmentsUseClasses = true
 pygmentsCodefences = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [permalinks]
   post = ":year/:month/:day/:slug/"
 
@@ -77,12 +80,18 @@ pygmentsCodefences = true
   url = "/"
 [[menu.main]]
   weight = 2
+  identifier = "search"
+  name = "Search"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-search\"></i>"
+  url = "/search"
+[[menu.main]]
+  weight = 3
   identifier = "categories"
   name = "Categories"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-bookmark\"></i>"
   url = "/categories"
 [[menu.main]]
-  weight = 3
+  weight = 4
   identifier = "tags"
   name = "Tags"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-tags\"></i>"
@@ -106,22 +115,3 @@ pygmentsCodefences = true
   name = "RSS"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\"></i>"
   url = "/index.xml"
-
-[[menu.misc]]
-  weight = 1
-  identifier = "jumeaux"
-  name = "Jumeaux"
-  pre = "<img src=\"https://tadashi-aikawa.github.io/jumeaux/img/logo.png\" width=30 class=\"sidebar-button-icon\">"
-  url = "https://tadashi-aikawa.github.io/jumeaux"
-[[menu.misc]]
-  weight = 2
-  identifier = "miroir"
-  name = "Miroir"
-  pre = "<img src=\"https://github.com/tadashi-aikawa/miroir/blob/master/src/assets/miroir-inverse.png?raw=true\" width=30 class=\"sidebar-button-icon\">"
-  url = "https://tadashi-aikawa.github.io/miroir"
-[[menu.misc]]
-  weight = 3
-  identifier = "gowl"
-  name = "Gowl"
-  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-horse\"></i>"
-  url = "https://github.com/tadashi-aikawa/gowl"
