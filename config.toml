@@ -23,49 +23,6 @@ pygmentsCodefences = true
   bio = "Productivity creator"
   picture = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
 
-[params]
-  description = "Webエンジニアによる エンジニアリング/業務効率化/ガジェット に関するブログ"
-  coverImage = "https://dl.dropboxusercontent.com/s/l96rzrxzd4ztsgy/cover.jpg"
-  favicon = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
-
-  sidebarBehavior = 2
-  thumbnailImage = true
-  thumbnailImagePosition = "left"
-  autoThumbnailImage = true
-  imageGallery = true
-  hierarchicalCategories = true
-
-  [[params.customJS]]
-    src = "//cdn.embedly.com/widgets/platform.js"
-    async = true
-
-  [[params.customJS]]
-    src = "https://use.fontawesome.com/releases/v5.6.1/js/all.js"
-    async = true
-
-  [[params.customJS]]
-    src = "https://use.fontawesome.com/releases/v5.6.1/js/v4-shims.js"
-    async = true
-
-  [[params.customCSS]]
-    href = "css/mystyle.css"
-
-  [[params.sharingOptions]]
-    name = "Facebook"
-    icon = "fa-facebook-official"
-    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
-
-  [[params.sharingOptions]]
-    name = "Twitter"
-    icon = "fa-twitter"
-    url = "https://twitter.com/intent/tweet?text=%s"
-
-  [[params.sharingOptions]]
-    name = "Google+"
-    icon = "fa-google-plus"
-    url = "https://plus.google.com/share?url=%s"
-
-
 [[menu.main]]
   weight = 1
   identifier = "home"
@@ -109,3 +66,49 @@ pygmentsCodefences = true
   name = "RSS"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\"></i>"
   url = "/index.xml"
+
+[params]
+  description = "Webエンジニアによる エンジニアリング/業務効率化/ガジェット に関するブログ"
+  coverImage = "https://dl.dropboxusercontent.com/s/l96rzrxzd4ztsgy/cover.jpg"
+  favicon = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
+
+  sidebarBehavior = 2
+  thumbnailImage = true
+  thumbnailImagePosition = "left"
+  autoThumbnailImage = true
+  imageGallery = true
+  hierarchicalCategories = true
+
+  [params.header.rightLink]
+    url = "/search"
+    icon = "search"
+
+  [[params.customJS]]
+    src = "//cdn.embedly.com/widgets/platform.js"
+    async = true
+
+  [[params.customJS]]
+    src = "https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+    async = true
+
+  [[params.customJS]]
+    src = "https://use.fontawesome.com/releases/v5.6.1/js/v4-shims.js"
+    async = true
+
+  [[params.customCSS]]
+    href = "css/mystyle.css"
+
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fa-facebook-official"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+  [[params.sharingOptions]]
+    name = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com/intent/tweet?text=%s"
+
+  [[params.sharingOptions]]
+    name = "Google+"
+    icon = "fa-google-plus"
+    url = "https://plus.google.com/share?url=%s"
