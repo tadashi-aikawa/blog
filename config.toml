@@ -20,13 +20,7 @@ pygmentsCodefences = true
 
 [author]
   name = "Tadashi Aikawa"
-  bio = """
-  <div style="color: #55acee; font-size: 150%;">
-    <a href="https://twitter.com/Tadashi_MAMAN">
-      <i class="fab fa-twitter" aria-hidden="true"></i> Twitter
-    </a>
-  </div>
-  """
+  bio = "Productivity creator"
   picture = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
 
 [params]
