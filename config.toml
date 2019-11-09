@@ -85,15 +85,12 @@ pygmentsCodefences = true
 
   [[params.customJS]]
     src = "//cdn.embedly.com/widgets/platform.js"
-    async = true
 
   [[params.customJS]]
     src = "https://use.fontawesome.com/releases/v5.6.1/js/all.js"
-    async = true
 
   [[params.customJS]]
     src = "https://use.fontawesome.com/releases/v5.6.1/js/v4-shims.js"
-    async = true
 
   [[params.customCSS]]
     href = "css/mystyle.css"
