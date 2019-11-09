@@ -21,10 +21,10 @@ Vue.component("search-result-item", {
   <div style="display: flex;">
     <div>
       <a :href="url">
-        <img alt="" itemprop="image" :src="image" style="min-width: 200px; max-width: 200px; border-radius: 10%;">
+        <img alt="" itemprop="image" :src="image" class="image">
       </a>
     </div>
-    <div style="width: 480px; padding: 10px 0 10px 30px;">
+    <div class="description">
       <a :href="url" v-text="title" style="font-weight: bold;"></a>
       <div v-text="contents" class="contents"></div>
       <div class="date" v-text="date"></div>

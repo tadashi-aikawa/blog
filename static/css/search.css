@@ -29,3 +29,23 @@
   color: darkgrey;
   font-size: 75%;
 }
+
+.post .post-content .image {
+  min-width: 200px;
+  max-width: 200px;
+  border-radius: 10%;
+}
+.description {
+  width: 480px;
+  padding: 10px 0 10px 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .post .post-content .image {
+    display: none;
+  }
+  .description {
+    width: 300px;
+    padding: 5px 0 5px 15px;
+  }
+}
