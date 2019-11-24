@@ -404,6 +404,36 @@ CSSファイルの追加
 
 時間があるときに改善していければと🌻
 
+{{<update "2019-11-24: AND検索に対応しました">}}
+`search.js`の`app`を以下のようにします。
+
+```js
+const search = (words, fuse) =>
+  _.intersectionBy(...words.map(x => fuse.search(x)), "item.permalink");
+
+const app = new Vue({
+  el: "#app",
+  mounted: async function() {
+    this.fuse = new Fuse((await axios.get("/index.json")).data, fuseOptions);
+  },
+  data: {
+    fuse: {},
+    word: "",
+    results: []
+  },
+  watch: {
+    word: _.debounce(function(word) {
+      this.results = word.length > 0 ? search(word.split(" "), this.fuse) : [];
+    }, 500)
+  }
+});
+```
+
+`item.permalink`で記事の一意性が保証できるため、Lodashの`intersectionBy`で共通部分だけを抽出しています。
+
+{{</update>}}
+
+
 [Hugo]: https://gohugo.io/
 [Tranquilpeak]: https://github.com/kakawait/hugo-tranquilpeak-theme
 [Vue.js]: https://jp.vuejs.org/
