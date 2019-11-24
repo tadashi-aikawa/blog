@@ -33,6 +33,9 @@ Vue.component("search-result-item", {
   </div>`
 });
 
+const search = (words, fuse) =>
+  _.intersectionBy(...words.map(x => fuse.search(x)), "item.permalink");
+
 const app = new Vue({
   el: "#app",
   mounted: async function() {
@@ -45,7 +48,7 @@ const app = new Vue({
   },
   watch: {
     word: _.debounce(function(word) {
-      this.results = word.length > 0 ? this.fuse.search(word) : [];
+      this.results = word.length > 0 ? search(word.split(" "), this.fuse) : [];
     }, 500)
   }
 });
