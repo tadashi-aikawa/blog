@@ -7,7 +7,7 @@ categories:
   - engineering
 tags:
   - markdown
-  - revealjs
+  - reveal.js
 ---
 
 [vscode-reveal]を使って、Markdownでプレゼンテーション用のスライドを作ってみました。
