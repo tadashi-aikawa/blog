@@ -12,7 +12,7 @@ tags:
   - hugo
 ---
 
-Markdownで書かれたドキュメントやブログで気軽に図を描くため、[mermaid]を試してみました。
+Markdownベースのドキュメントやブログで気軽に図を描くため、[mermaid]を試してみました。
 
 <!--more-->
 
@@ -21,7 +21,7 @@ Markdownで書かれたドキュメントやブログで気軽に図を描くた
 <!--toc-->
 
 
-Mermaidとは
+mermaidとは
 -----------
 
 Markdownのような記述で図、表、グラフなどを記載できるJavaScriptライブラリです。  
