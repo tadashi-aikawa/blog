@@ -65,6 +65,7 @@ UserとColorの定義はテストケースによって異なります。
 以下の`measure`関数を使って測定します。
 
 {{<file "performance.ts">}}
+
 ```ts
 const pref = require('perf_hooks').performance;
 
@@ -89,6 +90,7 @@ export function measure<T>(times: number, f: (i: number) => T) {
     console.log(`平均: ${Math.round(results.reduce((x, y) => x + y) / results.length)}ミリ秒`)
 }
 ```
+
 {{</file>}}
 
 Node.jsを使うため、`require('perf_hooks').performance`です。  
@@ -111,6 +113,7 @@ Objectをそのまま使うケース
 ### ソースコード
 
 {{<file "models.ts">}}
+
 ```ts
 type Color = "赤" | "青" | "緑" | "白" | "黒"
 
@@ -121,9 +124,11 @@ export interface User {
     like?: User
 }
 ```
+
 {{</file>}}
 
 {{<file "main.ts">}}
+
 ```ts
 import { measure } from "./performance";
 
@@ -140,6 +145,7 @@ const directTest = (i: number) => ({
 
 measure(5, directTest)
 ```
+
 {{</file>}}
 
 ### 結果
@@ -169,18 +175,24 @@ Constructorを使ってインスタンス生成するケースです。
 ### ソースコード
 
 {{<file "models.ts">}}
+
 ```ts
 type Color = "赤" | "青" | "緑" | "白" | "黒"
 
-
 export class User {
-    constructor(id: number, name: string, color: Color, like?: User) {
-    }
+  constructor(
+    public id: number,
+    public name: string,
+    public color: Color,
+    public like?: User
+  ) {}
 }
 ```
+
 {{</file>}}
 
 {{<file "main.ts">}}
+
 ```ts
 import { measure } from "./performance";
 import {  User } from "./models";
@@ -198,6 +210,7 @@ const directTest = (i: number) => new User(
 
 measure(10, directTest)
 ```
+
 {{</file>}}
 
 
@@ -231,6 +244,7 @@ Colorのソースコード量は増えますが、使う側のコード量は減
 ### ソースコード
 
 {{<file "models.ts">}}
+
 ```ts
 export class Color {
     private static readonly _values: Color[] = []
@@ -264,9 +278,11 @@ export class User {
 }
 
 ```
+
 {{</file>}}
 
 {{<file "main.ts">}}
+
 ```ts
 import { measure } from "./performance";
 import { User, Color } from "./models";
@@ -284,6 +300,7 @@ const directTest = (i: number) => new User(
 
 measure(10, directTest)
 ```
+
 {{</file>}}
 
 
@@ -315,6 +332,7 @@ ConstructorにPartialを使ったケースです。
 ### ソースコード
 
 {{<file "models.ts">}}
+
 ```ts
 export class Color {
     private static readonly _values: Color[] = []
@@ -353,9 +371,11 @@ export class User {
     }
 }
 ```
+
 {{</file>}}
 
 {{<file "main.ts">}}
+
 ```ts
 import { measure } from "./performance";
 import { User, Color } from "./models";
@@ -373,6 +393,7 @@ const directTest = (i: number) => new User({
 
 measure(10, directTest)
 ```
+
 {{</file>}}
 
 
@@ -405,6 +426,7 @@ ConstructorにObjectを放りこむIFに違和感があるため、専用のイ�
 ### ソースコード
 
 {{<file "models.ts">}}
+
 ```ts
 export class Color {
     private static readonly _values: Color[] = []
@@ -447,9 +469,11 @@ export class User {
     }
 }
 ```
+
 {{</file>}}
 
 {{<file "main.ts">}}
+
 ```ts
 import { measure } from "./performance";
 import { User, Color } from "./models";
@@ -467,6 +491,7 @@ const directTest = (i: number) => User.fromObj({
 
 measure(10, directTest)
 ```
+
 {{</file>}}
 
 
@@ -504,6 +529,7 @@ class-transformerについては前回ブログでも紹介していますので
 Userモデルの記載だけ見ると、Objectをそのまま使うケースの次にシンプルで読みやすいです。
 
 {{<file "models.ts">}}
+
 ```ts
 import {  Transform, Type } from "class-transformer"
 
@@ -542,9 +568,11 @@ export class User {
     like?: User
 }
 ```
+
 {{</file>}}
 
 {{<file "main.ts">}}
+
 ```ts
 import { plainToClass } from "class-transformer"
 import "reflect-metadata";
@@ -564,6 +592,7 @@ const directTest = (i: number) => plainToClass(User, {
 
 measure(10, directTest)
 ```
+
 {{</file>}}
 
 
