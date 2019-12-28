@@ -165,7 +165,7 @@ module.exports = {
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@types/node", "@nuxt/types"],
+    "types": ["@types/node", "@nuxt/types"]
   },
   "exclude": ["node_modules"]
 }
