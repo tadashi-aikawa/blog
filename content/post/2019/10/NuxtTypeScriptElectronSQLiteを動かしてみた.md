@@ -29,6 +29,15 @@ tags:
 時間が経過している場合は、必ず公式ドキュメントを確認の上、自己責任で実施してください。
 {{</alert>}}
 
+{{<alert danger>}}
+本記事の内容では、Vuexを扱った場合にStoreが正しく初期化されません。  
+Vuexが必要な場合は、2ヶ月後に書いた↓も併せてご確認ください。
+
+{{<summary "https://blog.mamansoft.net/2019/12/29/nuxt-typescript-electron-sqlite-project2/">}}
+
+ただし、本記事に書かれたハマリポイントに対する原因や対策の経緯は省いています。
+{{</alert>}}
+
 <!--toc-->
 
 
