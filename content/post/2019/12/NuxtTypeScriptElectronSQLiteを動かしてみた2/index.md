@@ -100,7 +100,7 @@ npm i -D @nuxt/typescript-build nuxt-property-decorator
     "sourceMap": true,
     "strict": true,
     "strictPropertyInitialization": false,
-    "skipLibCheck": true, // Elementの名前空の問題
+    "skipLibCheck": true,
     "experimentalDecorators": true,
     "noEmit": true,
     "baseUrl": ".",
@@ -108,7 +108,7 @@ npm i -D @nuxt/typescript-build nuxt-property-decorator
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@types/node", "@nuxt/types"],
+    "types": ["@types/node", "@nuxt/types"]
   },
   "exclude": ["node_modules"]
 }
