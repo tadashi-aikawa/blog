@@ -83,7 +83,7 @@ npm i -D @nuxt/typescript-build nuxt-property-decorator
 
 #### nuxt.config.js:
 
-* `default export {`を`module.exports = `に変更
+* `export default {`を`module.exports = `に変更
 * `buildModules`に`@nuxt/typescript-build`を追加
 
 {{<file "tsconfig.json">}}
