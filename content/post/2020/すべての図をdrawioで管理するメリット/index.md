@@ -1,5 +1,5 @@
 ---
-title: すべての図をDraw.ioで管理するメリット
+title: すべての図をdraw.ioで管理するメリット
 slug: benefits-manage-all-diagrams
 date: 2020-01-06T23:46:29+09:00
 thumbnailImage: https://dl.dropboxusercontent.com/s/nj3bdwjs1us71ty/neven-krcmarek-V4EOZj7g1gw-unsplash.jpg
@@ -11,7 +11,7 @@ tags:
 ---
 
 エンジニアはどのように図の管理をするのがベストなのか..。  
-[Draw.io]という答えが出ましたので紹介します。
+[draw.io]という答えが出ましたので紹介します。
 
 <!--more-->
 
@@ -74,10 +74,10 @@ GUIツールが持つ管理面のデメリットをテキスト管理は解消�
 * GUIツールで細かな編集
 * Markdown/HTMLで表示
 
-そして遂に発見しました！ それが[Draw.io]になります😄
+そして遂に発見しました！ それが[draw.io]になります😄
 
 
-Draw.ioとは
+draw.ioとは
 -----------
 
 プロフェッショナルのための図作成ツール/サービスです。
@@ -95,7 +95,7 @@ Draw.ioとは
   * ローカルストレージで保存できる
 
 
-Draw.ioのメリット
+draw.ioのメリット
 -----------------
 
 以下のURLから試すことができます。
@@ -116,7 +116,7 @@ Draw.ioのメリット
 ### SVGファイルを保存/編集できる
 
 ベクターファイルであるSVGは拡大/縮小しても綺麗に表示されます。  
-しかも、[Draw.io]で保存したSVGファイルは、いつでも[Draw.io]で編集できます✨
+しかも、[draw.io]で保存したSVGファイルは、いつでも[draw.io]で編集できます✨
 
 ### アイコンなどデータセットが沢山ある
 
@@ -214,14 +214,14 @@ HTMLやMarkdownに埋め込んで確認してみると.. 一部の画像が表�
 総括
 ----
 
-エンジニアにとって図を管理するベストなソリューションとして[Draw.io]を紹介しました。  
+エンジニアにとって図を管理するベストなソリューションとして[draw.io]を紹介しました。  
 個人的にはブラウザ版を使ってSVGファイルで編集し、`<object>`タグから参照するのがオススメです。
 
 本記事のMarkdownとSVGファイルは以下にありますので、よろしければ見てみて下さい😺
 
 {{<summary "https://github.com/tadashi-aikawa/blog/tree/master/content/post/2020/%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AE%E5%9B%B3%E3%82%92drawio%E3%81%A7%E7%AE%A1%E7%90%86%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">}}
 
-[Draw.io]: https://about.draw.io/
+[draw.io]: https://about.draw.io/
 [PlantUML]: https://plantuml.com/
 [mermaid]: https://plantuml.com/
 [Hugo]: https://gohugo.io/
