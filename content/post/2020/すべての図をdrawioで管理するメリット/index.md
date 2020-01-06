@@ -214,9 +214,12 @@ HTMLやMarkdownに埋め込んで確認してみると.. 一部の画像が表�
 総括
 ----
 
-エンジニアにとって図を管理するベストなソリューションとして[Draw.io]を紹介しました。
-
+エンジニアにとって図を管理するベストなソリューションとして[Draw.io]を紹介しました。  
 個人的にはブラウザ版を使ってSVGファイルで編集し、`<object>`タグから参照するのがオススメです。
+
+本記事のMarkdownとSVGファイルは以下にありますので、よろしければ見てみて下さい😺
+
+{{<summary "https://github.com/tadashi-aikawa/blog/tree/master/content/post/2020/%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AE%E5%9B%B3%E3%82%92drawio%E3%81%A7%E7%AE%A1%E7%90%86%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">}}
 
 [Draw.io]: https://about.draw.io/
 [PlantUML]: https://plantuml.com/
