@@ -179,7 +179,7 @@ GitHubだとテキストとベクター画像、それぞれで差分確認で�
 
 たとえばこんな図を作ります。
 
-<object type="image/svg+xml" data="20200106_2.svg"></object>
+{{<svg "20200106_2.svg">}}
 
 HTMLやMarkdownに埋め込んで確認してみると.. 一部の画像が表示されません。
 
@@ -204,8 +204,13 @@ HTMLやMarkdownに埋め込んで確認してみると.. 一部の画像が表�
 下記のように記述します。
 
 ```html
-<object type="image/svg+xml" data="20200106_2.svg"></object>
+<object type="image/svg+xml" data="20200106_2.svg" style="width: auto; max-width: 100%;"></object>
 ```
+
+{{<update "2020-01-03: styleを追加">}}
+objectタグを使用する時は`width`と`max-width`の指定が必要です。  
+さもないと、スマホなど横幅が短い画面で表示したときに図が切れてしまいます。
+{{</update>}}
 
 デスクトップアプリで作成したSVGファイルは、URLが相対パスになっていたのでそのままでは使えませんでした。  
 ブラウザアプリで作成したとき埋め込まれる絶対URLにする必要があります。
