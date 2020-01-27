@@ -26,6 +26,12 @@ tags:
 時間が経過している場合は、必ず公式ドキュメントを確認の上、自己責任で実施してください。
 {{</alert>}}
 
+{{<update "2020-01-28: 本記事の内容だけではPackagingに失敗します">}}
+解決策を以下の記事にまとめましたので、そちらもあわせてご覧下さい🙇‍♀
+
+{{<summary "https://blog.mamansoft.net/2020/01/28/cannot-package-election-with-nuxt/">}}
+{{</update>}}
+
 <!--toc-->
 
 
