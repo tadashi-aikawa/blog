@@ -39,28 +39,29 @@ DDDとはドメイン駆動設計(Domain-driven design)の略です。
 ### DDDに関する書籍
 
 この3ヶ月間、私は3つのプロダクトでDDDを試しました。  
-この記事では詳しい話をしませんが、大体のケースでDDDは素晴らしい価値を提供してくれました。
+この記事では触れませんが、ほとんどのケースでDDDは素晴らしい価値を提供してくれました。
 
 そんなDDDを始めるきっかけとなった2つの本を紹介します。
 
 #### エリック・エヴァンスのドメイン駆動設計
 
-一番有名と思われるのがエリック・エヴァンスの本です。  
+一番有名と思われるエリック・エヴァンスの本です。  
 通称エヴァンス本と呼ばれています。
 
 ページ数も多く、お値段もビッグです😏
 
 <table border="0" cellpadding="0" cellspacing="0"><tr><td><div style="border:1px solid #95a5a6;border-radius:.75rem;background-color:#FFFFFF;width:624px;margin:0px;padding:5px;text-align:center;overflow:hidden;"><table><tr><td style="width:300px"><a href="https://hb.afl.rakuten.co.jp/hgc/0bb611af.8b747228.0bb611b0.b536e084/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F11146351%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIzMDB4MzAwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D" target="_blank" rel="nofollow noopener noreferrer" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/0bb611af.8b747228.0bb611b0.b536e084/?me_id=1213310&item_id=14501360&m=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fbook%2Fcabinet%2F1963%2F9784798121963.jpg%3F_ex%3D80x80&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fbook%2Fcabinet%2F1963%2F9784798121963.jpg%3F_ex%3D300x300&s=300x300&t=picttext" border="0" style="margin:2px" alt="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]" title="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]"></a></td><td style="vertical-align:top;width:308px;"><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word"><a href="https://hb.afl.rakuten.co.jp/hgc/0bb611af.8b747228.0bb611b0.b536e084/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F11146351%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIzMDB4MzAwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D" target="_blank" rel="nofollow noopener noreferrer" style="word-wrap:break-word;"  >エリック・エヴァンスのドメイン駆動設計 ソフトウェア開発の実践 （IT　architects’　archive） [ エリック・エヴァンス ]</a><br><span >価格：5720円（税込、送料無料)</span> <span style="color:#BBB">(2020/2/17時点)</span></p><div style="margin:15px;"><a href="https://hb.afl.rakuten.co.jp/hgc/0bb611af.8b747228.0bb611b0.b536e084/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F11146351%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIzMDB4MzAwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D" target="_blank" rel="nofollow noopener noreferrer" style="word-wrap:break-word;"  ><img src="https://static.affiliate.rakuten.co.jp/makelink/rl.svg" style="float:left;max-height:27px;width:auto;margin-top:5px"></a><a href="https://hb.afl.rakuten.co.jp/hgc/0bb611af.8b747228.0bb611b0.b536e084/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F11146351%2F%3Fscid%3Daf_pc_bbtn&m=%3Fscid%3Daf_pc_bbtn&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIzMDB4MzAwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ==" target="_blank" rel="nofollow noopener noreferrer" style="word-wrap:break-word;"  ><div style="float:right;width:50%;height:32px;background-color:#bf0000;color:#fff !important;font-size:14px;font-weight:500;line-height:32px;margin-left:1px;padding: 0 12px;border-radius:16px;cursor:pointer;text-align:center;">楽天で購入</div></a></div></td><tr></table></div><br><p style="color:#000000;font-size:12px;line-height:1.4em;margin:5px;word-wrap:break-word"></p></td></tr></table>
 
-内容は充実しており素晴らしいです。しかし、内容が難しすぎます。  
-恐らく以下のすべてを満たさない方は躓く可能性が高く、いずれも満たさないと早々にドロップしてしまうと思います。
+内容は素晴らしいです.. しかし、難しすぎます😓
 
-* オブジェクト指向を理解していない
-* 本の内容で例に出されるドメイン知識がない
-* 意思をもつ設計をしたことがない
-* 同じシステムを1年以上開発し続けたことがない
+以下のすべてを満たさない方は躓く可能性が高いです。  
+1つも条件を満たさない方へは読むこと自体をオススメしません..。
 
-幸い私は、独学で築き上げた独自の設計感とDDDの思想が近かったため、最後まで読み進めることができました。
+* オブジェクト指向を理解している
+* 本の中で例に出されているドメインの知識がある
+* 設計をしたことがある
+* 同じシステムを1年以上開発し続けたことがある
+
 
 #### ドメイン駆動設計入門
 
@@ -70,7 +71,7 @@ DDDとはドメイン駆動設計(Domain-driven design)の略です。
 <table border="0" cellpadding="0" cellspacing="0"><tr><td><div style="border:1px solid #95a5a6;border-radius:.75rem;background-color:#FFFFFF;width:624px;margin:0px;padding:5px;text-align:center;overflow:hidden;"><table><tr><td style="width:300px"><a href="https://hb.afl.rakuten.co.jp/hgc/0bb611af.8b747228.0bb611b0.b536e084/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16167672%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIzMDB4MzAwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D" target="_blank" rel="nofollow noopener noreferrer" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/0bb611af.8b747228.0bb611b0.b536e084/?me_id=1213310&item_id=19881333&m=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fbook%2Fcabinet%2F0727%2F9784798150727.jpg%3F_ex%3D80x80&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fbook%2Fcabinet%2F0727%2F9784798150727.jpg%3F_ex%3D300x300&s=300x300&t=picttext" border="0" style="margin:2px" alt="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]" title="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]"></a></td><td style="vertical-align:top;width:308px;"><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word"><a href="https://hb.afl.rakuten.co.jp/hgc/0bb611af.8b747228.0bb611b0.b536e084/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16167672%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIzMDB4MzAwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D" target="_blank" rel="nofollow noopener noreferrer" style="word-wrap:break-word;"  >ドメイン駆動設計入門 ボトムアップでわかる！ドメイン駆動設計の基本 [ 成瀬 允宣 ]</a><br><span >価格：3520円（税込、送料無料)</span> <span style="color:#BBB">(2020/2/17時点)</span></p><div style="margin:15px;"><a href="https://hb.afl.rakuten.co.jp/hgc/0bb611af.8b747228.0bb611b0.b536e084/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16167672%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIzMDB4MzAwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ%3D%3D" target="_blank" rel="nofollow noopener noreferrer" style="word-wrap:break-word;"  ><img src="https://static.affiliate.rakuten.co.jp/makelink/rl.svg" style="float:left;max-height:27px;width:auto;margin-top:5px"></a><a href="https://hb.afl.rakuten.co.jp/hgc/0bb611af.8b747228.0bb611b0.b536e084/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16167672%2F%3Fscid%3Daf_pc_bbtn&m=%3Fscid%3Daf_pc_bbtn&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIzMDB4MzAwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowfQ==" target="_blank" rel="nofollow noopener noreferrer" style="word-wrap:break-word;"  ><div style="float:right;width:50%;height:32px;background-color:#bf0000;color:#fff !important;font-size:14px;font-weight:500;line-height:32px;margin-left:1px;padding: 0 12px;border-radius:16px;cursor:pointer;text-align:center;">楽天で購入</div></a></div></td><tr></table></div><br><p style="color:#000000;font-size:12px;line-height:1.4em;margin:5px;word-wrap:break-word"></p></td></tr></table>
 
 本書が発売されたのは数日前であり、まだ読み切っていません。  
-ただ、著者であるnrsさんが運営されている以下ページにはお世話になりました。
+ただ、著者nrsさんが運営されているサイトにはお世話になりました。
 
 {{<summary "https://nrslib.com/bottomup-ddd/">}}
 
@@ -92,7 +93,7 @@ DDDとはドメイン駆動設計(Domain-driven design)の略です。
 {{</warn>}}
 
 値オブジェクトの詳細については割愛します。  
-nrsさんの以下がオススメですので、理解を深めたいことは是非読んでみてください😄
+nrsさんの以下がオススメですので、理解を深めたい方は是非読んでみてください😄
 
 {{<summary "https://nrslib.com/bottomup-ddd/#outline__3_1">}}
 
@@ -109,14 +110,14 @@ TypeScriptのバージョンは3.7.5です。
 import { shallowEqual } from 'shallow-equal-object';
 
 export abstract class AbstractValueObject<T> {
-  protected readonly _value: T | undefined;
+  protected readonly _value: T;
 
-  protected constructor(_value?: T) {
+  protected constructor(_value: T) {
     this._value = Object.freeze(_value);
   }
 
   equals(vo?: AbstractValueObject<T>): boolean {
-    if (vo == null || vo._value == null) {
+    if (vo == null) {
       return false;
     }
     return shallowEqual(this._value, vo._value);
@@ -131,9 +132,9 @@ export abstract class AbstractValueObject<T> {
 唯一のプロパティ`_value`を`Object.freeze`することで変更不可能にしています。
 
 ```ts
-  protected readonly _value: T | undefined;
+  protected readonly _value: T;
 
-  protected constructor(_value?: T) {
+  protected constructor(_value: T) {
     this._value = Object.freeze(_value);
   }
 ```
@@ -146,11 +147,11 @@ export abstract class AbstractValueObject<T> {
 ### 全ての要素が等しい場合のみ等しくする
 
 値オブジェクトの等価判定でよく使う処理です。  
-比較対象が値を持っており、直下のプロパティ同士が完全に等価である場合のみ`true`を返します。
+直下のプロパティ同士が完全に等価である場合のみ`true`を返します。
 
 ```ts
   equals(vo?: AbstractValueObject<T>): boolean {
-    if (vo == null || vo._value == null) {
+    if (vo == null) {
       return false;
     }
     return shallowEqual(this._value, vo._value);
@@ -164,9 +165,9 @@ export abstract class AbstractValueObject<T> {
 {{<why "_valueやコンストラクタがprotectedなのはなぜ?">}}
 
 ```ts
-  protected readonly _value: T | undefined;
+  protected readonly _value: T;
 
-  protected constructor(_value?: T) {
+  protected constructor(_value: T) {
     this._value = Object.freeze(_value);
   }
 ```
@@ -190,7 +191,7 @@ export abstract class ValueObject<T extends ValueObjectProps> extends AbstractVa
 ```
 
 `T`は値オブジェクトがもつ`[index: string]: any`型を継承したプロパティです。  
-以下のように継承して利用します。
+以下のようにクラスを作成します。
 
 ```ts
 interface UserProps {
@@ -204,7 +205,7 @@ class User extends ValueObject<UserProps> {
   }
 
   get name(): string {
-    return this._value!.name;
+    return this._value.name;
   }
 }
 ```
@@ -231,7 +232,7 @@ console.log(ichiro.equals(ichiro2)); // true
 #### 実装ミスのリスクが減る
 
 `User.create(id: string, firstName: string, lastName?: string)`という前提で話をします。  
-TypeScriptでは名前付き引数が利用できませんので、以下のように書くことはできません。
+TypeScriptは名前付き引数に未対応のため、以下のようには書けません。
 
 ```ts
 User.create(id="100", firstName="Taro", lastName="Suzuki")
@@ -244,8 +245,7 @@ User.create("100", "Suzuki", "Taro")
 User.create("Taro", "Suzuki", "100")
 ```
 
-Propによる型付きの指定は、このリスクを最小限にできます。  
-記述量は触れますが安いモノです。
+Propsによる型付きの指定は、このリスクを最小限にできます。
 
 ```ts
 User.create({
@@ -280,7 +280,7 @@ User.create(id: string, required: string, firstName: string, lastName?: string)
 User.create("100", "Taro", "Suzuki")
 ```
 
-Prop指定の場合、引数の順序は関係ないのでこの問題は起きません。
+Props指定の場合、引数の順序は関係ないのでこの問題は起きません。
 
 ```ts
 User.create({
@@ -290,8 +290,8 @@ User.create({
 })
 ```
 
-しかも、`UserProps`型に必須の`required`プロパティを追加すれば上記コードはエラーになります👍  
-そして以下のように修正できるわけです😄
+しかも、`UserProps`型に`required`プロパティを追加されると、上記はエラーになります。  
+それに気付いて、以下のように修正できるわけです😄
 
 ```ts
 User.create({
@@ -305,7 +305,7 @@ User.create({
 ### 不完全なオブジェクトが存在できないようにする
 
 不完全であるかの判定は、実装する値オブジェクトクラスによって決まります。  
-抽象クラスではなく、具象クラスでcreateするときにValidationします。
+そのため、抽象クラスではなく具象クラスでcreateするときにValidationします。
 
 ```ts
   static create(props: UserProps): User {
@@ -338,12 +338,12 @@ primitiveな値を値オブジェクトとして扱いたい場合のため`Prim
 ```ts
 export abstract class PrimitiveValueObject<T> extends AbstractValueObject<T> {
   get value(): T {
-    return this._value!;
+    return this._value;
   }
 }
 ```
 
-生成時のValidationが主なため、利用時のgetterは値を取り出す共通実装をしておきます。  
+生成時のValidationが主な目的なので、getterで値を取り出す共通実装をしておきます。  
 必要があればgetterを追加すればOKです。
 
 `PrimitiveValueObject`を使って、`User`クラスの`id`と`name`を値オブジェクトにした実装が以下です。
@@ -378,7 +378,7 @@ class User extends ValueObject<UserProps> {
   }
 
   get name(): string {
-    return this._value!.name.value;
+    return this._value.name.value;
   }
 }
 
@@ -393,8 +393,8 @@ Validationの役割も的確なスコープに留まっています。
 createの引数とプロパティの型を分ける
 --------------------------------
 
-先のコードでは`User.create`のIF(引数)が変わっていました。  
-実はこれを全く変えずに実装をすり替える方法があります。
+先のコードでは`User.create`のインタフェース(引数)が少し変わっていました。  
+実はこれを全く変えずに実装を変更する方法があります。
 
 `User.create`の引数を`UserProps`ではなく、新たに作った`UserArgs`で分離してしまうのです。
 
@@ -418,7 +418,7 @@ class User extends ValueObject<UserProps> {
   }
 
   get name(): string {
-    return this._value!.name.value;
+    return this._value.name.value;
   }
 }
 
@@ -426,8 +426,8 @@ const ichiro = User.create({ id: 2, name: 'jiro' });
 console.log(ichiro.name); // jiro
 ```
 
-`User.create`のコード量は増えてしまいましたが、生成ロジックと内部状態の分離というメリットがあります。  
-`User.create`を使う側からすると、個々の値オブジェクトを作成する手間が省けるのは嬉しいですね😄
+`User.create`のコード量と引き替えに、生成ロジックと内部状態の分離がされました。  
+使う側からすると、個々の値オブジェクトを作成する手間が省けるのは嬉しいですね😄
 
 
 総括
@@ -439,14 +439,18 @@ TypeScriptでDDDの値オブジェクトを表現する方法を模索した結�
 * `ValueObject`
 * `PrimitiveValueObject`
 
-システムが小さいうちは、記載が面倒であることのデメリットがメリットを上回るかもしれません。  
-しかし、ある程度の規模になってくると値オブジェクトが厳格に定義されているメリットを感じられる瞬間がくると思います😄
+システムが小さいうちは、回りくどく面倒に感じるかもしれません。  
+しかし、ある程度の規模になってくると値オブジェクトが厳格に定義されているメリットを感じられることでしょう😄
 
 `getter`が不要であれば、公称型と生成関数を使ったアプローチもオススメです。  
 公式でも利用されている手法なので、小規模プロダクトならアリだと思います👍
 
 {{<summary "https://basarat.gitbook.io/typescript/main-1/nominaltyping">}}
 
-最後に本記事で紹介したクラスを定義したコードへのリンクを貼っておきます。
+最後に、本記事で紹介したクラスの2020-02-19現在におけるコードへのリンクを貼っておきます。
 
-{{<summary "https://github.com/tadashi-aikawa/togowl-next/blob/master/utils/vo.ts">}}
+{{<summary "https://github.com/tadashi-aikawa/togowl-next/blob/b77355040928d8241b31ff8c9ed3ac49f87e9955/utils/vo.ts">}}
+
+### 参考
+
+{{<summary "https://khalilstemmler.com/articles/typescript-value-object/">}}
