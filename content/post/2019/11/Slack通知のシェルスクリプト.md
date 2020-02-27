@@ -84,7 +84,7 @@ post_slack() {
   # ex: "smile"
   emoji=$3
   # ex: "ほげほげ"
-  message=$4
+  message=${4//'"'/'\"'}
   # list: good / danger
   color=$5
 
@@ -209,6 +209,19 @@ curl -s -S -X POST -d @"$file" ${SLACK_WEBHOOK_URL}
 ```
 
 `set -x slack.sh`でデバッグ出力すると、必ず最後に`rm ${file}`が実行されることを確認できます。
+
+#### ダブルクォーテーションの考慮
+
+{{<update "2020-02-07: ダブルクォーテションの考慮について追記しました">}}
+{{</update>}}
+
+`message`にダブルクォーテーションを含むと、ivalid payloadエラーになります。  
+そのため変数代入時に`"`を`\"`に置換して代入する必要があります。
+
+```bash
+  # ex: "ほげほげ"
+  message=${4//'"'/'\"'}
+```
 
 
 総括
