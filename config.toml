@@ -9,9 +9,6 @@ languageCode = "ja"
 publishDir = "docs"
 enableEmoji = true
 
-pygmentsUseClasses = true
-pygmentsCodefences = true
-
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
@@ -109,3 +106,6 @@ pygmentsCodefences = true
     name = "Google+"
     icon = "fa-google-plus"
     url = "https://plus.google.com/share?url=%s"
+
+[markup.goldmark.renderer]
+  unsafe = true
