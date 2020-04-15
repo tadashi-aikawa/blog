@@ -4,4 +4,3 @@ publish = "docs"
 
 [build.environment]
 HUGO_VERSION = "0.69.0"
-GIT_LFS_ENABLED  = "true"
