@@ -1,3 +1,7 @@
 <div style=" display: flex; justify-content: center;">
-    <img src="/images/cover/{{ .Get 0 }}" style="width: max-content; margin: 10px 0;"/>
+    {{ if hasPrefix (.Get 0) "http" }}
+        <img src="{{ .Get 0 }}" style="width: max-content; margin: 10px 0;"/>
+    {{ else }}
+        <img src="/images/cover/{{ .Get 0 }}" style="width: max-content; margin: 10px 0;"/>
+    {{ end }}
 </div>
