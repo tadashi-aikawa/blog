@@ -20,6 +20,8 @@ Windows環境での開発が苦痛に感じてきたので、仮想マシンのU
 
 <!--more-->
 
+{{<cimg "https://s3-us-west-2.amazonaws.com/svgporn.com/logos/ubuntu.svg">}}
+
 <!--toc-->
 
 
@@ -210,7 +212,7 @@ Ubuntuから再起動するとボリュームマウントが上手くいきま�
 デフォルトでは英語版のキーボードになっています。  
 それが良い場合は問題ありませんが、日本語版が使いたい場合は以下の設定をします。
 
-{{<mp4 "https://dl.dropboxusercontent.com/s/eeg31zu2kjnfuwm/20171203_2.mp4">}}
+{{<mp4 "resources/20171203_2.mp4">}}
 
 
 AutoHotKeyを自然に使えるようにする
@@ -227,12 +229,12 @@ VirtualBoxのウィンドウがアクティブなとき、キーボードから�
 以下が点灯しているとき、キーボードのキャプチャーはONになっています。  
 キャプチャーのON/OFFはホストキー(デフォルト: `右Ctrl`)で変更できます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/tww72u7amt4x2uu/20171203_1.png">}}
+{{<himg "resources/20171203_1.png">}}
 
 デフォルトでは、VirtualBoxにフォーカスが当たると自動でONになります。  
 これを禁止することで、普段はAutoHotKeyが使えるようにします。
 
-{{<mp4 "https://dl.dropboxusercontent.com/s/t5c7wuidtqrwy2y/20171203_1.mp4">}}
+{{<mp4 "resources/20171203_1.mp4">}}
 
 {{<alert info>}}
 2017/12/12追記
@@ -253,11 +255,11 @@ AutoHotKeyでは`setIME()`関数を使用して直接日本語入力モードを
 
 キーボードの設定を開きます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/bby1trlvx2y6r04/20171203_2.png">}}
+{{<himg "resources/20171203_2.png">}}
 
 最も他のツールと競合しなかった `ScrollLock` と `Ctrl+ScrollLock` を割り当てました。  
 
-{{<himg "https://dl.dropboxusercontent.com/s/x9bvuv2mso4utu3/20171203_3.png">}}
+{{<himg "resources/20171203_3.png">}}
 
 Pauseキーも含めて色々と試しましたが、AutoHotKeyとの相性もあってかなり苦戦しました。。  
 AutoHotKeyでは`{sc046}`がScreenLockキーに該当しますので、以下の様な関数を組みました。
@@ -288,20 +290,20 @@ setIME(imeOn) {
 私の場合は以下を設定します。不要の場合はスキップしてください。  
 端末を開き、`ファイル` > `新しいプロファイル`からプロファイルを作成します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/noc5yr7a2xxh4my/20171203_4.png">}}
+{{<himg "resources/20171203_4.png">}}
 
 ### デフォルトシェルをfishにする
 
 コマンドタブの設定を以下の様にします。
 
-{{<himg "https://dl.dropboxusercontent.com/s/blsfqllynwn6w4x/20171203_5.png">}}
+{{<himg "resources/20171203_5.png">}}
 
 
 ### Powerline対応フォントに変更する
 
 全般タブの設定を以下の様にします。
 
-{{<himg "https://dl.dropboxusercontent.com/s/vrwnmpf02vqa6ku/20171203_6.png">}}
+{{<himg "resources/20171203_6.png">}}
 
 {{<alert info>}}
 Powerlineフォントはインストールが必要なため、Ansibleのplaybookにtaskを記載しています。  
@@ -326,7 +328,7 @@ Powerlineフォントはインストールが必要なため、Ansibleのplayboo
 ターミナルを開いたときのプロファイルを今回作成したものにしましょう。  
 `端末` > `設定`から設定できます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/om6wwtfoaahmy7k/20171203_7.png">}}
+{{<himg "resources/20171203_7.png">}}
 
 
 トラブルシューティング
