@@ -2,6 +2,7 @@
 title: IDEAのプラグインを作ってみた
 slug: create-intellij-idea-plugin
 date: 2020-04-09T21:35:15+09:00
+draft: true
 thumbnailImage: null
 categories:
   - engineering
