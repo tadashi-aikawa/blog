@@ -1,110 +1,110 @@
 * {
-  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
 }
 
 /* Table of Contentsの邪魔なulを消す */
 #TableOfContents > ul:nth-child(1) {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 ul, ol {
-  margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 li ul, li ol {
-  margin: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .embedly-card {
-  margin: 30px 0 30px 0;
+    margin: 30px 0 30px 0;
 }
 
 code {
-  background-color: rgb(240, 235, 233);
-  color: rgb(211, 0, 0);
-  line-height: 150%;
-  border-radius: 5px;
-  margin: 2px;
+    background-color: rgb(240, 235, 233);
+    color: rgb(211, 0, 0);
+    line-height: 150%;
+    border-radius: 5px;
+    margin: 2px;
 }
 
 .postShorten-header h1:before {
-  font-family: "FontAwesome";
-  color: deepskyblue;
-  content: "\f219";
+    font-family: "FontAwesome";
+    color: deepskyblue;
+    content: "\f219";
 }
 
 .post-content h2:before {
-  font-family: "FontAwesome";
-  content: "\f02d";
-  margin-right: 9px;
+    font-family: "FontAwesome";
+    content: "\f02d";
+    margin-right: 9px;
 }
 
 .post-content h2 {
-  border-bottom: solid 2px grey;
-  margin: 60px 0 15px 0;
+    border-bottom: solid 2px grey;
+    margin: 60px 0 15px 0;
 }
 
 .post-content h3:before {
-  font-family: "FontAwesome";
-  content: "\f0a4";
-  margin-right: 9px;
+    font-family: "FontAwesome";
+    content: "\f0a4";
+    margin-right: 9px;
 }
 
 .post-content h3 {
-  font-size: 135%;
-  border-bottom: dashed 2px grey;
-  display: inline-block;
-  margin: 30px 0 0 0;
+    font-size: 135%;
+    border-bottom: dashed 2px grey;
+    display: inline-block;
+    margin: 30px 0 0 0;
 }
 
 
 .post-content h4 {
-  font-size: 110%;
-  padding-left: 10px;
-  border-left: solid 3px grey;
-  margin: 30px 0 0 0;
+    font-size: 110%;
+    padding-left: 10px;
+    border-left: solid 3px grey;
+    margin: 30px 0 0 0;
 }
 
 .post-content table {
-  margin: 2.0em 0 2.0em 0
+    margin: 2.0em 0 2.0em 0
 }
 
 video {
-  max-width: 75%;
-  height: auto;
-  margin: 20px 0px 20px 0px;
+    max-width: 75%;
+    height: auto;
+    margin: 20px 0px 20px 0px;
 }
 
 div.img-horizontal {
-  max-width: 75%;
-  height: auto;
+    max-width: 75%;
+    height: auto;
 
-  display: inline-block;
-  position: relative;
+    display: inline-block;
+    position: relative;
 
-  -moz-box-shadow: 2px 2px 3px 3px #CCC;
-  -webkit-box-shadow: 2px 2px 3px 3px #CCC;
-  box-shadow: 2px 2px 3px 3px #CCC;
-  background-color: #EEE;
-  border-radius: 5px;
-  padding: 2px;
-  margin: 20px 0px 20px 0px;
+    -moz-box-shadow: 2px 2px 3px 3px #CCC;
+    -webkit-box-shadow: 2px 2px 3px 3px #CCC;
+    box-shadow: 2px 2px 3px 3px #CCC;
+    background-color: #EEE;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 20px 0px 20px 0px;
 }
 
 div.img-vertical {
-  max-width: 50%;
-  width: auto;
+    max-width: 50%;
+    width: auto;
 
-  display: inline-block;
-  position: relative;
+    display: inline-block;
+    position: relative;
 
-  -moz-box-shadow: 2px 2px 3px 3px #CCC;
-  -webkit-box-shadow: 2px 2px 3px 3px #CCC;
-  box-shadow: 2px 2px 3px 3px #CCC;
-  background-color: #EEE;
-  border-radius: 5px;
-  padding: 2px;
-  margin: 20px 0px 20px 0px;
+    -moz-box-shadow: 2px 2px 3px 3px #CCC;
+    -webkit-box-shadow: 2px 2px 3px 3px #CCC;
+    box-shadow: 2px 2px 3px 3px #CCC;
+    background-color: #EEE;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 20px 0px 20px 0px;
 }
 
 div.postShorten-thumbnailimg img {
@@ -116,98 +116,166 @@ div.postShorten-thumbnailimg img {
 /***********************************/
 
 div.alert {
-  font-size: 80%;
+    font-size: 80%;
 }
 
 @keyframes openDetail {
-  0% {
-    opacity: 0;
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(3%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(3%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 summary {
-  display: block;
-  cursor: pointer;
-  outline: none;
-  padding: 10px 0px 0px 10px;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 0px 0px 10px;
 }
 
 summary:before {
-  display: inline-block;
-  content: "▶";
-  margin-right: 1.0rem;
-  font-weight: bold;
-  font-size: 1.3rem;
-  transition: all 300ms ease;
+    display: inline-block;
+    content: "▶";
+    margin-right: 1.0rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: all 300ms ease;
 }
 
 /* Chromeでデフォルトの▶が非表示にならない問題の対応 */
 details > summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 
 details[open] .alert-box {
-  animation: openDetail 500ms ease;
+    animation: openDetail 500ms ease;
 }
 
 details[open] summary::before {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .alert-box {
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
-  padding: 20px 30px;
-  min-width: 120px;
-  max-width: 100%;
-  color: #555;
-  font-size: 80%;
-  border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 20px 30px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 80%;
+    border-radius: 10px;
 }
 
-.alert-box:before{
-  content: "";
-  position: absolute;
-  top: -30px;
-  left: 100px;
-  margin-left: -15px;
-  border: 15px solid transparent;
+.alert-box:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    margin-left: -15px;
+    border: 15px solid transparent;
 }
 
 .alert-box p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.alert-box-file { background-color: rgba(39, 40, 34); }
-.alert-box-info { border: 2px solid rgba(52, 160, 250, .5); }
-.alert-box-update { border: 2px solid rgba(250, 35, 170, .5); }
-.alert-box-why { border: 2px solid rgba(70, 170, 87, .5); }
-.alert-box-warn { border: 2px solid rgba(245, 130, 10, .5); }
-.alert-box-error { border: 2px solid rgba(245, 50, 28, .5); }
+.alert-box-file {
+    background-color: rgba(39, 40, 34);
+}
 
-.alert-box-file:before { border-bottom: 15px solid rgba(39, 40, 34, .5); }
-.alert-box-info:before { border-bottom: 15px solid rgba(52, 160, 250, .5); }
-.alert-box-update:before { border-bottom: 15px solid rgba(250, 35, 170, .5); }
-.alert-box-why:before { border-bottom: 15px solid rgba(70, 170, 87, .5); }
-.alert-box-warn:before { border-bottom: 15px solid rgba(245, 130, 10, .5); }
-.alert-box-error:before { border-bottom: 15px solid rgba(245, 50, 28, .5); }
+.alert-box-info {
+    border: 2px solid rgba(52, 160, 250, .5);
+}
 
-.alert-word-file { color: #272822; }
-.alert-word-info { color: #349ef3; }
-.alert-word-update { color: #fa22aa; }
-.alert-word-why { color: #4da657; }
-.alert-word-warn { color: #f5770a; }
-.alert-word-error { color: #f5311d; }
+.alert-box-update {
+    border: 2px solid rgba(250, 35, 170, .5);
+}
+
+.alert-box-why {
+    border: 2px solid rgba(70, 170, 87, .5);
+}
+
+.alert-box-warn {
+    border: 2px solid rgba(245, 130, 10, .5);
+}
+
+.alert-box-error {
+    border: 2px solid rgba(245, 50, 28, .5);
+}
+
+.alert-box-file:before {
+    border-bottom: 15px solid rgba(39, 40, 34, .5);
+}
+
+.alert-box-info:before {
+    border-bottom: 15px solid rgba(52, 160, 250, .5);
+}
+
+.alert-box-update:before {
+    border-bottom: 15px solid rgba(250, 35, 170, .5);
+}
+
+.alert-box-why:before {
+    border-bottom: 15px solid rgba(70, 170, 87, .5);
+}
+
+.alert-box-warn:before {
+    border-bottom: 15px solid rgba(245, 130, 10, .5);
+}
+
+.alert-box-error:before {
+    border-bottom: 15px solid rgba(245, 50, 28, .5);
+}
+
+.alert-word-file {
+    color: #272822;
+}
+
+.alert-word-info {
+    color: #349ef3;
+}
+
+.alert-word-update {
+    color: #fa22aa;
+}
+
+.alert-word-why {
+    color: #4da657;
+}
+
+.alert-word-warn {
+    color: #f5770a;
+}
+
+.alert-word-error {
+    color: #f5311d;
+}
+
+.cover-image {
+    width: max-content;
+    margin: 40px 0;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.cover-image:after {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    -moz-box-shadow: inset 0 0 8px 8px white;
+    -webkit-box-shadow: inset 0 0 8px 8px white;
+    box-shadow: inset 0 0 8px 8px white;
+    content: " ";
+}
 
 /***********************************/
 /* Syntax code style
@@ -217,67 +285,315 @@ details[open] summary::before {
     color: #f8f8f2;
     background-color: #272822;
     line-height: 20px;
-    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
-.chroma code span, pre code span{
-    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+
+.chroma code span, pre code span {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
-/* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
-/* LineTableTD */ .chroma .lntd { ; vertical-align: top; padding: 0; margin: 0; border: 0; }
-/* LineTable */ .chroma .lntable { ; border-spacing: 0; padding: 0; margin: 0; border: 0; width: 100%; overflow: auto; display: block; }
-/* LineHighlight */ .chroma .hl { background-color: #ffffcc; display: block; width: 100% }
-/* LineNumbersTable */ .chroma .lnt { ; margin-right: 0.4em; padding: 0 0.4em 0 0.4em; display: block; }
-/* LineNumbers */ .chroma .ln { ; margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
-/* Keyword */ .chroma .k { color: #66d9ef }
-/* KeywordConstant */ .chroma .kc { color: #66d9ef }
-/* KeywordDeclaration */ .chroma .kd { color: #66d9ef }
-/* KeywordNamespace */ .chroma .kn { color: #f92672 }
-/* KeywordPseudo */ .chroma .kp { color: #66d9ef }
-/* KeywordReserved */ .chroma .kr { color: #66d9ef }
-/* KeywordType */ .chroma .kt { color: #66d9ef }
-/* NameAttribute */ .chroma .na { color: #a6e22e }
-/* NameClass */ .chroma .nc { color: #a6e22e }
-/* NameConstant */ .chroma .no { color: #66d9ef }
-/* NameDecorator */ .chroma .nd { color: #a6e22e }
-/* NameException */ .chroma .ne { color: #a6e22e }
-/* NameFunction */ .chroma .nf { color: #a6e22e }
-/* NameOther */ .chroma .nx { color: #a6e22e }
-/* NameTag */ .chroma .nt { color: #f92672 }
-/* Literal */ .chroma .l { color: #ae81ff }
-/* LiteralDate */ .chroma .ld { color: #e6db74 }
-/* LiteralString */ .chroma .s { color: #e6db74 }
-/* LiteralStringAffix */ .chroma .sa { color: #e6db74 }
-/* LiteralStringBacktick */ .chroma .sb { color: #e6db74 }
-/* LiteralStringChar */ .chroma .sc { color: #e6db74 }
-/* LiteralStringDelimiter */ .chroma .dl { color: #e6db74 }
-/* LiteralStringDoc */ .chroma .sd { color: #e6db74 }
-/* LiteralStringDouble */ .chroma .s2 { color: #e6db74 }
-/* LiteralStringEscape */ .chroma .se { color: #ae81ff }
-/* LiteralStringHeredoc */ .chroma .sh { color: #e6db74 }
-/* LiteralStringInterpol */ .chroma .si { color: #e6db74 }
-/* LiteralStringOther */ .chroma .sx { color: #e6db74 }
-/* LiteralStringRegex */ .chroma .sr { color: #e6db74 }
-/* LiteralStringSingle */ .chroma .s1 { color: #e6db74 }
-/* LiteralStringSymbol */ .chroma .ss { color: #e6db74 }
-/* LiteralNumber */ .chroma .m { color: #ae81ff }
-/* LiteralNumberBin */ .chroma .mb { color: #ae81ff }
-/* LiteralNumberFloat */ .chroma .mf { color: #ae81ff }
-/* LiteralNumberHex */ .chroma .mh { color: #ae81ff }
-/* LiteralNumberInteger */ .chroma .mi { color: #ae81ff }
-/* LiteralNumberIntegerLong */ .chroma .il { color: #ae81ff }
-/* LiteralNumberOct */ .chroma .mo { color: #ae81ff }
-/* Operator */ .chroma .o { color: #f92672 }
-/* OperatorWord */ .chroma .ow { color: #f92672 }
-/* Comment */ .chroma .c { color: #75715e }
-/* CommentHashbang */ .chroma .ch { color: #75715e }
-/* CommentMultiline */ .chroma .cm { color: #75715e }
-/* CommentSingle */ .chroma .c1 { color: #75715e }
-/* CommentSpecial */ .chroma .cs { color: #75715e }
-/* CommentPreproc */ .chroma .cp { color: #75715e }
-/* CommentPreprocFile */ .chroma .cpf { color: #75715e }
-/* GenericDeleted */ .chroma .gd { color: #f92672 }
-/* GenericEmph */ .chroma .ge { font-style: italic }
-/* GenericInserted */ .chroma .gi { color: #a6e22e }
-/* GenericStrong */ .chroma .gs { font-weight: bold }
-/* GenericSubheading */ .chroma .gu { color: #75715e }
+
+/* Error */
+.chroma .err {
+    color: #960050;
+    background-color: #1e0010
+}
+
+/* LineTableTD */
+.chroma .lntd {;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* LineTable */
+.chroma .lntable {;
+    border-spacing: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    overflow: auto;
+    display: block;
+}
+
+/* LineHighlight */
+.chroma .hl {
+    background-color: #ffffcc;
+    display: block;
+    width: 100%
+}
+
+/* LineNumbersTable */
+.chroma .lnt {;
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+    display: block;
+}
+
+/* LineNumbers */
+.chroma .ln {;
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+}
+
+/* Keyword */
+.chroma .k {
+    color: #66d9ef
+}
+
+/* KeywordConstant */
+.chroma .kc {
+    color: #66d9ef
+}
+
+/* KeywordDeclaration */
+.chroma .kd {
+    color: #66d9ef
+}
+
+/* KeywordNamespace */
+.chroma .kn {
+    color: #f92672
+}
+
+/* KeywordPseudo */
+.chroma .kp {
+    color: #66d9ef
+}
+
+/* KeywordReserved */
+.chroma .kr {
+    color: #66d9ef
+}
+
+/* KeywordType */
+.chroma .kt {
+    color: #66d9ef
+}
+
+/* NameAttribute */
+.chroma .na {
+    color: #a6e22e
+}
+
+/* NameClass */
+.chroma .nc {
+    color: #a6e22e
+}
+
+/* NameConstant */
+.chroma .no {
+    color: #66d9ef
+}
+
+/* NameDecorator */
+.chroma .nd {
+    color: #a6e22e
+}
+
+/* NameException */
+.chroma .ne {
+    color: #a6e22e
+}
+
+/* NameFunction */
+.chroma .nf {
+    color: #a6e22e
+}
+
+/* NameOther */
+.chroma .nx {
+    color: #a6e22e
+}
+
+/* NameTag */
+.chroma .nt {
+    color: #f92672
+}
+
+/* Literal */
+.chroma .l {
+    color: #ae81ff
+}
+
+/* LiteralDate */
+.chroma .ld {
+    color: #e6db74
+}
+
+/* LiteralString */
+.chroma .s {
+    color: #e6db74
+}
+
+/* LiteralStringAffix */
+.chroma .sa {
+    color: #e6db74
+}
+
+/* LiteralStringBacktick */
+.chroma .sb {
+    color: #e6db74
+}
+
+/* LiteralStringChar */
+.chroma .sc {
+    color: #e6db74
+}
+
+/* LiteralStringDelimiter */
+.chroma .dl {
+    color: #e6db74
+}
+
+/* LiteralStringDoc */
+.chroma .sd {
+    color: #e6db74
+}
+
+/* LiteralStringDouble */
+.chroma .s2 {
+    color: #e6db74
+}
+
+/* LiteralStringEscape */
+.chroma .se {
+    color: #ae81ff
+}
+
+/* LiteralStringHeredoc */
+.chroma .sh {
+    color: #e6db74
+}
+
+/* LiteralStringInterpol */
+.chroma .si {
+    color: #e6db74
+}
+
+/* LiteralStringOther */
+.chroma .sx {
+    color: #e6db74
+}
+
+/* LiteralStringRegex */
+.chroma .sr {
+    color: #e6db74
+}
+
+/* LiteralStringSingle */
+.chroma .s1 {
+    color: #e6db74
+}
+
+/* LiteralStringSymbol */
+.chroma .ss {
+    color: #e6db74
+}
+
+/* LiteralNumber */
+.chroma .m {
+    color: #ae81ff
+}
+
+/* LiteralNumberBin */
+.chroma .mb {
+    color: #ae81ff
+}
+
+/* LiteralNumberFloat */
+.chroma .mf {
+    color: #ae81ff
+}
+
+/* LiteralNumberHex */
+.chroma .mh {
+    color: #ae81ff
+}
+
+/* LiteralNumberInteger */
+.chroma .mi {
+    color: #ae81ff
+}
+
+/* LiteralNumberIntegerLong */
+.chroma .il {
+    color: #ae81ff
+}
+
+/* LiteralNumberOct */
+.chroma .mo {
+    color: #ae81ff
+}
+
+/* Operator */
+.chroma .o {
+    color: #f92672
+}
+
+/* OperatorWord */
+.chroma .ow {
+    color: #f92672
+}
+
+/* Comment */
+.chroma .c {
+    color: #75715e
+}
+
+/* CommentHashbang */
+.chroma .ch {
+    color: #75715e
+}
+
+/* CommentMultiline */
+.chroma .cm {
+    color: #75715e
+}
+
+/* CommentSingle */
+.chroma .c1 {
+    color: #75715e
+}
+
+/* CommentSpecial */
+.chroma .cs {
+    color: #75715e
+}
+
+/* CommentPreproc */
+.chroma .cp {
+    color: #75715e
+}
+
+/* CommentPreprocFile */
+.chroma .cpf {
+    color: #75715e
+}
+
+/* GenericDeleted */
+.chroma .gd {
+    color: #f92672
+}
+
+/* GenericEmph */
+.chroma .ge {
+    font-style: italic
+}
+
+/* GenericInserted */
+.chroma .gi {
+    color: #a6e22e
+}
+
+/* GenericStrong */
+.chroma .gs {
+    font-weight: bold
+}
+
+/* GenericSubheading */
+.chroma .gu {
+    color: #75715e
+}
 
