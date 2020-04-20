@@ -79,7 +79,6 @@ div.img-horizontal {
     max-width: 75%;
     height: auto;
 
-    background-color: #EEE;
     border-radius: 5px;
     padding: 2px;
     margin: 20px 0;
@@ -90,7 +89,6 @@ div.img-vertical {
     max-width: 50%;
     width: auto;
 
-    background-color: #EEE;
     border-radius: 5px;
     padding: 2px;
     margin: 20px 0;
