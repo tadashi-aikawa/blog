@@ -15,7 +15,7 @@ Go言語の開発環境を作成して簡単なスクリプトを書いてみま
 
 <!--more-->
 
-<img src="https://cdn.svgporn.com/logos/gopher.svg"/>
+{{<cimg "https://cdn.svgporn.com/logos/gopher.svg">}}
 
 <!--toc-->
 
@@ -216,7 +216,7 @@ Hello World
 
 構築した開発環境でHello Worldを出力するプログラムを書いてみました。
 
-{{<himg "https://dl.dropboxusercontent.com/s/6bj192s7bqf6sno/20180827_1.gif">}}
+{{<himg "resources/20180827_1.gif">}}
 
 記載から実行までわずか10秒程度です。  
 `main.go`を作成すると[vim-go]が自動でテンプレをベースにしてくれます。  

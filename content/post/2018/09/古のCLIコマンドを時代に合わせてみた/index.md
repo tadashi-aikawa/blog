@@ -2,7 +2,7 @@
 title: "古のCLIコマンドを時代に合わせてみた"
 slug: replace-ancient-cli-command
 date: 2018-09-03T01:11:14+09:00
-thumbnailImage: https://images.pexels.com/photos/462334/pexels-photo-462334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+thumbnailImage: images/cover/2018-09-03.jpg
 categories:
   - engineering
 tags:
@@ -10,11 +10,11 @@ tags:
   - cli
 ---
 
-もうすぐ年号も変わりますので、太古から存在するCLIコマンドを現代に沿ったものへ移行してみました。
+年号も変わりますので、太古から存在するCLIコマンドを現代に沿ったものへ移行してみました。
 
 <!--more-->
 
-<img src="https://images.pexels.com/photos/462334/pexels-photo-462334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+{{<cimg "2018-09-03.jpg">}}
 
 <!--toc-->
 
