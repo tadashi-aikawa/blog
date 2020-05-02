@@ -21,7 +21,8 @@ Vimを本格的に使い始めて半年強が経過しました。
 <!--toc-->
 
 
-## easymotion/vim-easymotion
+easymotion/vim-easymotion
+-------------------------
 
 {{<summary "https://github.com/easymotion/vim-easymotion">}}
 
@@ -33,7 +34,8 @@ Migemoを有効にして日本語も候補にしたり、Windowを越えて移�
 `s` => `om` => `a`
 
 
-## editorconfig/editorconfig-vim
+editorconfig/editorconfig-vim
+-----------------------------
 
 {{<summary "https://github.com/editorconfig/editorconfig-vim">}}
 
@@ -43,7 +45,8 @@ EditorConfigについては下記をご覧下さい。
 {{<summary "https://editorconfig.org/">}}
 
 
-## tpope/vim-surround
+tpope/vim-surround
+------------------
 
 {{<summary "https://github.com/tpope/vim-surround">}}
 
@@ -55,7 +58,8 @@ IDEAやVS CodeのVimプラグインにも搭載されているほどの人気で
 `ds]` => `cs(]`
 
 
-## tpope/vim-repeat
+tpope/vim-repeat
+----------------
 
 {{<summary "https://github.com/tpope/vim-repeat">}}
 
@@ -67,7 +71,8 @@ IDEAやVS CodeのVimプラグインにも搭載されているほどの人気で
 `ysw)` => `j.` => `j.` => `j.`
 
 
-## tpope/vim-fugitive
+tpope/vim-fugitive
+------------------
 
 {{<summary "https://github.com/tpope/vim-fugitive">}}
 
@@ -80,7 +85,8 @@ Vimから様々なGitの操作を行うことができるプラグインです�
 {{<himg "resources/20180813_6.png">}}
 
 
-## yuttie/comfortable-motion.vim
+yuttie/comfortable-motion.vim
+-----------------------------
 
 {{<summary "https://github.com/yuttie/comfortable-motion.vim">}}
 
@@ -88,7 +94,8 @@ Vimから様々なGitの操作を行うことができるプラグインです�
 動作イメージはGitHubのREADMEをご覧下さい。
 
 
-## kshenoy/vim-signature
+kshenoy/vim-signature
+---------------------
 
 {{<summary "https://github.com/kshenoy/vim-signature">}}
 
@@ -98,7 +105,8 @@ Vimから様々なGitの操作を行うことができるプラグインです�
 {{<himg "resources/20180813_4.gif">}}
 
 
-## crusoexia/vim-monokai
+crusoexia/vim-monokai
+---------------------
 
 {{<summary "https://github.com/crusoexia/vim-monokai">}}
 
@@ -106,7 +114,8 @@ Vimから様々なGitの操作を行うことができるプラグインです�
 monokaiは本記事のスクリーンショットのような配色で非常にクールです。
 
 
-## terryma/vim-multiple-cursors
+terryma/vim-multiple-cursors
+----------------------------
 
 {{<summary "https://github.com/terryma/vim-multiple-cursors">}}
 
@@ -124,7 +133,8 @@ monokaiは本記事のスクリーンショットのような配色で非常に�
 * 複数行選択した後に起動すると、選択した全ての行にカーソルを増殖する
 
 
-## mbbill/undotree
+mbbill/undotree
+---------------
 
 {{<summary "https://github.com/mbbill/undotree">}}
 
@@ -134,7 +144,8 @@ monokaiは本記事のスクリーンショットのような配色で非常に�
 {{<himg "resources/20180813_8.gif">}}
 
 
-## osyo-manga/vim-over
+osyo-manga/vim-over
+-------------------
 
 {{<summary "https://github.com/osyo-manga/vim-over">}}
 
@@ -152,7 +163,8 @@ nnoremap <silent> <Space>// :OverCommandLine<CR>%s/
 ```
 
 
-## kana/vim-operator-replace
+kana/vim-operator-replace
+-------------------------
 
 {{<summary "https://github.com/kana/vim-operator-replace">}}
 
@@ -175,7 +187,8 @@ nmap _ <Plug>(operator-replace)
 ```
 
 
-## scrooloose/nerdtree
+scrooloose/nerdtree
+-------------------
 
 {{<summary "https://github.com/scrooloose/nerdtree">}}
 
@@ -183,7 +196,8 @@ nmap _ <Plug>(operator-replace)
 ディレクトリ構造の可視化はVim標準に無い弱点の1つなので、それを補うことができます。
 
 
-## jistr/vim-nerdtree-tabs
+jistr/vim-nerdtree-tabs
+-----------------------
 
 {{<summary "https://github.com/jistr/vim-nerdtree-tabs">}}
 
@@ -192,8 +206,7 @@ nmap _ <Plug>(operator-replace)
 
 以下はNEDRTreeおよびNEDRTreeTabsに関する私の設定です。
 
-<details>
-  <summary>関連する`.vimrc`の設定</summary>
+{{<file ".vimrc">}}
 
 ```vim
 " [NERDTree] ON/OFF切り替え
@@ -224,10 +237,12 @@ augroup NERD
     let g:nerdtree_tabs_open_on_console_startup=2
 augroup END
 ```
-</details>
+
+{{</file>}}
 
 
-## Xuyuanp/nerdtree-git-plugin
+Xuyuanp/nerdtree-git-plugin
+---------------------------
 
 {{<summary "https://github.com/Xuyuanp/nerdtree-git-plugin">}}
 
@@ -238,7 +253,8 @@ NERDTreeにGitの変更情報を表示することができます。
 変更があったディレクトリやファイルには印がつきます。
 
 
-## airblade/vim-gitgutter
+airblade/vim-gitgutter
+----------------------
 
 {{<summary "https://github.com/airblade/vim-gitgutter">}}
 
@@ -252,8 +268,7 @@ Gitの変更情報をgutter部分に表示することができます。
 Preview: `gip`  
 Undo `giu`
 
-<details>
-  <summary>関連する`.vimrc`の設定</summary>
+{{<file ".vimrc">}}
 
 ```vim
 " [gitgutter] 0.1秒おきに表示を更新する
@@ -268,10 +283,12 @@ nmap giu <Plug>GitGutterUndoHunk
 " [vim-gitgutter] ハンクをプレビューする
 nmap gip <Plug>GitGutterPreviewHunk
 ```
-</details>
+
+{{</file>}}
 
 
-## Shougo/unite.vim
+Shougo/unite.vim
+----------------
 
 {{<summary "https://github.com/Shougo/unite.vim">}}
 
@@ -279,7 +296,8 @@ nmap gip <Plug>GitGutterPreviewHunk
 私は後ほど紹介するShougo/unite-outlineを使用するためだけにインストールしています。
 
 
-## Shougo/unite-outline
+Shougo/unite-outline
+--------------------
 
 {{<summary "https://github.com/Shougo/unite-outline">}}
 
@@ -290,15 +308,14 @@ nmap gip <Plug>GitGutterPreviewHunk
 
 {{<himg "resources/20180813_13.gif">}}
 
-<details>
-  <summary>関連する`.vimrc`の設定</summary>
+{{<file ".vimrc">}}
 
 ```vim
 " [unite-outline] アウトライン
 nnoremap <silent> <Space>o :Unite -vertical -winwidth=30 -no-quit outline<CR>
 ```
 
-</details>
+{{</file>}}
 
 Markdownのアウトラインを表示するプラグインは他にもいくつか試しましたが、上手くいきませんでした。
 
@@ -307,7 +324,8 @@ Markdownのアウトラインを表示するプラグインは他にもいくつ
 * majutsushi/tagbar + jszakmeister/markdown2ctags
 
 
-## plasticboy/vim-markdown
+plasticboy/vim-markdown
+-----------------------
 
 {{<summary "https://github.com/plasticboy/vim-markdown">}}
 
@@ -323,7 +341,8 @@ Syntax以外に、テーブルフォーマット機能を目的として使用�
 {{<summary "https://github.com/godlygeek/tabular">}}
 
 
-## kien/ctrlp.vim
+kien/ctrlp.vim
+--------------
 
 {{<summary "https://github.com/kien/ctrlp.vim">}}
 
@@ -339,9 +358,8 @@ Syntax以外に、テーブルフォーマット機能を目的として使用�
 
 `<C-p>` => `Rust` => `↑<CR>` => `<Space>e` => `rust<CR>`
 
-<details>
-  <summary>関連する`.vimrc`の設定</summary>
-  
+{{<file ".vimrc">}}
+
 ```vim
 " [ctrlp] node_modules,build,distは無視
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|build|dist)$'
@@ -353,10 +371,12 @@ nnoremap <silent> <Space>L :CtrlPLine<CR>
 " [ctrlp] Buffer
 nnoremap <silent> <Space>t :CtrlPBuffer<CR>
 ```
-</details>
+
+{{</file>}}
 
 
-## prabirshrestha/vim-lsp
+prabirshrestha/vim-lsp
+----------------------
 
 {{<summary "https://github.com/prabirshrestha/vim-lsp">}}
 
@@ -370,9 +390,8 @@ IDEのような各種機能をLanguage Server Protocolを使って実現する�
 IDEや専用プラグインに比べて機能が非実装であることも多いため、言語によって使いわけています。  
 私の場合は主にbashで利用し、PythonやRustで参考程度に使っています。
 
-<details>
-  <summary>関連する`.vimrc`の設定</summary>
-  
+{{<file ".vimrc">}}
+
 ```vim
 " [lsp] 定義
 nmap <silent> <Space>d :LspDefinition<CR>
@@ -406,10 +425,12 @@ if executable('rls')
         \ })
 endif
 ```
-</details>
+
+{{</file>}}
 
 
-## w0rp/ale
+w0rp/ale
+--------
 
 {{<summary "https://github.com/w0rp/ale">}}
 
@@ -420,8 +441,7 @@ Language Serverと連携することもできます。
 
 上記の例ではbash-language-serverと連携の結果を表示しています。  
 
-<details>
-  <summary>関連する`.vimrc`の設定</summary>
+{{<file ".vimrc">}}
 
 ```vim
 " エラー行に表示するマーク
@@ -447,10 +467,12 @@ let g:ale_keep_list_window_open = 0
 let g:ale_list_window_size = 5
 
 ```
-</details>
+
+{{</file>}}
 
 
-## fatih/vim-go
+fatih/vim-go
+------------
 
 {{<summary "https://github.com/fatih/vim-go">}}
 
