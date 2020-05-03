@@ -2,7 +2,7 @@
 title: "Ubuntu Bionicの仮想環境を作成してみた"
 slug: ubuntu-bionic-virtual-machine
 date: 2018-09-09T17:04:37+09:00
-thumbnailImage: https://images.unsplash.com/photo-1485795046599-702122cd1267?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1bfc98d64d81949c903c9135e7562eb5&auto=format&fit=crop&w=1050&q=80
+thumbnailImage: images/cover/2018-09-09.jpg
 categories:
   - engineering
 tags:
@@ -19,7 +19,7 @@ Ubuntu Bionic BeaverことUbuntu 18.04 LTSが2018年4月にリリースされま
 
 <!--more-->
 
-<img src="https://images.unsplash.com/photo-1485795046599-702122cd1267?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1bfc98d64d81949c903c9135e7562eb5&auto=format&fit=crop&w=1050&q=80"/>
+{{<cimg "2018-09-09.jpg">}}
 
 <!--toc-->
 
@@ -264,7 +264,7 @@ Lubuntuでログイン
 ログイン画面でLubuntuを選択します。  
 LightDMに慣れていると切り替えに戸惑いますが、以下画像のように変更できます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/v9u3g9cd2z8bisw/20180909_1.png">}}
+{{<himg "resources/20180909_1.png">}}
 
 ユーザーを選択してからでないと歯車マークは出ませんのでご注意。
 
@@ -280,7 +280,7 @@ LightDMに慣れていると切り替えに戸惑いますが、以下画像の�
 まずは言語設定を日本語化しましょう。  
 以下の画像のように`Language Support`から日本語を追加します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/atcvplu83gbnq9x/20180909_2.png">}}
+{{<himg "resources/20180909_2.png">}}
 
 {{<warn "ubuntuユーザのログインパスワードを求められて認証できない場合は...">}}
 `sudo passwd ubuntu`コマンドでubuntuユーザのパスワードを変更しましょう。  
@@ -292,8 +292,8 @@ LightDMに慣れていると切り替えに戸惑いますが、以下画像の�
 インストール成功したら`Language`と`Regional Formats`を日本語に設定します。  
 `Apply System-Wide`をクリックしてシステム全体へ適応するのを忘れないようにしてください。
 
-{{<himg "https://dl.dropboxusercontent.com/s/zqq59xookwl0res/20180909_3.png">}}
-{{<himg "https://dl.dropboxusercontent.com/s/vu3110pzkeftydz/20180909_4.png">}}
+{{<himg "resources/20180909_3.png">}}
+{{<himg "resources/20180909_4.png">}}
 
 
 ### キーボード設定
@@ -303,7 +303,7 @@ LightDMに慣れていると切り替えに戸惑いますが、以下画像の�
 
 キーボードアイコンから設定を開きます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/w8b1dz8px472sxo/20180909_5.png">}}
+{{<himg "resources/20180909_5.png">}}
 
 {{<warn "キーボードアイコンが表示されない場合は...">}}
 理由は分かりませんが表示されなくなることがあります。一度VMを再起動してみましょう。
@@ -313,7 +313,7 @@ LightDMに慣れていると切り替えに戸惑いますが、以下画像の�
 
 ダイアログ下部のボタンを使って、入力メソッドのキーボードを以下のように配置します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/mycshb7eiajujfo/20180909_6.png">}}
+{{<himg "resources/20180909_6.png">}}
 
 後は好みに応じて設定を変更して下さい。  
 私はAutoHotKeyでカスタマイズをしているため以下のような設定をしています。

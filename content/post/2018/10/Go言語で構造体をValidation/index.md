@@ -2,7 +2,7 @@
 title: Go言語で構造体をValidation
 slug: golang-struct-validation
 date: 2018-10-15T01:00:57+09:00
-thumbnailImage: https://raw.githubusercontent.com/go-playground/validator/v9/logo.png
+thumbnailImage: images/cover/2018-10-15.jpg
 categories:
   - engineering
 tags:
@@ -12,6 +12,8 @@ tags:
 validatorを使って、Go言語の構造体をスマートにValidationしてみました。
 
 <!--more-->
+
+{{<cimg "2018-10-15.jpg">}}
 
 <!--toc-->
 

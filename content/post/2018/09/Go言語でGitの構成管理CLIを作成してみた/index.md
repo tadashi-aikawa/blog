@@ -2,7 +2,7 @@
 title: "Go言語でGitの構成管理CLIを作成してみた"
 slug: go-git-structual-cli-create
 date: 2018-09-24T01:52:45+09:00
-thumbnailImage: https://images.pexels.com/photos/634613/pexels-photo-634613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+thumbnailImage: images/cover/2018-09-24.jpg
 categories:
   - engineering
 tags:
@@ -16,7 +16,7 @@ Go言語でGitの構成管理を手助けするCLIを作ってみました。
 
 <!--more-->
 
-<img src="https://images.pexels.com/photos/634613/pexels-photo-634613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+{{<cimg "2018-09-24.jpg">}}
 
 <!--toc-->
 

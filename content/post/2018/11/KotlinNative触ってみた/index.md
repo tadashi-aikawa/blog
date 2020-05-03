@@ -154,14 +154,14 @@ Kotlinの開発元でもあるJetBrainsのIDE、IntelliJ IDEAを使います。
 
 Kotlinプラグインがインストールされていない場合はインストールが必要です。
 
-{{<himg "https://dl.dropboxusercontent.com/s/lg1u3k5hcrj97aj/20181105_1.png">}}
+{{<himg "resources/20181105_1.png">}}
 
 
 ### プロジェクト作成
 
 Kotlinの`Kotlin/Native`を選びましょう。
 
-{{<himg "https://dl.dropboxusercontent.com/s/kzrua61hmp47ese/20181105_2.png">}}
+{{<himg "resources/20181105_2.png">}}
 
 `Gradle JVM`の指定を要求されます。  
 Kotlin/NativeはGradle経由で実行するため、Gradleを動かすためにJVMが必要なようです... そんな馬鹿な..。
@@ -196,7 +196,7 @@ src
 `build.gradle`を開き、`task runProgram`の横に表示される実行ボタンをクリックしてみましょう。  
 プログラムが実行されます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/ldxptu8slowtfgc/20181105_3.png">}}
+{{<himg "resources/20181105_3.png">}}
 
 
 

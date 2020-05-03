@@ -14,7 +14,7 @@ Pythonやfzfなど、対話型プロンプトをgitbashから使う方法を紹�
 
 <!--more-->
 
-<img src="https://cdn.svgporn.com/logos/git-icon.svg"/>
+{{<cimg "https://cdn.svgporn.com/logos/git-icon.svg">}}
 
 <!--toc-->
 
@@ -58,7 +58,7 @@ Vimもプラグインインストール含めてLinuxと同様のレベルで動
 しかし、対話型シェルが必要な場合は上手く動作しませんでした。  
 たとえばPythonを実行するとご覧のように固まってしまいます..。
 
-{{<himg "https://dl.dropboxusercontent.com/s/lnk4sburbaeu0vz/20181008_1.gif">}}
+{{<himg "resources/20181008_1.gif">}}
 
 
 解決方法
@@ -75,7 +75,7 @@ winptyはLinuxのpty-masterにあたるもののWindows版のようです。
 
 以下のようになります。
 
-{{<himg "https://dl.dropboxusercontent.com/s/l5uw22eh389xh4b/20181008_2.gif">}}
+{{<himg "resources/20181008_2.gif">}}
 
 都度実行するのは面倒なので、`.bashrc`に以下のようなaliasを設定しておきます。
 

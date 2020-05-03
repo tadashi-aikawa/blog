@@ -40,7 +40,7 @@ VSCodeでオレオレExtensionを作ってみました。
 
 Markdownの見出し(`#`を使わない方)を自動で挿入する機能を作ります。
 
-{{<himg "https://dl.dropboxusercontent.com/s/p8x0ngb4x7m648c/20181112_1.gif">}}
+{{<himg "resources/20181112_1.gif">}}
 
 全角文字は2つ、半角文字は1つでカウントします。
 

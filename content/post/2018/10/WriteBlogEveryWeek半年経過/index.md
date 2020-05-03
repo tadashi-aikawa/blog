@@ -2,7 +2,7 @@
 title: "Write Blog Every Week 半年経過"
 slug: write-blog-every-week-6-months
 date: 2018-10-01T01:48:57+09:00
-thumbnailImage: https://images.unsplash.com/photo-1537778152644-4d0fd3ca2424?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bca7a1082d2a63931e1131785423a16d&auto=format&fit=crop&w=1050&q=80
+thumbnailImage: images/cover/2018-10-01.jpg
 categories:
   - other
 tags:
@@ -14,7 +14,7 @@ Write Blog Every Week宣言をしてから半年が経過しました。
 
 <!--more-->
 
-<img src="https://images.unsplash.com/photo-1537778152644-4d0fd3ca2424?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bca7a1082d2a63931e1131785423a16d&auto=format&fit=crop&w=1050&q=80"/>
+{{<cimg "2018-10-01.jpg">}}
 
 <!--toc-->
 
@@ -39,7 +39,7 @@ Write Blog Every Week宣言をしてから半年が経過しました。
 
 例えば以下のようなアコーディオンはShortCodesを使っています。
 
-{{<himg "https://dl.dropboxusercontent.com/s/4sque2cqfnexlq1/20181001_1.gif">}}
+{{<himg "resources/20181001_1.gif">}}
 
 ブログの記事(マークダウンファイル)には以下のように記載されています。
 

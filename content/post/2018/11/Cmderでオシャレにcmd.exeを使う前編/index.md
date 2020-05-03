@@ -2,7 +2,7 @@
 title: Cmderでオシャレにcmd.exeを使う -前編-
 slug: use-cmd-elegant-on-cmder-phase1
 date: 2018-11-18T18:35:22+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/2xjyq8zxjybbzgf/20181118_1.png
+thumbnailImage: images/cover/2018-11-18.png
 categories:
   - engineering
 tags:
@@ -17,13 +17,10 @@ Cmderを使ってWindowsの`cmd.exe`を快適にカッコよく使えるよう�
 
 <!--more-->
 
-<a href="https://dl.dropboxusercontent.com/s/2xjyq8zxjybbzgf/20181118_1.png">
-  <img src="https://dl.dropboxusercontent.com/s/2xjyq8zxjybbzgf/20181118_1.png"/>
-</a>
+{{<cimg "2018-11-18.png">}}
 
 この写真で実行しているのは`cmd.exe`です。  
 `cmd.exe`でもCmder上で実行すると、ここまでオシャレになります。
-
 
 <!--toc-->
 
@@ -569,5 +566,6 @@ Cmderを使ってWindowsの`cmd.exe`をオシャレに使う方法を紹介し�
 タイトルからも分かるように今回前編です。  
 後ほど執筆予定の後編では、自作コマンドを駆使してイケてるLinux環境に負けないカスタマイズの仕方を紹介します。
 
-:new: 2018/11/27追記  
+{{<update "2018/11/17: 後編を追加しました">}}
 [Cmderでオシャレにcmd.exeを使う -後編-](/2018/11/26/use-cmd-elegant-on-cmder-phase2/)を公開しました.
+{{</update>}}

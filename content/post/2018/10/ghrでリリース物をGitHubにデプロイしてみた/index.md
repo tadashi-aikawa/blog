@@ -13,6 +13,8 @@ GitHubのreleasesページにワンコマンドでリリース物をデプロイ
 
 <!--more-->
 
+{{<cimg "https://cdn.svgporn.com/logos/github-icon.svg">}}
+
 <!--toc-->
 
 

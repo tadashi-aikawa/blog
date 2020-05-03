@@ -2,7 +2,7 @@
 title: 1人開発に最適なGitワークフローとリリースの自動化
 slug: own-development-git-workflow-release-automation
 date: 2018-10-29T00:47:12+09:00
-thumbnailImage: https://images.unsplash.com/photo-1531517647563-118f2dbd3ba6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6af7ad68a645531521d7caa470a4d121&auto=format&fit=crop&w=1050&q=80
+thumbnailImage: images/cover/2018-10-29.jpg
 categories:
   - engineering
 tags:
@@ -10,7 +10,7 @@ tags:
   - bash
 ---
 
-1人で開発するのに最適なGitワークフローとリリースを自動化する方法について紹介します。
+1人で開発するのに最適なGitワークフローとリリースを自動化する方法について紹介します。  
 リリース時の作業を以下3ステップにできます。
 
 1. 対象バージョンの最新release branchをcheckout
@@ -19,7 +19,7 @@ tags:
 
 <!--more-->
 
-<img src="https://images.unsplash.com/photo-1531517647563-118f2dbd3ba6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6af7ad68a645531521d7caa470a4d121&auto=format&fit=crop&w=1050&q=80"/>
+{{<cimg "2018-10-29.jpg">}}
 
 <!--toc-->
 
@@ -54,7 +54,7 @@ Owlフロー
 
 コミットグラフは以下のようになります。
 
-{{<himg "https://dl.dropboxusercontent.com/s/mc158fuc9e4qlf2/20181030_1.png">}}
+{{<himg "resources/20181030_1.png">}}
 
 {{<info "どこかで見たことがあるなら...">}}
 ここで紹介するワークフローは、もしかすると既に存在するものかもしれません。  
@@ -117,7 +117,7 @@ Owlフローのメリット/デメリット
 トピックの対応バージョンを予め決めているのでコミットグラフが非常に見やすくなります。  
 各`release branch`の終点にタグが打たれます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/mc158fuc9e4qlf2/20181030_1.png">}}
+{{<himg "resources/20181030_1.png">}}
 
 #### リリース時のバージョン指定で緊張しない
 

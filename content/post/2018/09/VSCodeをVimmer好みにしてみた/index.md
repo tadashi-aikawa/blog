@@ -1,8 +1,8 @@
 ---
-title: "VSCodeをVimmerが満足できる設定にしてみた"
+title: "VSCodeをVimmer好みにしてみた"
 slug: vscode-satisfies-vimmer
 date: 2018-09-17T01:26:15+09:00
-thumbnailImage: https://images.pexels.com/photos/35188/child-childrens-baby-children-s.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+thumbnailImage: images/cover/2018-09-17.jpg
 categories:
   - engineering
 tags:
@@ -10,9 +10,8 @@ tags:
   - vim
 ---
 
-VSCodeの設定をいじったりプラグインを導入して、Vimmerが満足できる設定にしてみました。
-
-VSCodeを使いこなしたい方にも役立つ内容となっておりますので、Vimmer以外の方もご一読いただければと思います。
+VSCodeの設定をいじったりプラグインを導入して、Vimmerが満足できる設定にしてみました。  
+Vimmer以外の方にも役立つ内容が含まれています。
 
 {{<update "2019/02/01: VSCodeVimの設定を見直す記事を追加しました">}}
 VSCodeVimがversion1.0を迎えたことによる設定見直し記事です。
@@ -22,7 +21,7 @@ VSCodeVimがversion1.0を迎えたことによる設定見直し記事です。
 
 <!--more-->
 
-<img src="https://images.pexels.com/photos/35188/child-childrens-baby-children-s.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+{{<cimg "2018-09-17.jpg">}}
 
 <!--toc-->
 
