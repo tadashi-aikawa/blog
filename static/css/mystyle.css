@@ -26,6 +26,16 @@ code {
     font-size: 85%;
     background-color: rgba(27,31,35,.05);
     border-radius: 3px;
+    line-height: 150%;
+}
+
+.code {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    padding: 0 .4em;
+    margin: .2em;
+    font-size: 85%;
+    background-color: rgba(27,31,35,.05);
+    border-radius: 3px;
 }
 
 .postShorten-header h1:before {
@@ -126,7 +136,7 @@ summary {
     display: block;
     cursor: pointer;
     outline: none;
-    padding: 10px 0px 0px 10px;
+    padding: 10px 0 0 10px;
 }
 
 summary:before {
@@ -179,6 +189,7 @@ details[open] summary::before {
 
 .alert-box-file {
     background-color: rgba(39, 40, 34);
+    padding: 0 10px;
 }
 
 .alert-box-info {
