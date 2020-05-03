@@ -403,7 +403,7 @@ router.get("/", (req, res, next) => res.render("index", { title: "Express" }));
 [Prettier]を使ってファイル保存時に自動フォーマットをかけます。  
 先日記事を書いたばかりなので詳細は下記をご覧下さい。
 
-{{<summary "http://localhost:1313/2019/08/08/only-use-prettier-typescript-auto-format/">}}
+{{<summary "https://blog.mamansoft.net/2019/08/08/only-use-prettier-typescript-auto-format/">}}
 
 ### Prettierのインストール
 

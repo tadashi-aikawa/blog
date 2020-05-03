@@ -107,7 +107,7 @@ Wordpressから引っ越ししておいて良かったです。
 
 Hugoから引っ越しした記事は下記になりますので、宜しければそちらもご覧下さい。
 
-{{<summary "http://localhost:1313/2017/12/01/migrate-blog-by-hugo/">}}
+{{<summary "https://blog.mamansoft.net/2017/12/01/migrate-blog-by-hugo/">}}
 
 [Netlify]: https://www.netlify.com/
 [Hugo]: https://gohugo.io/
