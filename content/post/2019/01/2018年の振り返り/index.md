@@ -2,7 +2,7 @@
 title: 2018年の振り返り
 slug: good-bye-2018
 date: 2019-01-03T23:09:56+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/ba3ya8a1t1d1sqb/pexels-photo-1661682%20%281%29.jpeg
+thumbnailImage: images/cover/2019-01-03.jpg
 categories:
   - other
 tags:
@@ -16,7 +16,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/ba3ya8a1t1d1sqb/pexels-photo-1661682%20%281%29.jpeg"/>
+{{<cimg "2019-01-03.jpg">}}
 
 <!--toc-->
 

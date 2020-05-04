@@ -2,7 +2,7 @@
 title: Ubuntu作成環境を整備した
 slug: clean-ubuntu-infra
 date: 2019-01-25T23:58:59+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/pu2x36ge0456oss/pexels-photo-1308886.jpeg
+thumbnailImage: images/cover/2019-01-25.jpg
 categories:
   - engineering
 tags:
@@ -19,7 +19,7 @@ Ubuntu環境が少し散らかっていたので、綺麗にしてみました�
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/pu2x36ge0456oss/pexels-photo-1308886.jpeg"/>
+{{<cimg "2019-01-25.jpg">}}
 
 <!--toc-->
 

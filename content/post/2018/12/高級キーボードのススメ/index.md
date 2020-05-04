@@ -2,7 +2,7 @@
 title: 高級キーボードのススメ
 slug: keyboard-advanced
 date: 2018-12-27T10:12:37+09:00
-thumbnailImage: https://images.pexels.com/photos/257928/pexels-photo-257928.jpeg?auto=compress&cs=tinysrgb&dpr=2
+thumbnailImage: images/cover/2018-12-27.jpg
 categories:
   - engineering
 tags:
@@ -16,7 +16,7 @@ tags:
 
 <!--more-->
 
-<img src="https://images.pexels.com/photos/257928/pexels-photo-257928.jpeg?auto=compress&cs=tinysrgb&dpr=2"/>
+{{<cimg "2018-12-27.jpg">}}
 
 <!--toc-->
 

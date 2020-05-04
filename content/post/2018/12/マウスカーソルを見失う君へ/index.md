@@ -2,7 +2,7 @@
 title: マウスカーソルを見失う君へ
 slug: for-you-lost-mouse-cursor
 date: 2018-12-17T02:24:03+09:00
-thumbnailImage: https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+thumbnailImage: images/cover/2018-12-17.jpg
 categories:
   - engineering
 tags:
@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-<img src="https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+{{<cimg "2018-12-17.jpg">}}
 
 <!--toc-->
 
@@ -27,11 +27,11 @@ Windowsを使用している方へ。
 以下のgif画像内のマウスカーソルを探してみて下さい。  
 カーソルが動くまでに見つけられた方は問題ないかもしれません。
 
-{{<himg "https://dl.dropboxusercontent.com/s/vivqxtwink32eih/20181217_1.gif">}}
+{{<himg "resources/20181217_1.gif">}}
 
 本記事の対応をすると、これが以下のように見えます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/sgi0fww654wolc1/20181217_2.gif">}}
+{{<himg "resources/20181217_2.gif">}}
 
 
 設定変更
@@ -44,7 +44,7 @@ Windowsを使用している方へ。
 
 どちらも以下の設定画面を表示します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/to81l337k18hd8g/20181217_3.png">}}
+{{<himg "resources/20181217_3.png">}}
 
 {{<info "Windowsのバージョンについて">}}
 Windows 10 Home バージョン 1803 を使用しています。
@@ -55,7 +55,7 @@ Windows 10 Home バージョン 1803 を使用しています。
 
 初期設定ではポインタサイズが小さいので大きくします。
 
-{{<himg "https://dl.dropboxusercontent.com/s/ud8a3bxtyg2egpc/20181217_4.png">}}
+{{<himg "resources/20181217_4.png">}}
 
 
 ### ポインターの色を変更する
@@ -63,11 +63,11 @@ Windows 10 Home バージョン 1803 を使用しています。
 初期設定では白がベースとなっているため、白い背景に埋もれることが多いです。  
 これを **カーソル背景の反対色** にします。
 
-{{<himg "https://dl.dropboxusercontent.com/s/felrpv5b1k643n7/20181217_5.png">}}
+{{<himg "resources/20181217_5.png">}}
 
 周囲とのコントラスタが発生するため、単色よりも目立ちます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/qa4bfuxgph6s7f9/20181217_6.gif">}}
+{{<himg "resources/20181217_6.gif">}}
 
 
 総括

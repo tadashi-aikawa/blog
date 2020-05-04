@@ -2,7 +2,7 @@
 title: VSCodeVimの設定を見直す
 slug: review-vscode-vim-setting
 date: 2019-02-01T23:52:00+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/cal3w9gdcksdeia/pexels-photo-1843358.jpeg
+thumbnailImage: images/cover/2019-02-01.jpg
 categories:
   - engineering
 tags:
@@ -15,7 +15,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/cal3w9gdcksdeia/pexels-photo-1843358.jpeg"/>
+{{<cimg "2019-02-01.jpg">}}
 
 <!--toc-->
 

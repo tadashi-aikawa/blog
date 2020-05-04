@@ -2,7 +2,7 @@
 title: Keypirinhaのpackageを作ってみた -前編-
 slug: create-keypirinha-package-phase1
 date: 2018-12-09T02:42:38+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/tf0ur2bvlfjrd1i/piranha-2382115_960_720.jpg
+thumbnailImage: images/cover/2018-12-09.jpg
 categories:
   - engineering
 tags:
@@ -15,9 +15,7 @@ KeypirinhaでSlackに通知された予定をTodoist形式に変換するpackage
 
 <!--more-->
 
-ボリュームがあるので前編と後編に分けます。
-
-<img src="https://dl.dropboxusercontent.com/s/tf0ur2bvlfjrd1i/piranha-2382115_960_720.jpg"/>
+{{<cimg "2018-12-09.jpg">}}
 
 <!--toc-->
 
@@ -230,5 +228,3 @@ class Sample(kp.Plugin):
 ----
 
 Keypirinhaのpackage(プラグイン)について、簡単なものを作成して動かしてみました。
-
-後編では更に実用的なものを作るための方法を紹介します。

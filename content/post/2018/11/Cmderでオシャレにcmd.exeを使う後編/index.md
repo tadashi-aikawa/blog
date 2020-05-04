@@ -2,7 +2,7 @@
 title: Cmderでオシャレにcmd.exeを使う -後編-
 slug: use-cmd-elegant-on-cmder-phase2
 date: 2018-11-26T03:39:23+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/3sciy8337ls1bvn/20181126_1.png
+thumbnailImage: images/cover/2018-11-26.jpg
 categories:
   - engineering
 tags:
@@ -17,9 +17,7 @@ tags:
 
 <!--more-->
 
-<a href="https://dl.dropboxusercontent.com/s/3sciy8337ls1bvn/20181126_1.png">
-  <img src="https://dl.dropboxusercontent.com/s/3sciy8337ls1bvn/20181126_1.png"/>
-</a>
+{{<cimg "2018-11-26.jpg">}}
 
 <!--toc-->
 

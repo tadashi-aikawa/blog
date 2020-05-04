@@ -2,7 +2,7 @@
 title: StackBlitzを使ってみた
 slug: use-stackblitz
 date: 2018-12-02T00:19:49+09:00
-thumbnailImage: https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2
+thumbnailImage: images/cover/2018-12-02.jpg
 categories:
   - engineering
 tags:
@@ -14,7 +14,7 @@ StackBlitzという便利なサービスを使ってみました。
 
 <!--more-->
 
-<img src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2"/>
+{{<cimg "2018-12-02.jpg">}}
 
 <!--toc-->
 
@@ -44,7 +44,7 @@ Topページに有名な言語やフレームワークの案内がされてい�
 
 例えばReactを押すと次のような画面になります。
 
-{{<himg "https://dl.dropboxusercontent.com/s/0llsu6822t238on/20181203_1.png">}}
+{{<himg "resources/20181203_1.png">}}
 
 ファイルを変更すると、リアルタイムにビルド/実行されます。
 
@@ -54,12 +54,12 @@ Topページに有名な言語やフレームワークの案内がされてい�
 Webエディタでは依存packageが制限されていることが多いですが、StackBlitzは心配いりません。  
 動作に必要なpackageがインストールされていないと以下の画面が表示されます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/taubgkgkww5z67t/20181203_2.png">}}
+{{<himg "resources/20181203_2.png">}}
 
 するとpackageがインストールされて使用できるようになります。  
 インストールしたpackageは左側に表示されます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/xm8ytjbzvatajez/20181203_3.png">}}
+{{<himg "resources/20181203_3.png">}}
 
 packageはDEPENDENCIESのフォームからもインストールできます。
 
@@ -69,7 +69,7 @@ packageはDEPENDENCIESのフォームからもインストールできます。
 URLを教えると別の人にプロジェクトを共有できます。  
 共有前にSaveを忘れないで下さい。
 
-{{<himg "https://dl.dropboxusercontent.com/s/diwxj8i73cq2mux/20181203_4.png">}}
+{{<himg "resources/20181203_4.png">}}
 
 共有したプロジェクトを勝手に変更されることはありません。  
 逆に他人から共有されたプロジェクトに変更を加えて保存するにはForkが必要です。
@@ -103,7 +103,7 @@ GitHubのリポジトリをプロジェクトとしてインポートできま�
 
 `Download Project`ボタンを押すとプロジェクトをzipでダウンロードできます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/85jm3gs9ixd3t6b/20181203_5.png">}}
+{{<himg "resources/20181203_5.png">}}
 
 zipを解凍して依存パッケージをダウンロードすればローカルで開発を続けることが可能です。
 
@@ -114,11 +114,11 @@ GitHubアカウントとの連携
 
 GitHubアカウントを持っている場合は`Sign in`できます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/qea5hk80tkpawry/20181203_6.png">}}
+{{<himg "resources/20181203_6.png">}}
 
 `Sign in`すると以下のようにアカウントに紐づく形で管理できます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/cwhvtfi0lgzorde/20181203_7.png">}}
+{{<himg "resources/20181203_7.png">}}
 
 > These are your StackBlitz projects. You'll soon be able to sync them to Github repos! Learn more.
 

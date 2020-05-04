@@ -2,7 +2,7 @@
 title: Cmderでオシャレにcmd.exeを使う -前編-
 slug: use-cmd-elegant-on-cmder-phase1
 date: 2018-11-18T18:35:22+09:00
-thumbnailImage: images/cover/2018-11-18.png
+thumbnailImage: images/cover/2018-11-18.jpg
 categories:
   - engineering
 tags:
@@ -17,7 +17,7 @@ Cmderを使ってWindowsの`cmd.exe`を快適にカッコよく使えるよう�
 
 <!--more-->
 
-{{<cimg "2018-11-18.png">}}
+{{<cimg "2018-11-18.jpg">}}
 
 この写真で実行しているのは`cmd.exe`です。  
 `cmd.exe`でもCmder上で実行すると、ここまでオシャレになります。

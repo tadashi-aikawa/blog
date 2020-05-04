@@ -14,7 +14,7 @@ Phoenixというフレームワークを触ってみました。
 
 <!--more-->
 
-<img src="https://cdn.svgporn.com/logos/phoenix.svg"/>
+{{<cimg "https://cdn.svgporn.com/logos/phoenix.svg">}}
 
 {{<warn "本記事の内容を過信しないでください">}}
 動かしてみただけのため、記事の途中ところどころに疑問を散りばめています。  
@@ -223,7 +223,7 @@ Windowsのターミナルを管理者権限で起動していることを確認�
 
 http://localhost:4000 にアクセスして以下の画面が表示されればOKです😄
 
-{{<himg "https://dl.dropboxusercontent.com/s/6hvrk0h6savirpb/20190119_1.png">}}
+{{<himg "resources/20190119_1.png">}}
 
 
 総括

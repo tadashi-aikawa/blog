@@ -2,7 +2,7 @@
 title: 2019年の目標
 slug: 2019-goal
 date: 2019-01-10T23:00:02+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/4qi62uuu1oozaid/pexels-photo-799420.jpeg
+thumbnailImage: images/cover/2019-01-10.jpg
 categories:
   - other
 tags:
@@ -15,7 +15,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/4qi62uuu1oozaid/pexels-photo-799420"/>
+{{<cimg "2019-01-10.jpg">}}
 
 <!--toc-->
 
