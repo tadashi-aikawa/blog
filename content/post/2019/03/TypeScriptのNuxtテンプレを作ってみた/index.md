@@ -20,7 +20,7 @@ create-nuxt-appを使ってTypeScriptのNuxtテンプレを作ってみました
 ここで言うテンプレは開発するための準備です。  
 create-nuxt-app用のテンプレートを作成したわけではありません。
 
-<img src="https://cdn.svgporn.com/logos/nuxt.svg"/>
+{{<cimg "https://cdn.svgporn.com/logos/nuxt.svg">}}
 
 <!--toc-->
 

@@ -2,7 +2,7 @@
 title: サブコマンドに対応したdocoptベースのCLIフレームワークを作ってみた
 slug: subcommand-supported-docopt-base-cli-framework
 date: 2019-04-24T19:47:58+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/tou6pnwbvcz9tcr/andras-vas-655223-unsplash.jpg
+thumbnailImage: images/cover/2019-04-24.jpg
 categories:
   - engineering
 tags:
@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/tou6pnwbvcz9tcr/andras-vas-655223-unsplas"/>
+{{<cimg "2019-04-24.jpg">}}
 
 <!--toc-->
 

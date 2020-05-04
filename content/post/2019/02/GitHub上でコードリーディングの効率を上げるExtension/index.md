@@ -15,7 +15,7 @@ GitHubをより快適に使うため、Google Chrome Extensionをいくつか追
 
 <!--more-->
 
-<img src="https://lh3.googleusercontent.com/nYhPnY2I-e9rpqnid9u9aAODz4C04OycEGxqHG5vxFnA35OGmLMrrUmhM9eaHKJ7liB-=w300"/>
+{{<cimg "https://lh3.googleusercontent.com/nYhPnY2I-e9rpqnid9u9aAODz4C04OycEGxqHG5vxFnA35OGmLMrrUmhM9eaHKJ7liB-=w300">}}
 
 <!--toc-->
 
@@ -48,7 +48,7 @@ GitHubに限らず見出しが整理されたサイトであればどこでも�
 GitHubのREADMEをこんな感じに閲覧できます。  
 私の環境では`Ctrl+E`をTOC表示/非表示に割り当てています。
 
-{{<mp4 "https://dl.dropboxusercontent.com/s/4i7eapt5s9n3v4b/20190222_1.mp4">}} 
+{{<mp4 "resources/20190222_1.mp4">}} 
 
 このExtensionの素晴らしい点は以下2点に尽きます。
 
@@ -77,7 +77,7 @@ GitHubのファイルツリーを表示してくれるExtensionです。
 ファイルツリーは現在表示中のファイル位置と同期します。  
 私の環境では`Ctrl+Shift+S`をツリーの表示/非表示に割り当てています。
 
-{{<himg "https://dl.dropboxusercontent.com/s/v6sva33un11lqc0/20190222_2.png">}}
+{{<himg "resources/20190222_2.png">}}
 
 
 Sourcegraph
@@ -102,7 +102,7 @@ GitHub上のコードに対して『定義や宣言に移動』『参照箇所�
 
 私がGoで開発しているGowlリポジトリでの利用例です。
 
-{{<mp4 "https://dl.dropboxusercontent.com/s/j7mftjq2fh3anoe/20190222_3.mp4">}} 
+{{<mp4 "resources/20190222_3.mp4">}} 
 
 GitHub上のソースコードから定義や宣言に移動できます。  
 少しindex作成などの時間が取られますが、ローカルへCloneしたりpackageのインストールナシでジャンプできるのは素晴らしいですね😄

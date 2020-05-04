@@ -2,7 +2,7 @@
 title: TypeScriptのモデル生成速度比較
 slug: typescript-model-created-comparison
 date: 2019-03-17T10:53:03+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/o07zvkk895j6p8y/alarm-clock-art-background-1037993.jpg
+thumbnailImage: images/cover/2019-03-17.jpg
 categories:
   - engineering
 tags:
@@ -13,7 +13,7 @@ TypeScriptでモデルを生成する方法の速度を比較してみました�
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/o07zvkk895j6p8y/alarm-clock-art-background-103799"/>
+{{<cimg "2019-03-17.jpg">}}
 
 <!--toc-->
 

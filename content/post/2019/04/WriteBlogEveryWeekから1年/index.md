@@ -2,7 +2,7 @@
 title: WriteBlogEveryWeekから1年
 slug: write-blog-every-week-1year
 date: 2019-04-06T12:15:01+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/iwgg86ho9bvlfyd/mikhail-pavstyuk-8436-unsplash.jpg
+thumbnailImage: images/cover/2019-04-06.jpg
 categories:
   - engineering
 tags:
@@ -14,7 +14,7 @@ Write Blog Every Weekを開始して1年が経ちましたので振り返りま�
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/iwgg86ho9bvlfyd/mikhail-pavstyuk-8436-unsplas"/>
+{{<cimg "2019-04-06.jpg">}}
 
 <!--toc-->
 

@@ -2,7 +2,7 @@
 title: TypeScriptの例外処理をEitherで
 slug: typescript-exception-with-either
 date: 2019-03-26T20:33:38+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/jowm08x0n9jfepm/ethics-2991600_1280.jpg
+thumbnailImage: images/cover/2019-03-26.jpg
 categories:
   - engineering
 tags:
@@ -13,7 +13,7 @@ TypeScriptの例外処理をEitherでスマートに記述する方法を紹介�
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/jowm08x0n9jfepm/ethics-2991600_128"/>
+{{<cimg "2019-03-26.jpg">}}
 
 <!--toc-->
 

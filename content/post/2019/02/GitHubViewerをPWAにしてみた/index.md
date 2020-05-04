@@ -2,7 +2,7 @@
 title: GitHub ViewerをPWAにしてみた
 slug: github-viewer-change-pwa
 date: 2019-02-09T0:29:50+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/1ahe0zzs1nsxds3/albert-s-633533.jpg
+thumbnailImage: images/cover/2019-02-09.jpg
 categories:
   - engineering
 tags:
@@ -15,7 +15,7 @@ GitHub ViewerをPWA対応してみました。
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/1ahe0zzs1nsxds3/albert-s-633533.jpg"/>
+{{<cimg "2019-02-09.jpg">}}
 
 <!--toc-->
 

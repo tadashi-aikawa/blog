@@ -13,7 +13,7 @@ API結果差分確認ツール**Jumeaux**のVersion1.0をリリースしまし�
 
 <!--more-->
 
-<img src="https://tadashi-aikawa.github.io/jumeaux/img/logo-large.png" style="width: 480px;"/>
+{{<cimg "https://tadashi-aikawa.github.io/jumeaux/img/logo-large.png">}}
 
 <!--toc-->
 
@@ -35,7 +35,7 @@ Jumeauxとは
 Web APIに対し、2つのエンドポイントにリクエストして、レスポンスの差分を調べるツールです。  
 『似たレスポンスを比較する』という点が、Jumeaux(双子)という名前の由来です。
 
-{{<mp4 "https://dl.dropboxusercontent.com/s/2m0jvenb50iyacr/demo.mp4">}}
+{{<mp4 "resources/demo.mp4">}}
 
 上記はデモです。文字が小さいので画面を最大化してご覧下さい。 
 

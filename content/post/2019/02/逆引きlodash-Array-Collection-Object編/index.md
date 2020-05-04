@@ -19,15 +19,14 @@ Lodashの仕様を以下のようにまとめてみました。
 
 <!--more-->
 
-{{<alert "danger">}}
-本記事で参考にしたLodashのバージョンは 4.17.11 です。  
-時間の経過と共に仕様は変わります。正しい情報が欲しい方は必ず本家のドキュメントをお読み下さい。
+{{<warn "本記事で参考にしたLodashのバージョンは 4.17.11 です">}}
+時間の経過と共に仕様は変わります。  
+最新の情報は必ず本家のドキュメントをお読み下さい。
 
 {{<summary "https://lodash.com/docs/4.17.11">}}
-{{</alert>}}
+{{</warn>}}
 
-
-<img src="https://cdn.svgporn.com/logos/lodash.svg"/>
+{{<cimg "https://cdn.svgporn.com/logos/lodash.svg">}}
 
 <!--toc-->
 
@@ -124,7 +123,7 @@ _.takeRight(input, 3)
 */
 ```
 
-#### 条件を満たす要素 `([]|{}) -> []`
+#### 条件を満たす要素 `([]|obj) -> []`
 
 ```js
 const input = [10, 11, 12, 13, 12, 11, 10]
@@ -133,7 +132,7 @@ _.filter(input, x => x < 12)
 */
 ```
 
-#### 条件を満たす最初の要素 `([]|{}) -> *`
+#### 条件を満たす最初の要素 `([]|obj) -> *`
 
 ```js
 const input = [10, 11, 12, 13, 14, 11, 10]
@@ -142,7 +141,7 @@ _.find(input, x => x >= 12)
 */
 ```
 
-#### 条件を満たす最初の要素のkey `{} -> *`
+#### 条件を満たす最初の要素のkey `obj -> *`
 
 ```js
 const input = {'warosu': 21, 'tagayasu': 31, 'monomousu': 41, 'osu': 11}
@@ -151,7 +150,7 @@ _.findKey(input, x => x > 30)
 */
 ```
 
-#### 条件を満たす最後の要素 `([]|{}) -> *`
+#### 条件を満たす最後の要素 `([]|obj) -> *`
 
 ```js
 const input = [10, 11, 12, 13, 14, 11, 10]
@@ -160,7 +159,7 @@ _.findLast(input, x => x >= 12)
 */
 ```
 
-#### 条件を満たす最後の要素のkey `{} -> *`
+#### 条件を満たす最後の要素のkey `obj -> *`
 
 ```js
 const input = {'warosu': 21, 'tagayasu': 31, 'monomousu': 41, 'osu': 11}
@@ -212,7 +211,7 @@ _.slice(input, 2, 4)
 
 `[10, 20, 30, 40, 50].slice(2, 4)`と一緒です。
 
-#### ランダムで1つ `([]|{}) -> *`
+#### ランダムで1つ `([]|obj) -> *`
 
 {{<warn-short>}}
 ランダムなので結果は毎回変わります。
@@ -225,7 +224,7 @@ _.sample(input)
 */
 ```
 
-#### ランダムで指定数 `([]|{}) -> []`
+#### ランダムで指定数 `([]|obj) -> []`
 
 {{<warn-short>}}
 ランダムなので結果は毎回変わります。
@@ -238,7 +237,7 @@ _.sampleSize(input, 3)
 */
 ```
 
-#### 指定したパスの値 `{} -> *`
+#### 指定したパスの値 `obj -> *`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
@@ -256,7 +255,7 @@ _.get(input, 'nothing', 'default')
 input.y && input.y.y2 || 'default'
 ```
 
-#### 指定した複数パスの値 `{} -> []`
+#### 指定した複数パスの値 `obj -> []`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
@@ -265,7 +264,7 @@ _.at(input, ['x', 'y.y2'])
 */
 ```
 
-#### 指定したパスのkey-value `{} -> {}`
+#### 指定したパスのkey-value `obj -> obj`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
@@ -274,7 +273,7 @@ _.pick(input, ['x', 'y.y1'])
 */
 ```
 
-#### 条件を満たすのkey-value `{} -> {}`
+#### 条件を満たすのkey-value `obj -> obj`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
@@ -315,7 +314,7 @@ _.dropRight(input, 3)
 */
 ```
 
-#### 条件を満たす要素 `([]|{}) -> []`
+#### 条件を満たす要素 `([]|obj) -> []`
 
 ```js
 const input = [10, 11, 12, 13, 12, 11, 10]
@@ -374,7 +373,7 @@ _.compact(input)
 */
 ```
 
-#### 指定したパスのkey-value `{} -> {}`
+#### 指定したパスのkey-value `obj -> obj`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
@@ -383,7 +382,7 @@ _.omit(input, ['x', 'y.y1'])
 */
 ```
 
-#### 条件を満たすのkey-value `{} -> {}`
+#### 条件を満たすのkey-value `obj -> obj`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
@@ -467,7 +466,7 @@ _.concat(input, [3, 4], 5)
 集まりを別の形の集まりに変換する処理です。
 
 
-### 要素を変換する `[]|{} -> []`
+### 要素を変換する `([]|obj) -> []`
 
 #### 通常
 
@@ -557,7 +556,7 @@ _.flattenDeep(input)
 ```
 
 
-### 要素ごとの個数を数える `([]|{}) -> {}`
+### 要素ごとの個数を数える `([]|obj) -> obj`
 
 #### 通常
 
@@ -578,7 +577,7 @@ _.countBy(input, x => x % 10)
 ```
 
 
-### key-value化する `([]|{}) -> {}`
+### key-value化する `([]|obj) -> obj`
 
 #### key:value = 1:1
 
@@ -676,7 +675,7 @@ _.unzip(input)
 実は`_.zip(...input)`と一緒です😛  
 引数が配列(`*[]`)、可変長引数(`...*`)、どちらかの違いです。
 
-#### Objectにグルーピング `([n], [n]) -> {}`
+#### Objectにグルーピング `([n], [n]) -> obj`
 
 ```js
 _.zip(['id', 'name', 'age'], [10, 'ichiro', 21])
@@ -709,7 +708,7 @@ _(input)
 ```
 {{</file>}}
 
-#### Objectにネストプロパティ有効でグルーピング `([n], [n]) -> {}`
+#### Objectにネストプロパティ有効でグルーピング `([n], [n]) -> obj`
 
 ```js
 _.zipObjectDeep(
@@ -823,7 +822,7 @@ _.unzipWith(input, (x, y, z) => x + y + z)
 
 ### 2要素ArrayとObjectを相互変換する
 
-#### ArrayからObject `[2][] -> {}`
+#### ArrayからObject `[2][] -> obj`
 
 ```js
 const input = [["a", 1], ["b", 2], ["c", 3]]
@@ -832,7 +831,7 @@ _.fromPairs(input)
 */
 ```
 
-#### ObjectからArray `{} -> [2][]`
+#### ObjectからArray `obj -> [2][]`
 
 ```js
 const input = { a: 1, b: 2, c: 3 }
@@ -854,7 +853,7 @@ _.chunk(input, 3)
 ```
 
 
-### 条件を満たすものと満たさないものに分別する `([]|{}) -> [2]`
+### 条件を満たすものと満たさないものに分別する `([]|obj) -> [2]`
 
 ```js
 const input = [1, 2, 3, 4, 5, 6, 7]
@@ -864,7 +863,7 @@ _.partition(input, x => x >= 5)
 ```
 
 
-### keyとvalueを逆転する `{} -> {}`
+### keyとvalueを逆転する `obj -> obj`
 
 #### 変換後の値は1つ
 
@@ -898,7 +897,7 @@ _.invertBy(input, v => v.toLowerCase())
 ```
 
 
-### key-valueをkeyだけに変換する `{} -> []`
+### key-valueをkeyだけに変換する `obj -> []`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
@@ -910,7 +909,7 @@ _.keys(input)
 Nativeの`Object.keys(input)`と同じです。
 
 
-### key-valueをvalueだけに変換する `{} -> []`
+### key-valueをvalueだけに変換する `obj -> []`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
@@ -922,7 +921,7 @@ _.values(input)
 Nativeの`Object.values(input)`と同じです。
 
 
-### key-valueのkeyを変換する `{} -> {}`
+### key-valueのkeyを変換する `obj -> obj`
 
 各keyの後に、valueを文字列にしたときの長さを付ける例です。
 
@@ -936,7 +935,7 @@ _.mapKeys(input, (v, k) => `${k}-${v.toString().length}`)
 keyが渡るのはラムダ式の第2引数なので注意してください。
 
 
-### key-valueのvalueを変換する `{} -> {}`
+### key-valueのvalueを変換する `obj -> obj`
 
 各valueを、文字列にしたときの長さにする例です。
 
@@ -953,7 +952,7 @@ _.mapValues(input, v => v.toString().length)
 
 要素や構成に変更は無いが、順番が変わる処理です。
 
-### 要素を並び替える `([]|{}) -> []`
+### 要素を並び替える `([]|obj) -> []`
 
 #### 昇順 固定
 
@@ -1020,7 +1019,7 @@ _.shuffle(input)
 複数の要素を単一の何かに畳み込む処理です。
 
 
-### サイズを取得する `([]|{}) -> number`
+### サイズを取得する `([]|obj) -> number`
 
 ```js
 const input = [1, 10, 100]
@@ -1030,7 +1029,7 @@ _.size(input)
 ```
 
 
-### 任意の処理で畳み込む `([]|{}) -> *`
+### 任意の処理で畳み込む `([]|obj) -> *`
 
 #### 左から畳み込む
 
@@ -1088,7 +1087,7 @@ _.join(input, '-->')
 
 booleanを返す判定系の処理です。
 
-### keyが含まれているかを確認する `{} -> boolean`
+### keyが含まれているかを確認する `obj -> boolean`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'YY'}, z: 'ZZZ'}
@@ -1101,7 +1100,7 @@ _.has(input, 'z.z1')
 ```
 
 
-### 要素が含まれているかを確認する `([]|{}|string) -> boolean`
+### 要素が含まれているかを確認する `([]|obj|string) -> boolean`
 
 ```js
 const input = [10, 20, 30, 40, 50]
@@ -1115,7 +1114,7 @@ _.includes(input, 77)
 ```
 
 
-### 全てが条件を満たすかを確認する `([]|{}) -> boolean`
+### 全てが条件を満たすかを確認する `([]|obj) -> boolean`
 
 ```js
 const input = [1, 2, 3]
@@ -1129,7 +1128,7 @@ _.every(input, x => x < 5)
 ```
 
 
-### 少なくとも1つが条件を満たすかを確認する `([]|{}) -> boolean`
+### 少なくとも1つが条件を満たすかを確認する `([]|obj) -> boolean`
 
 ```js
 const input = [1, 10, 100]
@@ -1542,7 +1541,7 @@ _.reverse(input)
 `[10, 20, 30, 40].reverse()`と一緒です。
 
 
-### 💀Objectのkey-valueを上書き/追加する `{} -> {}`
+### 💀Objectのkey-valueを上書き/追加する `obj -> obj`
 
 #### 💀後から指定された方で勝つ
 
@@ -1594,7 +1593,7 @@ _.assignWith(
 ```
 
 
-### 💀Objectのkey-valueをマージする `{} -> {}`
+### 💀Objectのkey-valueをマージする `obj -> obj`
 
 #### 💀通常
 
@@ -1627,7 +1626,7 @@ _.mergeWith(input, {x: {x2: 'XX'}, y: 'YY'}, mergeAsJsonString)
 ```
 
 
-### 💀指定したパスに値を設定する `{} => {}`
+### 💀指定したパスに値を設定する `obj => obj`
 
 #### 💀通常
 
@@ -1678,7 +1677,7 @@ _.updateWith(input, 'y.0', x => "dummy", Object)
 ```
 
 
-### 💀指定したパスの値を削除する `{} => {}`
+### 💀指定したパスの値を削除する `obj => obj`
 
 `_.unset`の返却値はプロパティが削除されたかどうかのbooleanです。
 
@@ -1696,7 +1695,7 @@ input
 ------
 
 
-### 各要素に処理を行う `([]|{}) -> ([]|{})`
+### 各要素に処理を行う `([]|obj) -> ([]|obj)`
 
 #### 先頭から
 
@@ -1727,7 +1726,7 @@ _.forEachRight(input, x => console.log(x*2))
 ```
 
 
-### 指定したパスのmethodを実行する `{} => *`
+### 指定したパスのmethodを実行する `obj => *`
 
 ```js
 const input = {x: 'X', y: {y1: 'Y', y2: 'Y-Y'}, z: 'ZZZ'}

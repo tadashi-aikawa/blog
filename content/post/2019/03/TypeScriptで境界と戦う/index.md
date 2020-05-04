@@ -2,7 +2,7 @@
 title: TypeScriptで境界と戦う
 slug: battle-with-boundary-typescript
 date: 2019-03-10T20:24:31+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/shtz8i41arhndam/quentin-lagache-77362-unsplash.jpg
+thumbnailImage: images/cover/2019-03-10.jpg
 categories:
   - engineering
 tags:
@@ -14,7 +14,7 @@ TypeScriptで境界に立ち向かう方法を整理してみました。
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/shtz8i41arhndam/quentin-lagache-77362-unsplash.jpg"/>
+{{<cimg "2019-03-10.jpg">}}
 
 <!--toc-->
 
