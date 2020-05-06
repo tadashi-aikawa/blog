@@ -17,11 +17,16 @@ const fuseOptions = {
 
 Vue.component("search-result-item", {
   props: ["title", "url", "date", "image", "contents", "tags"],
+  computed: {
+    imageUrl() {
+      return this.image.startsWith("http") ? this.image : `/${this.image}`
+    }
+  },
   template: `
   <div style="display: flex;">
     <div>
       <a :href="url">
-        <img alt="" itemprop="image" :src="image" class="image">
+        <img alt="" itemprop="image" :src="imageUrl" class="image">
       </a>
     </div>
     <div class="description">
