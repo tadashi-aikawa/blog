@@ -15,7 +15,7 @@ tags:
 
 <!--more-->
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/51TAXvhHj9L._SL1000_.jpg" />
+{{<cimg "https://images-na.ssl-images-amazon.com/images/I/51TAXvhHj9L._SL1000_.jpg">}}
 
 <!--toc-->
 
@@ -105,7 +105,7 @@ Kindle Fireは含みません。
 こういうレビューを見たことがあり、『流石にそれは言い過ぎでしょw』と思っていました。  
 ...が、本当でした。ごめんなさい🙇
 
-{{<vimg "https://dl.dropboxusercontent.com/s/m1j2bt3lus6lykv/20190729_1.jpg">}}
+{{<vimg "resources/20190729_1.jpg">}}
 
 画像や動画を通したKindleのディスプレイからは良さが伝わりません。  
 是非、実際に現物を見ていただきたいと思います。
@@ -182,4 +182,4 @@ e-lnk/電子書籍ならではの利点もあれば、欠点もあります。
 
 以下は待機中(スリープ)画面です。美しいですね😄
 
-{{<vimg "https://dl.dropboxusercontent.com/s/n8n1hhf78ehtgdd/20190729_2.jpg">}}
+{{<vimg "resources/20190729_2.jpg">}}

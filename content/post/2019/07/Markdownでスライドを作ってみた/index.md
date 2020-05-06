@@ -2,7 +2,7 @@
 title: Markdownでスライドを作ってみた
 slug: create-slide-by-markdown
 date: 2019-07-24T23:22:47+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/34pcsny6n5d8k0p/person-1196671_1280.jpg
+thumbnailImage: images/cover/2019-07-24.jpg
 categories:
   - engineering
 tags:
@@ -14,7 +14,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/34pcsny6n5d8k0p/person-1196671_1280.jpg"/>
+{{<cimg "2019-07-24.jpg">}}
 
 <!--toc-->
 
@@ -54,8 +54,8 @@ FUSUMAというスライド作成ツールのv1.0.0が公開された記事を�
 FUSUMAは素晴らしいツールですが、今回は[vscode-reveal]を使うことにしました。
 
 
-[reveal.js]
------------
+reveal.js
+---------
 
 本記事のメインは[vscode-reveal]です。  
 その前に[reveal.js]の紹介をさせてください。
@@ -68,8 +68,8 @@ HTMLを利用していますが、Markdownを使うこともできます。
 しかし、非開発者からするとMarkdownを使ってスライドを作る過程が少し面倒です。
 
 
-[vscode-reveal]
----------------
+vscode-reveal
+-------------
 
 VSCodeで[reveal.js]を使ってスライド作成できる拡張です。  
 
@@ -105,7 +105,7 @@ slideNumber: true
 ### tadashi-aikawa
 2019-07-24 (Wed)
 
-<!-- .slide: class="title"  data-background="https://dl.dropboxusercontent.com/s/c2qdld24ynb7boz/emiliano-vittoriosi-aTHqiz_sosU-unsplash.jpg" -->
+<!-- .slide: class="title"  data-background="https://blog.mamansoft.net/images/cover/2019-07-04.jpg" -->
 
 ---
 
@@ -320,11 +320,11 @@ slideNumber: true
 上記2ファイルをプロジェクトに含め、[vscode-reveal]でスライドを出してみましょう。  
 以下のようなタイトルが表示されればOKです👍
 
-{{<himg "https://dl.dropboxusercontent.com/s/yk3szyc2519baq8/20190724_1.png">}}
+{{<himg "resources/20190724_1.png">}}
 
 スライドの構成には階層があり、`ESC`を押すと以下のように表示されます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/h5nqtqx3dnvrc5g/20190724_2.png">}}
+{{<himg "resources/20190724_2.png">}}
 
 
 総括

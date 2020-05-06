@@ -17,7 +17,7 @@ tags:
 
 <!--more-->
 
-<img src="https://repository-images.githubusercontent.com/75104123/f6f27280-61e5-11e9-8759-33288e842a50"/>
+{{<cimg "https://repository-images.githubusercontent.com/75104123/f6f27280-61e5-11e9-8759-33288e842a50">}}
 
 <!--toc-->
 
@@ -160,7 +160,7 @@ IntelliJ IDEAの設定
 
 以下のように`Tools > File Watchers`から新しい設定を追加します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/vz8vk4h5lr6y3au/20190808_1.jpg">}}
+{{<himg "resources/20190808_1.jpg">}}
 
 `Level`を`Global`にしておけば、他のプロジェクトに反映させたい場合も`Enabled`をチェックするだけです。
 

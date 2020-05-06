@@ -2,7 +2,7 @@
 title: Nuxt × TypeScript × Electron × SQLiteを動かしてみた
 slug: nuxt-typescript-electron-sqlite-project
 date: 2019-10-08T23:05:27+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/8rzhoqi9gj8bo8z/freestocks-org-GYrxt-pUg8g-unsplash.jpg
+thumbnailImage: images/cover/2019-10-08.jpg
 categories:
   - engineering
 tags:
@@ -22,7 +22,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/8rzhoqi9gj8bo8z/freestocks-org-GYrxt-pUg8g-unsplas"/>
+{{<cimg "2019-10-08.jpg">}}
 
 {{<alert danger>}}
 本記事は執筆時点のやり方であり、この分野は非常に変化が激しいです。  

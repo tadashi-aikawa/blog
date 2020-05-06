@@ -2,7 +2,7 @@
 title: Tablacus Explorerで選択画像を一括編集
 slug: bulk-edit-images-by-tablacus-explorer
 date: 2019-09-29T23:03:41+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/q3eafc0rtnumkw6/cheryl-winn-boujnida-cqgnUEOaW00-unsplash.jpg
+thumbnailImage: images/cover/2019-09-29.jpg
 
 categories:
   - engineering
@@ -17,7 +17,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/q3eafc0rtnumkw6/cheryl-winn-boujnida-cqgnUEOaW00-unsplas"/>
+{{<cimg "2019-09-29.jpg">}}
 
 <!--toc-->
 
@@ -81,7 +81,7 @@ IrfanViewディレクトリ配下の`i_options.txt`にはコマンドライン�
 
 GUIで言うところの`File` > `Batch conversion/Rename..` > `Advanced`の設定が必要でした。
 
-{{<himg "https://dl.dropboxusercontent.com/s/u4xgg0sj085cr4l/20190929_1.png">}}
+{{<himg "resources/20190929_1.png">}}
 
 実はコレ、`/advancedbatch`オプションでCLIコマンドでも実行できます。
 
@@ -213,7 +213,7 @@ Windowsの標準ファイルエクスプローラーにはタブ機能がない�
 
 今回は **選択した画像すべてをアスペクト比を維持して長辺1280pxにリサイズしたい** ので以下のようなメニューを作成しました。
 
-{{<himg "https://dl.dropboxusercontent.com/s/caffbsuh0txyml4/20190929_2.png">}}
+{{<himg "resources/20190929_2.png">}}
 
 先ほど作成した`iresize.bat`を呼び出しています。
 
@@ -221,7 +221,7 @@ Windowsの標準ファイルエクスプローラーにはタブ機能がない�
 
 最後に動作確認です。
 
-{{<himg "https://dl.dropboxusercontent.com/s/ay6ly9eutyqwiwh/20190929_3.gif">}}
+{{<himg "resources/20190929_3.gif">}}
 
 上記だと`1280px`ではなく`128px`に変換していますが、変換処理は上手くできています👍
 

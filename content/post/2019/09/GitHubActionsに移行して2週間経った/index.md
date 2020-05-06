@@ -2,7 +2,7 @@
 title: GitHub Actionsに移行して2週間経った
 slug: two-weeks-after-moving-to-githubactions
 date: 2019-09-23T00:22:35+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/krkrooas9kaunlg/agenda-black-calendar-273011.jpg
+thumbnailImage: images/cover/2019-09-23.jpg
 categories:
   - engineering
 tags:
@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/krkrooas9kaunlg/agenda-black-calendar-27301"/>
+{{<cimg "2019-09-23.jpg">}}
 
 <!--toc-->
 

@@ -2,7 +2,7 @@
 title: AutoHotKeyで特定領域のウィンドウをアクティブにする
 slug: activate-window-in-area-by-autohotkey
 date: 2019-08-23T07:36:15+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/4cmg3o1aanpu7o6/juan-gomez-kt-wA0GDFq8-unsplash.jpg
+thumbnailImage: images/cover/2019-08-23.jpg
 categories:
   - engineering
 tags:
@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/4cmg3o1aanpu7o6/juan-gomez-kt-wA0GDFq8-unsplas"/>
+{{<cimg "2019-08-23.jpg">}}
 
 <!--toc-->
 

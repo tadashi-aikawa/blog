@@ -2,7 +2,7 @@
 title: "最近導入した3つのVSCode拡張"
 slug: 3vscode-extensions-recently
 date: 2019-08-19T21:10:54+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/ltm5p0tvffj9h96/ice-skates-1082514_1280.jpg
+thumbnailImage: images/cover/2019-08-19.jpg
 categories:
   - engineering
 tags:
@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/ltm5p0tvffj9h96/ice-skates-1082514_128"/>
+{{<cimg "2019-08-19.jpg">}}
 
 <!--toc-->
 
@@ -47,7 +47,7 @@ Gitのコミットグラフを綺麗に見たり、操作ができるExtension�
 
 詳しくは以下の動画をご覧下さい。
 
-{{<mp4 "https://dl.dropboxusercontent.com/s/rz3n85opbzc9xqd/20190819_1.mp4">}}
+{{<mp4 "resources/20190819_1.mp4">}}
 
 
 REST Client
@@ -67,7 +67,7 @@ GUIツールとしては[Postman]を使っており、非常に使いやすい�
 
 エディタと一体化 + テキストエディタの操作を活かした心地よい拡張ですね🌝
 
-{{<mp4 "https://dl.dropboxusercontent.com/s/7rhxut8l5wibvgo/20190819_2.mp4">}}
+{{<mp4 "resources/20190819_2.mp4">}}
 
 上記動画はほんの1機能に過ぎません。  
 結果として表示する内容を精査したり、プレビューではなくてテキストエディタとして開くこともできます。
@@ -83,12 +83,12 @@ Material Icon Theme
 導入前は『正直アイコンくらいで..』と正直舐めていました。  
 しかし、一度導入してみたらその素晴らしさを実感しました。すみませんでした🙇
 
-{{<vimg "https://dl.dropboxusercontent.com/s/i3t0oym2ppela6m/20190819_3.jpg">}}
+{{<vimg "resources/20190819_3.jpg">}}
 
 特にVSCodeはディレクトリアイコン?が非常に見にくいため、それが解消されるだけでも素晴らしいです。  
 他にも**ファイル検索時の絞り込み結果が見やすい**というメリットありました。
 
-{{<himg "https://dl.dropboxusercontent.com/s/60xcnnomulhql4u/20190819_4.gif">}}
+{{<himg "resources/20190819_4.gif">}}
 
 
 総括

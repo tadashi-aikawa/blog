@@ -2,7 +2,7 @@
 title: GitHub Actionsに移行してみた
 slug: migrate-to-github-actions
 date: 2019-09-11T10:38:49+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/5bwganpqyhg5hj1/richard-lee-9s5xhvXHYec-unsplash.jpg
+thumbnailImage: https://cdn.svgporn.com/logos/github-icon.svg
 categories:
   - engineering
 tags:
@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/5bwganpqyhg5hj1/richard-lee-9s5xhvXHYec-unsplas"/>
+{{<cimg "https://cdn.svgporn.com/logos/github-icon.svg">}}
 
 <!--toc-->
 
@@ -246,7 +246,7 @@ on:
 
 試行錯誤した過去のWorkflowがずっと残っており、邪魔なので消したいです..。
 
-{{<himg "https://dl.dropboxusercontent.com/s/552yoa35fyu7w9e/20190911_1.png">}}
+{{<himg "resources/20190911_1.png">}}
 
 今のところ消し方が分かりません.. ご存知の方いらっしゃいましたらTwitterにコメントいただけると大変助かります🙇
 
@@ -340,7 +340,7 @@ SlackのActionが今後沢山出てきそうですが、個人的に応援して
 
 通知の結果はこのように表示されます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/70gronjsil3gz2w/20190911_2.png">}}
+{{<himg "resources/20190911_2.png">}}
 
 今後、失敗したときはメンションを飛ばすようにするかもしれません。 (`job_name`に入れればいけそう)
 

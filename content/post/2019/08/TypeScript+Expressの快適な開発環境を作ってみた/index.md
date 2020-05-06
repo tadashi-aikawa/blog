@@ -2,7 +2,7 @@
 title: TypeScript+Expressの快適な開発環境を作ってみた
 slug: develop-express-with-typescript-cool-environment
 date: 2019-08-12T09:17:44+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/r9oiu5tc5y5p3yu/surfer-2212948_1280.jpg
+thumbnailImage: images/cover/2019-08-12.jpg
 categories:
   - engineering
 tags:
@@ -17,7 +17,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/r9oiu5tc5y5p3yu/surfer-2212948_128"/>
+{{<cimg "2019-08-12.jpg">}}
 
 <!--toc-->
 
