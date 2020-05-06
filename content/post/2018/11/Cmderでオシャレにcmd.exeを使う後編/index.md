@@ -66,11 +66,11 @@ Gitに関する表示についてのみ説明します。
 
 ブランチマークの隣には現在のブランチ名が表示されます。
 
-![alt](https://dl.dropboxusercontent.com/s/27tgi9bs1y59y9l/20181126_7.png)
+{{<himg "resources/20181126_7.png">}}
 
 ワークスペースに変更がある場合は色が変わり、変更内容によってマークが変わります。
 
-![alt](https://dl.dropboxusercontent.com/s/j41nigodj8msadi/20181126_2.png)
+{{<himg "resources/20181126_2.png">}}
 
 * `*`は変更
 * `-`は削除
@@ -78,19 +78,19 @@ Gitに関する表示についてのみ説明します。
 
 ステージングエリアにaddされたエントリ数はカメラマークと一緒に表示されます。  
 
-![alt](https://dl.dropboxusercontent.com/s/oklhgnj08j83gdj/20181126_3.png)
+{{<himg "resources/20181126_3.png">}}
 
 ハロウィンマークはファイル名変更です。
 
-![alt](https://dl.dropboxusercontent.com/s/3m4djh78f2ntopk/20181126_4.png)
+{{<himg "resources/20181126_4.png">}}
 
 pushされていないコミット数はクラウドマークと一緒に`↑`で表示されます。
 
-![alt](https://dl.dropboxusercontent.com/s/1gq5ibdjiqqeqyp/20181126_5.png)
+{{<himg "resources/20181126_5.png">}}
 
 逆にfetch済みだがmergeしていないコミット数は`↓`で表示されます。
 
-![alt](https://dl.dropboxusercontent.com/s/96fu0wyyhladm6x/20181126_6.png)
+{{<himg "resources/20181126_6.png">}}
 
 左側がファイルシステムであり、右に行くにつれてリモートリポジトリに近い...とイメージできるようにしました。
 
@@ -139,7 +139,7 @@ pushされていないコミット数はクラウドマークと一緒に`↑`�
 
 fzfの対話IFを使ってローカルのGitリポジトリへ移動します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/q0hzd2u9w77r703/20181126_8.gif">}}
+{{<himg "resources/20181126_8.gif">}}
 
 第1引数に正規表現を指定すると、大文字小文字を区別せずに部分一致で初期候補を絞り込めます。
 
@@ -160,7 +160,7 @@ for /f "usebackq" %t in (`gowl list ^| fzf`) do cd %t
 
 fzfの対話IFを使ってカレントディレクトリ配下のディレクトリへ移動します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/oyw3s3mrph4n0wf/20181126_9.gif">}}
+{{<himg "resources/20181126_9.gif">}}
 
 第1引数に正規表現を指定すると、大文字小文字を区別せずに部分一致で初期候補を絞り込めます。
 
@@ -168,7 +168,7 @@ fzfの対話IFを使ってカレントディレクトリ配下のディレクト
 
 fzfの対話IFを使って最近移動したディレクトリへ移動します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/fv2mye0tz4451u7/20181126_10.gif">}}
+{{<himg "resources/20181126_10.gif">}}
 
 移動履歴は`%home%/.cdz`ファイルに記録されるため、cmderを起動しなおしても候補は保持されます。
 
@@ -178,13 +178,13 @@ fzfの対話IFを使って最近移動したディレクトリへ移動します
 
 fzfの対話IFを使ってローカルのブランチをチェックアウトします。
 
-{{<himg "https://dl.dropboxusercontent.com/s/5lmcr1nh5yn6vue/20181126_11.gif">}}
+{{<himg "resources/20181126_11.gif">}}
 
 ### gcr
 
 gcのリモートブランチ版です。
 
-{{<himg "https://dl.dropboxusercontent.com/s/3wp4peevta5bzh3/20181126_12.gif">}}
+{{<himg "resources/20181126_12.gif">}}
 
 リモート名は`origin`固定です。つまり`git checkout -b <branch> origin/<branch>`が実行されます。
 
@@ -193,7 +193,7 @@ gcのリモートブランチ版です。
 fzfの対話IFを使ってコマンド履歴を検索します。  
 コマンドを選択すると内容がクリップボードにコピーされます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/yx5ryev5i7j4rj9/20181126_13.gif">}}
+{{<himg "resources/20181126_13.gif">}}
 
 {{<warn "シングルクォーテーションを含むコマンドに注意">}}
 シングルクォーテーションを含むコマンドは正しくコピーされません。
@@ -204,14 +204,14 @@ fzfの対話IFを使ってコマンド履歴を検索します。
 
 fzfの対話IFを使ってカレントディレクトリ配下のディレクトリをvimで開きます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/110msv8thi90s4f/20181126_14.gif">}}
+{{<himg "resources/20181126_14.gif">}}
 
 
 ### vimf
 
 fzfの対話IFを使ってカレントディレクトリ配下のファイルをvimで開きます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/dcr4q0nuvbvwhmr/20181126_15.gif">}}
+{{<himg "resources/20181126_15.gif">}}
 
 
 総括

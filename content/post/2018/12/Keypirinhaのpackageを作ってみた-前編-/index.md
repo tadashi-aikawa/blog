@@ -221,7 +221,7 @@ class Sample(kp.Plugin):
 
 以下のようになればOKです :smile:
 
-{{<himg "https://dl.dropboxusercontent.com/s/bisne4z1q9aq1b8/20181209-1.gif">}}
+{{<himg "resources/20181209-1.gif">}}
 
 
 総括

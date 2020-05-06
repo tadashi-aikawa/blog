@@ -119,7 +119,7 @@ Powerlineの導入
 
 デフォルトもそこそこオシャレですが、情報を増やしたいのでPowerlineを導入します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/0s3h2777757t9cz/20181118_2.png">}}
+{{<himg "resources/20181118_2.png">}}
 
 
 ### Powerline対応フォントのインストール
@@ -151,7 +151,7 @@ $ cp *.lua %cmder_root%\config\
 
 フォントをPowerline対応フォントにします。
 
-{{<himg "https://dl.dropboxusercontent.com/s/oak3bd6sq0up9us/20181118_3.png">}}
+{{<himg "resources/20181118_3.png">}}
 
 Boldは個人的な好みです。  
 Monospaceは日本語によるレイアウト崩れを防ぐために外しています。
@@ -204,7 +204,7 @@ Cmderの設定変更
 
 記事の冒頭にあるスクリーンショットで移っていたフクロウの画像を背景に設定しています。
 
-{{<himg "https://dl.dropboxusercontent.com/s/1c2rrt8g841gyw2/20181118_4.png">}}
+{{<himg "resources/20181118_4.png">}}
 
 フクロウの画像は[WallpaperCaveのもの](https://wallpapercave.com/wp/R5aosPq.jpg)を使わせて頂きました。
 
@@ -213,7 +213,7 @@ Cmderの設定変更
 
 起動直後は`%USERPROFILE%`にいるのが便利だと思うので変更します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/p8xshqyehbzxact/20181118_5.png">}}
+{{<himg "resources/20181118_5.png">}}
 
 赤枠下の部分にある`Startup dir...`ボタンを押してホームディレクトリを選ぶと、自動で入力されます。
 
@@ -286,7 +286,7 @@ Google検索で調べると`clink.lua`を変更せよという記事が沢山出
 
 改修後のイメージです。
 
-{{<himg "https://dl.dropboxusercontent.com/s/xbb9jjl450dh4qr/20181118_6.png">}}
+{{<himg "resources/20181118_6.png">}}
 
 `%cmder_root%\config\powerline_git.lua`にいくつか改修を加えます。
 

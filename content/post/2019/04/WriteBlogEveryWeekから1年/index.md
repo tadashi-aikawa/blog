@@ -38,7 +38,7 @@ Write Blog Every Weekは **毎週1つブログの記事を書く** という取�
 
 当初の4倍になりました😄
 
-{{<himg "https://dl.dropboxusercontent.com/s/uyg960nuzv0eldt/20190406_1.png">}}
+{{<himg "resources/20190406_1.png">}}
 
 4月は50くらいでしたが、1ヶ月後には100弱まで増えました。  
 そこからしばらく伸び悩みましたが、年末には100を越えるようになり、最近は遂に200を越えました。
@@ -51,7 +51,7 @@ Write Blog Every Weekは **毎週1つブログの記事を書く** という取�
 
 当初の5倍になりました😄
 
-{{<himg "https://dl.dropboxusercontent.com/s/gd54ah03vo783yh/20190406_2.png">}}
+{{<himg "resources/20190406_2.png">}}
 
 4月は250弱だったのが現在は1250ほどです。  
 年末から年度末にかけての伸び幅が大きいですね。
@@ -61,7 +61,7 @@ Write Blog Every Weekは **毎週1つブログの記事を書く** という取�
 
 当初の10倍になりました😄  
 
-{{<himg "https://dl.dropboxusercontent.com/s/28du03y4q5i8vza/20190406_3.png">}}
+{{<himg "resources/20190406_3.png">}}
 
 4月は400でしたが現在は4000を越えました。
 
@@ -69,7 +69,7 @@ Write Blog Every Weekは **毎週1つブログの記事を書く** という取�
 そもそもWrite Blog Every Weekを始める前の3月から4月にかけて、アクティブユーザ数が数倍に増えている影響です。
 
 `2018年3月～2018年5月の1週間あたりアクティブユーザ数`
-{{<himg "https://dl.dropboxusercontent.com/s/2sv0rds61liaa07/20190406_4.png">}}
+{{<himg "resources/20190406_4.png">}}
 
 {{</why>}}
 

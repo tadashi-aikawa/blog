@@ -175,7 +175,7 @@ PCやスマホからアクセスして、是非アプリ登録してみてくだ
 プッシュ通知はされませんが、ブラウザメニューの中からインストールできます。  
 日本語は少しおかしいですが...。
 
-{{<vimg "https://dl.dropboxusercontent.com/s/9h9mwt8cl48l17q/20190209_1.png">}}
+{{<vimg "resources/20190209_1.png">}}
 
 Macでは未確認です。
 {{</warn>}}
@@ -183,14 +183,14 @@ Macでは未確認です。
 {{<warn "Windowsのアンインストール画面からアンインストールできない">}}
 PWAアプリ立ち上げ後に表示されるメニューからアンインストールできます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/pkwc65qcpfn6j3k/20190209_2.png">}}
+{{<himg "resources/20190209_2.png">}}
 
 Windowsメニューから右クリックでのアンインストールはダミーです。お気をつけ下さい😿
 {{</warn>}}
 
 ちなみにPWA関連の情報はChrome Developer ToolsのApplicationメニューから確認できます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/zpzpu9mtmiq2pkc/20190209_3.png">}}
+{{<himg "resources/20190209_3.png">}}
 
 
 総括

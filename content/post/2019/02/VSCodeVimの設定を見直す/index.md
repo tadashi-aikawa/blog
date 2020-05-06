@@ -93,11 +93,11 @@ OSのクリップボードとの同期はコラボレーションに必須です
 
 #### フラグがfalseの場合
 
-{{<himg "https://dl.dropboxusercontent.com/s/858ep2echfjjm4y/20190201_2.gif">}}
+{{<himg "resources/20190201_2.gif">}}
 
 #### フラグがtrueの場合
 
-{{<himg "https://dl.dropboxusercontent.com/s/hitohmslqzoq372/20190201_1.gif">}}
+{{<himg "resources/20190201_1.gif">}}
 
 
 NeoVim
@@ -140,7 +140,7 @@ NeoVim
 利用イメージ。  
 <small>※ 押したキー: `steh <C-k><C-k><C-k> cvscode<ESC> ^ $a,<BS> <Space>--vim <ESC><ESC>`</small>
 
-{{<himg "https://dl.dropboxusercontent.com/s/ok4gzib70abineq/20190201_3.gif">}}
+{{<himg "resources/20190201_3.gif">}}
 
 カーソルを増やすデフォルトのキーバインドは`gb`ですが、`<C-k>`に変更しています。  
 
@@ -221,7 +221,7 @@ VSCodeVimにプラグイン機能はありません。
 利用イメージ。  
 <small>※ 押したキー: `svsk cw<ESC> smau cw<ESC> smai cw<ESC>`</small>
 
-{{<himg "https://dl.dropboxusercontent.com/s/m7s315vf80sfv2d/20190201_4.gif">}}
+{{<himg "resources/20190201_4.gif">}}
 
 `s`を押した後にキーを入力すると、該当箇所にMarkerが表示されます。  
 Markerに表示された文字を押すと移動します。
@@ -294,7 +294,7 @@ VSCodeの機能として存在する`Go Forward`と`Go Back`の挙動にした�
 利用イメージ。  
 <small>※ 押したキー: `ysiw) W cs]} B lds)`</small>
 
-{{<himg "https://dl.dropboxusercontent.com/s/cr8q7fl3z1r43at/20190201_5.gif">}}
+{{<himg "resources/20190201_5.gif">}}
 
 
 ### vim-commentary
@@ -311,7 +311,7 @@ VSCodeの機能として存在する`Go Forward`と`Go Back`の挙動にした�
 利用イメージ。  
 <small>※ 押したキー: `vai d`</small>
 
-{{<himg "https://dl.dropboxusercontent.com/s/msaofdaj4jwdwlx/20190201_6.gif">}}
+{{<himg "resources/20190201_6.gif">}}
 
 Pythonなどインデントが重要な位置づけを持つ言語では役立ちそうですね。
 
@@ -331,7 +331,7 @@ Markerが表示ず、押した瞬間に移動するので候補が少ない場�
 せっかくなのでVim版の利用イメージを載せておきます。  
 <small>※ 押したキー: `sre;;; <C-o> sret`</small>
 
-{{<himg "https://dl.dropboxusercontent.com/s/kcy9nsh8e1yrzco/20190201_7.gif">}}
+{{<himg "resources/20190201_7.gif">}}
 
 
 その他
@@ -346,7 +346,7 @@ VSCodeVimならではのショートカットキーがいくつかあります�
 選択範囲拡張は以下の様にラフな使い方ができます。  
 <small>※ 押したキー: `vafafafafaf`</small>
 
-{{<himg "https://dl.dropboxusercontent.com/s/we61mauvu3kyk54/20190201_8.gif">}}
+{{<himg "resources/20190201_8.gif">}}
 
 
 総括
