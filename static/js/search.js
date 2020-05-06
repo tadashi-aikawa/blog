@@ -54,6 +54,6 @@ const app = new Vue({
   watch: {
     word: _.debounce(function(word) {
       this.results = word.length > 0 ? search(word.split(" "), this.fuse) : [];
-    }, 500)
+    }, 250)
   }
 });
