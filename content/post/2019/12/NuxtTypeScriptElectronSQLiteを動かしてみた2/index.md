@@ -320,7 +320,7 @@ if (config.dev) {
 しかし、`nuxt`インスタンスは作成後に`nuxt.ready()`を呼び出して準備完了を待たなければいけないようです。  
 そうしないと、`nuxt`インスタンスの準備が整う前にビルドが開始して上手くいきません。
 
-{{<svg "electron-nuxt-build.svg">}}
+{{<svg "resources/electron-nuxt-build.svg">}}
 
 今回の記事では`nuxt`インスタンスの作成直後に`await nuxt.ready()`を入れています。  
 公式にもWARNINGとして記載されています。
