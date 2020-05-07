@@ -13,7 +13,7 @@ TypeScript3.7のベータ版を試してみました。
 
 <!--more-->
 
-<img src="https://cdn.svgporn.com/logos/typescript-icon.svg"/>
+{{<cimg "https://cdn.svgporn.com/logos/typescript-icon.svg">}}
 
 <!--toc-->
 
@@ -115,7 +115,7 @@ console.log(jiro.favorite?.favorite?.name)
 
 しかも、VSCodeだと`?`が自動補完されます。これも凄い！
 
-{{<himg "https://dl.dropboxusercontent.com/s/xcp80eq4k1mhcqq/20191016_2.gif">}}
+{{<himg "resources/20191016_2.gif">}}
 
 `array?.[0]`や`handler?.()`みたいにArrayやFunctionにも使えます。  
 `?.`が間に挟まると存在する場合だけ後続の処理に続く..という理解で概ねOKだと思います。
@@ -126,7 +126,7 @@ VSCodeが使用するTypeScriptのバージョンが`ワークスペースのバ
 
 フッタに表示されるバージョンを見てください。
 
-{{<himg "https://dl.dropboxusercontent.com/s/f8axc8j0k5zdk55/20191016_3.png">}}
+{{<himg "resources/20191016_3.png">}}
 
 クリックすると変更できます。
 

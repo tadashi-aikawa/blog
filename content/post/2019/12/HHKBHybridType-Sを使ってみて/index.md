@@ -2,7 +2,7 @@
 title: HHKB Hybrid Type-Sを使ってみて
 slug: hhkb-hybrid-type-s-use
 date: 2019-12-26T00:31:19+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/ymeaixs3olqqolh/20191226_5.jpg
+thumbnailImage: images/cover/2019-12-26.jpg
 categories:
   - gadget
 tags:
@@ -14,6 +14,8 @@ HHKB Professional HYBRID Type-S の墨モデル(日本語配列)を購入しま�
 本記事はそのレビューになります。
 
 <!--more-->
+
+{{<cimg "2019-12-26.jpg">}}
 
 <!--toc-->
 
@@ -67,23 +69,23 @@ HHKB Professional HYBRID Type-S の墨モデル(日本語配列)を購入しま�
 
 オシャレな箱が到着します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/prgnungi1n4u16r/20191226_9.jpg">}}
+{{<himg "resources/20191226_9.jpg">}}
 
 シンプルな梱包です。
 
-{{<himg "https://dl.dropboxusercontent.com/s/8eqhykuitc16ng6/20191226_8.jpg">}}
+{{<himg "resources/20191226_8.jpg">}}
 
 トラックボールと並べてみました。
 
-{{<himg "https://dl.dropboxusercontent.com/s/crogkkx7zv3w94f/20191226_1.jpg">}}
+{{<himg "resources/20191226_1.jpg">}}
 
 遠目からはこんな感じです。
 
-{{<himg "https://dl.dropboxusercontent.com/s/6yz2ri1kps8xbgz/20191226_7.jpg">}}
+{{<himg "resources/20191226_7.jpg">}}
 
 ナナメから見ても格好良いですね😄
 
-{{<himg "https://dl.dropboxusercontent.com/s/ryowebh4sbpxgdk/20191226_6.jpg">}}
+{{<himg "resources/20191226_6.jpg">}}
 
 
 使いごこち
@@ -129,19 +131,19 @@ Bluetoothによるケーブルレスが思っていたより遥かに快適で�
 また、2台目はキーボードリーフの色をスモークに変更しました。  
 本体は墨が気に入ったため、1台目同様に墨にしました。
 
-{{<himg "https://dl.dropboxusercontent.com/s/ydomgx7f1n9drm1/20191226_2.jpg">}}
+{{<himg "resources/20191226_2.jpg">}}
 
 被せたところです。🆒ですね！
 
-{{<himg "https://dl.dropboxusercontent.com/s/pzreuf7exw8nufl/20191226_3.jpg">}}
+{{<himg "resources/20191226_3.jpg">}}
 
 ナナメから見ても格好良いです😄
 
-{{<himg "https://dl.dropboxusercontent.com/s/lk2efk9ocdvojuk/20191226_4.jpg">}}
+{{<himg "resources/20191226_4.jpg">}}
 
 カバーが掛かっていれば何かが乗っても問題ありません。
 
-{{<himg "https://dl.dropboxusercontent.com/s/ymeaixs3olqqolh/20191226_5.jpg">}}
+{{<himg "resources/20191226_5.jpg">}}
 
 
 総括

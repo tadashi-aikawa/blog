@@ -2,7 +2,7 @@
 title: backslideでスライド作ってみた
 slug: use-backslide-as-a-presentation-tool
 date: 2019-12-08T23:58:50+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/2tgw62c1h1hdzpz/norman-tsui-KBKHXjhVQVM-unsplash.jpg
+thumbnailImage: images/cover/2019-12-08.jpg
 categories:
   - engineering
 tags:
@@ -16,7 +16,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/2tgw62c1h1hdzpz/norman-tsui-KBKHXjhVQVM-unsplas"/>
+{{<cimg "2019-12-08.jpg">}}
 
 <!--toc-->
 

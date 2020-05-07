@@ -2,7 +2,7 @@
 title: Nuxt × TypeScript × Electron × SQLiteを動かしてみた2
 slug: nuxt-typescript-electron-sqlite-project2
 date: 2019-12-29T22:26:09+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/40csiok4h69535w/mikayla-mallek-ZDBQ2dx_gbQ-unsplas
+thumbnailImage: images/cover/2019-12-29.jpg
 categories:
   - engineering
 tags:
@@ -13,13 +13,11 @@ tags:
   - element
 ---
 
-10月に書いた以下の記事について、一部上手く動かなくなった部分があったため続編を書きました。
+以前に書いた記事で一部上手く動かなくなった部分があったため続編を書きました。
 
 <!--more-->
 
-{{<summary "https://blog.mamansoft.net/2019/10/08/nuxt-typescript-electron-sqlite-project/">}}
-
-<img src="https://dl.dropboxusercontent.com/s/40csiok4h69535w/mikayla-mallek-ZDBQ2dx_gbQ-unsplash.jpg"/>
+{{<cimg "2019-12-29.jpg">}}
 
 {{<alert danger>}}
 本記事は執筆時点のやり方であり、この分野は非常に変化が激しいです。  
@@ -37,6 +35,10 @@ tags:
 
 はじめに
 --------
+
+### 以前に書いた記事
+
+{{<summary "https://blog.mamansoft.net/2019/10/08/nuxt-typescript-electron-sqlite-project/">}}
 
 ### 方針
 
@@ -318,7 +320,7 @@ if (config.dev) {
 しかし、`nuxt`インスタンスは作成後に`nuxt.ready()`を呼び出して準備完了を待たなければいけないようです。  
 そうしないと、`nuxt`インスタンスの準備が整う前にビルドが開始して上手くいきません。
 
-<object type="image/svg+xml" data="electron-nuxt-build.svg"></object>
+{{<svg "electron-nuxt-build.svg">}}
 
 今回の記事では`nuxt`インスタンスの作成直後に`await nuxt.ready()`を入れています。  
 公式にもWARNINGとして記載されています。

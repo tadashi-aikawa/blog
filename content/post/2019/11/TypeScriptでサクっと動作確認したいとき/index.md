@@ -2,7 +2,7 @@
 title: TypeScriptでサクっと動作確認したいとき
 slug: run-typescript-quickly
 date: 2019-11-02T15:20:55+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/ic58fske85nwi8p/visit-almaty-wn4d-mvr7fe-unsplash.jpg
+thumbnailImage: images/cover/2019-11-02.jpg
 categories:
   - engineering
 tags:
@@ -13,7 +13,7 @@ TypeScriptでサクっと動作確認したいときのTipsをまとめてみま
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/ic58fske85nwi8p/visit-almaty-wn4d-mvr7fe-unsplash.jpg"/>
+{{<cimg "2019-11-02.jpg">}}
 
 <!--toc-->
 

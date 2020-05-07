@@ -17,6 +17,7 @@ WindowsとLinuxの両方で動くSlack通知用シェルスクリプトを書い
 
 <!--more-->
 
+{{<cimg "https://cdn.svgporn.com/logos/slack-icon.svg">}}
 
 <!--toc-->
 
@@ -61,7 +62,7 @@ export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/..............
 
 こんな感じに通知されます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/icokye4q8nfv18s/20191127_1.png">}}
+{{<himg "resources/20191127_1.png">}}
 
 
 実装
@@ -211,9 +212,6 @@ curl -s -S -X POST -d @"$file" ${SLACK_WEBHOOK_URL}
 `set -x slack.sh`でデバッグ出力すると、必ず最後に`rm ${file}`が実行されることを確認できます。
 
 #### ダブルクォーテーションの考慮
-
-{{<update "2020-02-07: ダブルクォーテションの考慮について追記しました">}}
-{{</update>}}
 
 `message`にダブルクォーテーションを含むと、ivalid payloadエラーになります。  
 そのため変数代入時に`"`を`\"`に置換して代入する必要があります。

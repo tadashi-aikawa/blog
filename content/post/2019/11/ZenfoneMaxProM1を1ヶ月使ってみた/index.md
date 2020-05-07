@@ -20,7 +20,6 @@ tags:
 
 <a href="https://hb.afl.rakuten.co.jp/hgc/0ef94b41.459a8d91.0ef94b42.eaef2759/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdtc%2F0192876126271%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdtc%2Fi%2F11658691%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjQwMHg0MDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjB9" target="_blank" rel="nofollow noopener noreferrer" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/0ef94b41.459a8d91.0ef94b42.eaef2759/?me_id=1210933&item_id=11658691&m=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fdtc%2Fcabinet%2F20181128s%2F0192876126271.jpg%3F_ex%3D80x80&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fdtc%2Fcabinet%2F20181128s%2F0192876126271.jpg%3F_ex%3D400x400&s=400x400&t=pict" border="0" style="margin:2px" alt="" title=""></a>
 
-
 <!--toc-->
 
 
@@ -91,7 +90,7 @@ tags:
 
 実際のイメージは以下です。
 
-{{<vimg "https://dl.dropboxusercontent.com/s/q46u4l4bwlvdi6t/20191123_1.png">}}
+{{<vimg "resources/20191123_1.png">}}
 
 位置、大きさ、扇の分割数はカスタマイズ可能です。  
 レイヤーも3段まで設定できます。  
@@ -107,7 +106,7 @@ tags:
 たとえば『ダイジェスト』機能はメールのように、アカウントごとの投稿に対する未読/既読管理ができます。  
 フォローせずに登録だけすることも可能です。
 
-{{<vimg "https://dl.dropboxusercontent.com/s/9zq7mez0qplli63/20191123_2.png">}}
+{{<vimg "resources/20191123_2.png">}}
 
 雑多なタイムラインを眺めるだけでなく、有益なアカウントのツイートを効率的にチェックできます。  
 SNSに時間を費やしてしまうけど情報収集したい方には響く機能かと😉

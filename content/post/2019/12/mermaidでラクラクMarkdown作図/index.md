@@ -2,7 +2,7 @@
 title: mermaidでラクラクMarkdown作図
 slug: write-diagram-with-mermaid
 date: 2019-12-17T01:15:42+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/ee24dg6h5qz7i5q/mermaid-2787088_1280.jpg
+thumbnailImage: images/cover/2019-12-17.jpg
 categories:
   - engineering
 tags:
@@ -16,7 +16,7 @@ Markdownベースのドキュメントやブログで気軽に図を描くため
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/ee24dg6h5qz7i5q/mermaid-2787088_1280.jpg"/>
+{{<cimg "2019-12-17.jpg">}}
 
 <!--toc-->
 
@@ -240,7 +240,7 @@ graph LR;
 
 #### 出力例
 
-{{<himg "https://dl.dropboxusercontent.com/s/wxci53pdoi5ycrr/20191217_1.png">}}
+{{<himg "resources/20191217_1.png">}}
 
 CSSで見た目は変更できると思います。
 

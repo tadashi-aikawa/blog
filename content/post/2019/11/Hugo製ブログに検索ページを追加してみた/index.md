@@ -2,7 +2,7 @@
 title: Hugo製ブログに検索ページを追加してみた
 slug: add-search-page-in-blog-made-by-hugo
 date: 2019-11-11T22:29:58+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/ys4ml2r4i9ehj43/girl-3038974_1280.jpg
+thumbnailImage: images/cover/2019-11-11.jpg
 categories:
   - engineering
 tags:
@@ -16,7 +16,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/ys4ml2r4i9ehj43/girl-3038974_128"/>
+{{<cimg "2019-11-11.jpg">}}
 
 <!--toc-->
 

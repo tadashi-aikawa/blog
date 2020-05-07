@@ -2,7 +2,7 @@
 title: Electronのe2eテストを書いてみた
 slug: electron-e2etest-use-spectron
 date: 2019-10-23T14:49:29+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/10zch1tqm8mshot/girl-2629791_1280.jpg
+thumbnailImage: images/cover/2019-10-23.jpg
 categories:
   - engineering
 tags:
@@ -15,7 +15,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/10zch1tqm8mshot/girl-2629791_1280.jpg"/>
+{{<cimg "2019-10-23.jpg">}}
 
 <!--toc-->
 
@@ -278,7 +278,7 @@ npm run build && npm run e2etest
 
 実際の動作は以下のようになります。
 
-{{<mp4 "https://dl.dropboxusercontent.com/s/ju7ehbx69yu7xyz/20191023_1.mp4">}}
+{{<mp4 "resources/20191023_1.mp4">}}
 
 一瞬なので瞬きしないように注意して下さいね😉
 
