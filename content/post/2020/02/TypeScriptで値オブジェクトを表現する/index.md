@@ -2,7 +2,7 @@
 title: TypeScriptで値オブジェクトを表現する
 slug: express-value-object-by-typescript
 date: 2020-02-19T13:13:26+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/k2sxyfkoh9ifuv1/girl-2931287_1280.jpg
+thumbnailImage: images/cover/2020-02-19.jpg
 categories:
   - engineering
 tags:
@@ -14,7 +14,7 @@ TypeScriptでDDDの値オブジェクトを表現する方法を模索してみ�
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/k2sxyfkoh9ifuv1/girl-2931287_1280.jpg"/>
+{{<cimg "2020-02-19.jpg">}}
 
 <!--toc-->
 

@@ -16,7 +16,7 @@ tags:
 
 <!--more-->
 
-<img src="https://cdn.svgporn.com/logos/nginx.svg"/>
+{{<cimg "https://cdn.svgporn.com/logos/nginx.svg">}}
 
 <!--toc-->
 

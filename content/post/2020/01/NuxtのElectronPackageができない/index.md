@@ -2,7 +2,7 @@
 title: NuxtのElectron Packageができない
 slug: cannot-package-election-with-nuxt
 date: 2020-01-28T01:16:47+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/8r68v9viivvqhb3/gokil-I_p6V-AAqhU-unsplash.jpg
+thumbnailImage: images/cover/2020-01-28.jpg
 categories:
   - engineering
 tags:
@@ -23,7 +23,7 @@ tags:
 本来は原因を含めての対策としたいのですが、Packagingのときのみに発生する事象であるため解決策の周知を優先させていただきました🙇
 {{</alert>}}
 
-<img src="https://dl.dropboxusercontent.com/s/8r68v9viivvqhb3/gokil-I_p6V-AAqhU-unsplash.jpg"/>
+{{<cimg "2020-01-28.jpg">}}
 
 <!--toc-->
 
@@ -71,7 +71,7 @@ $ npm i -D electron-builder
 
 この記事通りに実装してPackagingしたアプリケーションを実行すると404エラーが発生します。
 
-{{<himg "https://dl.dropboxusercontent.com/s/jlfnbrpvd44ienv/20200127_1.png">}}
+{{<himg "resources/20200127_1.png">}}
 
 `npm run dev`や`npm run build`では動いていたのに..ショッキングです😱
 

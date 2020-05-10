@@ -2,7 +2,7 @@
 title: IDEAでTypeScriptとESLintを使う
 slug: use-typescript-and-eslint-with-intellij-idea
 date: 2020-03-29T00:26:05+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/7kjluhn1c7396vt/swan-2077219_1280.jpg
+thumbnailImage: images/cover/2020-03-29.jpg
 categories:
   - engineering
 tags:
@@ -16,7 +16,7 @@ IntelliJ IDEAでTypeScriptプロダクトを開発するとき、ESLintを導入
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/7kjluhn1c7396vt/swan-2077219_1280.jpg"/>
+{{<cimg "2020-03-29.jpg">}}
 
 <!--toc-->
 
@@ -300,29 +300,29 @@ IntelliJ IDEAとの連携
 IntelliJ IDEAで連携するための設定をしましょう。  
 `ESLint`の設定から、`Automatic ESLint configuration`を選んで下さい。
 
-{{<himg "https://dl.dropboxusercontent.com/s/3dcrqz317zcaoa4/20200328_1.png">}}
+{{<himg "resources/20200328_1.png">}}
 
 こんな風にInspectionが表示されればOKです。
 
-{{<himg "https://dl.dropboxusercontent.com/s/67pm5qtbo93ya8m/20200328_2.png">}}
+{{<himg "resources/20200328_2.png">}}
 
 ### Lintエラーを自動修正する
 
 `--fix`で修正できるルール違反はIntelliJ IDEAの`Show Context Actions`から修正できます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/6n0lt1pk2v0pw8t/20200328_3.gif">}}
+{{<himg "resources/20200328_3.gif">}}
 
 `Fix ESLint Problems`を実行すると、ファイルやディレクトリ単位でまとめて修正できます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/8o83ke9txjecu83/20200328_4.gif">}}
+{{<himg "resources/20200328_4.gif">}}
 
 ### IntelliJのInspectionと競合を防ぐ
 
 `TypeScript`と`JavaScript`のInspectionをすべてオフにすると競合しません。  
 ただし、`Code quality tools > ESLint`だけはオンのままにしておく必要があります。
 
-{{<vimg "https://dl.dropboxusercontent.com/s/rd9oqg9pdqysi1p/20200328_5.png">}}
-{{<vimg "https://dl.dropboxusercontent.com/s/juwa77xt0w3qezp/20200328_6.png">}}
+{{<vimg "resources/20200328_5.png">}}
+{{<vimg "resources/20200328_6.png">}}
 
 足りないInspectionがある場合は、Lintルールを変更するかIntelliJのInspectionを部分的にオンにすれば対処できます。
 

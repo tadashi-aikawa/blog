@@ -2,7 +2,7 @@
 title: TodoistのStyleを変更する拡張を作ってみた
 slug: create-change-todoist-style
 date: 2020-03-02T19:18:42+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/d534b7m752lghqx/anete-lusina-2JknzBYDu6k-unsplash.jpg
+thumbnailImage: images/cover/2020-03-02.jpg
 categories:
   - engineering
 tags:
@@ -16,7 +16,7 @@ Todoistのデザインを自分好みに変更する拡張を作ってみまし�
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/d534b7m752lghqx/anete-lusina-2JknzBYDu6k-unsplas"/>
+{{<cimg "2020-03-02.jpg">}}
 
 <!--toc-->
 
@@ -74,19 +74,19 @@ TodoistとMAMANSOFT
 これだけでもシンプルですが、1日の予定が長い場合は1行にしたい..。  
 あと、時間の区切りを分かりやすくしたい。
 
-{{<vimg "https://dl.dropboxusercontent.com/s/6k25eeamp2fc5m4/20200302_3.png">}}
+{{<vimg "resources/20200302_3.png">}}
 
 ### cssだけ適用した画面
 
 cssだけのChrome拡張でもシュっとなります。
 
-{{<vimg "https://dl.dropboxusercontent.com/s/09x0qo07pxaelyu/20200302_4.png">}}
+{{<vimg "resources/20200302_4.png">}}
 
 ### cssとjsを適用した画面
 
 JavaScriptを使えばこんなところまで❗️
 
-{{<vimg "https://dl.dropboxusercontent.com/s/45v0wph1m5ic46i/20200302_5.png">}}
+{{<vimg "resources/20200302_5.png">}}
 
 それでは実際に作り方を紹介します。
 
@@ -126,11 +126,11 @@ Cloneしてきたリポジトリ内に`manifest.json`を作成します。
 実際に読み込んでみましょう。  
 Chromeで`chrome://extensions`を開きます。
 
-{{<himg "https://dl.dropboxusercontent.com/s/utsm7j5p5xj1bx2/20200302_1.png">}}
+{{<himg "resources/20200302_1.png">}}
 
 こうなればOKです。
 
-{{<himg "https://dl.dropboxusercontent.com/s/d6xypxlvekjahhf/20200302_2.png">}}
+{{<himg "resources/20200302_2.png">}}
 
 {{<info "アイコンについて">}}
 Chrome拡張用のアイコンを指定する場合は`manifest.json`に追記しましょう。

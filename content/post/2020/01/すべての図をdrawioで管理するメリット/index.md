@@ -2,7 +2,7 @@
 title: すべての図をdraw.ioで管理するメリット
 slug: benefits-manage-all-diagrams
 date: 2020-01-06T23:46:29+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/nj3bdwjs1us71ty/neven-krcmarek-V4EOZj7g1gw-unsplash.jpg
+thumbnailImage: images/cover/2020-01-16.jpg
 categories:
   - engineering
 tags:
@@ -15,7 +15,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/nj3bdwjs1us71ty/neven-krcmarek-V4EOZj7g1gw-unsplas"/>
+{{<cimg "2020-01-16.jpg">}}
 
 <!--toc-->
 
@@ -109,7 +109,7 @@ draw.ioのメリット
 他のどのGUIツールより図の作成に向いているかもしれません😮  
 以下は簡単なワークフロー図を作成してみた動画です。
 
-{{<mp4 "https://dl.dropboxusercontent.com/s/zj727l8aug4ombg/20200106_1.mp4">}}
+{{<mp4 "resources/20200106_1.mp4">}}
 
 必要な図はほとんど描けてしまう気がしませんか?😉
 
@@ -122,11 +122,11 @@ draw.ioのメリット
 
 とてもgifでは紹介しきれませんが沢山あります😄
 
-{{<himg "https://dl.dropboxusercontent.com/s/u7p2hkl59lbl3ig/20200106_2.gif">}}
+{{<himg "resources/20200106_2.gif">}}
 
 左上の検索窓から検索して、そのまま使うこともできます。  
 
-{{<himg "https://dl.dropboxusercontent.com/s/0tvgqavf30qbbwf/20200106_3.gif">}}
+{{<himg "resources/20200106_3.gif">}}
 
 何のアイコンか分からない場合はHoverすると説明が表示される！ 素晴らしい😭  
 SVGアイコンの場合は色の変更も自由自在です😏

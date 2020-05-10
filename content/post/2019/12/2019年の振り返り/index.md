@@ -2,7 +2,7 @@
 title: 2019年の振り返り
 slug: good-bye-2019
 date: 2019-12-31T23:44:15+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/fujgz5valyq376j/clint-patterson-QJ1BY2vxXpA-unsplash.jpg
+thumbnailImage: images/cover/2019-12-31.jpg
 categories:
   - other
 ---
@@ -12,7 +12,7 @@ categories:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/fujgz5valyq376j/clint-patterson-QJ1BY2vxXpA-unsplas"/>
+{{<cimg "2019-12-31.jpg">}}
 
 <!--toc-->
 
@@ -116,7 +116,7 @@ PCだとサイドバーの`Search`から、スマホだと右上の検索ボタ�
 
 せっかくなので久々に書いてから、専用アプリでスキャンしてみました。
 
-{{<vimg "https://dl.dropboxusercontent.com/s/tnrg7dvzlcile8y/20191231_1.jpg">}}
+{{<vimg "resources/20191231_1.jpg">}}
 
 字が霞みやすいので、それがモヤモヤしていたのかもしれません..。
 
@@ -131,7 +131,7 @@ PCだとサイドバーの`Search`から、スマホだと右上の検索ボタ�
 結果は以下グラフの通り..結果にコミットできました💪  
 ※ 青が体重、黄色が内臓脂肪レベル
 
-{{<himg "https://dl.dropboxusercontent.com/s/dx4dsmbepliuu33/20191231_2.png">}}
+{{<himg "resources/20191231_2.png">}}
 
 食事管理やウォーキング(毎日10000歩)も続けての成果ではありますが、可視化は全ての改善において最も大切な1歩だと思っています😉
 

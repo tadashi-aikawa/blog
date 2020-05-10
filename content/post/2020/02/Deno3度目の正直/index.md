@@ -2,7 +2,7 @@
 title: Deno3度目の正直
 slug: Third-time-lucky-about-deno
 date: 2020-02-26T09:37:03+09:00
-thumbnailImage: https://dl.dropboxusercontent.com/s/ea69yw9k6rbmfj7/raptor-4452140_1280.jpg
+thumbnailImage: images/cover/2020-02-26.jpg
 categories:
   - engineering
 tags:
@@ -15,7 +15,7 @@ tags:
 
 <!--more-->
 
-<img src="https://dl.dropboxusercontent.com/s/ea69yw9k6rbmfj7/raptor-4452140_128"/>
+{{<cimg "2020-02-26.jpg">}}
 
 <!--toc-->
 
