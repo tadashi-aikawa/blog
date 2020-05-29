@@ -141,12 +141,12 @@ HTMLやMarkdownにSVGファイルを貼り付ければOKです。
 ### Markdownの場合
 
 ```markdown
-![](20200106.svg)
+![](resources/20200106.svg)
 ```
 
 実際はこうなります。
 
-![](20200106.svg)
+![](resources/20200106.svg)
 
 ### HTMLの場合
 
@@ -156,7 +156,7 @@ HTMLやMarkdownにSVGファイルを貼り付ければOKです。
 
 実際はこうなります。
 
-<img src="20200106.svg" />
+<img src="resources/20200106.svg" />
 
 
 SVGファイルの中身
@@ -179,11 +179,11 @@ GitHubだとテキストとベクター画像、それぞれで差分確認で�
 
 たとえばこんな図を作ります。
 
-{{<svg "20200106_2.svg">}}
+{{<svg "resources/20200106_2.svg">}}
 
 HTMLやMarkdownに埋め込んで確認してみると.. 一部の画像が表示されません。
 
-![](20200106_2.svg)
+![](resources/20200106_2.svg)
 
 これはHTMLのimgタグでsvgを表すると、svgのimageタグ属性`xlink:href`が有効にならないからです。  
 私はしっかり理解できていませんが、以下の記事が参考になりました。
