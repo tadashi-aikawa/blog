@@ -3,7 +3,6 @@ title: Windows TerminalとPowerShellでクールなターミナル環境をつ�
 slug: windows-terminal-and-power-shell-makes-beautiful
 date: 2020-05-24T17:47:00+09:00
 thumbnailImage: images/cover/2020-05-27.jpg
-draft: true
 categories:
   - engineering
 tags:
@@ -27,19 +26,20 @@ tags:
 はじめに
 --------
 
-先日、Windows Terminalのバージョン1.0がリリースされました。
+先日、[Windows Terminal]のバージョン1.0がリリースされました。
 
 {{<summary "https://github.com/microsoft/terminal">}}
 
-以前は状況に応じて、ツールを使い分けていました。
+以前は状況に応じてターミナルソフトを使い分けていましたが、[Windows Terminal]を使うことで全てを統一することができました😄
 
-| 使っていたもの | 状況                                                 |
-| -------------- | ---------------------------------------------------- |
-| [Cmder]        | 一般的なターミナル操作(コマンドプロンプトを使うもの) |
-| [git bash]     | Linuxコマンドを使ってShell Scriptを実行するとき      |
-| [wsl-terminal] | Linux(SSH含む)の操作                                 |
+### Windows Terminal導入前の環境
 
-今回の対応でこれらをすべて[Windows Terminal]に統一することができました。
+| 以前使っていたターミナルソフト | 状況                                                 |
+| ------------------------------ | ---------------------------------------------------- |
+| [Cmder]                        | 一般的なターミナル操作(コマンドプロンプトを使うもの) |
+| [git bash]                     | Linuxコマンドを使ってShell Scriptを実行するとき      |
+| [wsl-terminal]                 | Linux(SSH含む)の操作                                 |
+
 
 ### 以前の記事
 
@@ -69,8 +69,9 @@ tags:
 以下のような方を想定しています。
 
 * WindowsでLinuxのようにターミナルを快適に使いたい
-* WSL Terminalやgit bash、Cmderを使っているが満足できていない
-* Windows Terminalを使いこなしたい
+* [wsl-terminal]や[git bash]、[Cmder]を使っているが満足できていない
+* [Windows Terminal]を使いこなしたい
+* [PowerShell]を使いこなしたい
 * Windowsのコマンドプロンプトを哀れみの目で見てくるMac/Linuxユーザを見返したい
 
 
@@ -97,15 +98,20 @@ tags:
 | リポジトリにcdできる                      | 〇       | ×         | 〇             |
 
 
-なぜWindows Terminalなのか
---------------------------
+Windows Terminal
+----------------
+
+まずは[Windows Terminal]についてです。  
+導入を決めた理由、インストールや設定の仕方を説明していきます。
+
+### なぜWindows Terminalなのか
 
 理由は2つあります。
 
 ❶ Microsoftが公式で開発している  
 ❷ 必要な要件をほぼ全て満たしている
 
-### Microsoftが公式で開発している
+#### ❶ Microsoftが公式で開発している
 
 Windows OSを開発しているのはMicrosoftです。  
 そのMicrosoftが開発しているため、将来性は抜群でしょう😁
@@ -113,7 +119,7 @@ Windows OSを開発しているのはMicrosoftです。
 別の言い方をすると、リスク回避とも言えます。  
 数年後には、他のOSSターミナルは軒並み開発が停止している可能性がありますので。
 
-### 必要な要件をほぼ全て満たしている
+#### ❷ 必要な要件をほぼ全て満たしている
 
 今回試して分かったことでもありますが、私にとって必要な要件をほぼ全て満たしていました。  
 先ほどの要件表に照らし合わせると、以下のようになります。
@@ -138,11 +144,6 @@ Windows OSを開発しているのはMicrosoftです。
 ※ 他にも問題はありますが、それは後ほど紹介します
 
 
-Windows Terminal
-----------------
-
-ここからは[Windows Terminal]のインストール方法や設定の話をします。
-
 ### インストール
 
 公式が推奨しているので、Microsoft Storeからインストールしました。
@@ -164,70 +165,53 @@ GUIのメニューから設定を選ぶと、VS Codeなどのエディタで設�
 // 👀 https://docs.microsoft.com/ja-jp/windows/terminal/customize-settings/global-settings
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
+  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
 
-  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-  // 格好いいのでテーマはdark
   "theme": "dark",
   "copyOnSelect": false,
   "copyFormatting": false,
 
+  // ダブルクリックでパスを丸ごと選択したいため
+  "wordDelimiters": " ",
+
   // 👀 https://docs.microsoft.com/ja-jp/windows/terminal/customize-settings/profile-settings
+  // Azureは使わないので無効化
+  "disabledProfileSources": ["Windows.Terminal.Azure"],
   "profiles": {
     "defaults": {
-      "closeOnExit": "always",
       "startingDirectory": "%USERPROFILE%",
+      "closeOnExit": "always",
+      "colorScheme": "Tango Dark",
+
       // Nerd Fontを指定
       "fontFace": "SauceCodePro NF",
-      "fontSize": 13,
-      // 格好良いから
-      "colorScheme": "Tango Dark",
-      // 背景画像は右端に
-      "backgroundImageStretchMode": "uniform",
-      "backgroundImageAlignment": "right"
+      "fontSize": 13
     },
+
     // 実行するシェルの一覧
     "list": [
-      // PowerShellがメイン
+      // PowerShell Coreがメイン
       {
-        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "name": "Windows PowerShell",
-        "icon": "https://avatars3.githubusercontent.com/u/9500018?s=460&u=409f92af80796e5d70aff0d97cfbcfc9031cb620&v=4",
-        "backgroundImage": "%USERPROFILE%\\Pictures\\terminal\\linux-background.jpg"
+        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+        "source": "Windows.Terminal.PowershellCore",
+        "backgroundImage": "%USERPROFILE%\\git\\github.com\\tadashi-aikawa\\owl-playbook\\mnt\\windows\\power-shell\\fukurou.jpg"
       },
-      // WSLをたまに使う
+      // WSLは絵文字を入力したいとき
       {
         "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-        "name": "Ubuntu",
-        "source": "Windows.Terminal.Wsl",
-        "backgroundImage": "%USERPROFILE%\\Pictures\\terminal\\linux-tux.png"
+        "source": "Windows.Terminal.Wsl"
       },
-      // git bashもshellの動作確認用に使うことがある
+      // 『Git Bash』はbashスクリプトの動作確認用に使うことがある
       {
         "guid": "{cbaea444-ca1f-4125-bb6f-5c3f1201b568}",
         "name": "git bash",
         "startingDirectory": "%USERPROFILE%",
-        "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
-        "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico"
-      },
-      // コマンドプロンプトとCmderは基本使わないので hidden: true で非表示にする
-      {
-        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-        "name": "コマンド プロンプト",
-        "commandline": "cmd.exe",
-        "hidden": true
-      },
-      {
-        "guid": "{cae41f3b-63b9-47a2-a091-cfc530ccdc6b}",
-        "name": "Cmder",
-        "backgroundImage": "c:\\tools\\Cmder\\config\\fukurou.jpg",
-        "commandline": "cmd.exe /k C:\\tools\\Cmder\\vendor\\init.bat",
-        "hidden": true
-      },
-      {
-        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-        "hidden": false,
-        "name": "Azure Cloud Shell",
-        "source": "Windows.Terminal.Azure"
+        "commandline": "%GIT_INSTALL_ROOT%\\usr\\bin\\bash.exe",
+        "icon": "%GIT_INSTALL_ROOT%\\mingw64\\share\\git\\git-for-windows.ico",
+        "backgroundImage": "%GIT_INSTALL_ROOT%\\mingw64\\share\\git\\git-for-windows.ico",
+        "backgroundImageAlignment": "bottomRight",
+        "backgroundImageStretchMode": "none",
+        "backgroundImageOpacity": 0.75
       }
     ]
   },
@@ -255,48 +239,17 @@ GUIのメニューから設定を選ぶと、VS Codeなどのエディタで設�
     { "command": "prevTab", "keys": "alt+h" },
 
     // ペインの分割
-    {
-      "command": {
-        "action": "splitPane",
-        "split": "auto",
-        "splitMode": "duplicate"
-      },
-      "keys": "alt+shift+d"
-    },
+    { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" },
     // ペイン移動
-    {
-      "command": { "action": "moveFocus", "direction": "down" },
-      "keys": "alt+ctrl+j"
-    },
-    {
-      "command": { "action": "moveFocus", "direction": "left" },
-      "keys": "alt+ctrl+h"
-    },
-    {
-      "command": { "action": "moveFocus", "direction": "right" },
-      "keys": "alt+ctrl+l"
-    },
-    {
-      "command": { "action": "moveFocus", "direction": "up" },
-      "keys": "alt+ctrl+k"
-    },
+    { "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+ctrl+j" },
+    { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+ctrl+h" },
+    { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+ctrl+l" },
+    { "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+ctrl+k" },
     // ペインサイズ変更
-    {
-      "command": { "action": "resizePane", "direction": "down" },
-      "keys": "alt+shift+j"
-    },
-    {
-      "command": { "action": "resizePane", "direction": "left" },
-      "keys": "alt+shift+h"
-    },
-    {
-      "command": { "action": "resizePane", "direction": "right" },
-      "keys": "alt+shift+l"
-    },
-    {
-      "command": { "action": "resizePane", "direction": "up" },
-      "keys": "alt+shift+k"
-    }
+    { "command": { "action": "resizePane", "direction": "down" }, "keys": "alt+shift+j" },
+    { "command": { "action": "resizePane", "direction": "left" }, "keys": "alt+shift+h" },
+    { "command": { "action": "resizePane", "direction": "right" }, "keys": "alt+shift+l" },
+    { "command": { "action": "resizePane", "direction": "up" }, "keys": "alt+shift+k" }
   ]
 }
 ```
@@ -317,7 +270,7 @@ Power Shellに乗り換えた一番の理由は、コマンドの反応速度で
 
 画面イメージはこんな感じです。
 
-{{<himg "resources/a47ea615.jpeg">}}
+{{<himg "resources/c03f93bd.jpeg">}}
 
 GitHubでも設定を公開しています。よろしければご覧下さい。
 
@@ -334,18 +287,22 @@ GitHubでも設定を公開しています。よろしければご覧下さい�
 {{</why>}}
 
 
-なぜPowerShellなのか
---------------------
+PowerShellのセットアップ
+------------------------
 
-[Windows Terminal]の設定が終わったので、ここからは[PowerShell]の話をしていきます。  
+[PowerShell]のベース環境を作ります。  
+振り返ってみるとこの記事のメインは[PowerShell]かもしれません..。
+
+
+### なぜPowerShellなのか
+
 まずは採用した理由について..理由は3つあります。
 
 ❶ Windows標準  
 ❷ 見た目をかなりカスタマイズできる  
 ❸ Cmder.exeよりコマンド実行速度が速い  
 
-
-### Windows標準 
+#### ❶ Windows標準 
 
 [PowerShell]はWindowsに標準でインストールされています。  
 しかも、最近の推奨シェルは[PowerShell]となっています。
@@ -354,7 +311,7 @@ GitHubでも設定を公開しています。よろしければご覧下さい�
 
 Windowsとの相性を考えると、最もベストな選択肢と言えるでしょう。
 
-### 見た目をかなりカスタマイズできる
+#### ❷ 見た目をかなりカスタマイズできる
 
 [oh-my-posh]というテーマエンジンを使うと、見た目をかなりカスタマイズできます。  
 これは、コマンドプロンプトと比べて大きなメリットでしょう😄
@@ -368,8 +325,7 @@ Windowsとの相性を考えると、最もベストな選択肢と言えるで�
 
 絵文字は後ほど紹介する設定でカスタマイズしています。
 
-
-### Cmder.exeよりコマンド実行速度が速い
+#### ❸ Cmder.exeよりコマンド実行速度が速い
 
 Windowsではコマンドプロンプト/PowerShell以外のシェルを使うと、exe呼び出しか通信のオーバーヘッドがかなりかかっている気がします。  
 たとえば、現在のリポジトリ状況を示すPowerlineの表示速度を比較するとこれだけ差が出ます。
@@ -386,15 +342,39 @@ Enterを押してから情報が表示されるまでのラグを比べてみる
 
 私が[PowerShell]を採用する決め手となったのが、この速度差というわけです👍
 
+### PowerShell Coreのインストール
 
-PowerShell
-----------
+[PowerShell]という呼び名は、以下2つのエディションをしばしば包括しています。
 
-それでは、[PowerShell]の準備をしていきましょう。
+| エディション         | 概要                               | Windows標準搭載 |
+| -------------------- | ---------------------------------- | --------------- |
+| Windows PowerShell   | v5まで. Windows専用                | されている      |
+| PowerShell Core      | v6以降. クロスプラットフォーム対応 | されていない    |
 
-### セットアップ
+今回の記事ではPowerShell Coreを使います。
 
-jMicrosoftの公式ページを参考にします。
+{{<why "なぜPowerShell Coreを使うのか?">}}
+大きな理由は以下2点です。
+
+❶ Windows PowerShellは開発が事実上凍結している (将来性がない)  
+❷ PowerShell Coreは標準エンコーディングがUTF-8 BOMなし (Windows PowerShellはUTF-16 BOMあり)
+
+特に❷の問題は、Windows PowerShellで解決することができません。  
+Encodingを指定しても、UTF-8 BOMありが限界です。
+{{</why>}}
+
+GitHubのリリースページから、最新の安定版をインストールします。
+
+{{<summary "https://github.com/PowerShell/PowerShell/releases">}}
+
+本記事執筆時は`PowerShell-7.0.1-win-x64.msi`を使いました。
+
+インストールが完了したら起動してみましょう。  
+**起動コマンドは`powershell`ではなく`pwsh`なので間違えないよう気をつけてください。**
+
+### Powerlineのセットアップ
+
+Microsoftの公式ページを参考にします。
 
 {{<summary "https://docs.microsoft.com/ja-jp/windows/terminal/tutorials/powerline-setup">}}
 
@@ -403,7 +383,6 @@ jMicrosoftの公式ページを参考にします。
 ```powershell
 Install-Module posh-git -Scope CurrentUser -Force
 Install-Module oh-my-posh -Scope CurrentUser -Force
-# PowerShell Coreを使用している場合
 Install-Module -Name PSReadLine -Scope CurrentUser -Force -SkipPublisherCheck
 ```
 
@@ -418,59 +397,59 @@ Powerlineの表示には、アイコンに対応した特殊なフォントが�
 私は`Source Code Pro`が好きなので、`Sauce Code Pro Nerd Font`にしました。
 
 解凍をしたら、インストールしたいフォントをダブルクリックします。  
-私は以下をインストールしました。
+私は`Windows Compatible`版をすべてインストールしました。
 
-* `Sauce Code Pro Nerd Font Complete Windows Compatible.ttf`
-* `Sauce Code Pro Bold Nerd Font Complete Windows Compatible.ttf`
-* `Sauce Code Pro Semibold Nerd Font Complete Windows Compatible.ttf`
+{{<info "Windows Terminalでフォントを指定する方法">}}
 
-これらを使うには[Windows Terminal]の設定で`fontFace`に指定する必要があります。  
-先ほどの設定例には既に記載されています。
+Windows Terminalの設定で`fontFace`に指定します。
+先ほど紹介した`settings.json`の例では以下のようにしています。
 
 ```
 "fontFace": "SauceCodePro NF"
 ```
 
+{{</info>}}
 
-### プロファイルの設定
 
-[PowerShell]を起動して以下のコマンドを実行します。
+### プロファイルの作成
+
+[PowerShell]の設定はプロファイルで設定します。  
+
+プロファイルの場所は`$PROFILE`で出力されるパスです。  
+まずは空ファイルを作成しましょう。
 
 ```
 notepad $PROFILE
 ```
 
-プロファイルが開きますので、必要な設定を記載します。
+先ほどインストールしたPowerline関連のModuleをインポートする設定を追加します。
 
-```powerline
+```powershell
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme Paradox
 ```
-
-[PowerShell]を再起動すれば表示が変わると思います。
-
 
 私のprofileファイルは以下です。
 
-{{<file "~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1">}}
+{{<file "~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1">}}
 
 ```powershell
 #-----------------------------------------------------
-# Env
+# General
 #-----------------------------------------------------
-
-# パイプで渡したときに文字化けで処理が上手く行かない問題を回避するため
-$utf8 = [System.Text.Encoding]::GetEncoding("utf-8")
-$OutputEncoding = $utf8
-[System.Console]::OutputEncoding = $utf8
 
 # git logなどのマルチバイト文字を表示させるため (絵文字含む)
 $env:LESSCHARSET = "utf-8"
 
-# Git Bash配下のMinGW系コマンドが使えるなら使う
-$env:PATH += ";C:\Program Files\Git\usr\bin"
+# 音を消す
+Set-PSReadlineOption -BellStyle None
 
+#-----------------------------------------------------
+# Key binding
+#-----------------------------------------------------
+
+# Emacsベース
+Set-PSReadLineOption -EditMode Emacs
 
 #-----------------------------------------------------
 # Powerline
@@ -478,6 +457,8 @@ $env:PATH += ";C:\Program Files\Git\usr\bin"
 
 Import-Module posh-git
 Import-Module oh-my-posh
+Import-Module z
+
 Set-Theme Powerlevel10k-Lean
 
 # Prompt
@@ -502,26 +483,38 @@ $ThemeSettings.GitSymbols.BranchUntrackedSymbol = [char]::ConvertFromUtf32(0xf66
 $env:FZF_DEFAULT_OPTS="--reverse --border --height 50%"
 $env:FZF_DEFAULT_COMMAND='fd -HL --exclude ".git" .'
 function _fzf_compgen_path() {
-  fd -HL --exclude ".git" . "$1"
+    fd -HL --exclude ".git" . "$1"
 }
 function _fzf_compgen_dir() {
-  fd --type d -HL --exclude ".git" . "$1"
+    fd --type d -HL --exclude ".git" . "$1"
 }
 
-
 #-----------------------------------------------------
-# Alias
+# Linux like commands
 #-----------------------------------------------------
 
-# Linux like (WSLの場合は日本語問題に遭遇しにくい。ただしpipeを使わない場合)
-Remove-Item alias:cat
+# Linuxコマンドを優先
+$linuxBin = "$env:GIT_INSTALL_ROOT\usr\bin"
 Remove-Item alias:rm
-function ll() { wsl ls -l $args }
+function rm() { Invoke-Expression "$linuxBin\rm $args"}
+function mkdir() { Invoke-Expression "$linuxBin\mkdir $args"}
+
+# 代替コマンドを使用
+Set-Alias grep rg
+function ll() { lsd -l --blocks permission --blocks size --blocks date --blocks name --blocks inode $args}
+function tree() { lsd --tree $args}
+
+#-----------------------------------------------------
+# Useful commands
+#-----------------------------------------------------
 
 # cd
 function cdg() { gowl list | fzf | cd }
 function cdr() { fd -H -t d -E .git -E node_modules | fzf | cd }
-function cdz() { z -l | oss | select -skip 3  | % { $_.Trim().Split(" *")[1] } | fzf | cd }
+function cdz() { z -l | oss | select -skip 3 | % { $_ -split " +" } | sls -raw '^[a-zA-Z].+' | fzf | cd }
+
+# Copy current path
+function cpwd() { Convert-Path . | Set-Clipboard }
 
 # git flow
 function gf()  { git fetch --all }
@@ -538,14 +531,13 @@ function gbm()  { git branch -l | rg -v '^\* ' | % { $_ -replace " ", "" } | fzf
 
 # git log
 function gls()   { git log -3}
-function gll()   { git log --oneline --all --graph --decorate }
+function gll()   { git log -10 --oneline --all --graph --decorate }
 function glll()  { git log --graph --all --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%d%Creset\ %C(yellow)%h%Creset %C(magenta)%ae%Creset %C(cyan)%ad%Creset%n%C(white bold)%w(80)%s%Creset%n%b' }
 function glls()  { git log --graph --all --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(auto)%d%Creset\ %C(yellow)%h%Creset %C(magenta)%ae%Creset %C(cyan)%ad%Creset%n%C(white bold)%w(80)%s%Creset%n%b' -10}
 
 # git status
 function gs()  { git status --short }
 function gss() { git status -v }
-
 ```
 
 {{</file>}}
@@ -554,57 +546,33 @@ GitHubでも設定を公開しています。よろしければご覧下さい�
 
 {{<summary "https://github.com/tadashi-aikawa/owl-playbook/blob/master/mnt/windows/power-shell/Microsoft.PowerShell_profile.ps1">}}
 
-{{<warn "一部の設定にはコマンドのインストールなどが必要です">}}
-以降の章で紹介していきます。
-{{</warn>}}
+プロファイルの中身は次章で詳しく説明します。
 
-### 文字コードをUTF-8に寄せる
 
-文字コードを極力統一するのはとても大事です。  
-いくつか制約はありますが、極力UTF-8として扱えるようprofileに設定します。
+PowerShellのカスタマイズ
+------------------------
+
+プロファイルでカスタマイズした内容を詳しく説明します。
+
+### git logなどの文字化けを解消する
+
+pagerでlessを使う場合、デフォルトのエンコーディングがUTF-8ではないため文字化けします。  
+以下のように設定してマルチバイト文字を表示できるようにしています。
 
 ```powershell
-# パイプで渡したときに文字化けで処理が上手く行かない問題を回避するため
-$utf8 = [System.Text.Encoding]::GetEncoding("utf-8")
-$OutputEncoding = $utf8
-[System.Console]::OutputEncoding = $utf8
-
-# git logなどのマルチバイト文字を表示させるため (絵文字含む)
 $env:LESSCHARSET = "utf-8"
 ```
 
-### Linuxコマンドをできるだけ使えるようにする
+### キーバインドをbashに寄せる
 
-[git bash]にコマンドが同梱されていますのでPATHを通します。
-
-```powershell
-# Git Bash配下のMinGW系コマンドが使えるなら使う
-$env:PATH += ";C:\Program Files\Git\usr\bin"
-```
-
-PowerShellとコマンド名が同じだが、Linuxコマンドを優先にしたい場合は無効にします。  
-ただし、pipeを通すとうまく動かないので注意して下さい。
+[PowerShell]はターミナルで使えるショートカットキーがbashと異なります。  
+PSReadLineの設定をEmacsベースにすることで、bashのようなショートカットキーが使えるようになります。
 
 ```powershell
-# Linux like (WSLの場合は日本語問題に遭遇しにくい。ただしpipeを使わない場合)
-Remove-Item alias:cat
-Remove-Item alias:rm
+Set-PSReadLineOption -EditMode Emacs
 ```
 
-また、PowerShellの`ll (ls- l)`は表示が遅いので、`function`としてWSLの`ls -l`コマンドを呼び出すようにしています。  
-WSLで扱うパスの区切り文字は`/`なので文字列置換が必要です。
-
-```powershell
-function ll() {
-  if ($args -ne "") {
-    wsl ls -l $args.Replace("\", "/")
-  } else {
-    wsl ls -l
-  }
-}
-```
-
-### アイコン設定
+### Powerlineをカスタマイズする
 
 主にGitのステータス表示で使われるアイコンをカスタマイズします。
 
@@ -613,6 +581,12 @@ function ll() {
 profileの以下で設定しています。
 
 ```powershell
+Set-Theme Powerlevel10k-Lean
+
+# Prompt
+$ThemeSettings.Colors.DriveForegroundColor = "Blue"
+
+# Git
 $ThemeSettings.GitSymbols.LocalStagedStatusSymbol = ""
 $ThemeSettings.GitSymbols.LocalWorkingStatusSymbol = ""
 $ThemeSettings.GitSymbols.BeforeWorkingSymbol = [char]::ConvertFromUtf32(0xf040)+" "
@@ -654,12 +628,73 @@ $ThemeSettings.GitSymbols.BranchUntrackedSymbol = [char]::ConvertFromUtf32(0xf66
 profileにワンライナーのfunctionを定義すればOKです。
 
 ```powershell
+Import-Module z
+
+# fzf
+$env:FZF_DEFAULT_OPTS="--reverse --border --height 50%"
+$env:FZF_DEFAULT_COMMAND='fd -HL --exclude ".git" .'
+function _fzf_compgen_path() {
+    fd -HL --exclude ".git" . "$1"
+}
+function _fzf_compgen_dir() {
+    fd --type d -HL --exclude ".git" . "$1"
+}
+
+# Command
 function cdg() { gowl list | fzf | cd }
 function cdr() { fd -H -t d -E .git -E node_modules | fzf | cd }
-function cdz() { z -l | oss | select -skip 3  | % { $_.Trim().Split(" *")[1] } | fzf | cd }
+function cdz() { z -l | oss | select -skip 3 | % { $_ -split " +" } | sls -raw '^[a-zA-Z].+' | fzf | cd }
 ```
 
 pipeで`cd`すると移動できるのは非常に🆒ですね！
+
+### Linuxコマンドをできるだけ使えるようにする
+
+日本語の扱いやパイプ、ビルドコマンドの制約などあるため完璧な設定は難しいです。  
+できるだけ違和感なくなるよう、頻出するコマンドだけカスタマイズしてみました。
+
+#### git bashに同梱されているコマンドを使用する
+
+`rm`と`mkdir`を設定します。
+
+```powershell
+$linuxBin = "$env:GIT_INSTALL_ROOT\usr\bin"
+
+# rm
+Remove-Item alias:rm
+function rm() { Invoke-Expression "$linuxBin\rm $args"}
+
+# mkdir
+function mkdir() { Invoke-Expression "$linuxBin\mkdir $args"}
+```
+
+`rm`は既にエイリアスが存在するため、エイリアス削除が必要です。
+
+#### 代替コマンドを使う
+
+パイプで繋ぐことが多いコマンドは、Windowsに対応している代替コマンドを使います。  
+すべて[Scoop]でインストールできます。
+
+| コマンド | 依存しているツール | インストール方法の一例 |
+| -------- | ------------------ | ---------------------- |
+| grep     | [ripgrep]          | [Scoop]                |
+| ll       | [lsd]              | [Scoop]                |
+| tree     | [lsd]              | [Scoop]                |
+
+それらを使ってAliasやfunctionを設定します。
+
+```powershell
+# grep
+Set-Alias grep rg
+
+# ll
+function ll() { lsd -l --blocks permission --blocks size --blocks date --blocks name --blocks inode $args}
+
+# tree
+function tree() { lsd --tree $args}
+```
+
+`lsd`は`ls`より見た目も格好良くて🆒ですね😄
 
 
 課題
@@ -667,16 +702,18 @@ pipeで`cd`すると移動できるのは非常に🆒ですね！
 
 見た目もパフォーマンスも素晴らしい[Windows Terminal] x [PowerShell]ですが課題もあります。
 
-### 標準出力/リダイレクトするとおかしくなる
+### Linuxコマンドを呼び出すと文字化けすることがある
 
+文字コードやコマンド設計のズレから、文字化けして表示できないことがあります。  
+先ほど紹介したように、パイプを利用するコマンドは代替コマンドを検討しましょう。
 
-### Linuxコマンドとの相性が悪い
+### 絵文字が入力できない
 
+[PowerShell]の問題だと思います。
 
-### 絵文字が入力できない(PowerShell)
+絵文字の表示はほぼ完璧ですが、入力は全くできません。  
+絵文字の入力が必要な場合は[PowerShell]ではなくWSLを利用してみましょう。
 
-Local VMはWSLからいったほうがいい。絵文字も完璧
-PowerShellからだと絵文字がダメ
 
 トラブルシューティング
 ----------------------
@@ -740,3 +777,5 @@ set clipboard+=unnamed
 [fd]: https://github.com/sharkdp/fd
 [gowl]: https://github.com/tadashi-aikawa/gowl
 [z]: https://github.com/rupa/z
+[ripgrep]: https://github.com/BurntSushi/ripgrep
+[lsd]: https://github.com/Peltoche/lsd
