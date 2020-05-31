@@ -1,7 +1,7 @@
 ---
 title: Windows TerminalとPowerShellでクールなターミナル環境をつくってみた
 slug: windows-terminal-and-power-shell-makes-beautiful
-date: 2020-05-24T17:47:00+09:00
+date: 2020-05-31T17:50:08+09:00
 thumbnailImage: images/cover/2020-05-27.jpg
 categories:
   - engineering
@@ -30,7 +30,16 @@ tags:
 
 {{<summary "https://github.com/microsoft/terminal">}}
 
-以前は状況に応じてターミナルソフトを使い分けていましたが、[Windows Terminal]を使うことで全てを統一することができました😄
+以前は状況に応じてターミナルソフトを使い分けていましたが、[Windows Terminal]を使うことで全てを統一することができました。
+
+### 導入後のイメージ
+
+本記事の設定を行うと、どのようになるのか...  
+実際の動作イメージを動画に収めました。
+
+{{<mp4 "resources/3.mp4">}}
+
+興味がありましたら是非この先へお進みください😉
 
 ### Windows Terminal導入前の環境
 
@@ -438,6 +447,10 @@ Import-Module oh-my-posh
 # General
 #-----------------------------------------------------
 
+# PowerShell Core7でもConsoleのデフォルトエンコーディングはsjisなので必要
+[System.Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("utf-8")
+[System.Console]::InputEncoding = [System.Text.Encoding]::GetEncoding("utf-8")
+
 # git logなどのマルチバイト文字を表示させるため (絵文字含む)
 $env:LESSCHARSET = "utf-8"
 
@@ -554,14 +567,36 @@ PowerShellのカスタマイズ
 
 プロファイルでカスタマイズした内容を詳しく説明します。
 
-### git logなどの文字化けを解消する
+### 文字化けを解消する
 
-pagerでlessを使う場合、デフォルトのエンコーディングがUTF-8ではないため文字化けします。  
-以下のように設定してマルチバイト文字を表示できるようにしています。
+PowerShell Coreは`$OutputEncoding`のデフォルトがUTF-8です。  
+しかし、その他の設定はsjisのものが多数あります。
+
+これらについて、すべてUTF-8を指定しなくてはなりません。
 
 ```powershell
+# PowerShell Core7でもConsoleのデフォルトエンコーディングはsjisなので必要
+[System.Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("utf-8")
+[System.Console]::InputEncoding = [System.Text.Encoding]::GetEncoding("utf-8")
+
+# git logなどのマルチバイト文字を表示させるため (絵文字含む)
 $env:LESSCHARSET = "utf-8"
 ```
+
+以下の回答に大変助けられました..🙇
+
+{{<summary "https://teratail.com/questions/226487">}}
+
+{{<info "git statusのファイル名が文字化けする場合..">}}
+
+こちらの場合はgitの設定変更で解決できます。
+
+```
+git config --global core.quotepath false
+```
+
+{{</info>}}
+
 
 ### キーバインドをbashに寄せる
 
@@ -646,12 +681,20 @@ function cdr() { fd -H -t d -E .git -E node_modules | fzf | cd }
 function cdz() { z -l | oss | select -skip 3 | % { $_ -split " +" } | sls -raw '^[a-zA-Z].+' | fzf | cd }
 ```
 
+実際にコマンドを実行している動画です。
+
+{{<mp4 "resources/1.mp4">}}
+
 pipeで`cd`すると移動できるのは非常に🆒ですね！
 
 ### Linuxコマンドをできるだけ使えるようにする
 
 日本語の扱いやパイプ、ビルドコマンドの制約などあるため完璧な設定は難しいです。  
 できるだけ違和感なくなるよう、頻出するコマンドだけカスタマイズしてみました。
+
+以下はこれから設定するコマンドを組み合わせた動画です。
+
+{{<mp4 "resources/2.mp4">}}
 
 #### git bashに同梱されているコマンドを使用する
 
@@ -720,7 +763,8 @@ function tree() { lsd --tree $args}
 
 ### profileに記載された設定が部分的に反映されない
 
-profileが **CRLF改行** になっていることを確認してください。
+profileが **CRLF改行** になっていることを確認してください。  
+LF改行の場合は正しく認識されないことがあります。
 
 ### sshすると posix_spawn: No such file or directory
 
@@ -764,6 +808,21 @@ ProxyCommand    C:\Windows\System32\OpenSSH\ssh.exe -W %h:%p server
 set clipboard+=unnamed
 ```
 
+
+総括
+----
+
+[Windows Terminal]と[PowerShell]を使ってCOOLなターミナル環境を構築する手順を説明しました。  
+文字コード問題やLinuxにどこまで思考をあわせるか..という点でとても苦労しましたが、満足できるクオリティに仕上がったのでは..と感じています🤗
+
+先日リリースされたWSL2をメインに考えている方も多いと思います。  
+しかし、結局のところWSL2はLinuxであり、1つの技術に依存するのはリスクだと思います。
+
+PowerShell Coreもクロスプラットフォームを意識することで、標準的な仕様が増えてきました。  
+[Windows Terminal]の登場で、ターミナルソフト面でも優位性もあります。
+
+この記事で1人でも多くの方が[PowerShell]を導入し、Windows環境での開発を楽しんでほしい..  
+と 心から願っております😊
 
 [Windows Terminal]: https://docs.microsoft.com/ja-jp/windows/terminal/
 [PowerShell]: https://docs.microsoft.com/en-us/powershell/
