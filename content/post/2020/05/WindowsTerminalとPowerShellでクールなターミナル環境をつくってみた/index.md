@@ -506,16 +506,38 @@ function _fzf_compgen_dir() {
 # Linux like commands
 #-----------------------------------------------------
 
-# Linuxコマンドを優先
-$linuxBin = "$env:GIT_INSTALL_ROOT\usr\bin"
+# パイプラインを受けつけないLinux標準コマンド
+Remove-Item alias:cp
+function cp() { uutils cp $args}
+Remove-Item alias:mv
+function mv() { uutils mv $args}
 Remove-Item alias:rm
-function rm() { Invoke-Expression "$linuxBin\rm $args"}
-function mkdir() { Invoke-Expression "$linuxBin\mkdir $args"}
+function rm() { uutils rm $args}
+Remove-Item alias:ls
+function mkdir() { uutils mkdir $args}
+function printenv() { uutils printenv $args}
+
+# パイプラインを受けつけるLinux標準コマンド
+Remove-Item alias:cat
+function cat() { $input | uutils cat $args}
+function head() { $input | uutils head $args}
+function tail() { $input | uutils tail $args}
+function wc() { $input | uutils wc $args}
+function tr() { $input | uutils tr $args}
+function pwd() { $input | uutils pwd $args}
+function cut() { $input | uutils cut $args}
+function uniq() { $input | uutils uniq $args}
+# ⚠ readonlyのaliasなので問題が発生するかも..
+Remove-Item alias:sort -Force
+function sort() { $input | uutils sort $args}
 
 # 代替コマンドを使用
 Set-Alias grep rg
-function ll() { lsd -l --blocks permission --blocks size --blocks date --blocks name --blocks inode $args}
-function tree() { lsd --tree $args}
+function ls() { exa --icons $args }
+function tree() { exa --icons -T $args}
+
+# Linuxコマンドのエイリアス
+function ll() { uutils ls -l $args}
 
 #-----------------------------------------------------
 # Useful commands
@@ -525,6 +547,9 @@ function tree() { lsd --tree $args}
 function cdg() { gowl list | fzf | cd }
 function cdr() { fd -H -t d -E .git -E node_modules | fzf | cd }
 function cdz() { z -l | oss | select -skip 3 | % { $_ -split " +" } | sls -raw '^[a-zA-Z].+' | fzf | cd }
+
+# vim
+function vimr() { fd -H -E .git -E node_modules | fzf | % { vim $_ } }
 
 # Copy current path
 function cpwd() { Convert-Path . | Set-Clipboard }
@@ -648,7 +673,7 @@ $ThemeSettings.GitSymbols.BranchUntrackedSymbol = [char]::ConvertFromUtf32(0xf66
 ### fzfとの連携
 
 [Cmder]を使っていたときは、独自Luaスクリプトで[fzf]と連携するコマンドを使っていました。  
-下記の`cdg`, `cdz`, `cdr`相当のことをできるようにします。
+下記の`cdg`, `cdz`, `cdr`, `vimd`, `vimf`相当のことをできるようにします。
 
 {{<summary "https://github.com/tadashi-aikawa/owl-cmder-tools">}}
 
@@ -659,6 +684,7 @@ $ThemeSettings.GitSymbols.BranchUntrackedSymbol = [char]::ConvertFromUtf32(0xf66
 | cdr      | [fd]               | [Scoop]                                                             |
 | cdz      | [z]                | [PowerShell Gallery](https://www.powershellgallery.com/packages/z/) |
 | cdg      | [gowl]             | go get                                                              |
+| vimr     | [fd] / vim         | [Scoop]                                                             |
 
 profileにワンライナーのfunctionを定義すればOKです。
 
@@ -679,13 +705,12 @@ function _fzf_compgen_dir() {
 function cdg() { gowl list | fzf | cd }
 function cdr() { fd -H -t d -E .git -E node_modules | fzf | cd }
 function cdz() { z -l | oss | select -skip 3 | % { $_ -split " +" } | sls -raw '^[a-zA-Z].+' | fzf | cd }
+function vimr() { fd -H -E .git -E node_modules | fzf | % { vim $_ } }
 ```
 
 実際にコマンドを実行している動画です。
 
 {{<mp4 "resources/1.mp4">}}
-
-pipeで`cd`すると移動できるのは非常に🆒ですね！
 
 ### Linuxコマンドをできるだけ使えるようにする
 
@@ -696,26 +721,49 @@ pipeで`cd`すると移動できるのは非常に🆒ですね！
 
 {{<mp4 "resources/2.mp4">}}
 
-#### git bashに同梱されているコマンドを使用する
+#### uutils/coreutilsのコマンドを使用する
 
-`rm`と`mkdir`を設定します。
+Rustで書きかえられたクロスプラットフォーム対応のcoreutilsである[uutils/coreutils]を使います。  
+[Scoop]でインストールできます。
+
+{{<summary "https://github.com/uutils/coreutils">}}
+
+[uutils/coreutils]は`uutils コマンド名`という構文です。  
+パイプが必要なものと不要なものでそれぞれ設定します。
 
 ```powershell
-$linuxBin = "$env:GIT_INSTALL_ROOT\usr\bin"
-
-# rm
+# パイプラインを受けつけないLinux標準コマンド
+Remove-Item alias:cp
+function cp() { uutils cp $args}
+Remove-Item alias:mv
+function mv() { uutils mv $args}
 Remove-Item alias:rm
-function rm() { Invoke-Expression "$linuxBin\rm $args"}
+function rm() { uutils rm $args}
+Remove-Item alias:ls
+function mkdir() { uutils mkdir $args}
+function printenv() { uutils printenv $args}
 
-# mkdir
-function mkdir() { Invoke-Expression "$linuxBin\mkdir $args"}
+# パイプラインを受けつけるLinux標準コマンド
+Remove-Item alias:cat
+function cat() { $input | uutils cat $args}
+function head() { $input | uutils head $args}
+function tail() { $input | uutils tail $args}
+function wc() { $input | uutils wc $args}
+function tr() { $input | uutils tr $args}
+function pwd() { $input | uutils pwd $args}
+function cut() { $input | uutils cut $args}
+function uniq() { $input | uutils uniq $args}
+# ⚠ readonlyのaliasなので問題が発生するかも..
+Remove-Item alias:sort -Force
+function sort() { $input | uutils sort $args}
 ```
 
-`rm`は既にエイリアスが存在するため、エイリアス削除が必要です。
+他に必要なコマンドがあれば追加してください。  
+既にエイリアスが存在するものは`Remove-Item`で削除が必要です。
 
 #### 代替コマンドを使う
 
-パイプで繋ぐことが多いコマンドは、Windowsに対応している代替コマンドを使います。  
+[uutils/coreutils]で置き換えられないもの、他コマンドの方が良いものをそれぞれ設定します。
 すべて[Scoop]でインストールできます。
 
 | コマンド | 依存しているツール | インストール方法の一例 |
@@ -737,16 +785,35 @@ function ll() { lsd -l --blocks permission --blocks size --blocks date --blocks 
 function tree() { lsd --tree $args}
 ```
 
-`lsd`は`ls`より見た目も格好良くて🆒ですね😄
+[lsd]は`ls`より見た目も格好良くて🆒ですね😄
 
-{{<error "特定ファイル、ディレクトリ、ドライブがエラーで表示されない">}}
+{{<error "lsdで特定ファイル、ディレクトリ、ドライブを表示しようとしたときエラーになる場合は..">}}
 
-`lsd`は環境によって表示されない場合があるようです。  
-同じく`ls`の代替ツールである`exa`は、その点を解消する動きがあります。
+[lsd]は環境によって表示されない場合があるようです。  
+同じく`ls`の代替ツールである[exa]は上記ケースをケアするようです。
+
+[exa]は今のところWindows未対応ですが、サポートの兆しがあります。  
+実際に以下Issue内で`-l`オプションを除く動作に成功しています。
 
 {{<summary "https://github.com/ogham/exa/issues/32">}}
 
-完成された場合は`exa`に切り替えるかもしれません。
+[lsd]が使えない場合は[exa]のWindows対応を待つか、上記開発中のソースでビルド/インストールしてみてはいかがでしょうか。  
+以下のコメントに記載されたビルドコマンドでビルドできました。
+
+{{<summary "https://github.com/ogham/exa/issues/32#issuecomment-623042107">}}
+
+[exa]を使う場合、関連する設定は以下のようになります。
+
+```powershell
+function ls() { exa --icons $args }
+function tree() { exa --icons -T $args}
+
+# exa -lは未完成のためuutils lsを使う
+function ll() { uutils ls -l $args}
+```
+
+[lsd]: https://github.com/Peltoche/lsd
+[exa]: https://github.com/ogham/exa 
 
 {{</error>}}
 
@@ -849,3 +916,4 @@ PowerShell Coreもクロスプラットフォームを意識することで、�
 [z]: https://github.com/rupa/z
 [ripgrep]: https://github.com/BurntSushi/ripgrep
 [lsd]: https://github.com/Peltoche/lsd
+[uutils/coreutils]: https://github.com/uutils/coreutils
