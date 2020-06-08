@@ -6,7 +6,16 @@ thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
 tags:
-  - idea
+  - rust
+  - windows
+  - terminal
+  - powershell
+  - jumeaux
+  - markowl
+  - togowl
+  - ipad
+  - make
+  - vue
 ---
 
 Weekly Reportをはじめることにしました。
@@ -67,6 +76,51 @@ Weekly Reportの内容は、他の記事と比べて記載内容の信憑性は�
 
 インプット
 ----------
+
+### uutils/coreutils
+
+Rustで書きかえられたクロスプラットフォーム対応のcoreutilsであるuutils/coreutilsを使ってみました。
+
+{{<summary "https://github.com/uutils/coreutils">}}
+
+MinGWとの大きな違いは、ファイル名などを含めて文字化け問題に遭遇しにくいことです。
+
+### mp4の動画サイズを抑える方法
+
+ブログで使うmp4ファイルの容量が大きかったので、削減する方法を調べました。  
+libx264コーデックを使うと1/3強まで削減できました👍
+
+```
+$ ffmpeg -i input.mp4 -vcodec libx264 -crf 20 output.mp4
+```
+
+{{<summary "https://qastack.jp/unix/28803/how-can-i-reduce-a-videos-size-with-ffmpeg">}}
+
+### Markedをinlineで使う
+
+MarkedはMarkdownをHTMLに変換するライブラリです。
+
+{{<summary "https://github.com/markedjs/marked">}}
+
+デフォルトだと改行なしテキストは`<p>`タグで外側を囲まれます。  
+inlineでparseしたい場合、`<p>`タグの存在が不都合なケースもあります。
+
+そこで、`InlineRenderer`を作り、inlineの場合は`<p>`タグで括らないように処理を上書きしました。
+
+```js
+const marked = require("marked");
+const defaultRenderer = new marked.Renderer();
+const InlineRenderer = new marked.Renderer();
+InlineRenderer.paragraph = (text: string) => `${text}\n`;
+
+export const toHTML = (markdown: string, inline: boolean = false): HtmlString =>
+  marked(markdown, {
+    breaks: true,
+    renderer: inline ? InlineRenderer : defaultRenderer,
+  });
+```
+
+かなり微妙なので、もっと良い方法があれば知りたいところです.. 😅
 
 
 アウトプット(ドキュメント)
@@ -164,5 +218,92 @@ Todoistのタスク名やTogglのエントリ名にMarkdown表記が含まれる
 変化
 ----
 
+### ASUS ExpertBookの購入
+
+7年以上使ってきたThinkPadと別れを告げて購入しました。
+
+{{<summary "https://jp.store.asus.com/store/asusjp/ja_JP/pd/productID.5404863700/varProductID.5404863700/categoryID.5001803600">}}
+
+後日、細かいレビューを書きたいと思います。  
+今のところ、顔認証のロック解除や動作など快適ですね 😄
+
+### 生活リズム
+
+6月から通勤が再開しました。  
+今まで自宅ワーク用に組んでいたスケジュールの知見を生かしつつ、以下のように変えました。
+
+| 時間帯         | やること                                 |
+| -------------- | ---------------------------------------- |
+| 起床後         | ルーチン/ふりかえり/朝食/シャワー/身支度 |
+| 出勤前(～11時) | クリエイティブな個人活動                 |
+| 出勤中         | インプット(見る/読む)                    |
+| 午前中         | 雑務                                     |
+| 昼休み         | 自由時間                                 |
+| 午後           | MTGなど                                  |
+| 夕方           | 休憩                                     |
+| 夜(～21時)     | 開発                                     |
+| 退勤中         | インプット(見る)                         |
+| 退勤後         | 軽食/シャワー/インプット(見る)           |
+
+クリエイティブな活動は仕事/プライベートでそれぞれ2時間程度です。  
+時間は短いですが、その分集中力が上がることを期待しています。
+
+### iPad Proと共に過ごす
+
+年度末に`iPad Pro12.9インチ`と`Apple Pencil`、`Magic Keyboard`を購入しました。
+
+{{<summary "https://www.apple.com/jp/ipad-pro/">}}
+
+{{<summary "https://www.apple.com/jp/apple-pencil/">}}
+
+{{<summary "https://www.apple.com/jp/ipad-keyboards/">}}
+
+自宅待機期間中の利用シーンは家のみでしたが、出勤が再開して幅が増えました。  
+1週間使った限り、以下のように感じています。
+
+* `iPad Pro`と`Apple Pencil`は持ち運ぶ価値がある
+* `Magic Keyboard`は持ち運ばない方がいい (重い/そこまで使わない)
+* ディスプレイやプロジェクターへのミラーリングも実用的
+* 特に少人数でのMTGで効果がある
+
+### ThinkSpaceを使い始める
+
+上述したiPad ProでThinkSpaceのアプリを使い始めました。
+
+{{<summary "https://apps.apple.com/jp/app/thinkspace/id1335574515">}}
+
+ThinkSpaceは**付箋に手書きで文字/絵を描いて**情報を整理することができます。  
+これは、JAM BoardやMiro、GoodNotesにはできないことなので思考整理が本当に捗ります☺️
+
+来週のWeekly Reportでその辺お見せできればと思います。
+
+### Rustを再び学び始める
+
+数年前に一度チャレンジしてから、しばらくいじってなかったRustの学習を再開します。  
+会社でRustに詳しい方が、所属PJ内で週1勉強会を開催しているので別PJながら便乗させてもらいました😉
+
+オシャレなCLIコマンドの1つ or wasm周りで成果物を作れたらいいなと思っています。
+
+
+### Makefile環境をbashに統一する
+
+Windowsの場合にPowerShellを使うか悩みましたが、こだわるところでもハマりたいところでもないためBashに統一しました。
+
+{{<summary "https://mimizou.mamansoft.net/it_note/tools/make/snippets/">}}
+
+MinGWにPATHを通す前提は必要ですが、それくらいなら問題ないでしょう。
+
+### watchEffectではなくwatchを使う
+
+Vue.jsのComposition APIで`watchEffect`を使っていましたが`watch`にしました。  
+`v-model`でbindしたstateの要素に代入したりすると予期せぬ挙動になったためです。
+
+Composition API周りは近いうちにまとめて記事書きたいですね。
+
+
 所感
 ----
+
+そこまで分量ないだろと思って書き始めたら、意外とネタがありました..。  
+内容よりペースを優先して、決められた時間で続けていければと思っています。
+
