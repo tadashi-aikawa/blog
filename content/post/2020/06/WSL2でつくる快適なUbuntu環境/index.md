@@ -6,6 +6,7 @@ thumbnailImage: images/cover/2020-06-17.jpg
 categories:
   - engineering
 tags:
+draft: true
 ---
 
 WindowsでWSL2を使ったUbuntu環境をつくってみました。
