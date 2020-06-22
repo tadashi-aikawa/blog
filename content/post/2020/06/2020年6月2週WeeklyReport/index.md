@@ -16,8 +16,9 @@ tags:
   - todoist
 ---
 
-今週の大きなトピックはWSL2..、使い方を間違えなければとても快適です。  
-内容が膨大になるため、詳しい内容は単独の記事で紹介します。
+**Topics**
+
+WSL2を導入しました。詳細は別途記事を書きます。
 
 <!--more-->
 
@@ -66,7 +67,6 @@ TableとProgress barがオススメですね😄
 Angular8使ってたのに、しれっと9のビルド環境にアップデートされていたのが原因らしいです。
 
 {{<summary "https://blog.officekoma.co.jp/2020/02/angular78an-unhandled-exception.html">}}
-
 
 
 アウトプット(ドキュメント)
