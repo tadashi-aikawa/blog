@@ -15,7 +15,7 @@ tags:
   - togowl
 ---
 
-**Topics**
+📰 **Topics**
 
 TypeScript x Nuxt x Vuetifyで作成されたTogowlの依存関係を一斉アップデートしました。
 
