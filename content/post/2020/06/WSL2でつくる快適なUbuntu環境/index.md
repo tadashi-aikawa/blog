@@ -1,12 +1,16 @@
 ---
 title: WSL2でつくる快適なUbuntu環境
 slug: efficient-wsl2-with-ubuntu
-date: 2020-06-17T09:50:18+09:00
+date: 2020-07-02T10:52:18+09:00
 thumbnailImage: images/cover/2020-06-17.jpg
 categories:
   - engineering
 tags:
-draft: true
+  - wsl
+  - ubuntu
+  - terminal
+  - ansible
+  - vim
 ---
 
 WindowsでWSL2を使ったUbuntu環境をつくってみました。
@@ -152,3 +156,148 @@ wsl --terminate Ubuntu
 {{<github "https://github.com/microsoft/WSL/issues/3994#issuecomment-485977423">}}
 
 {{</warn>}}
+
+
+秘密情報を含むドットファイルのコピー
+------------------------------------
+
+基本的にホストの設定をそのまま使いたいのでコピーします。  
+以下のような`provision.ps1`を作りました。
+
+```powershell
+# .gitconfig
+cp $home\.gitconfig \\wsl$\Ubuntu\tmp\
+wsl -- mv /tmp/.gitconfig ~/gg
+
+# .ssh
+cp -r $home\.ssh \\wsl$\Ubuntu\tmp\
+wsl -- rm -rf ~/.ssh
+wsl -- mv /tmp/.ssh ~/
+wsl -- chmod 600 ~/.ssh/*
+```
+
+本当は1行でコピーしたいのですが、ホストマシンからは`\\wsl$\Ubuntu\~`をホームディレクトリとみなすことができません。  
+そのため、tmp配下に一度コピーしたあと、WSL内でそれをホームディレクトリへ移動させます。
+
+`wsl -- <コマンド>`でWindowsからUbuntu内でコマンドを直接実行することができます。
+
+
+クリップボードを同期する
+------------------------
+
+Windows X Serveを使います。
+
+{{<summary "https://sourceforge.net/projects/vcxsrv/">}}
+
+Scoopでインストールします。
+
+```
+scoop install vcxsrv
+```
+
+### 設定ファイルの作成
+
+XLauncherを起動します。  
+**vcxsrvではないので注意してください。**
+
+`C:\Users\syoum\scoop\apps\vcxsrv\current\xlaunch.exe`
+
+設定画面が立ち上げるので、以下の画面が出るまでそのまま進みます。
+
+{{<himg "resources/e8efd136.jpeg">}} 
+
+`Disable access control`にチェックをつけて進みます。
+
+{{<himg "resources/96d6741f.jpeg">}}
+
+`Save configuration`をクリックすると設定をファイルとして保存できます。  
+ここでは`config.xlaunch`として保存しました。
+
+ファイルの中身は以下のような感じです。
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<XLaunch WindowMode="MultiWindow" ClientMode="NoClient" LocalClient="False" Display="-1" LocalProgram="xcalc"
+         RemoteProgram="xterm" RemotePassword="" PrivateKey="" RemoteHost="" RemoteUser="" XDMCPHost=""
+         XDMCPBroadcast="False" XDMCPIndirect="False" Clipboard="True" ClipboardPrimary="True" ExtraParams="" Wgl="True"
+         DisableAC="True" XDMCPTerminate="False"/>
+```
+
+
+### Windows起動時に自動起動させる
+
+スタートアップにショートカットを作成し、リンク先に以下を指定します。
+
+```
+C:\Users\syoum\scoop\apps\vcxsrv\current\xlaunch.exe -run <config.xlaunchのパス>
+```
+
+### 環境変数DISPLAYの設定
+
+Ubuntu側の`.bashrc`などで環境変数DISPLAYの値をセットします。
+
+```bash
+# クリップボード連携 (For WSL2)
+LOCAL_IP=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
+export DISPLAY=$LOCAL_IP:0
+```
+
+これでWindowsとクリップボードが連携できるようになります😁
+
+{{<info "Vimを使っている場合">}}
+VimのyankとWindowsのクリップボードを同期したい場合は、Ubuntu側の`.vimrc`で以下の設定をしてください。
+
+```
+set clipboard=unnamedplus
+```
+
+{{</info>}}
+
+
+Ansibleで環境構築
+-----------------
+
+Linux環境構築で使用しているAnsibleのPlaybookを実行します。  
+その前にAnsibleをインストールします。
+
+```
+sudo apt-get update
+sudo apt-get install python3-pip libffi-dev libssl-dev -y
+pip install ansible pywinrm
+```
+
+なぜこのコマンドにしたのか記憶にないので.. 公式のインストールコマンドで問題なければそちらを使った方がいいです..😅
+
+{{<summary "https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu">}}
+
+実行したらハマリ所はなく成功しました🎉
+
+{{<himg "resources/181782bd.jpeg">}}
+
+なお、Playbookの設定は以下のリポジトリで管理しています。
+
+{{<summary "https://github.com/tadashi-aikawa/owl-playbook/blob/master/linux/ansible/wsl-ubuntu.yml">}}
+
+
+総括
+----
+
+ポイントとハマリ所さえ抑えれば、思ったより時間をかけずに環境構築できました。  
+PowerShell環境やVagrantを使ったVMと比べると以下の点が良いと感じています。
+
+* 仮想マシンを起動/終了させる必要がない (地味に面倒ですよね！)
+* Gitコマンドなどの反応が速い
+* Linuxで利用できる技術がほぼそのまま使える
+
+一方、注意すべき点もいくつかあります。
+
+* Windowsファイルシステム上ではファイルの読み書き速度が著しく落ちる
+* WindowsとPATHを混同させるとカオスになる
+* Intellij IDEAではDebug/Runなどに完全対応していない
+
+『LinuxでWindowsを扱う』のではなく『Windowsの中にあるLinuxを使う』くらいがちょうどいい塩梅だと感じています。
+
+Windowsシステム上での操作を快適にしたい方は下記の記事も是非どうぞ😄
+
+{{<summary "https://blog.mamansoft.net/2020/05/31/windows-terminal-and-power-shell-makes-beautiful/">}}
+
