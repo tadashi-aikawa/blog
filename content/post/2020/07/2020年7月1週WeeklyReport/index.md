@@ -6,6 +6,15 @@ thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
 tags:
+  - wsl
+  - webp
+  - typescript
+  - vue
+  - golang
+  - rust
+  - netlify
+  - python
+  - hhkb
 ---
 
 📰 **Topics**
