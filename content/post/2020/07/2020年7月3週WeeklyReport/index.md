@@ -267,7 +267,7 @@ READMEの手順に沿うよう、Ansibleのroleを作りました。
 今週のリリース
 --------------
 
-### Togowl v0.16.3
+### Togowl v1.16.3
 
 {{<summary "https://github.com/tadashi-aikawa/togowl">}}
 

@@ -461,7 +461,7 @@ BluetoothやIHなどと干渉しないので接続も安定しました。
 今週のリリース
 --------------
 
-### Togowl v0.16.0 ～ v0.16.2
+### Togowl v1.16.0 ～ v1.16.2
 
 {{<summary "https://github.com/tadashi-aikawa/togowl">}}
 

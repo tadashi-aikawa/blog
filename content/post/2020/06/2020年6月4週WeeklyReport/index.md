@@ -264,7 +264,7 @@ checkType<string>(r)
 inferはキャプチャしたい型の直前につけます。  
 なので、実質意味合いは以下のようになります。(コードとしては不正)
 
-```typescript
+```
 type InferCallbackResults<T> = 
   T が (... t: [...Arg, (res: Res) => any]) => any に割り当て可能なら Res そうでなければ never
 ```
@@ -283,7 +283,7 @@ type InferCallbackResults<T> =
 実質の違いは❷だけです。  
 ❷は引数表現であり、最後が`(res: Res) => any`で終わるという制約がついています。  
 
-```typescript
+```
 type InferCallbackResults<T> = 
   T が 引数の最後に (res: Res) => any 型の関数を持つなら Res そうでなければ never
 ```
@@ -522,7 +522,7 @@ createEither(-10).biMap(
 // -> Left { error: 'invalid error です', _type: 'left' }
 ```
 
-### Togowl v0.14.0
+### Togowl v1.14.0
 
 {{<summary "https://github.com/tadashi-aikawa/togowl">}}
 

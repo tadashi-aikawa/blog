@@ -439,7 +439,7 @@ export default defineComponent({
 今週のリリース
 --------------
 
-### Togowl v0.15.0 ～ v0.15.1
+### Togowl v1.15.0 ～ v1.15.1
 
 {{<summary "https://github.com/tadashi-aikawa/togowl">}}
 
