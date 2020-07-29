@@ -446,6 +446,53 @@ settings.gradle
 ```
 
 
+互換性を定義する
+----------------
+
+デフォルトの設定では`build.gradle`に記載された`intellij.version`以外のプラットフォームで動作しません。  
+以下の記述をした場合 `2020.1.*`バージョン以外ではインストールできなくなります。
+
+```
+intellij {
+    version '2020.1'
+}
+```
+
+これを解決するため2つの設定が必要です。
+
+### 対応バージョンのアップデートオプションを無効にする
+
+`build.gradle`の`updateSinceUntilBuild`オプションに`false`を指定します。
+
+```diff
+  intellij {
+      version '2020.1'
++     updateSinceUntilBuild false
+  }
+```
+
+デフォルトは`true`となっており、雑に言うと`intellij.version`のバージョンが採用されます。  
+これがバージョン`2020.2`以降や`2020.1`より前のIDEAでインストールできない理由です。
+
+`updateSinceUntilBuild`が`true`の場合の正確な仕様はドキュメントをご覧ください。
+
+{{<summary "https://github.com/JetBrains/gradle-intellij-plugin/blob/master/README.md#building-properties">}}
+
+### 対応バージョンの下限を設定する
+
+`plugin.xml`で`idea-version`を指定します。
+
+```xml
+  <idea-version since-build="191"/>
+```
+
+上記は **`2019.1`以上のプラットフォームであれば対応する** という設定です。  
+`since-build`に指定できるプラットフォームバージョンの関連はドキュメントをご覧ください。
+
+{{<summary "https://jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html">}}
+
+
+
 プラグインをインストールする
 ----------------------------
 
