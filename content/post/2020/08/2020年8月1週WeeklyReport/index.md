@@ -1,7 +1,7 @@
 ---
 title: 2020年8月1週 Weekly Report
 slug: 2020-08-1w-weekly-report
-date: 2020-07-28T07:00:51+09:00
+date: 2020-08-02T21:02:41+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
