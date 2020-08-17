@@ -145,7 +145,7 @@ DVIは問題無かったため端子やケーブルの不良を疑いました�
 DisplayPortで表示できなくなった時に試しましたが、画面がカクカクします。  
 これはフレームレートが60Hz => 30Hzに落ちてしまうからです。
 
-<blockquote class="embedly-card"><a href="http://xn--pc-mh4aj6msdqgtc.com/column/video-output-types.html">HDMI、DVI、DisplayPortの違いは？ゲーミングPCの映像出力端子はどれが人気か調べました</a><p>デスクトップはノートパソコンとは違い、外部液晶モニターが必ず必要になります。デスクトップと液晶モニターを接続するために、それぞれが対応した映像出力端子のケーブルを用います。 BTOゲーミングPCの場合、グラフィックボードの映像出力端子と液晶モニターを接続することになり、HDMI、DVI、DisplayPortから選ぶことになります。 ...</p></blockquote>
+<blockquote class="embedly-card"><a href="https://xn--pc-mh4aj6msdqgtc.com/column/video-output-types.html">HDMI、DVI、DisplayPortの違いは？ゲーミングPCの映像出力端子はどれが人気か調べました</a><p>デスクトップはノートパソコンとは違い、外部液晶モニターが必ず必要になります。デスクトップと液晶モニターを接続するために、それぞれが対応した映像出力端子のケーブルを用います。 BTOゲーミングPCの場合、グラフィックボードの映像出力端子と液晶モニターを接続することになり、HDMI、DVI、DisplayPortから選ぶことになります。 ...</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 1920*1920の解像度では、30Hzが限界でした。  
