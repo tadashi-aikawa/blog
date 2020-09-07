@@ -97,7 +97,7 @@ Action名が分かれば、`Actionの検索`からコマンドを探して実行
 ### ファイル名でファイルを検索
 
 * {{<icon "comment">}} `『<ファイル名>開いてもらって...』`
-* {{<icon "cog">}} `Main menu | Navigate | File`
+* {{<icon "cog">}} `Main menu | Navigate | Go to File...`
 * {{<icon "keyboard">}} `Ctrl+j f`
 
 {{<himg "resources/20190518_6.gif">}}
@@ -195,12 +195,17 @@ Import文の自動補完は便利なので是非使いましょう。
 ### 宣言に移動/使用箇所一覧
 
 * {{<icon "comment">}} `『(関数や変数を指して)飛んでもらって...』『この変数どこで使っていますか?』`
-* {{<icon "cog">}} `Main menu | Navigate | Declaration`
+* {{<icon "cog">}} `Main menu | Navigate | Go to Declaration or Usages`
 * {{<icon "keyboard">}} `Ctrl+]`
 
 マウスだと`Ctrl`を押しながらクリックですが、キーボードの方が速いです。
 
 {{<himg "resources/20190518_10.gif">}}
+
+宣言で使用すると呼び出し元が表示されます。  
+正方向/逆方向共にこのコマンドだけでOKです。
+
+{{<himg "resources/20190518_12.gif">}}
 
 ### 1つ前に戻る
 
