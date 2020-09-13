@@ -8,7 +8,7 @@ categories:
 tags:
   - concept
   - rust
-  - go
+  - golang
   - javascript
   - vue
   - idea
