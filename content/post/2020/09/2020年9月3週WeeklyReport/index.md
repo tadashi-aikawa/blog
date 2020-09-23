@@ -139,7 +139,7 @@ $ alias rust-musl-builder='docker run --rm -it -v "$(pwd)":/home/rust/src ekidd/
 $ rust-musl-builder cargo build --release
 ```
 
-{{<github "https://github.com/emk/rust-musl-builder">}}
+{{<github "emk/rust-musl-builder" "https://github.com/emk/rust-musl-builder">}}
 
 
 調べたこと
