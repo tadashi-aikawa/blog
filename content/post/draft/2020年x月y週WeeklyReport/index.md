@@ -6,6 +6,7 @@ thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
 tags:
+draft: true # 消す!!
 ---
 
 📰 **Topics**
