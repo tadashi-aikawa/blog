@@ -167,7 +167,7 @@ wsl --terminate Ubuntu
 ```powershell
 # .gitconfig
 cp $home\.gitconfig \\wsl$\Ubuntu\tmp\
-wsl -- mv /tmp/.gitconfig ~/gg
+wsl -- mv /tmp/.gitconfig ~/
 
 # .ssh
 cp -r $home\.ssh \\wsl$\Ubuntu\tmp\
