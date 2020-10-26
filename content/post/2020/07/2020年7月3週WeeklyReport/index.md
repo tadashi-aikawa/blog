@@ -9,7 +9,7 @@ tags:
   - rust
   - typescript
   - tauri
-  - DDD
+  - ddd
   - git
   - bash
   - wsl
