@@ -39,9 +39,10 @@ ESLintは可能であればAuto fix (`--fix`) します。
 上記3つの知識については、このブログの過去記事でも紹介しています。  
 よろしければあわせてご覧下さい。
 
-* {{<refer "https://blog.mamansoft.net/tags/#eslint-list">}}
-* {{<refer "https://blog.mamansoft.net/tags/#prettier-list">}}
-* {{<refer "https://blog.mamansoft.net/tags/#idea-list">}}
+🏷️ [ESLintの記事](https://blog.mamansoft.net/tags/#eslint-list)  
+🏷️ [Prettierの記事](https://blog.mamansoft.net/tags/#prettier-list)  
+🏷️ [IDEAの記事](https://blog.mamansoft.net/tags/#idea-list)
+
 {{</info>}}
 
 ### 確認バージョン

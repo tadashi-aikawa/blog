@@ -475,8 +475,8 @@ sudo apt update
 sudo apt-get install google-chrome-stable
 ```
 
-* {{<refer "https://www.sejuku.net/blog/82940">}}
-* {{<refer "https://qiita.com/pyon_kiti_jp/items/e6032eb6061a4774aece">}}
+{{<refer "https://www.sejuku.net/blog/82940">}}
+{{<refer "https://qiita.com/pyon_kiti_jp/items/e6032eb6061a4774aece">}}
 
 絵文字などをしっかり表示したいので、Noto Color Emojiをインストールしました。
 
