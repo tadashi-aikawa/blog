@@ -17,7 +17,7 @@ IntelliJ IDEAをはじめとしたJetBrainsのIDE、VS Codeなどでも同じ体
 
 <!--more-->
 
-{{<cimg "2020-10-26.jpg">}}
+{{<cimg "2020-11-03.jpg">}}
 
 <!--toc-->
 
