@@ -5,20 +5,6 @@ date: 2020-08-18T07:31:01+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - rust
-  - typescript
-  - npm
-  - bitbucket
-  - atlassian
-  - idea
-  - jetbrains
-  - cargo
-  - ipad
-  - javascript
-  - wsl
-  - owlelia
-  - togowl
 ---
 
 📰 **Topics**

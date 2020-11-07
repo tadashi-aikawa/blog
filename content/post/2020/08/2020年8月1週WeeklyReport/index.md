@@ -5,20 +5,6 @@ date: 2020-08-02T21:02:41+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - concept
-  - rust
-  - golang
-  - javascript
-  - vue
-  - idea
-  - typescript
-  - portal-vue
-  - axios
-  - kotlin
-  - markowl
-  - togowl
-  - owlelia
 ---
 
 📰 **Topics**

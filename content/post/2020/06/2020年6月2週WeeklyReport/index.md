@@ -5,15 +5,6 @@ date: 2020-06-15T09:42:04+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - murai
-  - rich
-  - poetry
-  - angular
-  - togowl
-  - wsl
-  - ditto
-  - todoist
 ---
 
 📰 **Topics**

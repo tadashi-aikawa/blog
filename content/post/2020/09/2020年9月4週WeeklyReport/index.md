@@ -5,12 +5,6 @@ date: 2020-09-28T08:31:48+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - typescript
-  - aws
-  - golang
-  - emacs
-  - idea
 ---
 
 📰 **Topics**

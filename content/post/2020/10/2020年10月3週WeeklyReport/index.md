@@ -5,16 +5,6 @@ date: 2020-10-19T10:10:06+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - typescript
-  - vscode
-  - golang
-  - python
-  - quizlet
-  - idea
-  - pixel
-  - vim
-  - github
 ---
 
 📰 **Topics**

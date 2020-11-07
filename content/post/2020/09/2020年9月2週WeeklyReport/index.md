@@ -5,16 +5,6 @@ date: 2020-09-14T07:58:21+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - typescript
-  - idea
-  - golang
-  - vscode
-  - slack
-  - cobra
-  - viper
-  - zerolog
-  - angular
 ---
 
 📰 **Topics**

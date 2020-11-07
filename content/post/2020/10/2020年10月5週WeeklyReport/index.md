@@ -5,23 +5,6 @@ date: 2020-11-03T19:24:29+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - typescript
-  - open-api
-  - thiserror
-  - anyhow
-  - jetbrains
-  - rust
-  - kotlin
-  - fastify
-  - pino
-  - nodejs
-  - axios
-  - env_logger
-  - github
-  - netlify
-  - mkdocs
-  - atlrus
 ---
 
 📰 **Topics**

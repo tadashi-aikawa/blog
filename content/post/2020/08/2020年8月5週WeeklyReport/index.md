@@ -5,14 +5,6 @@ date: 2020-09-01T07:20:53+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - typescript
-  - prettier
-  - vue
-  - vite
-  - rust
-  - terminal
-  - togowl
 ---
 
 📰 **Topics**

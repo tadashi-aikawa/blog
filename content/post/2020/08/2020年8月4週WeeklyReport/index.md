@@ -5,15 +5,6 @@ date: 2020-08-24T21:26:29+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - rust
-  - chrome
-  - todoist
-  - idea
-  - git
-  - typescript
-  - delta
-  - togowl
 ---
 
 📰 **Topics**

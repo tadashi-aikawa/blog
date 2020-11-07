@@ -5,15 +5,6 @@ date: 2020-10-12T08:14:56+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - kotlin
-  - golang
-  - git
-  - github
-  - atlassian
-  - bitbucket
-  - kindle
-  - markowl
 ---
 
 Go言語とGitLFSについて学びを深めた一週間でした。  

@@ -5,17 +5,6 @@ date: 2020-07-05T20:08:07+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - wsl
-  - webp
-  - typescript
-  - vue
-  - golang
-  - rust
-  - netlify
-  - python
-  - hhkb
-  - togowl
 ---
 
 📰 **Topics**

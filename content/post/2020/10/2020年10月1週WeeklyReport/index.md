@@ -5,12 +5,6 @@ date: 2020-10-05T08:18:12+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - python
-  - poetry
-  - golang
-  - testify
-  - autohotkey
 ---
 
 📰 **Topics**

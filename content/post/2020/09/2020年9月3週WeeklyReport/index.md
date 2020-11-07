@@ -5,16 +5,6 @@ date: 2020-09-23T08:05:07+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - golang
-  - vue
-  - obsidian
-  - rust
-  - idea
-  - docker
-  - wsl
-  - miroir
-  - angular
 ---
 
 📰 **Topics**

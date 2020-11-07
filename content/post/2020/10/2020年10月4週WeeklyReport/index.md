@@ -5,20 +5,6 @@ date: 2020-10-26T10:18:11+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - typescript
-  - vscode
-  - javascript
-  - nodejs
-  - golang
-  - scala
-  - vim
-  - nerdtree
-  - pixel
-  - gruvbox
-  - pytest
-  - markowl
-  - jumeaux
 ---
 
 📰 **Topics**

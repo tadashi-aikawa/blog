@@ -5,18 +5,6 @@ date: 2020-07-27T07:49:07+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - wsl
-  - typescript
-  - java
-  - python
-  - scaledrone
-  - hhkb
-  - concept
-  - vuetify
-  - vue
-  - ubuntu
-  - togowl
 ---
 
 📰 **Topics**

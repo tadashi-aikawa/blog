@@ -5,16 +5,6 @@ date: 2020-09-02T07:07:31+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - sqlite
-  - atlassian
-  - jira
-  - confluence
-  - slack
-  - wsl
-  - idea
-  - vim
-  - jumeaux
 ---
 
 📰 **Topics**

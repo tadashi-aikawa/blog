@@ -5,22 +5,6 @@ date: 2020-07-14T06:56:38+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - rust
-  - typescript
-  - tauri
-  - ddd
-  - git
-  - bash
-  - wsl
-  - github
-  - ubuntu
-  - idea
-  - gmail
-  - togowl
-  - owlelia
-  - dayjs
-  - ipad
 ---
 
 📰 **Topics**

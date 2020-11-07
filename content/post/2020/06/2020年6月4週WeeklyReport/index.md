@@ -5,18 +5,6 @@ date: 2020-06-28T12:46:20+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - loguru
-  - vite
-  - typescript
-  - rust
-  - python
-  - make
-  - jest
-  - hhkb
-  - idea
-  - owlelia
-  - togowl
 ---
 
 📰 **Topics**

@@ -5,20 +5,6 @@ date: 2020-07-12T20:08:19+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - typescript
-  - python
-  - nodejs
-  - github
-  - slack
-  - powershell
-  - togowl
-  - owlmixin
-  - ffmpeg
-  - svelte
-  - vue
-  - codecov
-  - sql-alchemy
 ---
 
 📰 **Topics**

@@ -5,14 +5,6 @@ date: 2020-06-22T09:18:16+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - python
-  - typescript
-  - golang
-  - ffmpeg
-  - vue
-  - vuetify
-  - togowl
 ---
 
 📰 **Topics**

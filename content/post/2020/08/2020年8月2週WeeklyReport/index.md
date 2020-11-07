@@ -5,19 +5,6 @@ date: 2020-08-10T15:20:23+09:00
 thumbnailImage: images/cover/weekly-report.jpg
 categories:
   - weekly-report
-tags:
-  - rust
-  - ddd
-  - python
-  - vue
-  - nuxt
-  - vuetify
-  - vim
-  - duolingo
-  - idea
-  - vscode
-  - jira
-  - togowl
 ---
 
 📰 **Topics**
