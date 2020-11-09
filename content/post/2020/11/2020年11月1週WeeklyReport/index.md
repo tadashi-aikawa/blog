@@ -144,7 +144,7 @@ gzipに変わる圧縮方式であるBrotliを初めて知りました。
 
 {{<summary "https://blog.redbox.ne.jp/cdn_brotli.html">}}
 
-きっかけはNetlifyのコンテンツがgzipされない原因を調査していたときに見つけたページ＝
+きっかけはNetlifyのコンテンツがgzipされない原因を調査していたときに見つけたページ。
 
 {{<summary "https://community.netlify.com/t/bundle-file-not-served-gzip/16808">}}
 
