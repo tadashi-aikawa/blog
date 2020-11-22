@@ -341,7 +341,7 @@ ESLintにはフォーマットに関するルールがいくつか存在しま�
 1. ダブルクォーテーションの箇所がESLintの怒られる
 2. 1を修正したあと保存すると、Prettierによってダブルクォーテーションへ戻される(1へ)
 
-スタイルトはPrettierに任せるため、ESLintの関連設定を無効にしましょう。  
+スタイルはPrettierに任せるため、ESLintの関連設定を無効にしましょう。  
 そのために`prettier/eslint-config-prettier`を使います。
 
 {{<summary "https://github.com/prettier/eslint-config-prettier">}}
