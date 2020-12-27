@@ -9,6 +9,8 @@ languageCode = "ja"
 publishDir = "docs"
 enableEmoji = true
 
+pygmentsCodeFences = true
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
@@ -110,3 +112,4 @@ enableEmoji = true
 
 [markup.goldmark.renderer]
   unsafe = true
+
