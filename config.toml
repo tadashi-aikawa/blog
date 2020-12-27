@@ -1,6 +1,6 @@
 title = "MAMANのITブログ"
 theme = "tranquilpeak"
-baseURL = "https://blog.mamansoft.net"
+baseURL = "https://blog-flax-omega.vercel.app"
 googleAnalytics = "UA-36444836-1"
 # はまった...
 DefaultContentLanguage = "en-us"
