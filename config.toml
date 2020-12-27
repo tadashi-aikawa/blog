@@ -66,8 +66,9 @@ enableEmoji = true
 
 [params]
   description = "Webエンジニアによる エンジニアリング/業務効率化/ガジェット に関するブログ"
-  coverImage = "https://dl.dropboxusercontent.com/s/l96rzrxzd4ztsgy/cover.jpg"
+  coverImage = "images/cover.jpg"
   favicon = "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
+  dateFormat = "2006-01-02"
 
   sidebarBehavior = 2
   thumbnailImage = true
