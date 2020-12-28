@@ -27,14 +27,14 @@ TypeScriptやGoの学びを深め、アウトプットもできた一週間で�
 
 `vim --startuptime`を使って起動速度を調べる方法をメモしておきました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/tools/vim/faq/#vim_1">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/vim/faq/#vim_1">}}
 
 ### 【CSS】backdrop-filter
 
 背景の輝度などを変更する方法として`backdrop-filter`をはじめて知りました。  
 ホバーしたときにカードをうっすらグレーアウトしたかったので。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/css/faq/#_9">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/css/faq/#_9">}}
 
 ### 【Vue】ERR_ACTION_ACCESS_UNDEFINED
 
@@ -47,7 +47,7 @@ If not dynamic use this.context.commit("mutationName", payload) and this.context
 Error: Could not perform action updateSlackConfig
 ```
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/vue/vuex-module-decorators/faq/#err_action_access_undefined">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/vue/vuex-module-decorators/faq/#err_action_access_undefined">}}
 
 
 

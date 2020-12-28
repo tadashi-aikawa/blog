@@ -26,7 +26,7 @@ Project ReferencesやAngularバージョンアップなどTypeScriptにも取り
 
 TypeScript v3.0のリリースノートをまとめ終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/2.9/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/2.9/">}}
 
 Project Referencesの理解に苦しみました。  
 先にビルドモードから入ることでメリットをすんなり理解できたので、構成をそのように変えています。
@@ -70,12 +70,12 @@ tenntennさんが作成されているGo言語の入門スライドを読み始�
 
 自分の知識向上を目的として、過去のTypeScriptリリースノートをまとめています。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/">}}
 
 今までIntelliJ IDEAとターミナルで動作確認をしていましたが、v3.1の`Mapped types on tuples and arrays`に関する動作を確認しようとしたときハマりました。。  
 リリースノートの内容とIntelliJ IDEAの補完内容とが噛み合っていなかったのです。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/3.1/#mapped-types-on-tuples-and-arrays">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/3.1/#mapped-types-on-tuples-and-arrays">}}
 
 VS Codeを使って確認することにより、この問題は解決しました。  
 やはり、リリースノートのような細かな内容を確認するときはVS Codeが良さそうです。  

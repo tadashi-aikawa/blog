@@ -41,7 +41,7 @@ Svelteデビューしたので記事を書きました。
 
 TypeScript v3.6のリリースノートをまとめ終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/3.6/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/3.6/">}}
 
 ### 【GitHub Actions Cookbook】Use env vars
 
@@ -59,7 +59,7 @@ TypeScript v3.6のリリースノートをまとめ終わりました。
 
 人によって環境が違ったり、引数の位置によって意味合いが変わったりデリケートなので。
 
-{{<summary "https://mimizou.mamansoft.net/IT_Note/tools/sed/faq/#windowssed">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/sed/faq/#windowssed">}}
 
 
 読んだこと/聴いたこと

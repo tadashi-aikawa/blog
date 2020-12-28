@@ -27,13 +27,13 @@ PWAのキャッシュ問題に悩まされていますが、それは来週へ�
 
 たまに必要になるのでffmpegを使った手順を追加しました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/tools/ffmpeg/faq/#favicon">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/ffmpeg/faq/#favicon">}}
 
 ### 【IDEA】WindowsでMakeコマンドを実行したい
 
 `Run/Debug Configurations`の書き方にいつも悩むので追加しました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/tools/idea/faq/#windowsmake">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/idea/faq/#windowsmake">}}
 
 ### GitHub ActionsのCookbook
 
@@ -94,7 +94,7 @@ PyPIにPublishするとき、ユーザ/パスワードではなくトークン�
 
 あとはセットすればOK。Poetryを使うなら以下を参照。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/python/poetry/snippets/#idpassword">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/python/poetry/snippets/#idpassword">}}
 
 
 ### 【Python】GitHub Actionsでリリースできるようにする

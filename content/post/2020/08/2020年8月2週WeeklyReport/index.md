@@ -35,14 +35,14 @@ RustのThe bookを読み始めました。
 
 WindowsのBuild tools周りで結構手こずりました..。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/rust/thebook/1_getting_started/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/rust/thebook/1_getting_started/">}}
 
 #### 2. Programming a Guessing Game
 
 乱数を当てるゲームをRustで簡単に実装するハンズオンです。  
 簡単なプログラムですが、Rustの大事なポイントが詰まっていて非常にイイです。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/rust/thebook/2_programming_a_guessing_game/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/rust/thebook/2_programming_a_guessing_game/">}}
 
 
 読んだこと/聴いたこと

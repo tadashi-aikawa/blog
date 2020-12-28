@@ -41,7 +41,7 @@ tags:
 
 ターミナルで動く対話型gitクライアントtigのインストール方法を簡潔にまとめました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/tools/tig/#tig-top">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/tig/#tig-top">}}
 
 初見だと見逃しやすいマルチバイト文字対応バージョンも記載しています。
 

@@ -468,7 +468,7 @@ WindowsでCR改行の差分が表示されるためでした。
 
 以下にもまとめました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/tools/git/faq/#git-diffm">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/git/faq/#git-diffm">}}
 
 
 ### 【TypeScript】sqliteパッケージをv4にアップデートしたらビルドできない。

@@ -39,21 +39,21 @@ tags:
 
 TypeScript v3.5のリリースノートをまとめ終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/3.5/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/3.5/">}}
 
 
 ### psql
 
 たまにPostgreSQLをターミナルで操作するのですが、毎回psqlコマンド忘れるので書きました。
 
-{{<summary "https://mimizou.mamansoft.net/IT_Note/tools/psql/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/psql/">}}
 
 ### Vueのイベント修飾子で伝播を停止させる
 
 クリックを親に伝播させたくないとき、`<div @click.stop="onClick">hoge</div>`のように書けます。  
 今まで`stopPropagation`を真面目に実装していました..。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/vue/faq/#_2">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/vue/faq/#_2">}}
 
 
 

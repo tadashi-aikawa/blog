@@ -117,7 +117,7 @@ post_slack "$1" smile_bot smile "$2" good
 ブログ執筆時のコードです。  
 最新のページをご覧下さい。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/services/slack/snippets/#bash">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/services/slack/snippets/#bash">}}
 
 {{</warn>}}
 

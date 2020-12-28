@@ -26,7 +26,7 @@ Angularをバージョンアップして1年ぶりにMiroirをリリースしま
 
 やりたいことのコード例が頭にすぐ浮かんでこないのでFAQに書きました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/golang/faq/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/golang/faq/">}}
 
 
 学んだこと

@@ -26,7 +26,7 @@ GitHub ActionsやCIも強化し、9ヶ月ぶりにOwlMixinをリリースしま�
 
 TypeScript v2.8のリリースノートをまとめ終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/2.8/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/2.8/">}}
 
 `Conditional Types`周りはかなり勉強になりました。  
 以下の3つはオススメです。

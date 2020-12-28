@@ -26,7 +26,7 @@ Pixel5の導入やJumeauxの1000commit達成など、個人的な節目もあっ
 
 TypeScript v3.2のリリースノートをまとめ終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/3.2/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/3.2/">}}
 
 目玉機能はありませんが、エッジケースで利用できる機能が多かったイメージです。
 

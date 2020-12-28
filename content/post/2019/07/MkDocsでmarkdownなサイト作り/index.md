@@ -154,11 +154,11 @@ extra:
 {{<info "Mimizou Roomで使っているマクロのイメージ">}}
 以下のようなMarkdownを書くと
 
-https://raw.githubusercontent.com/tadashi-aikawa/mimizou-room/master/docs/IT_Note/tools/mkdocs/index.md
+https://raw.githubusercontent.com/tadashi-aikawa/mimizou-room/master/docs/it-note/tools/mkdocs/index.md
 
 以下のページのようになります。
 
-https://mimizou.mamansoft.net/it_note/tools/mkdocs/
+https://mimizou.mamansoft.net/it-note/tools/mkdocs/
 {{</info>}}
 
 ### 3. 追尾型の見出しに対応している
@@ -234,7 +234,7 @@ publish = "site"
 
 Mimizou Roomには[MkDocs]に関する情報も記載しています。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/tools/mkdocs/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/mkdocs/">}}
 
 よろしければ覗いてみてください😃
 

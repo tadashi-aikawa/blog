@@ -50,7 +50,7 @@ VSCodeの開発元が、TypeScriptの開発元でもあるMicroSoftだからで�
 きっかけは上記メリットの通りで、リリースノートに記載された細かな言語仕様の一部がIntelliJ IDEAでは忠実に表現されていないケースに巡りあいハマったことがあるからです。  
 例を挙げると、TypeScript3.1の`Mapped types on tuples and arrays`など。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/3.1/#mapped-types-on-tuples-and-arrays">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/3.1/#mapped-types-on-tuples-and-arrays">}}
 
 
 一方、普段の開発で多用する仕様に関してはIntelliJ IDEAで困ったことはありません。  

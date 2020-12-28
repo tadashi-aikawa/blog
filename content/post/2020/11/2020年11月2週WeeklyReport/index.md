@@ -27,7 +27,7 @@ tags:
 
 TypeScript v3.4のリリースノートをまとめ終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/3.4/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/3.4/">}}
 
 `--incremental`フラグによるビルド時間の短縮は重要ですね。
 
@@ -36,7 +36,7 @@ TypeScript v3.4のリリースノートをまとめ終わりました。
 
 以前のWeekly Reportに書いた内容を少しだけ修正してMimizou Roomに載せました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/tools/docker/#ubuntu-on-wsl2">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/docker/#ubuntu-on-wsl2">}}
 
 
 学んだこと

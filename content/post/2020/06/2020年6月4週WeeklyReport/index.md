@@ -247,7 +247,7 @@ checkType<string>(r)
 
 この辺で以前説明しています。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/2.8/#type-inference-in-conditional-types">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/2.8/#type-inference-in-conditional-types">}}
 
 inferはキャプチャしたい型の直前につけます。  
 なので、実質意味合いは以下のようになります。(コードとしては不正)

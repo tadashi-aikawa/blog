@@ -26,7 +26,7 @@ GitHub/Mkdocs/Netlifyなど環境整備にも力を入れました。
 
 TypeScript v3.3のリリースノートをまとめ終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/3.3/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/3.3/">}}
 
 2つだけですが`--build`と`--watch`が同時に使えるようになったのはポイントですね。
 
@@ -627,7 +627,7 @@ cp932のデータをHTTPで取得し、UTF-8の文字列として表示する処
 
 siteの方にも重要なポイントだけまとめておきました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/axios/faq/#shift-jis">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/axios/faq/#shift-jis">}}
 
 ### 【Rust】env_loggerの出力をカスタマイズする
 

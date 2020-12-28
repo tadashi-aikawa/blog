@@ -26,7 +26,7 @@ categories:
 
 Version1.0より前とはコマンドが変わっていました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/python/poetry/snippets/#_6">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/python/poetry/snippets/#_6">}}
 
 
 学んだこと

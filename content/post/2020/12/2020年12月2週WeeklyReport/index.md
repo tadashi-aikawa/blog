@@ -25,13 +25,13 @@ e2eテストを本格導入するためPlaywrightの知見を集めた一週間�
 
 Element UIのInputコンポーネントでEnterが押された時にコールバック関数を呼ぶ方法です。
 
-{{<summary "https://mimizou.mamansoft.net/IT_Note/languages/typescript/element/faq/#el-inputenter">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/element/faq/#el-inputenter">}}
 
 ### 【Rust】WIP: [The book] 4. Understanding Ownership
 
 途中までですが、しばらくRustを学習する機会がなさそうなのでアップしました。
 
-{{<summary "https://mimizou.mamansoft.net/IT_Note/languages/rust/thebook/4_understanding_ownership/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/rust/thebook/4_understanding_ownership/">}}
 
 所有権という非常に大事なところです。
 

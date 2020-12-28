@@ -204,12 +204,12 @@ Issueは上がっているので、そのうち対応される気はしてます
 
 v2.7のリリースノートが終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/2.7/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/2.7/">}}
 
 v2.8に着手を始めました。  
 以前挫折したConditional Typesと正面から向き合います。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/2.8/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/2.8/">}}
 
 
 アウトプット(OSS)

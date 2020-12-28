@@ -311,7 +311,7 @@ slideNumber: true
 
 変更があった場合は以下を更新していく予定です。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/tools/revealjs/snippets/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/revealjs/snippets/">}}
 
 
 スライドを見る

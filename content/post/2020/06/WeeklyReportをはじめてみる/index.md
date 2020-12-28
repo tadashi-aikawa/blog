@@ -137,11 +137,11 @@ export const toHTML = (markdown: string, inline: boolean = false): HtmlString =>
 
 TypeScriptの理解を深めるため、過去のリリースノートを要約する作業をしています。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/">}}
 
 今週でv2.6の内容が終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/2.6/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/2.6/">}}
 
 
 アウトプット(OSS)
@@ -289,7 +289,7 @@ ThinkSpaceは**付箋に手書きで文字/絵を描いて**情報を整理す�
 
 Windowsの場合にPowerShellを使うか悩みましたが、こだわるところでもハマりたいところでもないためBashに統一しました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/tools/make/snippets/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/tools/make/snippets/">}}
 
 MinGWにPATHを通す前提は必要ですが、それくらいなら問題ないでしょう。
 

@@ -38,20 +38,20 @@ tags:
 
 調べると色々な方法が出てくるので、最もシンプルなケースを書きました。
 
-{{<summary "https://mimizou.mamansoft.net/IT_Note/languages/typescript/element/faq/#pathrouting">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/element/faq/#pathrouting">}}
 
 ### 【Flexbox】縦の一番下に配置したい
 
 サイドバーの一番下にユーザ情報や設定/ヘルプアイコンなどを載せたい場合。  
 間の隙間を表現する1つの方法を書きました。
 
-{{<summary "https://mimizou.mamansoft.net/IT_Note/languages/css/faq/#_4">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/css/faq/#_4">}}
 
 ### 【Flexbox】要素に一定の間隔を開けたい
 
 今までは子要素で`margin`かけていましたけど、`gap`というプロパティがあったのですね..。
 
-{{<summary "https://mimizou.mamansoft.net/IT_Note/languages/css/faq/#_5">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/css/faq/#_5">}}
 
 
 学んだこと

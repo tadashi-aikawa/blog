@@ -35,7 +35,7 @@ Ubuntu DesktopをインストールせずGUIアプリケーションを使いた
 
 TypeScript v2.9のリリースノートをまとめ終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/2.9/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/2.9/">}}
 
 個人的には `--resoolveJsonModule`以外あまり響かなかったです。
 
@@ -43,7 +43,7 @@ TypeScript v2.9のリリースノートをまとめ終わりました。
 
 よく忘れるのでMimizou Roomにまとめました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/concepts/regex/faq/#_1">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/concepts/regex/faq/#_1">}}
 
 
 読んだこと/聴いたこと

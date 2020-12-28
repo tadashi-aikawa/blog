@@ -49,7 +49,7 @@ TableとProgress barがオススメですね😄
 
 プロジェクト名と依存関係のパッケージ名が同一だと起こるエラーです。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/python/poetry/faq/#assertionerror">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/python/poetry/faq/#assertionerror">}}
 
 たまにハマる。。
 

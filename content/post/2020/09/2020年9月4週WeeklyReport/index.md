@@ -26,7 +26,7 @@ categories:
 
 TypeScript v3.1のリリースノートをまとめ終わりました。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/typescript/releases/3.1/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/typescript/releases/3.1/">}}
 
 `Version selection with typesVersions`は初めて知りました。  
 ライブラリを開発する場合は使えそうだなと。

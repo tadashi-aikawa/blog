@@ -36,7 +36,7 @@ categories:
 変数や関数は他言語と違うクセもあり、なかなか楽しかったです。  
 コメントや制御構文は大体同じ。
 
-{{<summary "https://mimizou.mamansoft.net/it_note/languages/rust/thebook/3_common_programming_concepts/">}}
+{{<summary "https://mimizou.mamansoft.net/it-note/languages/rust/thebook/3_common_programming_concepts/">}}
 
 
 読んだこと/聴いたこと
