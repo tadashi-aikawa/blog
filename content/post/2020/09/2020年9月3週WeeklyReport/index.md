@@ -81,7 +81,7 @@ Vuetifyなど依存ライブラリの問題ですぐに使うことはできま�
 {{<summary "https://obsidian.md/features">}}
 
 私のベストはSlack(times)です。  
-ObsidianはSlack(times)にある大きなメリットがあります。
+Slack(times)には大きなメリットがあります。
 
 * 場所やデバイスを選ばずに投稿/閲覧できる (クラウド/マルチプラットフォーム)
 * 画像や動画なども投稿できる

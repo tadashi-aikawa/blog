@@ -103,7 +103,7 @@ modest-turing-f3415c.netlify.com. 0 IN  A       157.230.35.153
 ;; MSG SIZE  rcvd: 164
 ```
 
-名前解決サーバ動詞の詳細を追いたい場合は`+trace`オプションを付けます。
+名前解決サーバ同士の詳細を追いたい場合は`+trace`オプションを付けます。
 
 ```
 $ dig blog.mamansoft.net +trace
