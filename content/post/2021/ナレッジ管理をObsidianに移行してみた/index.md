@@ -66,7 +66,7 @@ Obsidianに移行したきっかけ
 
 ### LYTという思想に深く共感したから
 
-LYT(Link Your Thinking)は最近Nick Milo氏が考案したフレームワークです。  
+LYT(Linking Your Thinking)は最近Nick Milo氏が考案したフレームワークです。  
 100年近く前に考えられた[Zettelkasten]というメソッドを、デジタルツールに反映させるため考案されました。
 
 {{<summary "https://publish.obsidian.md/lyt-kit/LYT+About">}}
@@ -315,9 +315,9 @@ publishは有料ですが、今なら半額の`月8$`です。
 JCBカードでは購読できなかったのでVISAを使いました。
 {{</alert>}}
 
-### Link Graph
+### Graph view
 
-今のLink Graphはこんな感じです。  
+今のGraph viewはこんな感じです。  
 
 ![](resources/805e8175.png)
 
