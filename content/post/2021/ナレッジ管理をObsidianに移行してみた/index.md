@@ -261,7 +261,7 @@ isSecondKeyAfterCtrlJ() {
 
 #### Obsidianがアクティブか判定
 
-[Obsidian]がアクティブになっているかを判定する関数を作成します。
+指定したプロセスがアクティブになっているかを判定する関数を作成します。
 
 ```autohotkey
 ;【概要】指定されたプロセスがアクティブであるか
@@ -269,7 +269,7 @@ isSecondKeyAfterCtrlJ() {
 ;【戻値】true / false
 isActiveProcess(name) {
     WinGet, ahk_process, ProcessName, A
-    if (ahk_process == "Obsidian.exe") {
+    if (ahk_process == name) {
         return true
     } else {
         return false
@@ -284,7 +284,7 @@ isActiveProcess(name) {
 
 ```autohotkey
 $^j::
-    if (isActiveProcess("Obsidian")) {
+    if (isActiveProcess("Obsidian.exe")) {
         // DO NOTHING
     }
     ; 以下略
@@ -294,7 +294,7 @@ $^j::
 
 ```autohotkey
 $f::
-    if (isSecondKeyAfterCtrlJ()) {
+    if (isActiveProcess("Obsidian.exe") && isSecondKeyAfterCtrlJ()) {
         ;ObsidianでCtrl + Jのあとなら以下を実行
     } else {
         ; 以下略
