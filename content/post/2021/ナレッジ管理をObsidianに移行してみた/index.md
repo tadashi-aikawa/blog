@@ -233,6 +233,12 @@ Quick Switcher++プラグインの`Open in Symbol Mode`を使いましょう。
 ただし、見出しレベルによる階層表示はできません。  
 階層把握が目的なら`Open outline`でアウトラインを常時表示しましょう。
 
+{{<update "2021-01-20: Version 0.0.9から階層化表示に対応されていました。">}}
+> Setting to enable displaying symbols in line order, and indented (similar to Outline view)
+
+{{<summary "https://github.com/darlal/obsidian-switcher-plus/releases/tag/0.0.9">}}
+{{</update>}}
+
 ### 絵文字を入力したい
 
 Emoji Toolbarプラグインを使いましょう。
