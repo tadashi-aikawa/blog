@@ -59,7 +59,7 @@ oh-my-poshのv3インストール
 
 {{<summary "https://ohmyposh.dev/docs/installation">}}
 
-[PowerShell]を起動して以下のコマンドを実行します。[Scoop]がインストールされている前提です。
+[PowerShell]を起動して以下のコマンドを実行します。
 
 ```shell
 Install-Module oh-my-posh -Scope CurrentUser -Force
@@ -328,5 +328,4 @@ Gitリポジトリでのプロンプト表示が0.2sくらい遅くなったの�
 [Windows Terminal]: https://github.com/microsoft/terminal
 [oh-my-posh]: https://github.com/JanDeDobbeleer/oh-my-posh
 [PowerShell]: https://docs.microsoft.com/ja-jp/powershell/?view=powershell-7.1
-[Scoop]: https://scoop.sh/
 [Nerd Fonts]: https://www.nerdfonts.com/
