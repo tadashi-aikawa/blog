@@ -18,6 +18,12 @@ tags:
 
 <!--more-->
 
+{{<update "2021-04-11: oh-my-poshのバージョンが上がったためこの記事の手順では動作しない場所があります">}}
+手順に変更があった部分は注釈を入れて以下の記事を案内しています。
+
+{{<summary "https://blog.mamansoft.net/2021/04/11/migrate-oh-my-posh-from-v2-to-v3/">}}
+{{</update>}}
+
 {{<cimg "2020-05-27.jpg">}}
 
 <!--toc-->
@@ -395,6 +401,12 @@ Install-Module oh-my-posh -Scope CurrentUser -Force
 Install-Module -Name PSReadLine -Scope CurrentUser -Force -SkipPublisherCheck
 ```
 
+{{<update "2021-04-11: oh-my-poshのバージョンが上がったためposh-gitのインストールは不要です">}}
+oh-my-poshのv3移行については以下の記事をご覧ください。
+
+{{<summary "https://blog.mamansoft.net/2021/04/11/migrate-oh-my-posh-from-v2-to-v3/">}}
+{{</update>}}
+
 ### フォントのインストール
 
 Powerlineの表示には、アイコンに対応した特殊なフォントが必要です。  
@@ -432,6 +444,15 @@ notepad $PROFILE
 ```
 
 先ほどインストールしたPowerline関連のModuleをインポートする設定を追加します。
+
+{{<update "2021-04-11: oh-my-poshのバージョンが上がったため手順が変わっています">}}
+- `Import-Module`は不要
+- `$PROFILE`の`Powerline`に関する設定が変更
+
+oh-my-poshのv3移行については以下の記事をご覧ください。
+
+{{<summary "https://blog.mamansoft.net/2021/04/11/migrate-oh-my-posh-from-v2-to-v3/">}}
+{{</update>}}
 
 ```powershell
 Import-Module posh-git
@@ -633,6 +654,12 @@ Set-PSReadLineOption -EditMode Emacs
 ```
 
 ### Powerlineをカスタマイズする
+
+{{<update "2021-04-11: oh-my-poshのバージョンが上がったため手順が変わっています">}}
+oh-my-poshのv3移行については以下の記事をご覧ください。
+
+{{<summary "https://blog.mamansoft.net/2021/04/11/migrate-oh-my-posh-from-v2-to-v3/">}}
+{{</update>}}
 
 主にGitのステータス表示で使われるアイコンをカスタマイズします。
 
