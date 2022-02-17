@@ -1,7 +1,7 @@
 ---
 title: MAMANのITブログ運営終了のお知らせ
 slug: maman-it-blog-close
-date: 2022-02-17T19:53:09:00
+date: 2022-02-17T19:53:00+09:00
 ---
 
 表題のとおり、MAMANのITブログの運営を終了します。
